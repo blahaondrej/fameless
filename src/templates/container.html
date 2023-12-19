@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js is-loading">
+	<head>
+		<meta charset="utf-8">
+		<title>Container</title>
+        <meta name="description" content="Starter project template boilerplate based on Webpack with SASS/SCSS/PostCSS and babel ES6/7 support">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="apple-touch-icon" sizes="180x180" href="assets/images/favicons/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicons/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicons/favicon-16x16.png">
+        <link rel="manifest" href="assets/images/favicons/site.webmanifest">
+        <link rel="mask-icon" href="assets/images/favicons/safari-pinned-tab.svg" color="#38affc">
+        <link rel="shortcut icon" href="assets/images/favicons/favicon.ico">
+        <meta name="msapplication-TileColor" content="#38affc">
+        <meta name="msapplication-config" content="assets/images/favicons/browserconfig.xml">
+		<meta name="theme-color" content="#ffffff">
+
+        <meta property="og:title" content="" />
+        <meta property="og:description" content="" />
+        <meta property="og:url" content="" />
+        <meta property="og:site_name" content="" />
+        <meta property="og:type" content="" />
+        <meta property="og:image" content="" />
+
+        <link rel="stylesheet" href="assets/app.css" media="all">
+	</head>
+
+
+	<body data-barba="wrapper">
+        <div class="c-firstLoad">
+            <div class="c-firstLoad__inner"></div>
+        </div>
+        <div class="c-pageTransition">
+            <div class="c-pageTransition__inner"></div>
+        </div>
+        <header class="c-navigation js-navigation">
+            <div class="c-navigation__container">
+                <div class="c-navigation__row">
+                    <div class="c-navigation__logo">
+                        <a href="/" title="Frontend Webpack Boilerplate">
+                            <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 260 260">
+                                <circle cx="130" cy="130" r="130"/>
+                                <path d="M38.5,136.7v-12.9L87,100.3l6.2,13l-35.1,17l35,17.2l-6.4,12.9L38.5,136.7z" fill="#FFFFFF"/>
+                                <path d="M104.5,171.5l43.2-76.3l6.8,3.1l-43.1,76.1L104.5,171.5z" fill="#FFFFFF"/>
+                                <path d="M167,147.6l35-17.2l-35.1-17l6.2-13l48.4,23.5v12.9l-48.1,23.8L167,147.6z" fill="#FFFFFF"/>
+                            </svg>
+                        </a>
+                    </div>
+                    <div class="c-navigation__hamburger">
+                        <button class="m-hamburger js-burger" type="button">
+                            <div class="m-hamburger__lines">
+                                <span></span>
+                            </div>
+                        </button>
+                    </div>
+                    <nav class="c-navigation__nav">
+                        <div class="c-navigation__nav__scroll js-primary-nav-scroll">
+                            <div class="c-navigation__nav__container">
+                                <div class="c-navigation__nav__primary">
+                                    <div class="c-navigation__nav__primary--list">
+                                        <ul class="u-margin--none js-primary-nav">
+                                            <li>
+                                                <span>
+                                                    <a href="container.html">Container</a>
+                                                </span>
+                                            </li>
+                                            <li>
+                                                <span>
+                                                    <a href="grid.html">Grid</a>
+                                                </span>
+                                            </li>
+                                            <li>
+                                                <span>
+                                                    <a href="spacing.html">Spacing</a>
+                                                </span>
+                                            </li>
+                                            <li>
+                                                <span>
+                                                    <a href="images.html">Images</a>
+                                                </span>
+                                            </li>
+                                            <li>
+                                                <span>
+                                                    <a href="form.html">Form</a>
+                                                </span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </header>
+        <div
+            class="js-barba-container"
+            data-barba="container"
+            data-barba-namespace="default"
+            data-lang="en"
+        >
+            <div class="o-scroll" data-scroll-container>
+                <main>
+                    <div class="u-spacing--responsive--top" data-scroll-section></div>
+                    <header class="u-spacing--responsive" data-scroll-section>
+                        <div class="o-container">
+                            <div class="u-spacing--responsive u-box u-text--center">
+                                <div class="o-wysiwyg">
+                                    <h1>Container</h1>
+                                </div>
+                            </div>
+                        </div>
+                    </header>
+
+                    <section class="u-spacing--responsive" data-scroll-section>
+                        <div class="o-container">
+                            <h2>Container class</h2>
+                            <p>You can customize the breakpoints & grid gutter values in <strong>_config.scss</strong>.</p>
+                            <div class="o-wysiwyg u-blockColor--secondary u-bodyColor--white" style="padding: var(--spacing-responsive) var(--spacing-thinner);">
+                                <p>o-container</p>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="u-spacing--responsive" data-scroll-section>
+                        <div style="padding-left: var(--half-container)">
+                            <h2>Half container css variable</h2>
+                            <p>Useful when you only need the container on one side of a component.</p>
+                            <div class="o-wysiwyg u-blockColor--secondary u-bodyColor--white" style="padding: var(--spacing-responsive) var(--spacing-thinner);">
+                                <p>--half-container</p>
+                            </div>
+                        </div>
+                    </section>
+                </main>
+            </div>
+        </div>
+        <script src="assets/app.js" defer></script>
+	</body>
+</html>

@@ -1,38 +1,41 @@
-/* eslint-disable import/no-extraneous-dependencies */
+/**
+ * Webpack dev configuration file
+ */
 const { merge } = require('webpack-merge');
-
 const webpackConfiguration = require('../webpack.config');
-const environment = require('./environment');
+const environment = require('./webpack.environment');
 
 module.exports = merge(webpackConfiguration, {
-  mode: 'development',
+    mode: 'development',
 
-  /* Manage source maps generation process */
-  devtool: 'eval-source-map',
+    /* Manage source maps generation process */
+    devtool: 'eval-source-map',
 
-  /* Development Server Configuration */
-  devServer: {
-    static: {
-      directory: environment.paths.output,
-      publicPath: '/',
-      watch: true,
+    /* Development Server Configuration */
+    devServer: {
+        static: {
+            directory: environment.paths.output,
+            publicPath: '/',
+            watch: true,
+        },
+        client: {
+            overlay: true,
+        },
+        /* Tells dev-server to open the browser after server had been started. Set it to true to open your default browser. */
+        // open: true,
+        historyApiFallback: true,
+        compress: true,
+        hot: false,
+        ...environment.server,
     },
-    client: {
-      overlay: true,
+
+    /* File watcher options */
+    watchOptions: {
+        aggregateTimeout: 300,
+        poll: 300,
+        ignored: /node_modules/,
     },
-    open: true,
-    compress: true,
-    hot: false,
-    ...environment.server,
-  },
 
-  /* File watcher options */
-  watchOptions: {
-    aggregateTimeout: 300,
-    poll: 300,
-    ignored: /node_modules/,
-  },
-
-  /* Additional plugins configuration */
-  plugins: [],
+    /* Additional plugins configuration */
+    plugins: []
 });

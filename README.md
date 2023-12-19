@@ -1,231 +1,208 @@
-# Webpack 5 Boilerplate Template
+# Frontend webpack boilerplate
 
-![Maintenance](https://img.shields.io/maintenance/yes/2023?logo=github)
-![Build Status](https://github.com/WeAreAthlon/frontend-webpack-boilerplate/actions/workflows/deploy.yml/badge.svg)
-![webpack-current](https://img.shields.io/badge/webpack-v5.88.2-green?logo=webpack)
-![node-current (scoped)](https://img.shields.io/node/v/@weareathlon/frontend-webpack-boilerplate)
-[![@weareathlon/frontend-webpack-boilerplate](https://snyk.io/advisor/npm-package/@weareathlon/frontend-webpack-boilerplate/badge.svg)](https://snyk.io/advisor/npm-package/@weareathlon/frontend-webpack-boilerplate)
-[![GitHub Issues](https://img.shields.io/github/issues-raw/WeAreAthlon/frontend-webpack-boilerplate)](https://github.com/WeAreAthlon/frontend-webpack-boilerplate/issues)
-[![Known Vulnerabilities](https://snyk.io/test/github/WeAreAthlon/frontend-webpack-boilerplate/badge.svg?targetFile=package.json)](https://snyk.io/test/github/WeAreAthlon/frontend-webpack-boilerplate?targetFile=package.json)
-[![npm](https://img.shields.io/npm/dm/@weareathlon/frontend-webpack-boilerplate)](https://www.npmjs.com/package/@weareathlon/frontend-webpack-boilerplate)
-[![GitHub License](https://img.shields.io/github/license/WeAreAthlon/frontend-webpack-boilerplate)](https://github.com/WeAreAthlon/frontend-webpack-boilerplate/blob/master/LICENSE)
+[![node)](https://img.shields.io/badge/node->=14-informational?style=for-the-badge)](https://nodejs.org/)
+![webpack-current](https://img.shields.io/badge/webpack-v5.75.0-informational?style=for-the-badge&&logo=webpack)
+[![GitHub License](https://img.shields.io/github/license/gcolombi/frontend-webpack-boilerplate?color=informational&style=for-the-badge)](https://github.com/gcolombi/frontend-webpack-boilerplate/blob/master/LICENSE)
+[![barba](https://img.shields.io/badge/barba-v2.9.7-green?style=for-the-badge)](https://github.com/barbajs/barba)
+[![loadx](https://img.shields.io/badge/loadx-v0.1.1-green?style=for-the-badge)](https://github.com/cesarwbr/loadx)
+[![locomotive-scroll](https://img.shields.io/badge/locomotive--scroll-v4.1.4-green?style=for-the-badge)](https://github.com/locomotivemtl/locomotive-scroll)
+[![vanilla-lazyload](https://img.shields.io/badge/vanilla--lazyload-v17.8.3-green?style=for-the-badge)](https://github.com/verlok/vanilla-lazyload)
 
-![Front-end Webpack Boilerplate](https://repository-images.githubusercontent.com/96102257/4be7b600-61f1-11e9-9ebf-67b17d5ba125)
+<div align="center">
+    <img src="https://github.com/devicons/devicon/blob/master/icons/webpack/webpack-original-wordmark.svg" title="Webpack" alt="Webpack" width="300" height="300"/>
+</div>
 
-## Demo
-
-* [Demo page demonstrating building - SASS, JavaScript, Images, Fonts, HTML](https://weareathlon.github.io/frontend-webpack-boilerplate/)
-
-Table of Contents
-=================
-
-   * [Webpack 5 Boilerplate Template](#webpack-5-boilerplate-template)
-      * [Demo](#demo)
-      * [Features](#features)
-      * [Requirements](#requirements)
-   * [Setup](#setup)
-      * [Installation](#installation)
-      * [Define Package Metadata](#define-package-metadata)
-   * [Configuration](#configuration)
-      * [Environment Configuration](#environment-configuration)
-      * [Additional webpack configuration](#additional-webpack-configuration)
-   * [Development](#development)
-      * [Assets Source](#assets-source)
-      * [Build Assets](#build-assets)
-         * [One time build assets for development](#one-time-build-assets-for-development)
-         * [Build assets and enable source files watcher](#build-assets-and-enable-source-files-watcher)
-         * [Start a development server - reloading automatically after each file change.](#start-a-development-server---reloading-automatically-after-each-file-change)
-   * [Production](#production)
-      * [Build Assets](#build-assets-1)
-      * [Get Built Assets](#get-built-assets)
-   * [Run Code Style Linters](#run-code-style-linters)
-      * [SASS](#sass)
-      * [JavaScript](#javascript)
-   * [Additional Tools](#additional-tools)
-      * [Run Assets Bundle Analyzer](#run-assets-bundle-analyzer)
-      * [Continuous Integration](#continuous-integration)
+<div align="center">
+    <img src="https://github.com/devicons/devicon/blob/master/icons/sass/sass-original.svg" title="Saas" alt="Saas" width="40" height="40"/>&nbsp;
+    <img src="https://github.com/devicons/devicon/blob/master/icons/javascript/javascript-original.svg" title="Javascript" alt="Javascript" width="40" height="40"/>&nbsp;
+    <img src="https://github.com/devicons/devicon/blob/master/icons/babel/babel-original.svg" title="Babel" alt="Babel" width="40" height="40"/>
+</div>
 
 ## Features
 
-* 0 dependencies
-* **Simple setup** instructions
-  * Start development of a project right away with **simple**, **configured**, **linter enabled**, **browser synced** asset files.
+* Uses [Locomotive Scroll](https://github.com/locomotivemtl/locomotive-scroll) for detection of elements in viewport & smooth scrolling with parallax effects.
+* Uses [Barba](https://github.com/barbajs/barba) to create fluid and smooth transitions between your website's pages.
+* Uses [Vanilla lazyload](https://github.com/verlok/vanilla-lazyload) to speed up your web application by deferring the loading of your below-the-fold images.
+* **CSS architecture** containing generic and base style, custom configuration, grid, utilities, mixins etc.
+* **Dynamic javascript modules** rendering (example.js file as a reference).
 * Configuration per **environment**
-  * `development` - [`sourcemaps`](https://webpack.js.org/configuration/devtool/), [`browser synced developmentment server`](https://webpack.js.org/configuration/dev-server/)
-  * `production` - [`minification`](https://webpack.js.org/plugins/terser-webpack-plugin/), [`sourcemaps`](https://webpack.js.org/configuration/devtool/)
-* Configurable **browsers versions support**. It uses [`browserslist`](https://github.com/browserslist/browserslist#full-list) - just specify the browsers you want to support in the `package.json` file for `browserslist`:
-
-```js
-"browserslist": [
-    "last 2 versions",
-    "> 5%"
-]
-```
+    * `development` - [`sourcemaps`](https://webpack.js.org/configuration/devtool/), [`browser synced developmentment server`](https://webpack.js.org/configuration/dev-server/)
+    * `production` - [`minification`](https://webpack.js.org/plugins/terser-webpack-plugin/), [`sourcemaps`](https://webpack.js.org/configuration/devtool/)
 * The built CSS / JavaScript files will respect the **configured supported browser versions** using the following tools:
-  * [`autoprefixer`](https://github.com/postcss/autoprefixer) - automatically adds vendor prefixes to CSS rules
-  * [`babel-preset-env`](https://babeljs.io/docs/en/babel-preset-env) - smart preset that allows you to use the latest JavaScript without needing to micromanage which syntax transforms (*and optionally, browser polyfills*) are needed by your target environment(s).
-* Demo project files to be used as a reference and **example demo** building of:
-  * *JavaScript*
-  * *SASS / PostCSS*
-  * *HTML* templates
-  * *Images* (*CSS backgrounds and image tags*)
-  * *Videos*
-  * *Fonts*
+    * [`autoprefixer`](https://github.com/postcss/autoprefixer) - automatically adds vendor prefixes to CSS rules.
+    * [`babel-preset-env`](https://babeljs.io/docs/en/babel-preset-env) - smart preset that allows you to use the latest JavaScript without needing to micromanage which syntax transforms (*and optionally, browser polyfills*) are needed by your target environment(s).
 * Support for **assets optimization** for production environment with ability to configure:
-  * **Code Minification** of *JavaScript* and *CSS* processed files.
-  * **Optimize Assets Loading** - inline and embed **images** / **fonts** files having file size below a *configurable* threshold value.
-  * **Images Optimisation** - optimize `jpeg`, `jpg`, `png`, `gif`, `svg` filesize and loading type via [`imagemin`](https://github.com/imagemin/imagemin). Plugin and Loader for webpack to optimize (*compress*) all images using `imagemin`. Do not worry about size of images, now they are always optimized/compressed.
-* Support for **source code syntax style and formatting linters** that analyze source code to flag any programming errors, bugs, stylistic errors or suspicious constructs:
-  * **SASS/PostCSS syntax cheker** - you can change or add additional rules in `.sasslintrc` file. Configuration options can be found on [`sass-lint`](https://github.com/sasstools/sass-lint/blob/master/lib/config/sass-lint.yml) documentation.
-  * **JavaScript syntax checker** - following the `airbnb` style, you can review and configure the rules in `.eslintrc` file. Configuration options can be found on [`eslint`](https://eslint.org/docs/user-guide/configuring) documentation.
+    * **Code Minification** of *JavaScript* and *CSS* processed files.
+    * **Optimize Assets Loading** - inline and embed **images** / **fonts** files having file size below a *configurable* threshold value.
 * Latest [Webpack 5](https://github.com/webpack/webpack) - *JavaScript* module bundler.
 * Latest [SASS/PostCSS](https://github.com/sass/sass) compiler based on Dart `sass`.
-* Latest [Babel 7](https://github.com/babel/babel) (`@babel/core`) - JavaScript compiler - _Use next generation JavaScript, today._
-* Integration with [Github Actions](https://github.com/features/actions)
-  * [Demo deployment available to GitHub pages](https://weareathlon.github.io/frontend-webpack-boilerplate/)
+* Latest [Babel 7](https://github.com/babel/babel) JavaScript compiler.
 * Configured and ready to use **Webpack Dev Server** plugin for faster local development - [`webpack-dev-server`](https://webpack.js.org/configuration/dev-server/)
 * Integration with [Webpack Bundle Analyzer](https://www.npmjs.com/package/webpack-bundle-analyzer) - _Visualize size of webpack output files with an interactive zoomable treemap._
 
 ## Requirements
 
-* `node` : `>=14`
-* `npm`
-
-# Setup
+* `node`: `>=14`
+* `yarn` or `npm`
 
 ## Installation
 
-1. Choose and download the latest template release from [List of Releases](https://github.com/WeAreAthlon/frontend-webpack-boilerplate/releases).
-2. Extract the release archive to a new directory, rename it to your project name and browse the directory.
-3. Install all dependencies using `npm` *clean install* command. 
-
+Yarn
 ```sh 
-$ npm ci
+git clone git@github.com:gcolombi/frontend-webpack-boilerplate.git project-name
+cd project-name
+yarn install
 ```
 
-> More on the clean install npm command can be read here [`npm ci`](https://docs.npmjs.com/cli/ci.html)
+NPM
+```sh 
+git clone git@github.com:gcolombi/frontend-webpack-boilerplate.git project-name
+cd project-name
+npm install
+```
 
-> You can still use `npm install` in cases the `npm ci` raises system error due to specific platform incompatibilities.
+Replace the original remote repository with your project's repository.
 
-## Define Package Metadata
+Update the following files to suit your project:
 
-* Amend `package.json` file and optionally specify:
-  * `name` - Name of your project. A name can be optionally prefixed by a scope, e.g. `@myorg/mypackage`.
-  * `version` - Specify and maintain a version number indicator for your project code.
-  * `author` - Your organisation or just yourself. You can also specify [`contributors`](https://docs.npmjs.com/files/package.json#people-fields-author-contributors).
-  * `description` - Short description of your project.
-  * `keywords` - Put keywords in it. It’s an array of strings.
-  * `repository` - Specify the place where your code lives.
-  * `license` - Announce your code license, figure out the license from [Choose an Open Source License](https://choosealicense.com) .
-  * `browserslist` - Specify the supported browsers versions - you can refer to [full list](https://github.com/browserslist/browserslist#full-list) of availalbe options.
-
-# Configuration
-
-## Environment Configuration
-
-* Edit the [`configuration/environment.js`](configuration/environment.js) if you want to specify:
-  * **`server`**: configure development server, specify `host`, `port`. Refer to the full development server configuration options for [`webpack-dev-server`](https://webpack.js.org/configuration/dev-server/).
-  * **`limits`**: configure file size thresholds for assets optimizations.
-    * Image/Font files size in bytes. Below this value the image file will be served as Data URL (_inline base64_).
-  * **`paths`**: `src` or `dist` directories names and file system location.
-
-## Additional `webpack` configuration
-
-You can additionally configure `webpack` for specific environment:
-* `development` - [`configuration/webpack.dev.config.js`](configuration/webpack.dev.config.js)
-* `production` - [`configuration/webpack.prod.config.js`](configuration/webpack.prod.config.js)
-  * Note that if you prefer to build and deploy [`sourcemap`](https://webpack.js.org/configuration/devtool/#production) files:
-> You should configure your server to disallow access to the _Source Map_ files for normal users!
+* [`README.md`](https://github.com/gcolombi/frontend-webpack-boilerplate/blob/master/README.md)
+* [`package.json`](https://github.com/gcolombi/frontend-webpack-boilerplate/blob/master/package.json):
+    * name: `frontend-webpack-boilerplate`
+    * description: `Starter project template boilerplate ...`
+    * author: `Gérard Colombi`
+* [`site.webmanifest`](https://github.com/gcolombi/frontend-webpack-boilerplate/blob/master/src/assets/images/favicons/site.webmanifest)
+    * name: `Frontend webpack boilerplate`
+    * short_name: `Boilerplate`
 
 # Development
 
 ## Assets Source
 
-* **SASS/PostCSS** files are located under `src/scss/`
-* **JavaScript** files with support of latest ECMAScript _ES6 / ECMAScript 2016(ES7)/ etc_ files are located under `src/js/`
-* **Image** files are located under `src/images/`
-* **Font** files are located under `src/fonts/`
-* **HTML** files are located under `src/`
-  * It will **automatically** build **all HTML files** placed under `src/` directory, no need to manually configure each template anymore!
+* _SASS/SCSS/PostCSS_: `src/assets/styles/`
+* _JavaScript_: `src/assets/scripts/`
+* _Images_: `src/assets/images/`
+* _Fonts_: `src/assets/fonts/`
+* _HTML_: `src/templates/`
+    * It will **automatically** build **all HTML files** placed under `src/templates/` in dist directory.
+    
+```
+📦src
+ ┣ 📂assets
+ ┃ ┣ 📂fonts
+ ┃ ┣ 📂images
+ ┃ ┃ ┣ 📂favicons
+ ┃ ┃ ┣ 📂svg
+ ┃ ┃ ┗ 📜example.jpg
+ ┃ ┣ 📂scripts
+ ┃ ┃ ┣ 📂base
+ ┃ ┃ ┣ 📂modules
+ ┃ ┃ ┣ 📂utils
+ ┃ ┃ ┣ 📜app.js
+ ┃ ┃ ┣ 📜lifecycle.js
+ ┃ ┃ ┗ 📜store.js
+ ┃ ┗ 📂styles
+ ┗📂templates
+   ┣ 📜container.html
+   ┣ 📜form.html
+   ┣ 📜grid.html
+   ┣ 📜images.html
+   ┣ 📜index.html
+   ┗ 📜spacing.html
+ ```
 
-## Build Assets
+## Build/Compile Assets
 
-### One time build assets for development
+### Start a development server
 
+Yarn
 ```sh
-$ npm run build
+yarn dev
 ```
 
-### Build assets and enable source files watcher
-
+NPM
 ```sh
-$ npm run watch
+npm run dev
 ```
 
-This command is suitable if you develop with external web server.
+### One time build assets
 
-> **Note:** File watching does not work with *NFS* (*Windows*) and virtual machines under *VirtualBox*. Extend the configuration in such cases by:
-
-```js
-module.exports = {
-  //...
-  watchOptions: {
-    poll: 1000 // Check for changes every second
-  }
-};
+Yarn
+```sh
+yarn build
 ```
 
-### Start a development server - reloading automatically after each file change.
-
+NPM
 ```sh
-$ npm run dev
+npm run build
+```
+
+### Compile and watch assets
+
+Yarn
+```sh
+yarn watch
+```
+
+NPM
+```sh
+npm run watch
 ```
 
 # Production 
 
 ## Build Assets
 
-Optimize assets for production by:
-
+Yarn
 ```sh
-$ npm run production
+yarn production
 ```
 
-## Get Built Assets
-
-* _CSS_ files are located under `/dist/css/`
-* _JavaScript_ files with support of _ES6 / ECMAScript 2016(ES7)_ files are located under `/dist/js/`
-* _Images_ are located under `/dist/images/`
-  * Images part of the _design_ (_usually referenced in the CSS_) are located under `/dist/images/design/`
-  * Images part of the _content_ (_usually referenced via `<img>` tags_) are located under `/dist/images/content/`
-* _Fonts_ are located under `/dist/fonts/`
-* _HTML_ files are located under `/dist/`
-
-# Run Code Style Linters
-
-## SASS
-
+NPM
 ```sh
-$ npm run lint:sass
-```
-## JavaScript
-
-```sh
-$ npm run lint:js
+npm run production
 ```
 
-# Additional Tools
+## Built Assets Source
+
+* _CSS_: `dist/assets/`
+* _JavaScript_: `dist/assets/`
+* _Images_: `dist/assets/images/`
+* _Fonts_: `dist/assets/fonts/`
+* _HTML_: `dist/`
+
+```
+📦dist
+ ┣ 📂assets
+ ┃ ┣ 📂fonts
+ ┃ ┣ 📂images
+ ┃ ┃ ┣ 📂favicons
+ ┃ ┃ ┣ 📂svg
+ ┃ ┃ ┣ 📂webp
+ ┃ ┃ ┗ 📜example.jpg
+ ┃ ┣ 📜app.css
+ ┃ ┣ 📜app.js
+ ┃ ┣ 📜example.js
+ ┃ ┗ 📜forminput.js
+ ┣ 📜container.html
+ ┣ 📜form.html
+ ┣ 📜grid.html
+ ┣ 📜images.html
+ ┣ 📜index.html
+ ┗ 📜spacing.html
+ ```
+
+# Additional Tool
 
 ## Run Assets Bundle Analyzer
 
+Yarn
 ```sh
-$ npm run stats
+yarn stats
 ```
 
-> This will open the visualisaion on the default configuraiton URL `localhost:8888`, you can change this URL or port following the [webpack-bundle-analyzer](https://github.com/webpack-contrib/webpack-bundle-analyzer#options-for-cli) documentation.
+NPM
+```sh
+npm run stats
+```
 
-## Continuous Integration
-
-This boilerplate template contains integration with [Github Actions](https://github.com/features/actions/). The build system runs all linting scripts and deploys production optimized pages to _GitHub_ pages upon push to the `master` branch. However, note that this deployment flow only works for _Project Pages_, as User and Organization pages [only support the master branch flow](https://help.github.com/articles/user-organization-and-project-pages/).
-
-For more information on how to set up alternative deployment processes, check out the [Github Actions documentation on deployment](https://docs.github.com/en/actions/deployment/about-deployments/deploying-with-github-actions). The service can deploy to dozens of cloud providers, including Heroku, AWS, and Firebase.
+> This will open the visualisaion on the default configuraiton URL `localhost:8888`.
