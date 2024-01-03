@@ -1,0 +1,27 @@
+{% extends "src/views/layouts/default.html" %}
+
+<!-- set variables used in layout -->
+{% set title="Home" %}
+
+{% block styles %}
+<!-- load specific page style -->
+<link href="./style.scss" rel="stylesheet">
+{% endblock %}
+
+{% block scripts %}
+<!-- load specific page script -->
+<script src="./home.js"></script>
+{% endblock %}
+
+{% block content %}
+<section>
+  <div class="container">
+    <div class="row">
+      <div class="col-6">1</div>
+      <div class="col-6">2</div>
+    </div>
+  </div>
+</section>
+
+{% include "src/views/partials/contact-banner.html" %}
+{% endblock %}

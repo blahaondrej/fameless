@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="cs" dir="ltr">
+
+<head>
+  <title>{{ title }}</title>
+
+  <!-- load source favicon via Webpack alias '@images' -->
+  <link href="@images/favicon.png" rel="icon" type="image/png">
+
+  <!-- load global source script via Webpack alias '@scripts' -->
+  <script src="@scripts/common.js" defer="defer"></script>
+
+  <!-- block for specific page styles -->
+  {% block styles %}{% endblock %}
+</head>
+
+<body>
+  <!-- Header -->
+  <div class="header-container">
+    <div class="header-content">
+      <a class="header-left" href="index.html">
+        <img class="app-logo" src="@images/logo-fameless.svg">
+      </a>
+      {% include "src/views/partials/navigation.html" %}
+      <div class="header-right"></div>
+    </div>
+  </div>
+
+  <!-- Main content -->
+  <main class="main-container">
+    <div class="main-content">
+
+      <!-- block for specific page content -->
+      {% block content %}{% endblock %}
+
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <div class="footer-container">
+    {% include "src/views/partials/footer.html" %}
+  </div>
+
+  <!-- block for specific page scripts -->
+  {% block scripts %}{% endblock %}
+</body>
+
+</html>
