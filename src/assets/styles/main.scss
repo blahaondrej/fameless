@@ -24,8 +24,13 @@
 // Page layout
 @use 'pages/default-layout';
 
+// Swiper
+@use 'swiper/css/bundle';
 
 // Partials
 @use 'partials/footer';
 @use 'partials/contact-banner';
+@use 'partials/blog';
+@use 'partials/team';
+
 

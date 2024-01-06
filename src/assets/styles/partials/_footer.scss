@@ -168,5 +168,61 @@
             height: 100%;
             width: 120px;
         }
+        .checkbox-container {
+            display: block;
+            position: relative;
+            padding-left: 35px;
+            margin-bottom: 12px;
+            cursor: pointer;
+            font-size: 14px;
+            user-select: none;
+          }
+          
+          /* Skryje checkbox */
+          .checkbox-container input {
+            position: absolute;
+            opacity: 0;
+            cursor: pointer;
+            height: 0;
+            width: 0;
+          }
+          
+          /* Vytvoří vlastní checkbox */
+          .checkmark {
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 25px;
+            width: 25px;
+            background-color: #eee;
+          }
+          
+          /* Při zaškrtnutí změní barvu pozadí */
+          .checkbox-container input:checked ~ .checkmark {
+            background-color: #2196F3;
+          }
+          
+          /* Vytvoří indikátor zaškrtnutí v checkboxu */
+          .checkmark:after {
+            content: "";
+            position: absolute;
+            display: none;
+          }
+          
+          /* Zobrazí indikátor zaškrtnutí, když je checkbox zaškrtnut */
+          .checkbox-container input:checked ~ .checkmark:after {
+            display: block;
+          }
+          
+          /* Styl pro indikátor zaškrtnutí */
+          .checkbox-container .checkmark:after {
+            left: 9px;
+            top: 5px;
+            width: 7px;
+            height: 12px;
+            border: solid white;
+            border-width: 0 3px 3px 0;
+            transform: rotate(45deg);
+          }
     }
 }

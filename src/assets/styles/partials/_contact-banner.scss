@@ -2,7 +2,91 @@
     margin: 200px 0;
     border-radius: 20px;
     background: #FFF;
-    padding: 60px 20px 50px 20px;
+    position: relative;
+    &__bubble {
+        content: '';
+        position: absolute;
+        bottom: -35px;
+        left: 5%;
+        background-image: url('src/assets/images/icons/contact_bubble.png');
+        z-index: 5;
+        background-repeat: no-repeat;
+        width: 250px;
+        background-position: center;
+        background-size: 100%;
+        height: 100%;
+    }
+    &__inner {
+        z-index: 1;
+        overflow: hidden;
+        position: relative;
+        padding: 60px 20px 50px 20px;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        &::after {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background-image: url('src/assets/images/icons/circle.svg');
+            z-index: 0;
+            background-repeat: no-repeat;
+            text-align: center;
+            width: auto;
+            height: auto;
+            background-position: center;
+            background-size: 800px; 
+            animation: expandFade3 2s linear infinite;
+            pointer-events: none;
+        }
+        &::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background-image: url('src/assets/images/icons/circle.svg');
+            z-index: 0;
+            background-repeat: no-repeat;
+            text-align: center;
+            width: auto;
+            height: auto;
+            background-position: center;
+            background-size: 1100px; 
+            animation: expandFade4 2s linear infinite;
+            pointer-events: none;
+        }
+    }
+    &::after {
+        content: '';
+        position: absolute;
+        inset: 0;
+        background-image: url('src/assets/images/icons/circle.svg');
+        z-index: 0;
+        background-repeat: no-repeat;
+        text-align: center;
+        width: auto;
+        height: auto;
+        background-position: center;
+        background-size: 300px; 
+        animation: expandFade1 2s linear infinite;
+        pointer-events: none;
+    }
+    &::before {
+        content: '';
+        position: absolute;
+        inset: 0;
+        background-image: url('src/assets/images/icons/circle.svg');
+        z-index: 0;
+        background-repeat: no-repeat;
+        text-align: center;
+        width: auto;
+        height: auto;
+        background-position: center;
+        background-size: 500px; 
+        animation: expandFade2 2s linear infinite;
+        pointer-events: none;
+    }
     h2 {
         color: #070058;
         text-align: center;
@@ -21,16 +105,79 @@
         line-height: normal;
     }
     a {
-        display: flex;
+        display: inline-flex;
         padding: 20px 26px;
         justify-content: center;
         align-items: center;
         flex-shrink: 0;
-        color: #070058;
+        color: #fff;
         text-align: center;
         font-size: 14px;
         font-style: normal;
         font-weight: 500;
         line-height: 24px;
+        background-color: #1273EF;
+        border-radius: 34px;
+        &:hover, &:active {
+            background-color: #0D62CF;
+            text-decoration: none;
+        }
+    }
+}
+
+@keyframes expandFade1 {
+    0% {
+        opacity: 1;
+        background-size: 300px;
+    }
+    50% {
+        opacity: 0.7;
+        background-size: 400px;
+    }
+    100% {
+        opacity: 0;
+        background-size: 500px;
+    }
+}
+@keyframes expandFade2 {
+    0% {
+        opacity: 1;
+        background-size: 500px;
+    }
+    50% {
+        opacity: 0.7;
+        background-size: 650px;
+    }
+    100% {
+        opacity: 0;
+        background-size: 800px;
+    }
+}
+@keyframes expandFade3 {
+    0% {
+        opacity: 1;
+        background-size: 800px;
+    }
+    50% {
+        opacity: 0.7;
+        background-size: 950px;
+    }
+    100% {
+        opacity: 0;
+        background-size: 1100px;
+    }
+}
+@keyframes expandFade4 {
+    0% {
+        opacity: 1;
+        background-size: 1100px;
+    }
+    50% {
+        opacity: 0.7;
+        background-size: 1250px;
+    }
+    100% {
+        opacity: 0;
+        background-size: 1400px;
     }
 }

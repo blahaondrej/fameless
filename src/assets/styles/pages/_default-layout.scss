@@ -72,39 +72,3 @@ $footer-bg-color: #15384f;
     margin-right: var.$gap-lg;
   }
 }
-
-.main-container {
-  display: flex;
-  flex: 1 0 auto;
-}
-
-.main-content {
-  display: flex;
-  flex-direction: column;
-  height: 100%;
-  width: 100%;
-  max-width: var.$content-max-width;
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: $content-padding-x;
-  padding-right: $content-padding-x;
-}
-
-section {
-  &:not(:first-of-type) {
-    margin-top: var.$gap-lg;
-  }
-
-  .container {
-    padding: var.$gap-lg * 1.5;
-    background-color: #fff;
-
-    > :first-child {
-      margin-top: 0;
-    }
-  }
-}
-
-.teaser {
-  margin-bottom: var.$gap-lg;
-}
