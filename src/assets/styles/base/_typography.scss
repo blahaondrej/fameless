@@ -1,7 +1,8 @@
-@import url('https://fonts.googleapis.com/css2?family=Epilogue:wght@200;300;400;500;600;700&display=swap');
-
+@use '../base/mixins';
 $font-family: 'Epilogue', sans-serif !default;
 $font-size: 16px !default;
+$font-family-inter: 'Inter', sans-serif !default;
+
 
 body {
   font-family: $font-family;
@@ -165,50 +166,106 @@ p, .p {
 }
 
 .section-title {
-  color: #070058;
-  text-align: center;
-  font-feature-settings: 'clig' off, 'liga' off;
-  font-size: 28px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
   display: flex;
   justify-content: space-between;
-  margin-bottom: 60px;
-  padding-left: 24px;
-  position: relative;
-  &::after {
-    content: '';
-    position: absolute;
-    bottom: -30px;
-    left: 0;
-    height: 2px;
-    width: 100%;
-    background-color: #08005C;
-    opacity: 0.1278;
-  }
-  a {
+  border-bottom: 1.5px solid rgba(8, 0, 92, 0.1);
+  padding: 20px 0;
+  &__title {
     color: #070058;
-    font-size: 14px;
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-size: 28px;
     font-style: normal;
-    font-weight: 500;
-    line-height: 24px;
+    font-weight: 400;
+    line-height: normal;
+    margin-bottom: 0;
+    @include mixins.respond-to(sm) {
+      font-size: 22px;
+    }
+  }
+  &__left {
     display: flex;
     align-items: center;
-      span {
-        content: '';
-        margin-left: 30px;
-        color: #070058;
-        font-size: 32px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: 40px;
-        margin-bottom: 5px;
+  }
+  &__right {
+    display: flex;
+    align-items: center;
+    @include mixins.respond-to(sm) {
+      display: none;
     }
-    &:hover {
-      span {
-        animation: bounceRight 1s infinite;
+    a {
+      color: #070058;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 24px;
+      display: flex;
+      align-items: center;
+      position: relative;
+      margin-right: 40px;
+      @include mixins.animation();
+      &::after{
+          content: '';
+          margin-left: 30px;
+          line-height: 40px;
+          margin-bottom: 5px;
+          background-image: url('src/assets/images/icons/arrow-right.svg');
+          background-repeat: no-repeat;
+          width: 18px;
+          background-position: center;
+          background-size: 100%;
+          height: 18px;
+          position: absolute;
+          right: -40px;
       }
+      &::before {
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 1px;
+        background-color: #070058;
+        bottom: 0;
+        left: 0;
+        transform-origin: right;
+        transform: scaleX(0);
+        transition: transform .3s ease-in-out;
+    }
+      &:hover {
+        &::after {
+          animation: bounceRight 1s infinite;
+        }
+        &::before {
+          transform-origin: left;
+          transform: scaleX(1);
+      }
+      }
+    }
+  }
+  &__icon {
+    height: 46px;
+    width: 46px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 24px;
+    @include mixins.respond-to(sm) {
+      display: none;
+    }
+    &--pohoda {
+        background: linear-gradient(180deg, #F75544 0%, #AD2A1C 100%);
+    }
+    &--sklad {
+        background: linear-gradient(180deg, #FAAD21 0%, #D4931D 100%);
+    }
+    &--vyvoj {
+        background: linear-gradient(180deg, #4BC6B6 0%, #37A395 100%);
+    }
+    &--marketing {
+        background: linear-gradient(180deg, #1273EF 0%, #0D5DC5 100%);
+    }
+    img {
+      width: 23px;
+      height: auto;
     }
   }
 }

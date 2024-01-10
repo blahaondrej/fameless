@@ -1,22 +1,23 @@
+// Mixins
+@use 'base/mixins';
 // Bootstrap 
 @use "~bootstrap/scss/bootstrap";
+
 
 // Base
 @use 'base/normalize';
 @use 'base/space';
 @use 'base/layout';
+@use 'base/swiper';
 
 // App font: load your font
-//@use 'base/fonts/arial' as font;
-//@use 'base/fonts/helvetica' as font;
-@use 'base/fonts/roboto' as font;
+@use 'base/fonts/epilogue' as font;
+@use 'base/fonts/inter' as fontInter;
 
 @use 'base/typography' with (
   $font-family: font.$font-family,
+  $font-family-inter: fontInter.$font-family-inter,
 );
-
-// Icons
-@use 'base/mat-icons';
 
 // Loko scroll
 @use 'base/lokomotivescroll';
@@ -32,5 +33,11 @@
 @use 'partials/contact-banner';
 @use 'partials/blog';
 @use 'partials/team';
+@use 'partials/services';
+@use 'partials/stats';
+@use 'partials/intro';
+@use 'partials/products';
+@use 'partials/work';
+@use 'partials/software';
 
 

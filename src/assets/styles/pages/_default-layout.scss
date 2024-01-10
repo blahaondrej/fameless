@@ -1,4 +1,5 @@
 @use '../abstracts/variables' as var;
+@use '../base/mixins';
 
 // sticky header height normal, no scrolling
 $header-max-height: 100px;
@@ -17,58 +18,188 @@ $footer-bg-color: #15384f;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  position: sticky;
-  top: $header-min-height - $header-max-height;
-  min-height: $header-max-height;
-  margin-bottom: var.$gap-lg;
-  background-color: #fff;
-  box-shadow: 0 0 17px rgba(0, 0, 0, 0.3);
-
+ /*  position: sticky;
+  top: 0; */
+  position: fixed;
+  width: 100%;
+  min-height: 100px;
+  margin-bottom: 50px;
+  z-index: 10;
+  padding: 10px 0;
+  @include mixins.respond-to(sm) {
+    display: none;
+  }
+  &.small-header {
+    min-height: auto;
+    height: 60px;
+    background-color: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(5px);
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    .header-content {
+      .header-top {
+        height: 0;
+        opacity: 0;
+        visibility: hidden;
+        max-height: 0;
+      }
+    }
+/*     .app-logo {
+      max-height: 40px;
+      min-height: 40px;
+    } */
+  }
   .header-content {
     position: sticky;
     display: flex;
+    justify-content: space-between;
+    align-items: center;
     top: 0;
-    height: $header-min-height;
     width: 100%;
-    max-width: var.$content-max-width;
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: $content-padding-x;
-    padding-right: $content-padding-x;
-
-    > * {
+    .header-top {
+      border-bottom: 1px solid rgba(7, 0, 88, 0.1);
+      height: 55px;
+      max-height: 60px;
       display: flex;
-      flex-direction: row;
-      justify-content: center;
       align-items: center;
-    }
-
-    > :first-child,
-    > :last-child {
-      flex: 0 0 18%;
-      max-width: 18%;
-    }
-
-    > :first-child {
-      justify-content: flex-start;
-    }
-
-    > :last-child {
       justify-content: flex-end;
-    }
-
-    > :not(:first-child):not(:last-child) {
-      flex-grow: 1;
-
-      > :not(:first-child) {
-        margin-left: var.$gap-lg;
+      transition: all 0.2s ease-in-out;
+      a {
+        color: #070058;
+        font-size: 13px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 24px;
+        padding: 0 20px;
+        @include mixins.animation();
+        &:last-child {
+          padding-right: 0;
+          padding-left: 0;
+        }
+        &:hover {
+          color: #1273EF;
+        }
       }
+      .header-login {
+        border-radius: 34px;
+        border: 1px solid #08005C;
+        color: #070058;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 24px;
+        padding: 6px 24px;
+        &:hover {
+          color:#fff;
+          border-color: #fff;
+        }
+      }
+      .header-social {
+        padding-left: 16px;
+        svg {
+          height: 16px;
+          width: auto;
+        }
+      }
+    }
+    .header-bottom {
+      display: flex;
+      height: 44px;
+      align-items: center;
+      justify-content: flex-end;
+        a {
+          margin: 0 17px;
+          color: #070058;
+          font-size: 15px;
+          font-style: normal;
+          font-weight: 500;
+          line-height: 24px;
+          position: relative;
+          display: flex;
+          align-items: center;
+          @include mixins.animation();
+          &::after {
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 1px;
+            background-color: #1273EF;
+            bottom: 0;
+            left: 0;
+            transform-origin: right;
+            transform: scaleX(0);
+            transition: transform .3s ease-in-out;
+        }
+        &:hover {
+          color: #1273EF;
+            &::after {
+                transform-origin: left;
+                transform: scaleX(1);
+            }
+        }
+          &:last-child {
+            margin-right: 0;
+          }
+          &:before {
+            content: '';
+            position: absolute;
+            left: -12px;
+            top: 7px;
+            border-radius: 50%;
+          }
+          &:first-child {
+            &:before {
+              width: 8px;
+              height: 8px;
+              background: linear-gradient(180deg, #1273EF 0%, #0D5DC5 100%);
+            }
+          }
+          &:nth-child(2) {
+            &:before {
+              width: 8px;
+              height: 8px;
+              background: linear-gradient(180deg, #4BC6B6 0%, #37A395 100%);
+            }
+          }
+          &:nth-child(3) {
+            &:before {
+              width: 8px;
+              height: 8px;
+              background: linear-gradient(180deg, #F75544 0%, #AD2A1C 100%);
+            }
+          }
+          &:nth-child(4) {
+            &:before {
+              width: 8px;
+              height: 8px;
+              background: linear-gradient(180deg, #2E09AE 0%, #08005C 100%);
+            }
+          }
+          &:nth-child(5) {
+            &:before {
+              width: 8px;
+              height: 8px;
+              background: linear-gradient(180deg, #FAAD21 0%, #D4931D 100%);
+            }
+          }
+          &:last-child {
+            margin-left: 30px;
+            &:before {
+              width: 1px;
+              height: 18px;
+              opacity: 0.1;
+              background: #070058;
+              top: 2px;
+              left: -24px;
+            }
+          }
+        }
     }
   }
 
   .app-logo {
-    max-height: 60px;
-    min-height: 40px;
-    margin-right: var.$gap-lg;
+    max-height: 30px;
+    min-height: 30px;
+    margin-right: 20px;
+    transition: all 0.3s ease-in-out;
   }
 }

@@ -1,0 +1,22 @@
+@mixin animation($speed: .2s) {
+  transition: all $speed linear;
+}
+
+@mixin respond-to($breakpoint) {
+  @if $breakpoint == xs {
+    @media (max-width: 575.98px) { @content; }
+  }
+  @else if $breakpoint == sm {
+    @media (max-width: 768px) { @content; }
+  }
+  @else if $breakpoint == md {
+    @media (max-width: 992px) { @content; }
+  }
+  @else if $breakpoint == lg {
+    @media (max-width: 1200px) { @content; }
+  }
+  @else if $breakpoint == xl {
+    @media (max-width: 1400px) { @content; }
+  }
+}
+

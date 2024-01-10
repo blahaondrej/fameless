@@ -1,0 +1,70 @@
+@use '../base/fonts/inter.scss' as fontInter;
+@use '../base/mixins';
+.intro {
+    display: flex;
+    align-items: center;
+    position: relative;
+    height: 50vh;
+    min-height: 600px;
+    @include mixins.respond-to(sm) {
+        height: 100%;
+        padding: 50px 10px;
+        text-align: center;
+      }
+    &__title {
+        color: #070058;
+        font-feature-settings: 'clig' off, 'liga' off;
+        font-size: 48px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 102.083%;
+        margin-bottom: 16px;
+        @include mixins.respond-to(sm) {
+            font-size: 28px;
+            line-height: 119%;
+        }
+    }
+    &__text {
+        color: #070058;
+        font-feature-settings: 'clig' off, 'liga' off;
+        font-family: fontInter.$font-family-inter;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 25px;
+        margin-bottom: 30px;
+        @include mixins.respond-to(sm) {
+            font-size: 18px;
+            line-height: 22px;
+        }
+    }
+    &__btn {
+        background-color: #1273EF;
+        border-radius: 34px;
+        color: #FFF;
+        display: inline-flex;
+        justify-content: center;
+        font-family: fontInter.$font-family-inter;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 24px;
+        padding: 20px 30px;
+        transition: all 0.3s ease-in-out;
+        &:hover {
+            background: #0D62CF;
+            box-shadow: 1px 1px 5px 0px rgba(18, 115, 239, 0.45);
+        }
+        &:active {
+            background: #0D62CF;
+            box-shadow: 1px 1px 5px 0px rgba(18, 115, 239, 0.45);
+        }
+    }
+    &__mac {
+        text-align: right;
+        img {
+            width: 320px;
+            height: auto;
+        }
+    }
+}

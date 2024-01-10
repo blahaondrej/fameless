@@ -1,7 +1,7 @@
 {% extends "src/views/layouts/default.html" %}
 
 <!-- set variables used in layout -->
-{% set title="Home" %}
+{% set title="Fameless | Home" %}
 
 {% block styles %}
 <!-- load specific page style -->
@@ -14,77 +14,524 @@
 {% endblock %}
 
 {% block content %}
+<div class="circle-background"></div>
+<section class="intro">
+  <div class="row align-items-end">
+    <div class="col-12 col-md-6">
+      <h1 class="intro__title">Máme za sebou více jak
+        250 úspěšných projektů</h1>
+      <p class="intro__text">S námi fameless opravdu nebudete. S čím pomůžeme vám?</p>
+      <a href="#" class="intro__btn">Chci konzultaci</a>
+    </div>
+    <div class="col-12 col-md-6 col-auto">
+      <div class="intro__mac">
+        <img class="pc-top" src="@images/homepage/pc_top.png">
+      </div>
+      <div class="intro__circle">
+
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="services">
+
+  <div class="row">
+    {% include "src/views/partials/services.html" %}
+  </div>
+
+</section>
 
 <section>
-  <div class="container">
-    <div class="col-12 col-md-6">
-      <h1>Máme za sebou více jak
-        250 úspěšných projektů</h1>
-      <p>S námi fameless opravdu nebudete. S čím pomůžeme vám?</p>
-      <a href="#" class="btn-primary">Chci konzultaci</a>
-    </div>
-    <div class="col-12 col-md-6">
-      <img class="pc-top" src="@images/homepage/pc_top.png">
+  <div class="swiper swiper-clients swiper-container-clients">
+    <!-- Additional required wrapper -->
+    <div class="swiper-wrapper">
+      <!-- Slides -->
+      <div class="swiper-slide">
+        <img class="pc-top" src="@images/clients/dekra.png">
+      </div>
+      <div class="swiper-slide">
+        <img class="pc-top" src="@images/clients/dekra.png">
+      </div>
+      <div class="swiper-slide">
+        <img class="pc-top" src="@images/clients/dekra.png">
+      </div>
+      <div class="swiper-slide">
+        <img class="pc-top" src="@images/clients/dekra.png">
+      </div>
+      <div class="swiper-slide">
+        <img class="pc-top" src="@images/clients/dekra.png">
+      </div>
+      <div class="swiper-slide">
+        <img class="pc-top" src="@images/clients/dekra.png">
+      </div>
+      <div class="swiper-slide">
+        <img class="pc-top" src="@images/clients/dekra.png">
+      </div>
+      <div class="swiper-slide">
+        <img class="pc-top" src="@images/clients/dekra.png">
+      </div>
+      <div class="swiper-slide">
+        <img class="pc-top" src="@images/clients/dekra.png">
+      </div>
     </div>
   </div>
 </section>
+
+<section class="stats">
+
+  <div class="stats__item">
+    <div class="stats__number counter" data-count="25">0</div>
+    <div class="stats__text">nových značek</div>
+  </div>
+  <div class="stats__item">
+    <div class="stats__number counter" data-count="100">0</div>
+    <div class="stats__text">implementace našeho skladového řešení</div>
+  </div>
+  <div class="stats__item">
+    <div class="stats__number counter" data-count="10">0</div>
+    <div class="stats__text">let zkušeností</div>
+  </div>
+
+</section>
+
+<section class="products">
+  <div class="section-title">
+    <div class="section-title__left">
+      <div class="section-title__icon section-title__icon--marketing">
+        <img src="@images/icons/marketing.svg">
+      </div>
+      <h2 class=" section-title__title">Marketing</h2>
+    </div>
+    <div class="section-title__right">
+      <a href="#">Všechny produkty</a>
+    </div>
+  </div>
+  <div class="products__inner">
+    <div class="row justify-content-md-center align-items-center">
+      <div class="col-12 col-md-4">
+        <div class="products__item products__item--left">
+          <div class="products__images justify-content-center">
+            <img class="product-left" src="@images/homepage/marketing1_block2.png">
+            <img class="product-right" src="@images/homepage/marketing1_block1.png">
+            <img class="product-bg" src="@images/homepage/marketing1_pc.png">
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-md-4">
+        <div class="products__item">
+          <h2 class="products__title">Marketing 1</h2>
+          <h5 class="products__subtitle">O zákazníkovi vše podrobné</h5>
+          <p class="products__text">Nabízíme profesionální správu vašeho marketingu. <strong>Zajistíme</strong> více
+            relevantní návštěvnost z veškerých vhodných kanálů. Nabízíme profesionální správu vašeho marketingu. </p>
+          <a href="#" class="products__btn">
+            Zjistit více
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="products__inner">
+    <div class="row justify-content-md-center align-items-center">
+      <div class="col-12 col-md-4 order-md-2">
+        <div class="products__item products__item--right">
+          <div class="products__images justify-content-center">
+            <img class="product-left" src="@images/homepage/marketing1_block2.png">
+            <img class="product-right" src="@images/homepage/marketing1_block1.png">
+            <img class="product-bg" src="@images/homepage/marketing1_pc.png">
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-md-4 order-md-1">
+        <div class="products__item">
+          <h2 class="products__title">Marketing 2</h2>
+          <h5 class="products__subtitle">O zákazníkovi vše podrobné</h5>
+          <p class="products__text">Nabízíme profesionální správu vašeho marketingu. <strong>Zajistíme</strong> více
+            relevantní návštěvnost z veškerých vhodných kanálů. Nabízíme profesionální správu vašeho marketingu. </p>
+          <a href="#" class="products__btn">
+            Zjistit více
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="work">
+  <div class="section-title">
+    <div class="section-title__left">
+      <h2 class=" section-title__title">Jak fungujeme?</h2>
+    </div>
+    <div class="section-title__right">
+      <a href="#">Sjednejte si s námi schůzku</a>
+    </div>
+  </div>
+  <div class="work__inner">
+    <div class="row">
+      <div class="col-12 col-md-6 justify-content-center align-items-center">
+        <div class="work__image">
+          <img src="@images/homepage/work-phone.png">
+        </div>
+      </div>
+      <div class="col-12 col-md-6">
+        <div class="accordion" id="accordionExample">
+          <div class="accordion-item active">
+            <h2 class="accordion-header" id="headingOne">
+              <div class="accordion-icon">
+                <img src="@images/icons/konzultujeme.svg">
+              </div>
+              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
+                aria-expanded="true" aria-controls="collapseOne">
+                Konzultujeme
+              </button>
+            </h2>
+            <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+              data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                Soustředíme se na pochopení vaší značky a vašich produktů jako celku
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingTwo">
+              <div class="accordion-icon">
+                <img src="@images/icons/analyzujeme.svg">
+              </div>
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                Analyzujeme
+              </button>
+            </h2>
+            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+              data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                Soustředíme se na pochopení vaší značky a vašich produktů jako celku
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingThree">
+              <div class="accordion-icon">
+                <img src="@images/icons/navrhujeme_reseni.svg">
+              </div>
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                Navrhujeme řešení
+              </button>
+            </h2>
+            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+              data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                Soustředíme se na pochopení vaší značky a vašich produktů jako celku
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingFour">
+              <div class="accordion-icon">
+                <img src="@images/icons/testujeme.svg">
+              </div>
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                Testujeme
+              </button>
+            </h2>
+            <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
+              data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                Soustředíme se na pochopení vaší značky a vašich produktů jako celku
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingFive">
+              <div class="accordion-icon">
+                <img src="@images/icons/implementujeme.svg">
+              </div>
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                Implementujeme
+              </button>
+            </h2>
+            <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive"
+              data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                Soustředíme se na pochopení vaší značky a vašich produktů jako celku
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="products">
+  <div class="section-title">
+    <div class="section-title__left">
+      <div class="section-title__icon section-title__icon--pohoda">
+        <img src="@images/icons/rozsireni_pohody.svg">
+      </div>
+      <h2 class=" section-title__title">Naše software produkty</h2>
+    </div>
+    <div class="section-title__right">
+      <a href="#">Všechny produkty</a>
+    </div>
+  </div>
+  <div class="products__inner">
+    <div class="row justify-content-md-center align-items-center">
+      <div class="col-12 col-md-4">
+        <div class="products__item products__item--left">
+          <div class="products__images justify-content-center">
+            <img class="product-left" src="@images/homepage/marketing1_block2.png">
+            <img class="product-right" src="@images/homepage/marketing1_block1.png">
+            <img class="product-bg" src="@images/homepage/marketing1_pc.png">
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-md-4">
+        <div class="products__item">
+          <h2 class="products__title">FameDash</h2>
+          <h5 class="products__subtitle">O zákazníkovi vše podrobné</h5>
+          <p class="products__text">Nabízíme profesionální správu vašeho marketingu. <strong>Zajistíme</strong> více
+            relevantní návštěvnost z veškerých vhodných kanálů. Nabízíme profesionální správu vašeho marketingu. </p>
+          <a href="#" class="products__btn">
+            Zjistit více
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="software">
+    <div class="software__item">
+      <div class="software__icon">
+        <img src="@images/icons/famebee.svg">
+      </div>
+      <h3 class="software__title">FameBee</h3>
+      <p class="software__text">
+        Nabízíme profesionální správu vašeho marketingu. Zajistíme více relevantní návštěvnost z veškerých vhodných
+        kanálů.
+      </p>
+    </div>
+    <div class="software__item">
+      <div class="software__icon">
+        <img src="@images/icons/famedoc.svg">
+      </div>
+      <h3 class="software__title">FameDoc</h3>
+      <p class="software__text">
+        Nabízíme profesionální správu vašeho marketingu. Zajistíme více relevantní návštěvnost z veškerých vhodných
+        kanálů.
+      </p>
+    </div>
+    <div class="software__item">
+      <div class="software__icon">
+        <img src="@images/icons/famedash.svg">
+      </div>
+      <h3 class="software__title">FameDash</h3>
+      <p class="software__text">
+        Nabízíme profesionální správu vašeho marketingu. Zajistíme více relevantní návštěvnost z veškerých vhodných
+        kanálů.
+      </p>
+    </div>
+  </div>
+
+
+
+  <div class="products__inner">
+    <div class="row justify-content-md-center align-items-center">
+      <div class="col-12 col-md-4 order-md-2">
+        <div class="products__item products__item--right">
+          <div class="products__images justify-content-center">
+            <img class="product-left" src="@images/homepage/marketing1_block2.png">
+            <img class="product-right" src="@images/homepage/marketing1_block1.png">
+            <img class="product-bg" src="@images/homepage/marketing1_pc.png">
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-md-4 order-md-1">
+        <div class="products__item">
+          <h2 class="products__title">Skladový systém</h2>
+          <h5 class="products__subtitle">Mějte sklad pod kontrolou</h5>
+          <p class="products__text">Nabízíme profesionální správu vašeho marketingu. <strong>Zajistíme</strong> více
+            relevantní návštěvnost z veškerých vhodných kanálů. Nabízíme profesionální správu vašeho marketingu. </p>
+          <a href="#" class="products__btn">
+            Zjistit více
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="blog">
+  <div class="section-title">
+    <div class="section-title__left">
+      <h2 class=" section-title__title">Případové studie vám napoví, co máme za sebou</h2>
+    </div>
+    <div class="section-title__right">
+      <a href="#">Všechny případové studie</a>
+    </div>
+  </div>
+  <div class="blog__inner">
+    <div class="row">
+      <div class="swiper swiper-studie">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            {% include "src/views/partials/blog-item.html" %}
+          </div>
+          <div class="swiper-slide">
+            {% include "src/views/partials/blog-item.html" %}
+          </div>
+          <div class="swiper-slide">
+            {% include "src/views/partials/blog-item.html" %}
+          </div>
+          <div class="swiper-slide">
+            {% include "src/views/partials/blog-item.html" %}
+          </div>
+          <div class="swiper-slide">
+            {% include "src/views/partials/blog-item.html" %}
+          </div>
+          <div class="swiper-slide">
+            {% include "src/views/partials/blog-item.html" %}
+          </div>
+        </div>
+        <div class="swiper-button-prev swiper-button-studie-prev"></div>
+        <div class="swiper-button-next swiper-button-studie-next"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="work">
+  <div class="section-title">
+    <div class="section-title__left">
+      <h2 class=" section-title__title">Spolupracujeme s těmi nejlepšími</h2>
+    </div>
+    <div class="section-title__right">
+      <a href="#">Všichni partneři</a>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="software software--reference">
+      <div class="software__item">
+        <div class="software__icon">
+          <img src="@images/clients/bsshop.png">
+        </div>
+        <h3 class="software__title">BS Shop</h3>
+        <p class="software__text">
+          Nabízíme profesionální správu vašeho marketingu. Zajistíme více relevantní návštěvnost z veškerých vhodných
+          kanálů.
+        </p>
+      </div>
+      <div class="software__item">
+        <div class="software__icon">
+          <img src="@images/clients/pohoda.png">
+        </div>
+        <h3 class="software__title">Pohoda</h3>
+        <p class="software__text">
+          Nabízíme profesionální správu vašeho marketingu. Zajistíme více relevantní návštěvnost z veškerých vhodných
+          kanálů.
+        </p>
+      </div>
+      <div class="software__item">
+        <div class="software__icon">
+          <img src="@images/clients/mailkit.png">
+        </div>
+        <h3 class="software__title">MailKit</h3>
+        <p class="software__text">
+          Nabízíme profesionální správu vašeho marketingu. Zajistíme více relevantní návštěvnost z veškerých vhodných
+          kanálů.
+        </p>
+      </div>
+    </div>
+  </div>
+
+</section>
+
 
 <section class="team">
-  <h2 class="section-title">Náš tým
-    <a href="#">Více o Fameless <span>→</span></a>
-  </h2>
-  <div class="container">
+  <div class="section-title">
+    <div class="section-title__left">
+      <h2 class=" section-title__title">Náš tým</h2>
+    </div>
+    <div class="section-title__right">
+      <a href="#">Více o Fameless</a>
+    </div>
+  </div>
+  <div class="team__inner">
     <div class="row">
-      <div class="col-12 col-md-3">
-        {% include "src/views/partials/team-item.html" %}
-      </div>
-      <div class="col-12 col-md-3">
-        {% include "src/views/partials/team-item.html" %}
-      </div>
-      <div class="col-12 col-md-3">
-        {% include "src/views/partials/team-item.html" %}
-      </div>
-      <div class="col-12 col-md-3">
-        {% include "src/views/partials/team-item.html" %}
+      <div class="swiper swiper-team">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            {% include "src/views/partials/team-item.html" %}
+          </div>
+          <div class="swiper-slide">
+            {% include "src/views/partials/team-item.html" %}
+          </div>
+          <div class="swiper-slide">
+            {% include "src/views/partials/team-item.html" %}
+          </div>
+          <div class="swiper-slide">
+            {% include "src/views/partials/team-item.html" %}
+          </div>
+          <div class="swiper-slide">
+            {% include "src/views/partials/team-item.html" %}
+          </div>
+          <div class="swiper-slide">
+            {% include "src/views/partials/team-item.html" %}
+          </div>
+          <div class="swiper-slide">
+            {% include "src/views/partials/team-item.html" %}
+          </div>
+          <div class="swiper-slide">
+            {% include "src/views/partials/team-item.html" %}
+          </div>
+        </div>
+        <div class="swiper-pagination"></div>
       </div>
     </div>
   </div>
 </section>
 
+
 <section class="blog">
-  <h2 class="section-title">Případové studie vám napoví, co máme za sebou
-    <a href="#">Všechny případové studie <span>→</span></a>
-  </h2>
-  <div class="container">
-    <div class="row">
-      <div class="col-12 col-md-4">
-        {% include "src/views/partials/blog-item.html" %}
-      </div>
-      <div class="col-12 col-md-4">
-        {% include "src/views/partials/blog-item.html" %}
-      </div>
-      <div class="col-12 col-md-4">
-        {% include "src/views/partials/blog-item.html" %}
-      </div>
+  <div class="section-title">
+    <div class="section-title__left">
+      <h2 class=" section-title__title">Poslední novinky z Fameless</h2>
+    </div>
+    <div class="section-title__right">
+      <a href="#">Všechny novinky</a>
     </div>
   </div>
-</section>
-
-
-<section class="blog">
-  <h2 class="section-title">Poslední novinky z Fameless
-    <a href="#">Všechny novinky <span>→</span></a>
-  </h2>
-  <div class="container">
+  <div class="blog__inner">
     <div class="row">
-      <div class="col-12 col-md-4">
-        {% include "src/views/partials/blog-item.html" %}
-      </div>
-      <div class="col-12 col-md-4">
-        {% include "src/views/partials/blog-item.html" %}
-      </div>
-      <div class="col-12 col-md-4">
-        {% include "src/views/partials/blog-item.html" %}
+      <div class="swiper swiper-blog">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            {% include "src/views/partials/blog-item.html" %}
+          </div>
+          <div class="swiper-slide">
+            {% include "src/views/partials/blog-item.html" %}
+          </div>
+          <div class="swiper-slide">
+            {% include "src/views/partials/blog-item.html" %}
+          </div>
+          <div class="swiper-slide">
+            {% include "src/views/partials/blog-item.html" %}
+          </div>
+          <div class="swiper-slide">
+            {% include "src/views/partials/blog-item.html" %}
+          </div>
+          <div class="swiper-slide">
+            {% include "src/views/partials/blog-item.html" %}
+          </div>
+        </div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
       </div>
     </div>
   </div>

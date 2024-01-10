@@ -1,3 +1,4 @@
+@use '../base/fonts/inter.scss' as fontInter;
 .footer {
     background-color: #08005C;
     &__inner {
@@ -126,17 +127,20 @@
 .newsletter {
     &__form {
         display: flex;
-        flex-direction: row;
-        align-items: center;
+        flex-direction: column;
         margin-bottom: 130px;
         height: 50px;
+        .d-flex-inline {
+            display: flex;
+        }
         input {
-            border-radius: 12px;
+            border-radius: 8px;
             background: rgba(177, 227, 253, 0.259);
             border: none;
             color: #FFF;
             font-size: 14px;
             font-style: normal;
+            font-family: fontInter.$font-family-inter;
             font-weight: 500;
             line-height: 24px;
             height: 100%;
@@ -144,6 +148,7 @@
             max-width: 330px;
             padding: 12px 20px;
             outline: none;
+            height: 36px;
             &::placeholder {
                 color: rgba(255 ,255 ,255 ,0.5);
                 font-size: 14px;
@@ -155,27 +160,37 @@
             }
         }
         button {
-            background-color: #FFF;
-            border: none;
-            border-radius: 12px;
-            color: #08005C;
+            border-radius: 34px;
+            border: 1px solid #FFF;
+            color: #fff;
+            width: 128px;
+            height: 36px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
             font-size: 14px;
             font-style: normal;
             font-weight: 500;
             line-height: 24px;
-            margin-left: 12px;
-            cursor: pointer;
-            height: 100%;
-            width: 120px;
+            background-color: transparent;
+            margin-left: 14px;
         }
         .checkbox-container {
             display: block;
             position: relative;
-            padding-left: 35px;
-            margin-bottom: 12px;
+            padding-left: 22px;
+            margin-top: 12px;
             cursor: pointer;
             font-size: 14px;
             user-select: none;
+            color: #FFF;
+            font-family: fontInter.$font-family-inter;
+            font-size: 10px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 24px;
+            opacity: 0.8;
           }
           
           /* Skryje checkbox */
@@ -190,11 +205,12 @@
           /* Vytvoří vlastní checkbox */
           .checkmark {
             position: absolute;
-            top: 0;
+            top: 5px;
             left: 0;
-            height: 25px;
-            width: 25px;
-            background-color: #eee;
+            height: 14px;
+            width: 14px;
+            border-radius: 4px;
+            background: rgba(177,227,253, 0.259);
           }
           
           /* Při zaškrtnutí změní barvu pozadí */
@@ -216,12 +232,12 @@
           
           /* Styl pro indikátor zaškrtnutí */
           .checkbox-container .checkmark:after {
-            left: 9px;
-            top: 5px;
-            width: 7px;
-            height: 12px;
+            left: 5px;
+            top: 2px;
+            width: 4px;
+            height: 9px;
             border: solid white;
-            border-width: 0 3px 3px 0;
+            border-width: 0 2px 2px 0;
             transform: rotate(45deg);
           }
     }

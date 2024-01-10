@@ -1,15 +1,33 @@
+@use '../base/fonts/inter.scss' as fontInter;
+@use '../base/mixins';
+.team {
+    &__inner {
+        padding: 50px 20px;
+        @include mixins.respond-to(sm) {
+            padding: 30px 0 30px 20px;
+          }
+    }
+    .swiper-pagination {
+        bottom: 30px;
+        .swiper-pagination-bullet {
+
+        }
+        .swiper-pagination-bullet-active {
+            background: #070058;
+        }
+    }
+}
 .team-item {
     .flip-card {
-        width: 300px;
-        height: 400px;
-        perspective: 1000px;
+        width: 222px;
+        height: 300px;
     }
     .flip-card-inner {
         position: relative;
         width: 100%;
         height: 100%;
         border: none;
-        border-radius: 10px;
+        border-radius: 15px;
         transition: transform 0.6s;
         transform-style: preserve-3d;
     }
@@ -27,34 +45,73 @@
     }
       
     .flip-card-front {
-        background-color: #f1f1f1;
+        background: rgba(8, 0, 92, 0.05);
         overflow: hidden;
     }
-    .flip-card-front img{
-        max-height: 100%;
+    .flip-card-front {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        padding-top: 40px;
+        img {
+            height: 80%;
+            max-height: 150px;
+            width: auto;
+        }
+        .position {
+            white-space: pre-wrap;
+            word-break: break-all;
+            color: #070058;
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 28px;
+        }
+        &:after{
+            content: '';
+            position: absolute;
+            top: 10px;
+            right: 14px;
+            background-image: url('src/assets/images/icons/turn-over.svg');
+            background-repeat: no-repeat;
+            width: 22px;
+            background-position: center;
+            background-size: 100%;
+            height: 24px;
+            opacity: 0.4;
+        }
     }
     .flip-card-back {
-        background-color: #555;
-        color: white;
+        background: rgba(8, 0, 92, 0.05);
+        color: #070058;
         transform: rotateY(180deg);
         display: flex;
-        justify-content: center;
-        align-items: center;
+        justify-content: flex-start;
+        align-items: flex-end;
     }
       
     .card-content {
-        padding: 20px;
-        text-align: center;
-    }
-      
-    .card-content h2 {
-        font-size: 24px;
-        margin-bottom: 10px;
-    }
-      
-    .card-content p {
-        font-size: 16px;
-        margin-bottom: 20px;
+        padding: 14px 20px;
+        text-align: left;
+        .h3 {
+            color: #070058;
+            font-feature-settings: 'clig' off, 'liga' off;
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 30px;
+        }
+        p {
+            color: rgba(7, 0, 88, 0.80);
+            font-feature-settings: 'clig' off, 'liga' off;
+            font-family: fontInter.$font-family-inter;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 25px;
+        }
     }
 }
 

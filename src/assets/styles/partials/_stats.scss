@@ -1,0 +1,64 @@
+@use '../base/fonts/inter.scss' as fontInter;
+.stats {
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    margin: 200px 0 80px;
+    &__item {
+        border-radius: 85px;
+        background: #FFF;
+        margin: 0 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 200px;
+        width: 110px;
+        text-align: center;
+        padding: 10px;
+        &:first-child {
+            transform: translateY(50px);
+        }
+        &:nth-child(2){
+            transform: translateY(-150px);
+            width: 160px;
+            height: 280px;
+            .stats__number {
+                margin-bottom: 20px;
+            }
+        }
+        &:last-child {
+            transform: translateY(20px);
+        }
+        &:last-child {
+            .stats__number {
+                &:before {
+                    content: '';
+                }
+            }
+        }
+    }
+    &__number {
+        color: #1273EF;
+        font-size: 36px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        margin-bottom: 15px;
+        position: relative;
+        &:before {
+            content: '+';
+            position: absolute;
+            left: -20px;
+        }
+    }
+    &__text {
+        color: #070058;
+        font-feature-settings: 'clig' off, 'liga' off;
+        font-family: fontInter.$font-family-inter;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 24px;
+    }
+}

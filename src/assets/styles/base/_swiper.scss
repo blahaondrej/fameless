@@ -1,0 +1,53 @@
+@use '../base/mixins';
+.swiper-container-clients {
+    margin-bottom: 80px;
+    mask-image: linear-gradient(to right, 
+                              transparent, 
+                              black 80px, 
+                              black calc(100% - 80px), 
+                              transparent);
+    .swiper-wrapper{
+        transition-timing-function : linear;
+        img {
+            width: 100px;
+            height: auto;
+        }
+      }
+}
+.team {
+    .swiper-team {
+        padding-bottom: 100px;
+    }
+    .swiper-button-next, .swiper-button-prev {
+        width: 37px;
+        height: 37px;
+        background-color: #fff;
+        border-radius: 50%;
+        &:after {
+            font-size: 24px;
+            font-weight: bold;
+            color: #070058;
+        }
+    }
+}
+
+.swiper-blog, .swiper-studie {
+    .swiper-button-next, .swiper-button-prev {
+        background-color: transparent;
+        background-image: url('src/assets/images/icons/swiper-arrow.svg');
+        width: 42px;
+        &:after {
+            content: none;
+        }
+        @include mixins.respond-to(sm) {
+            display: none;
+          }
+    }
+    .swiper-button-next {
+        right: 0;
+    }
+    .swiper-button-prev {
+        left: 0;
+        transform: rotate(180deg);
+    }
+}

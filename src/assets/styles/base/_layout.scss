@@ -1,5 +1,5 @@
 @use '../abstracts/variables' as var;
-
+@use '../base/mixins';
 html,
 body {
   margin: 0;
@@ -65,5 +65,36 @@ body {
 
   > :not(:first-child) {
     flex-grow: 1;
+  }
+}
+
+.circle-background {
+  position: absolute;
+  z-index: -1;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  right: 0;
+  &::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      right: 0;
+      background-image: url('src/assets/images/icons/circle_white.svg');
+      z-index: 0;
+      background-repeat: no-repeat;
+      width: 60%;
+      height: 100%;
+      background-size: 1000px; 
+      pointer-events: none;
+  }
+  @include mixins.respond-to(sm) {
+    &::after {
+      background-size: 450px; 
+      background-size: 100%;
+      inset: 0;
+      width: 100%;
+      background-position: center;
+    }
   }
 }

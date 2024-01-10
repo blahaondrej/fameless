@@ -1,0 +1,126 @@
+@use '../base/fonts/inter.scss' as fontInter;
+@use '../base/mixins';
+.services {
+    margin: 50px 0;
+    @include mixins.respond-to(sm) {
+        margin: 50px 0 20px 0;
+     }
+    &__inner {
+        display: flex;
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        scrollbar-width: none;
+        -ms-overflow-style: none;
+        padding: 26px 0;
+        &::-webkit-scrollbar {
+            display: none;
+        }
+    }
+    &__item {
+        border-radius: 20px;
+        border: 1px solid rgba(8, 0, 92, 0.04);
+        background: rgba(244, 244, 247, 0.58);
+        padding: 25px;
+        position: relative;
+        height: 300px;
+        width: 240px;
+        display: block;
+        transition: transform 0.3s ease;
+        margin-right: 26px;
+        flex: 0 0 auto;
+        &:hover {
+            text-decoration: none;
+            transform: translateY(-20px);
+            .services__arrow {
+                animation: bounceRight 1s infinite;
+            }
+            .services__text {
+                text-decoration: none;
+            }
+            .services___title {
+                text-decoration: none;
+            }
+        }
+    }
+    &__icon {
+        height: 46px;
+        width: 46px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        &--pohoda {
+            background: linear-gradient(180deg, #F75544 0%, #AD2A1C 100%);
+        }
+        &--sklad {
+            background: linear-gradient(180deg, #FAAD21 0%, #D4931D 100%);
+        }
+        &--vyvoj {
+            background: linear-gradient(180deg, #4BC6B6 0%, #37A395 100%);
+        }
+        &--marketing {
+            background: linear-gradient(180deg, #1273EF 0%, #0D5DC5 100%);
+        }
+    }
+    &__icons {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 70px;
+        img {
+            width: 23px;
+            height: auto;
+        }
+    }
+    &__arrow {
+        content: '';
+        position: absolute;
+        top: 25px;
+        right: 25px;
+        color: #070058;
+        font-size: 32px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 40px;
+    }
+    &__title {
+        color: #070058;
+        font-feature-settings: 'clig' off, 'liga' off;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 30px;
+    }
+    &__text {
+        color: rgba(7, 0, 88, 0.80);
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 24px;
+        font-family: fontInter.$font-family-inter;
+        strong {
+            opacity: 0.8;
+            font-weight: 700;
+        }
+    }
+    h4 {
+        padding-left: 30px;
+        opacity: 0.7;
+        color: #070058;
+        font-family: fontInter.$font-family-inter;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+    }
+    &__left {
+        padding-right: 26px;
+        @include mixins.respond-to(sm) {
+            padding-right: 0;
+         }
+    }
+    &__right {
+        @include mixins.respond-to(sm) {
+            padding-right: 0;
+        }
+    }
+}

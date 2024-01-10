@@ -1,0 +1,103 @@
+@use '../base/fonts/inter.scss' as fontInter;
+@use '../base/mixins';
+.work {
+    border-radius: 20px;
+    background: #FFF;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.04);
+    margin-bottom: 90px;
+    padding: 15px 33px;
+    @include mixins.respond-to(sm) {
+        padding: 20px;
+    }
+    &__image {
+        text-align: center;
+        @include mixins.respond-to(sm) {
+            margin: 20px auto;
+            width: 60%;
+        }
+        img {
+            width: 100%;
+            max-width: 350px;
+        }
+    }
+    &__inner {
+        padding: 50px 60px;
+        @include mixins.respond-to(sm) {
+            padding: 0;
+        }
+    }
+    .accordion {
+        .accordion-item {
+            border-radius: 18px;
+            outline: none;
+            padding: 30px 30px 30px 80px;
+            border: none;
+            transition: all 0.2s ease-in-out;
+            padding: 50px 60px;
+            @include mixins.respond-to(sm) {
+                padding: 30px 20px;
+            }
+            &.active {
+                background: rgba(8, 0, 92, 0.05);
+            }
+            .accordion-header {
+                position: relative;
+                display: flex;
+                align-items: center;
+                @include mixins.respond-to(sm) {
+                    flex-direction: column;
+                    align-items: flex-start;
+                }
+            }
+            .accordion-icon {
+                position: absolute;
+                left: -50px;
+                bottom: 10px;
+                @include mixins.respond-to(sm) {
+                    position: relative;
+                    left: unset;
+                    bottom: unset;
+                    margin-bottom: 14px;
+                }
+            }
+            .accordion-button {
+                color: #070058;
+                font-feature-settings: 'clig' off, 'liga' off;
+                font-size: 20px;
+                font-style: normal;
+                font-weight: 600;
+                line-height: 30px;
+                display: flex;
+                align-items: center;
+                position: relative;
+                padding: 0;
+                margin-bottom: 10px;
+                background-color: transparent;
+                @include mixins.respond-to(sm) {
+                    &::after {
+                        position: absolute;
+                        top: -40px;
+                        right: 0;
+                    }
+                }
+            }
+            .accordion-body {
+                color: #08005C;
+                font-feature-settings: 'clig' off, 'liga' off;
+                font-family: fontInter.$font-family-inter;
+                font-size: 18px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 30px;
+                padding: 0;
+            }
+        }
+        .accordion-button {
+            outline: none;
+            box-shadow: none;
+            &:not(.collapsed) {
+                background: transparent;
+            }
+        }
+    }
+}

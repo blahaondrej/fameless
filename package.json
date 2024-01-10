@@ -60,6 +60,8 @@
   "dependencies": {
     "bootstrap": "^5.3.2",
     "bootstrap-4-grid": "^3.4.0",
+    "gsap": "^3.12.4",
+    "jquery": "^3.7.1",
     "locomotive-scroll": "^4.1.4",
     "swiper": "^11.0.5"
   }
