@@ -2,6 +2,7 @@
 <html lang="cs" dir="ltr">
 
 <head>
+  <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>{{ title }}</title>
 
@@ -19,7 +20,7 @@
   {% block styles %}{% endblock %}
 </head>
 
-<body data-scroll-container>
+<body>
   <!-- Header -->
   <header>
     <div class="header-container">
@@ -35,7 +36,7 @@
   </header>
 
   <!-- Main content -->
-  <main class="main-container">
+  <main class="main-container" data-scroll-container>
     <div class="main-content">
       <div class="container">
         <!-- block for specific page content -->
