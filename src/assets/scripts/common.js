@@ -250,9 +250,9 @@ $(window).on('scroll', function() {
       $this.addClass('counted');
     }
   });
-  var scroll = $(window).scrollTop();
+  /* var scroll = $(window).scrollTop();
   var newSize = 40 - scroll * 0.50; // 0.20 je faktor změny velikosti
   newSize = Math.max(newSize, 30);  // Minimální velikost obrázku je 40px
-  $('.app-logo').css('height', newSize + 'px');
+  $('.app-logo').css('height', newSize + 'px'); */
 });
 

@@ -43,6 +43,8 @@ module.exports = {
           import: 'src/views/pages/about/index.html',
           filename: 'about/index.html' // Cesta, kam se má soubor vytvořit
         },
+        products: 'src/views/pages/products/index.html',
+          
         404: './src/views/pages/404/index.html', // => dist/404.html
 
       },

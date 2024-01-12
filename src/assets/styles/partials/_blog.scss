@@ -8,6 +8,14 @@
             padding: 30px 0 30px 20px;
           }
     }
+    &--products {
+        .blog-item {
+            margin: 20px 0;
+            @include mixins.respond-to(sm) {
+                margin: 0 0 20px 0;
+              }
+        }
+    }
 }
 .blog-item {
     border-radius: 20px;

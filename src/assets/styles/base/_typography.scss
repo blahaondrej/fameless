@@ -165,6 +165,9 @@ p, .p {
   line-height: 16px;
 }
 
+a {
+  @include mixins.animation();
+}
 .section-title {
   display: flex;
   justify-content: space-between;

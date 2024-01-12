@@ -6,6 +6,10 @@
     position: relative;
     height: 50vh;
     min-height: 600px;
+    &--products {
+        justify-content: center;
+        text-align: center;
+    }
     @include mixins.respond-to(sm) {
         height: 100%;
         padding: 50px 10px;
@@ -62,6 +66,9 @@
     }
     &__mac {
         text-align: right;
+        @include mixins.respond-to(sm) {
+            text-align: center;
+          }
         img {
             width: 320px;
             height: auto;

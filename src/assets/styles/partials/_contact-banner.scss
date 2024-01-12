@@ -103,6 +103,9 @@
         font-style: normal;
         font-weight: 600;
         line-height: 102.083%;
+        @include mixins.respond-to(sm) {
+            font-size: 28px;
+          }
     }
     p {
         color: #070058;
@@ -133,6 +136,9 @@
             background: #0D62CF;
             box-shadow: 1px 1px 5px 0px rgba(18, 115, 239, 0.45);
         }
+        @include mixins.respond-to(sm) {
+            font-size: 12px;
+          }
     }
 }
 
