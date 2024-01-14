@@ -22,7 +22,7 @@
     background: #FFF;
     position: relative;
     display: block;
-    margin: 20px;
+    margin: 20px 10px;
     @include mixins.respond-to(sm) {
         margin: 20px 0;
       }
@@ -47,13 +47,13 @@
         bottom: 290px;
         display: flex;
         flex-direction: column;
+        align-items: flex-end;
         .label {
             display: inline-block;
             margin: 4px 0;
-            padding: 8px 0;
-            width: 105px;
+            padding: 6px 8px 3px 8px;
             text-align: center;
-            border-radius: 8px;
+            border-radius: 6px;
             background: #4BC6B6;
             color: #FFF;
             font-feature-settings: 'clig' off, 'liga' off;
@@ -81,7 +81,7 @@
             position: absolute;
             bottom: -25px;
             left: 0;
-            height: 2px;
+            height: 1px;
             width: 100%;
             background-color: #08005C;
             opacity: 0.1278;

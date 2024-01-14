@@ -46,7 +46,7 @@
             height: auto;
             background-position: center;
             background-size: 800px; 
-            animation: expandFade3 2s linear infinite;
+            animation: expandFade3 6s linear infinite;
             pointer-events: none;
         }
         &::before {
@@ -61,7 +61,7 @@
             height: auto;
             background-position: center;
             background-size: 1100px; 
-            animation: expandFade4 2s linear infinite;
+            animation: expandFade4 6s linear infinite;
             pointer-events: none;
         }
     }
@@ -77,7 +77,7 @@
         height: auto;
         background-position: center;
         background-size: 300px; 
-        animation: expandFade1 2s linear infinite;
+        animation: expandFade1 6s linear infinite;
         pointer-events: none;
     }
     &::before {
@@ -92,7 +92,7 @@
         height: auto;
         background-position: center;
         background-size: 500px; 
-        animation: expandFade2 2s linear infinite;
+        animation: expandFade2 6s linear infinite;
         pointer-events: none;
     }
     h2 {

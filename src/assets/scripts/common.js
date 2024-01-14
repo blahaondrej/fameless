@@ -138,9 +138,9 @@ const blogswiper = new Swiper('.swiper-blog', {
       slidesPerView: 2.8,
       spaceBetween: 20,
     },
-    1000: {
+    1200: {
       slidesPerView: 3,
-      spaceBetween: 20,
+      spaceBetween: 30,
     },
   }
 });
@@ -216,9 +216,39 @@ const studieswiper = new Swiper('.swiper-studie', {
             $(this).addClass('active');
         }
     });
+
+    $('.accordion-item').click(function() {
+      // Nejprve odstraníme speciální třídu ze všech accordion-itemů
+      $('.accordion-item').removeClass('no-border');
+  
+      // Nyní přidáme třídu 'special-class' předcházejícímu elementu toho, na který bylo kliknuto
+      $(this).prev('.accordion-item').addClass('no-border');
+  });
+  
 });
 
 $(window).on('scroll', function() {
+  var scrollTop = $(this).scrollTop();
+    var documentHeight = $(document).height();
+    var windowHeight = $(this).height();
+
+    console.log("scrollTop: " + scrollTop);
+    console.log("documentHeight: " + documentHeight);
+    console.log("windowHeight: " + windowHeight);
+
+    // Vypočítáme, jaký podíl stránky byl proskrolován
+    var scrollPercent = (scrollTop / (documentHeight - windowHeight));
+    console.log("scrollPercent: " + scrollPercent);
+
+    // Interpolujeme barvy
+    var r = Math.floor(173 + (255 - 173) * scrollPercent);
+    var g = Math.floor(232 + (255 - 232) * scrollPercent);
+    var b = Math.floor(255 + (255 - 255) * scrollPercent);
+
+    console.log("rgb(" + r + "," + g + "," + b + ")");
+
+    // Nastavíme barvu pozadí
+    $('body').css('background-color', 'rgb(' + r + ',' + g + ',' + b + ')');
   var header = $('.header-container');
   if ($(this).scrollTop() > 100) {
       header.addClass('small-header');

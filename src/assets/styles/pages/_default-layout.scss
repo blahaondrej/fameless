@@ -25,7 +25,6 @@ $footer-bg-color: #15384f;
   min-height: 100px;
   margin-bottom: 50px;
   z-index: 10;
-  padding: 10px 0;
   @include mixins.respond-to(sm) {
     display: none;
   }

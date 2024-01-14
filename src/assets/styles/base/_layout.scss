@@ -75,6 +75,34 @@ body {
   width: 100%;
   top: 0;
   right: 0;
+  &__inner {
+    &::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      right: 0;
+      background-image: url('src/assets/images/icons/circle_white.svg');
+      z-index: 0;
+      background-repeat: no-repeat;
+      width: 60%;
+      height: 100%;
+      background-size: 500px; 
+      pointer-events: none;
+  }
+  &::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      right: 0;
+      background-image: url('src/assets/images/icons/circle_white.svg');
+      z-index: 0;
+      background-repeat: no-repeat;
+      width: 60%;
+      height: 100%;
+      background-size: 750px; 
+      pointer-events: none;
+    }
+  }
   &::after {
       content: '';
       position: absolute;

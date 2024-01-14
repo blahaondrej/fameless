@@ -64,3 +64,4 @@ $(document).ready(function () {
     $(window).on('hashchange', onHashchange.bind($grid));
     onHashchange($grid);
 });
+

@@ -65,6 +65,7 @@
     "isotope-packery": "^2.0.1",
     "jquery": "^3.7.1",
     "locomotive-scroll": "^4.1.4",
+    "scrollreveal": "^4.0.9",
     "swiper": "^11.0.5"
   }
 }

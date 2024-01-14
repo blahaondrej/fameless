@@ -32,13 +32,37 @@
             outline: none;
             padding: 30px 30px 30px 80px;
             border: none;
-            transition: all 0.2s ease-in-out;
-            padding: 50px 60px;
+            position: relative;
+            @include mixins.animation();
             @include mixins.respond-to(sm) {
                 padding: 30px 20px;
             }
             &.active {
                 background: rgba(8, 0, 92, 0.05);
+            }
+            &:not(.active) {
+                &::after {
+                    content: '';
+                    position: absolute;
+                    bottom: 0;
+                    left: 0;
+                    right: 0;
+                    width: 100%;
+                    height: 1px;
+                    background: #08005C;
+                    opacity: 0.2;
+                    @include mixins.animation();
+                }
+            }
+            &.no-border {
+                &::after {
+                    opacity: 0;
+                }
+            }
+            &:last-child {
+                &::after {
+                    content: none;
+                }
             }
             .accordion-header {
                 position: relative;
@@ -52,7 +76,7 @@
             .accordion-icon {
                 position: absolute;
                 left: -50px;
-                bottom: 10px;
+                bottom: 12px;
                 @include mixins.respond-to(sm) {
                     position: relative;
                     left: unset;
