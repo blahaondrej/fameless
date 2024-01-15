@@ -1,0 +1,96 @@
+.about {
+    &__text {
+        padding: 20px 0;
+        h2 {
+            color: #070058;
+            font-size: 32px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 50px;
+        }
+        p {
+            color: rgba(7, 0, 88, 0.80);
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 30px;  
+            margin-bottom: 20px;          
+        }
+    }
+    &__image {
+        margin-top: 200px;
+        img {
+            width: 100%;
+            height: auto;
+            border-radius: 20px;
+        }
+    }
+}
+
+.about-team {
+    padding: 100px 0;
+}
+
+// ANIMATION
+.about-timeline {
+    position: relative;
+    padding: 20px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    &__item {
+        display: flex;
+        align-items: center;
+        margin: 30px 0;
+        position: relative;
+        &:nth-child(even) {
+            .about-timeline__text {
+                left: -200px;
+                text-align: right;
+            }
+        }
+        &:nth-child(odd) {
+            .about-timeline__text {
+                right: -200px;
+                text-align: left;
+            }
+        }
+    }
+    &__year {
+        color: #1273EF;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #fff;
+        border-radius: 85px;
+        width: 200px;
+        height: 110px;
+        font-size: 36px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        margin: 0 30px;
+    }
+    &__text {
+        color: #070058;
+        font-feature-settings: 'clig' off, 'liga' off;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 24px;
+        max-width: 200px;
+        position: absolute;
+    }
+    &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 1.5px;
+        height: 100%;
+        background-color: #08005C;
+        opacity: 0.12;
+        z-index: 0;
+    }
+}

@@ -14,13 +14,235 @@
 {% endblock %}
 
 {% block content %}
-<section>
-  <div class="container flex-column center-x">
-    <h1>About</h1>
-    <div class="teaser">
-      This multiple page boilerplate is built using
-      <a class="link" href="https://github.com/webdiscus/html-bundler-webpack-plugin/">html-bundler-webpack-plugin</a>.
+
+<div class="circle-background circle-background--homepage"></div>
+<section class="intro intro--products">
+  <div class="row align-items-center justify-content-center">
+    <div class="col-12">
+      <h1 class="intro__title">Strategický partner pro vaši firmu</h1>
+      <p class="intro__text">S námi fameless opravdu nebudete. S čím pomůžeme vám?</p>
+      <a href="#" class="button-secondary">Zjistit více</a>
     </div>
   </div>
 </section>
+
+<section class="about">
+  <div class="row">
+    <div class="col-12 col-md-4">
+      <div class="about__text">
+        <h2>Don't be Fameless</h2>
+        <p>Věříme v otevřenost a komunikaci. Funkční vztahy se zákazníky považujeme za základ úspěšné spolupráce.</p>
+        <p>Našim cílem je uspokojit potřeby všech klientů bez ohledu na jejich dosavadní zkušenost s marketingem.
+          Poradíme vám, jak se <strong>zviditelnit</strong>, a navrhneme řešení pro naplnění vašich potřeb. Neztraťte se
+          v
+          davu a "Nebuďte fameless“!</p>
+      </div>
+    </div>
+    <div class="col-12 col-md-6 offset-md-2">
+      <div class="about__image">
+        <img class="product-bg" src="@images/about-top.png">
+      </div>
+    </div>
+  </div>
+</section>
+<section class="studie-bottom">
+  <div class="row">
+    <div class="col-12 col-md-4">
+      <div class="studie-bottom__image reveal-opacity">
+        <img src="@images/studie-bottom.png" alt="Jindřich Macatý">
+      </div>
+    </div>
+    <div class="col-12 col-md-6 mt-auto">
+      <div class="studie-bottom__quote">
+        „S Fameless se mi spolupracovalo skvěle, dokází propojit xy s xy a to bylo nejdůležitější kritérium při výběru
+        dodavatele.“
+      </div>
+      <div class="studie-bottom__name">Jindřich Macatý</div>
+      <div class="studie-bottom__position">ředitel CFI</div>
+    </div>
+  </div>
+</section>
+
+<section class="about-team">
+  <div class="row row-cols-5 py-4">
+    <div class="col">
+      {% include "src/views/partials/team-item.html" %}
+    </div>
+    <div class="col">
+      {% include "src/views/partials/team-item.html" %}
+    </div>
+    <div class="col">
+      {% include "src/views/partials/team-item.html" %}
+    </div>
+    <div class="col">
+      {% include "src/views/partials/team-item.html" %}
+    </div>
+    <div class="col">
+      {% include "src/views/partials/team-item.html" %}
+    </div>
+  </div>
+  <div class="row row-cols-5 py-4">
+    <div class="col">
+      {% include "src/views/partials/team-item.html" %}
+    </div>
+    <div class="col">
+      {% include "src/views/partials/team-item.html" %}
+    </div>
+    <div class="col">
+      {% include "src/views/partials/team-item.html" %}
+    </div>
+    <div class="col">
+      {% include "src/views/partials/team-item.html" %}
+    </div>
+    <div class="col">
+      {% include "src/views/partials/team-item.html" %}
+    </div>
+  </div>
+</section>
+
+<section class="work">
+  <div class="section-title">
+    <div class="section-title__left">
+      <h2 class=" section-title__title">Jak fungujeme?</h2>
+    </div>
+    <div class="section-title__right">
+      <a href="#">Sjednejte si s námi schůzku</a>
+    </div>
+  </div>
+  <div class="work__inner">
+    <div class="row">
+      <div class="col-12 col-md-6 justify-content-center align-items-center">
+        <div class="work__image">
+          <img src="@images/homepage/work-phone.png">
+        </div>
+      </div>
+      <div class="col-12 col-md-6">
+        <div class="accordion reveal-up100" id="accordionExample">
+          <div class="accordion-item active">
+            <h2 class="accordion-header" id="headingOne">
+              <div class="accordion-icon">
+                <img src="@images/icons/konzultujeme.svg">
+              </div>
+              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
+                aria-expanded="true" aria-controls="collapseOne">
+                Konzultujeme
+              </button>
+            </h2>
+            <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+              data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                Soustředíme se na pochopení vaší značky a vašich produktů jako celku
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item reveal-up100">
+            <h2 class="accordion-header" id="headingTwo">
+              <div class="accordion-icon">
+                <img src="@images/icons/analyzujeme.svg">
+              </div>
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                Analyzujeme
+              </button>
+            </h2>
+            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+              data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                Soustředíme se na pochopení vaší značky a vašich produktů jako celku
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item reveal-up100">
+            <h2 class="accordion-header" id="headingThree">
+              <div class="accordion-icon">
+                <img src="@images/icons/navrhujeme_reseni.svg">
+              </div>
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                Navrhujeme řešení
+              </button>
+            </h2>
+            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+              data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                Soustředíme se na pochopení vaší značky a vašich produktů jako celku
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item reveal-up100">
+            <h2 class="accordion-header" id="headingFour">
+              <div class="accordion-icon">
+                <img src="@images/icons/testujeme.svg">
+              </div>
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                Testujeme
+              </button>
+            </h2>
+            <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
+              data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                Soustředíme se na pochopení vaší značky a vašich produktů jako celku
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item reveal-up100">
+            <h2 class="accordion-header" id="headingFive">
+              <div class="accordion-icon">
+                <img src="@images/icons/implementujeme.svg">
+              </div>
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                Implementujeme
+              </button>
+            </h2>
+            <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive"
+              data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                Soustředíme se na pochopení vaší značky a vašich produktů jako celku
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="about-timeline">
+  <div class="about-timeline__item">
+    <div class="about-timeline__year reveal-up400">
+      2015
+    </div>
+    <div class="about-timeline__text reveal-right">
+      Založení společnosti a otevření kanceláře
+    </div>
+  </div>
+  <div class="about-timeline__item">
+    <div class="about-timeline__year reveal-up400">
+      2015
+    </div>
+    <div class="about-timeline__text reveal-left">
+      Založení společnosti a otevření kanceláře
+    </div>
+  </div>
+  <div class="about-timeline__item">
+    <div class="about-timeline__year reveal-up400">
+      2015
+    </div>
+    <div class="about-timeline__text reveal-right">
+      Založení společnosti a otevření kanceláře
+    </div>
+  </div>
+  <div class="about-timeline__item">
+    <div class="about-timeline__year reveal-up400">
+      2015
+    </div>
+    <div class="about-timeline__text reveal-left">
+      Založení společnosti a otevření kanceláře
+    </div>
+  </div>
+</section>
+
+{% include "src/views/partials/contact-banner.html" %}
 {% endblock %}
