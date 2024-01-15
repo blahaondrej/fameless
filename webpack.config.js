@@ -43,7 +43,22 @@ module.exports = {
           import: 'src/views/pages/about/index.html',
           filename: 'about/index.html' // Cesta, kam se má soubor vytvořit
         },
-        products: 'src/views/pages/products/index.html',
+        products: {
+          import: 'src/views/pages/products/index.html',
+          filename: 'products/index.html' // Cesta, kam se má soubor vytvořit
+        },
+        studie: {
+          import: 'src/views/pages/studie/index.html',
+          filename: 'studie/index.html' // Cesta, kam se má soubor vytvořit
+        },
+        blog: {
+          import: 'src/views/pages/blog/index.html',
+          filename: 'blog/index.html' // Cesta, kam se má soubor vytvořit
+        },
+        kontakt: {
+          import: 'src/views/pages/kontakt/index.html',
+          filename: 'kontakt/index.html' // Cesta, kam se má soubor vytvořit
+        },
           
         404: './src/views/pages/404/index.html', // => dist/404.html
 
@@ -104,7 +119,7 @@ module.exports = {
               },
             },
             generator: {
-              filename: 'assets/img/[name].[hash:8][ext]',
+              filename: 'assets/img/[name][ext]',
             },
           },
         ],

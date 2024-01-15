@@ -9,16 +9,22 @@ import { Navigation, Pagination } from 'swiper/modules';
 import 'swiper/swiper-bundle.css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
-
-import { gsap } from "gsap";
+import lightbox from 'lightbox2';
+/* import { gsap } from "gsap";
     
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { ScrollToPlugin } from "gsap/ScrollToPlugin";
-import { TextPlugin } from "gsap/TextPlugin";
+import { TextPlugin } from "gsap/TextPlugin"; */
+
+lightbox.option({
+  'resizeDuration': 200,
+  'wrapAround': true,
+  'albumLabel': "Obrázek %1 z %2"
+});
 
 
-gsap.registerPlugin(ScrollTrigger,ScrollToPlugin,TextPlugin);
-/* const scroll = new LocomotiveScroll({
+/*gsap.registerPlugin(ScrollTrigger,ScrollToPlugin,TextPlugin);
+ const scroll = new LocomotiveScroll({
     el: document.querySelector('[data-scroll-container]'),
     smooth: true
 }); */
@@ -188,6 +194,23 @@ const studieswiper = new Swiper('.swiper-studie', {
   }
 });
 
+var swiperstudie = new Swiper(".swiper-detail-studie", {
+  spaceBetween: 10,
+  slidesPerView: 4,
+  freeMode: true,
+  watchSlidesProgress: true,
+});
+var swiperstudie2 = new Swiper(".swiper-detail-studie2", {
+  spaceBetween: 10,
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+  thumbs: {
+    swiper: swiperstudie,
+  },
+});
+
   function shortText(selektor, maxDelka) {
     const elementy = document.querySelectorAll(selektor);
     elementy.forEach(element => {
@@ -228,7 +251,8 @@ const studieswiper = new Swiper('.swiper-studie', {
 });
 
 $(window).on('scroll', function() {
-  var scrollTop = $(this).scrollTop();
+  // Změna barvy body při scrollu
+  /* var scrollTop = $(this).scrollTop();
     var documentHeight = $(document).height();
     var windowHeight = $(this).height();
 
@@ -248,7 +272,7 @@ $(window).on('scroll', function() {
     console.log("rgb(" + r + "," + g + "," + b + ")");
 
     // Nastavíme barvu pozadí
-    $('body').css('background-color', 'rgb(' + r + ',' + g + ',' + b + ')');
+    $('body').css('background-color', 'rgb(' + r + ',' + g + ',' + b + ')'); */
   var header = $('.header-container');
   if ($(this).scrollTop() > 100) {
       header.addClass('small-header');

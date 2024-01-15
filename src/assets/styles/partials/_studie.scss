@@ -1,0 +1,223 @@
+.studie-top {
+    padding-top: 150px;
+    padding-bottom: 50px;
+    border-bottom: 1.5px solid rgba(8, 0, 92, 0.1);
+    .swiper {
+    width: 100%;
+    height: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    }
+
+    .swiper-slide {
+    background-size: cover;
+    background-position: center;
+    }
+
+    .swiper-detail-studie2 {
+    height: 480px;
+    width: 100%;
+    border-radius: 20px;
+    margin-bottom: 10px;
+    }
+
+    .swiper-detail-studie {
+    height: 120px;
+    box-sizing: border-box;
+    padding: 10px 0;
+    }
+
+    .swiper-detail-studie .swiper-slide {
+    width: 25%;
+    height: 100%;
+    opacity: 0.4;
+    }
+
+    .swiper-detail-studie .swiper-slide-thumb-active {
+    opacity: 1;
+    }
+
+    .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    }
+    .lightbox .lb-image {
+        border: none;
+      }
+      
+      #lightboxOverlay {
+        position: fixed !important;
+        top: 0;
+        left: 0;
+        height: 100% !important;
+        width: 100% !important;
+      }
+      
+      #lightbox {
+        position: fixed !important;
+        top: 50% !important;
+        transform: translateY(-50%);
+      }
+}
+.studie-detail {
+    padding: 0 150px 50px 50px;
+    &__labels {
+        margin-bottom: 40px;
+        >.label {
+            text-transform: uppercase;
+            border-radius: 8px;
+            background:#4BC6B6;
+            color: #FFF;
+            font-size: 12px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: normal;
+            letter-spacing: 1px;
+            padding: 0 30px;
+            height: 24px;
+            margin: 10px;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            &:first-child {
+                margin-left: 0;
+            }
+        }
+    }
+    &__title {
+        color: #070058;
+        font-size: 32px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 42px;
+        margin-bottom: 30px;
+    }
+    &__text {
+        color: rgba(7, 0, 88, 0.80);
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 30px;
+        margin-bottom: 20px;
+    }
+    &__info {
+        display: flex;
+        margin-bottom: 10px;
+        >div {
+            span {
+                color: #070058;
+                font-size: 14px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: 25px;
+            }
+            img {
+                margin-right: 12px;
+                height: 14px;
+                width: auto;
+            }
+            &:first-child {
+                margin-right: 60px;
+            }
+        }
+    }
+}
+
+.studie-mid {
+    padding: 50px 0;
+    &__item {
+        padding: 0 20px;
+    }
+    &__icon {
+        width: 46px;
+        height: 46px;
+        border-radius: 50%;
+        background-color: #fff;
+        margin-bottom: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    &__title {
+        color: #070058;
+        font-size: 22px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 30px;
+        margin-bottom: 20px;
+    }
+    &__text {
+        p {
+            color: rgba(7, 0, 88, 0.80);
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 30px;
+            margin-bottom: 20px;
+        } 
+    }
+}
+
+.studie-bottom {
+    &__image {
+        width: 380px;
+        height: 380px;
+        position: relative;
+        border-radius: 32px;
+        background: rgba(8, 0, 92, 0.05);
+        margin-bottom: 70px;
+        img {
+            width: 250px;
+            position: absolute;
+            bottom: 0;
+            transform: translateX(-50%);
+            left: 50%;
+        }
+    }
+    &__quote {
+        color: #070058;
+        font-size: 32px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 43px; 
+    }
+    &__logo {
+        height: 50px;
+        width: auto;
+    }
+    &__name {
+        color: #070058;
+        font-size: 22px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 30px;
+    }
+    &__position {
+        color: #08005C;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 29px;
+    }
+    &__text {
+        padding: 50px 0;
+        h2 {
+            color: #070058;
+            font-size: 32px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 50px;
+        }
+        p {
+            color: rgba(7, 0, 88, 0.80);
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 30px;  
+            margin-bottom: 20px;          
+        }
+    }
+}

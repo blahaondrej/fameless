@@ -1,0 +1,256 @@
+{% extends "src/views/layouts/default.html" %}
+
+<!-- set variables used in layout -->
+{% set title="Případová studie" %}
+
+{% block styles %}
+<!-- load specific page style -->
+<link href="./style.scss" rel="stylesheet">
+{% endblock %}
+
+{% block scripts %}
+<!-- load specific page script -->
+
+{% endblock %}
+
+{% block content %}
+
+<div class="circle-background"></div>
+
+<section class="studie-top">
+  <div class="row">
+    <div class="col-12 col-md-6">
+      <div style="--swiper-navigation-color: #fff; --swiper-pagination-color: #fff"
+        class="swiper swiper-detail-studie2">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <a href="../assets/img/nature-1.jpg" data-lightbox="studie-top">
+              <img src="@images/studie/nature-1.jpg" />
+            </a>
+          </div>
+          <div class="swiper-slide">
+            <a href="../assets/img/nature-2.jpg" data-lightbox="studie-top">
+              <img src="@images/studie/nature-2.jpg" />
+            </a>
+          </div>
+          <div class="swiper-slide">
+            <a href="../assets/img/nature-3.jpg" data-lightbox="studie-top">
+              <img src="@images/studie/nature-3.jpg" />
+            </a>
+          </div>
+          <div class="swiper-slide">
+            <a href="../assets/img/nature-4.jpg" data-lightbox="studie-top">
+              <img src="@images/studie/nature-4.jpg" />
+            </a>
+          </div>
+          <div class="swiper-slide">
+            <a href="../assets/img/nature-5.jpg" data-lightbox="studie-top">
+              <img src="@images/studie/nature-5.jpg" />
+            </a>
+          </div>
+          <div class="swiper-slide">
+            <a href="../assets/img/nature-6.jpg" data-lightbox="studie-top">
+              <img src="@images/studie/nature-6.jpg" />
+            </a>
+          </div>
+          <div class="swiper-slide">
+            <a href="../assets/img/nature-7.jpg" data-lightbox="studie-top">
+              <img src="@images/studie/nature-7.jpg" />
+            </a>
+          </div>
+          <div class="swiper-slide">
+            <a href="../assets/img/nature-8.jpg" data-lightbox="studie-top">
+              <img src="@images/studie/nature-8.jpg" />
+            </a>
+          </div>
+          <div class="swiper-slide">
+            <a href="../assets/img/nature-9.jpg" data-lightbox="studie-top">
+              <img src="@images/studie/nature-9.jpg" />
+            </a>
+          </div>
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+      </div>
+      <div thumbsSlider="" class="swiper swiper-detail-studie">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img src="@images/studie/nature-1.jpg" />
+          </div>
+          <div class="swiper-slide">
+            <img src="@images/studie/nature-2.jpg" />
+          </div>
+          <div class="swiper-slide">
+            <img src="@images/studie/nature-3.jpg" />
+          </div>
+          <div class="swiper-slide">
+            <img src="@images/studie/nature-4.jpg" />
+          </div>
+          <div class="swiper-slide">
+            <img src="@images/studie/nature-5.jpg" />
+          </div>
+          <div class="swiper-slide">
+            <img src="@images/studie/nature-6.jpg" />
+          </div>
+          <div class="swiper-slide">
+            <img src="@images/studie/nature-7.jpg" />
+          </div>
+          <div class="swiper-slide">
+            <img src="@images/studie/nature-8.jpg" />
+          </div>
+          <div class="swiper-slide">
+            <img src="@images/studie/nature-9.jpg" />
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-12 col-md-6">
+      <div class="studie-detail">
+        <div class="studie-detail__labels">
+          <div class="label">ESHOP</div>
+          <div class="label">EMAILING</div>
+        </div>
+        <div class="studie-detail__title">
+          MyStarDesign: nový eshop na platformě BS shop
+        </div>
+        <div class="studie-detail__info">
+          <div>
+            <img src="@images/icons/date.svg" alt="Datum">
+            <span>5/2021 - 2/2022</span>
+          </div>
+          <div>
+            <img src="@images/icons/users.svg" alt="Členů týmu">
+            <span>7 členů teamu</span>
+          </div>
+        </div>
+        <div class="studie-detail__text">
+          Našim cílem je uspokojit potřeby všech klientů bez ohledu na jejich dosavadní zkušenost s marketingem.
+          Poradíme
+          vám, jak se <strong>zviditelnit</strong>, a navrhneme řešení pro naplnění vašich potřeb. Neztraťte se v davu a
+          "Nebuďte fameless“!
+        </div>
+        <a href="#" class="button-secondary">To mě zajímá</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="studie-mid">
+
+  <div class="row justify-content-center">
+    <div class="col-12 col-md-4">
+      <div class="studie-mid__item">
+        <div class="studie-mid__icon">
+          <img src="@images/icons/studie-vlc.svg" alt="Icon">
+        </div>
+        <div class="studie-mid__title">
+          Potřeba klienta
+        </div>
+        <div class="studie-mid__text">
+          <p>Věříme v otevřenost a komunikaci. Funkční vztahy se zákazníky považujeme za základ úspěšné spolupráce.
+          </p>
+          <p>Našim cílem je uspokojit potřeby všech klientů bez ohledu na jejich dosavadní zkušenost s marketingem.
+            Poradíme vám, jak se <strong>zviditelnit</strong>, a navrhneme řešení pro naplnění vašich potřeb.
+            Neztraťte se v davu a
+            "Nebuďte fameless“!</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-12 col-md-4">
+      <div class="studie-mid__item">
+        <div class="studie-mid__icon">
+          <img src="@images/icons/studie-circle.svg" alt="Icon">
+        </div>
+        <div class="studie-mid__title">
+          Řešení
+        </div>
+        <div class="studie-mid__text">
+          <p>Věříme v otevřenost a komunikaci. Funkční vztahy se zákazníky považujeme za základ úspěšné spolupráce.
+          </p>
+          <p>Našim cílem je uspokojit potřeby všech klientů bez ohledu na jejich dosavadní zkušenost s marketingem.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</section>
+
+<section class="studie-bottom">
+  <div class="row">
+    <div class="col-12 col-md-4">
+      <div class="studie-bottom__image">
+        <img src="@images/studie-bottom.png" alt="Jindřich Macatý">
+      </div>
+    </div>
+    <div class="col-12 col-md-6 mt-auto">
+      <div class="studie-bottom__quote">
+        „S Fameless se mi spolupracovalo skvěle, dokází propojit xy s xy a to bylo nejdůležitější kritérium při výběru
+        dodavatele.“
+      </div>
+      <div class="studie-bottom__name">Jindřich Macatý</div>
+      <div class="studie-bottom__position">ředitel CFI</div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-12 col-md-5 offset-md-5">
+      <div class="studie-bottom__text">
+        <h2>
+          Volitelný odstavcový text
+        </h2>
+        <p>Věříme v otevřenost a komunikaci. Funkční vztahy se zákazníky považujeme za základ úspěšné spolupráce.</p>
+        <p>K veškerým našim službám dodáváme pravidelný měsíční report.</p>
+        <p>K našemu reportingu nebudete potřebovat slovník cizích slov ani IT příručku. Nebudeme Vás zatěžovat stohy
+          grafů,
+          statistik ani tvrdých technických obratů.</p>
+        <p>Klademe důraz na přehledný, přívětivý výstup a nic neskrýváme. Stojíme si za tím, že po prvním přečtení
+          našeho
+          reportu je zřejmé, v jakém stavu jsou Vaše investice do marketingu.</p>
+        </p>
+      </div>
+    </div>
+  </div>
+
+</section>
+
+<section class="blog">
+  <div class="section-title">
+    <div class="section-title__left">
+      <h2 class=" section-title__title">Poslední novinky z Fameless</h2>
+    </div>
+    <div class="section-title__right">
+      <a href="#">Všechny novinky</a>
+    </div>
+  </div>
+  <div class="blog__inner">
+    <div class="row">
+      <div class="swiper swiper-blog">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            {% include "src/views/partials/blog-item.html" %}
+          </div>
+          <div class="swiper-slide">
+            {% include "src/views/partials/blog-item.html" %}
+          </div>
+          <div class="swiper-slide">
+            {% include "src/views/partials/blog-item.html" %}
+          </div>
+          <div class="swiper-slide">
+            {% include "src/views/partials/blog-item.html" %}
+          </div>
+          <div class="swiper-slide">
+            {% include "src/views/partials/blog-item.html" %}
+          </div>
+          <div class="swiper-slide">
+            {% include "src/views/partials/blog-item.html" %}
+          </div>
+        </div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+      </div>
+    </div>
+  </div>
+</section>
+{% include "src/views/partials/contact-banner.html" %}
+{% endblock %}

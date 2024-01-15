@@ -2,13 +2,15 @@
 @use 'base/mixins';
 // Bootstrap 
 @use "~bootstrap/scss/bootstrap";
-
+//Lightbox
+@use"node_modules/lightbox2/src/css/lightbox.css";
 
 // Base
 @use 'base/normalize';
 @use 'base/space';
 @use 'base/layout';
 @use 'base/swiper';
+@use 'base/buttons';
 
 // App font: load your font
 @use 'base/fonts/epilogue' as font;
@@ -41,5 +43,6 @@
 @use 'partials/software';
 @use 'partials/category';
 @use 'pages/product-list';
+@use 'partials/studie';
 
 

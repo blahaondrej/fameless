@@ -42,28 +42,6 @@
             line-height: 22px;
         }
     }
-    &__btn {
-        background-color: #1273EF;
-        border-radius: 34px;
-        color: #FFF;
-        display: inline-flex;
-        justify-content: center;
-        font-family: fontInter.$font-family-inter;
-        font-size: 14px;
-        font-style: normal;
-        font-weight: 500;
-        line-height: 24px;
-        padding: 20px 30px;
-        transition: all 0.3s ease-in-out;
-        &:hover {
-            background: #0D62CF;
-            box-shadow: 1px 1px 5px 0px rgba(18, 115, 239, 0.45);
-        }
-        &:active {
-            background: #0D62CF;
-            box-shadow: 1px 1px 5px 0px rgba(18, 115, 239, 0.45);
-        }
-    }
     &__mac {
         text-align: right;
         @include mixins.respond-to(sm) {

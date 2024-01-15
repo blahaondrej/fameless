@@ -8,13 +8,16 @@
     ul {
         display: inline;
         padding-left: 0;
+        border-radius: 17px;
+        padding: 4px 10px;
+        background: rgba(8, 0, 92, 0.05);
     }
 }
 
 .category__item {
     text-transform: uppercase;
     border-radius: 8px;
-    background: #4BC6B6;
+    background:#4BC6B6;
     color: #FFF;
     font-size: 12px;
     font-style: normal;

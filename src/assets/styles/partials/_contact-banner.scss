@@ -14,7 +14,7 @@
         bottom: 0;
         left: 5%;
         background-image: url('src/assets/images/icons/contact_bubble.png');
-        z-index: 0;
+        z-index: 1;
         background-repeat: no-repeat;
         width: 250px;
         background-position: bottom;
@@ -115,30 +115,7 @@
         font-weight: 500;
         line-height: normal;
         font-family: fontInter.$font-family-inter;
-    }
-    a {
-        display: inline-flex;
-        padding: 20px 26px;
-        justify-content: center;
-        align-items: center;
-        flex-shrink: 0;
-        color: #fff;
-        text-align: center;
-        font-size: 14px;
-        font-style: normal;
-        font-weight: 500;
-        line-height: 24px;
-        background-color: #1273EF;
-        border-radius: 34px;
-        margin-top: 40px;
-        transition: all 0.3s ease;
-        &:hover, &:active {
-            background: #0D62CF;
-            box-shadow: 1px 1px 5px 0px rgba(18, 115, 239, 0.45);
-        }
-        @include mixins.respond-to(sm) {
-            font-size: 12px;
-          }
+        margin-bottom: 20px;
     }
 }
 

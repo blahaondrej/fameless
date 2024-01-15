@@ -73,47 +73,24 @@ body {
   z-index: -1;
   height: 100%;
   width: 100%;
-  top: 0;
-  right: 0;
-  &__inner {
+  &--homepage {
     &::after {
-      content: '';
-      position: absolute;
-      top: 0;
       right: 0;
-      background-image: url('src/assets/images/icons/circle_white.svg');
-      z-index: 0;
-      background-repeat: no-repeat;
-      width: 60%;
-      height: 100%;
-      background-size: 500px; 
-      pointer-events: none;
-  }
-  &::before {
-      content: '';
-      position: absolute;
-      top: 0;
-      right: 0;
-      background-image: url('src/assets/images/icons/circle_white.svg');
-      z-index: 0;
-      background-repeat: no-repeat;
-      width: 60%;
-      height: 100%;
-      background-size: 750px; 
-      pointer-events: none;
+      left: 0;
+      background-position: center;
     }
   }
   &::after {
       content: '';
       position: absolute;
-      top: 0;
-      right: 0;
-      background-image: url('src/assets/images/icons/circle_white.svg');
+      top: -200px;
+      right: -80px;
+      background-image: url('src/assets/images/icons/three-circles.svg');
       z-index: 0;
       background-repeat: no-repeat;
       width: 60%;
       height: 100%;
-      background-size: 1000px; 
+      background-size: 1100px; 
       pointer-events: none;
   }
   @include mixins.respond-to(sm) {
