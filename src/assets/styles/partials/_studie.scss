@@ -2,6 +2,9 @@
     padding-top: 150px;
     padding-bottom: 50px;
     border-bottom: 1.5px solid rgba(8, 0, 92, 0.1);
+    &--blog {
+        border-bottom: none;
+    }
     .swiper {
     width: 100%;
     height: 300px;
@@ -219,5 +222,11 @@
             line-height: 30px;  
             margin-bottom: 20px;          
         }
+    }
+    &__blog-image {
+        display: block;
+        width: 100%;
+        height: auto;
+        border-radius: 20px;
     }
 }
