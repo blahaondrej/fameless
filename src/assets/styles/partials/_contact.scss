@@ -1,0 +1,87 @@
+.contact {
+    padding-top: 150px; 
+}
+
+.contact-box {
+    padding: 70px 100px;
+    border-radius: 20px;
+    background: #FFF;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.04);
+    margin-bottom: 90px;
+    position: relative;
+    &::after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        right: 10%;
+        background-image: url('src/assets/images/icons/contact-detail-bubble.png');
+        z-index: 0;
+        background-repeat: no-repeat;
+        width: 350px;
+        background-position: bottom;
+        background-size: 100%;
+        height: 100%;
+    }
+    h1 {
+        color: #070058;
+        text-align: center;
+        font-size: 48px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 56px;
+        margin-bottom: 60px;
+    }
+    h3 {
+        color: #070058;
+        font-size: 22px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 30px;
+        margin-bottom: 15px;
+    }
+    p {
+        color: rgba(7, 0, 88, 0.80);
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 30px;
+        max-width: 300px;
+    }
+    form {
+        display: flex;
+        flex-direction: column;
+    }
+    &__call {
+        border-radius: 12px;
+        background-color: (177, 227, 253, 0.25);
+        margin: 15px 0;
+        color: #08005C;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 24px;
+        margin-bottom: 30px;
+        strong {
+            font-weight: 600;
+            font-size: 18px;
+            margin-right: 25px;
+        }
+    }
+    input {
+        border-radius: 12px;
+        background-color: (177, 227, 253, 0.25);
+        margin: 15px 0;
+        color: #08005C;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 24px;
+        &::placeholder {
+            color: #08005C;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 24px;
+        }
+    }
+}

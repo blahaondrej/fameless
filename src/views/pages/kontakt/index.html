@@ -5,7 +5,7 @@
 
 {% block styles %}
 <!-- load specific page style -->
-
+<link href="./style.scss" rel="stylesheet">
 {% endblock %}
 
 {% block scripts %}
@@ -16,78 +16,27 @@
 {% block content %}
 
 <div class="circle-background circle-background--homepage"></div>
-<section class="intro intro--products">
-  <div class="row align-items-center justify-content-center">
-    <div class="col-12">
-      <h1 class="intro__title">Strategický partner pro vaši firmu</h1>
-      <p class="intro__text">S námi fameless opravdu nebudete. S čím pomůžeme vám?</p>
-      <a href="#" class="intro__btn">Zjistit více</a>
-    </div>
-  </div>
-</section>
-
-<section class="blog blog--products">
-  <div class="category__wrapper">
-    <ul class="category filter-button-group js-filter-menu">
-      <li class="category__item js-category__item is-checked" data-filter="all">Vše</li>
-      <li class="category__item js-category__item" data-filter="software">Zakázkový software</li>
-      <li class="category__item js-category__item" data-filter="eshop">E-shop</li>
-      <li class="category__item js-category__item" data-filter="web">Prezentační web</li>
-      <li class="category__item js-category__item" data-filter="mobil">Mobilní aplikace</li>
-      <li class="category__item js-category__item" data-filter="logo">Loga</li>
-      <li class="category__item js-category__item" data-filter="ux">Systémové UX & UI</li>
-    </ul>
-  </div>
-
-  <div class="blog__inner grid product-list">
+<section class="contact">
+  <div class="contact-box">
+    <h1>Pojďme to společně probrat</h1>
     <div class="row">
-
-      <div class="grid-item filter-all  filter-shoptet filter-eshop filter-ux filter-consultant">
-        {% include "src/views/partials/blog-item.html" %}
+      <div class="col-12 col-md-6">
+        <h3>Napište nám</h3>
+        <form action="">
+          <input type="text" placeholder="Vaše jméno / Firma">
+          <input type="text" placeholder="Váš e-mail">
+          <textarea placeholder="Zaujala mě vaše případová studie, kde řešíte…"></textarea>
+          <button type="submit">
+            Odeslat zprávu
+          </button>
+        </form>
       </div>
-
-      <div class="grid-item filter-all filter-software filter-shoptet filter-eshop filter-logo filter-software">
-        {% include "src/views/partials/blog-item.html" %}
-      </div>
-
-      <div class="grid-item filter-all filter-software filter-shoptet filter-eshop filter-consultant">
-        {% include "src/views/partials/blog-item.html" %}
-      </div>
-
-      <div class="grid-item filter-all  filter-shoptet filter-eshop filter-consultant filter-mobil">
-        {% include "src/views/partials/blog-item.html" %}
-      </div>
-
-      <div class="grid-item filter-all filter-software filter-shoptet filter-eshop filter-ux">
-        {% include "src/views/partials/blog-item.html" %}
-      </div>
-
-      <div class="grid-item filter-all filter-software  filter-eshop filter-ux filter-consultant">
-        {% include "src/views/partials/blog-item.html" %}
-      </div>
-      <div class="grid-item filter-all  filter-shoptet filter-eshop filter-ux filter-logo filter-software">
-        {% include "src/views/partials/blog-item.html" %}
-      </div>
-
-      <div class="grid-item filter-all filter-software filter-shoptet filter-eshop filter-mobil">
-        {% include "src/views/partials/blog-item.html" %}
-      </div>
-
-      <div class="grid-item filter-all filter-software filter-shoptet filter-eshop filter-logo filter-software">
-        {% include "src/views/partials/blog-item.html" %}
-      </div>
-
-      <div class="grid-item filter-all  filter-shoptet filter-eshop filter-consultant filter-mobil filter-software">
-        {% include "src/views/partials/blog-item.html" %}
-      </div>
-
-      <div class="grid-item filter-all filter-software filter-shoptet filter-eshop filter-ux">
-        {% include "src/views/partials/blog-item.html" %}
-      </div>
-
-      <div
-        class="grid-item filter-all filter-software  filter-eshop filter-ux filter-logo filter-mobil filter-software">
-        {% include "src/views/partials/blog-item.html" %}
+      <div class="col-12 col-md-6">
+        <h3>Nebo nám zavolejte</h3>
+        <div class="contact-box__call">
+          <span><strong>+420 534 534 623</strong>pondělí – pátek 8.00 – 18.00</span>
+        </div>
+        <p>Nechte nám na sebe kontakt a my se vám nejpozději do druhého pracovního dne ozveme.</p>
       </div>
     </div>
   </div>
