@@ -120,3 +120,20 @@
         text-decoration: underline;
     }
 }
+
+.product-detail {
+    position: relative;
+    padding-top: 50px;
+}
+.sticky-element {
+    position: sticky;
+    height: 200px;
+    width: 110px;
+    border-radius: 85px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    top: 70px;
+    transition: transform 0.2s ease-out;
+}

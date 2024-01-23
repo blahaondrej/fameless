@@ -1,0 +1,98 @@
+{% extends "src/views/layouts/default.html" %}
+
+<!-- set variables used in layout -->
+{% set title="Partneři" %}
+
+{% block styles %}
+<!-- load specific page style -->
+<link href="./style.scss" rel="stylesheet">
+{% endblock %}
+
+{% block scripts %}
+<!-- load specific page script -->
+
+{% endblock %}
+
+{% block content %}
+
+<div class="circle-background"></div>
+<nav aria-label="Breadcrumb">
+  <ol class="breadcrumbs">
+    <li><a href="/"><img src="@images/icons/home-icon.svg"></a></li>
+    <li><a href="/about/index.html">O nás</a></li>
+    <li><a href="#">Partners</a></li>
+  </ol>
+</nav>
+<section class="intro intro--detail">
+  <div class="row align-items-center justify-content-center">
+    <div class="col-12">
+      <h1 class="intro__title">Partneři</h1>
+      <p class="intro__text">S námi fameless opravdu nebudete. S čím pomůžeme vám?</p>
+      <a href="#" class="button-secondary">Zjistit více</a>
+    </div>
+  </div>
+</section>
+<section class="partners">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-12 col-md-8">
+        <div class="row">
+          <!-- První sloupec -->
+          <div class="col-md-6">
+            <!-- BS shop -->
+            <div class="partners__item">
+              <div class="partners__logo">
+                <img src="@images/clients/bsshop.png">
+              </div>
+              <h5 class="partners__title">BS shop</h5>
+              <p class="partners__text">Partnerem BS shopu jsme zejm. pro oblast … Rádi vám navrhneme e-shop s využitím
+                řešení BS shopu.</p>
+              <a href="www.bsshop.cz" class="partners__link" target="_blank">www.bsshop.cz</a>
+            </div>
+            <!-- Mergado -->
+            <div class="partners__item">
+              <div class="partners__logo">
+                <img src="@images/clients/pohoda.png">
+              </div>
+              <h5 class="partners__title">Pohoda</h5>
+              <p class="partners__text">Jsme certifikováni pro instalaci Pohody ve všech verzích. Ekonomický systém
+                Pohoda zakoupíte na webu stormware.cz. Pro Pohodu jsme vyvinuli pro několik zákazníků vlastních nástroje
+                pro usnadnění prací a automatizaci na míru. Nejnovějším přírůstkem je aplikace FameBee pro propojení
+                Pohody a SupportBoxu.</p>
+              <a href="www.pohoda.cz" class="partners__link" target="_blank">www.pohoda.cz</a>
+            </div>
+          </div>
+
+          <!-- Druhý sloupec -->
+          <div class="col-md-6">
+            <!-- Pohoda -->
+            <div class="partners__item">
+              <div class="partners__logo">
+                <img src="@images/clients/pohoda.png">
+              </div>
+              <h5 class="partners__title">Mergado</h5>
+              <p class="partners__text">Mergado je nástroj na správu a úpravy feedů z e-shopů tak, aby inzerce na
+                vyhledávačích a reklamních platformách byla co nejefektivnější a docházelo ke zvyšování konverzí. Díky
+                našim specialistům, kteří s Mergadem pracují, máme zlatou certifikaci.</p>
+              <a href="www.mergado.cz" class="partners__link" target="_blank">www.mergado.cz</a>
+            </div>
+            <!-- Mailkit -->
+            <div class="partners__item">
+              <div class="partners__logo">
+                <img src="@images/clients/mailkit.png">
+              </div>
+              <h5 class="partners__title">Mailkit</h5>
+              <p class="partners__text">Pro oslovení stávajících i potenciálních zákazníků slouží hromadná rozesílka
+                e-mailů. Využíváme produkt produkt Mailkit, který je pro koncového zákazníka velmi efektivní a snadný na
+                ovládání. Na to, že e-mail přijde do schránky zákazníka tak, jak má, že nezapadne ve spamu či nebude
+                vůbec doručen, se můžete spolehnout.</p>
+              <a href="www.mailkit.cz" class="partners__link" target="_blank">www.mailkit.cz</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+{% include "src/views/partials/contact-banner.html" %}
+{% endblock %}

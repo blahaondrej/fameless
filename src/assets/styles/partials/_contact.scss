@@ -1,5 +1,5 @@
 .contact {
-    padding-top: 150px; 
+    padding-top: 50px; 
 }
 
 .contact-box {
@@ -163,6 +163,7 @@
 }
 
 .contact-bottom {
+    padding-bottom: 100px;
     h3 {
         color: #070058;
         font-size: 22px;
@@ -171,7 +172,7 @@
         line-height: 30px;
         margin-bottom: 50px;
     }
-    p, a {
+    p {
         color: #08005C;
         font-size: 18px;
         font-style: normal;
@@ -179,6 +180,34 @@
         line-height: 30px;
         strong {
             font-weight: 700;
+        }
+    }
+    a {
+        color: #08005C;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 30px;
+        position: relative;
+        &::after {
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 1px;
+            background-color: #070058;
+            bottom: 0;
+            left: 0;
+            transform-origin: right;
+            transform: scaleX(0);
+            transition: transform .3s ease-in-out;
+        }
+        &:hover {
+            text-decoration: none;
+            opacity: 1;
+            &::after {
+                transform-origin: left;
+                transform: scaleX(1);
+            }
         }
     }
 }

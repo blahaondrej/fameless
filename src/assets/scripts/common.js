@@ -309,7 +309,7 @@ $(window).on('scroll', function() {
     
 
   var header = $('.header-container');
-  if ($(this).scrollTop() > 100) {
+  if ($(this).scrollTop() > 70) {
       header.addClass('small-header');
   } else {
       header.removeClass('small-header');

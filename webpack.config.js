@@ -63,6 +63,10 @@ module.exports = {
           import: 'src/views/pages/kontakt/index.html',
           filename: 'kontakt/index.html' // Cesta, kam se má soubor vytvořit
         },
+        partners: {
+          import: 'src/views/pages/partners/index.html',
+          filename: 'partners/index.html' // Cesta, kam se má soubor vytvořit
+        },
           
         404: './src/views/pages/404/index.html', // => dist/404.html
 

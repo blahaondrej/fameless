@@ -10,7 +10,15 @@
     &--products {
         justify-content: center;
         text-align: center;
-        padding-top: 60px;
+        padding-top: 50px;
+        padding-bottom: 200px;
+        min-height: auto;
+        height: auto;
+    }
+    &--detail {
+        justify-content: center;
+        text-align: center;
+        padding-top: 50px;
         padding-bottom: 200px;
         min-height: auto;
         height: auto;
