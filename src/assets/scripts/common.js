@@ -62,6 +62,10 @@ const swiper = new Swiper('.swiper-clients', {
       slidesPerView: 5,
       spaceBetween: 30,
     },
+    1200: {
+      slidesPerView: 6.5,
+      spaceBetween: 30,
+    },
   }
 });
 
@@ -211,6 +215,14 @@ var swiperstudie2 = new Swiper(".swiper-detail-studie2", {
   },
 });
 
+var swiperblogdetail = new Swiper(".swiper-detail-blog", {
+  spaceBetween: 10,
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+});
+
   function shortText(selektor, maxDelka) {
     const elementy = document.querySelectorAll(selektor);
     elementy.forEach(element => {
@@ -250,7 +262,27 @@ var swiperstudie2 = new Swiper(".swiper-detail-studie2", {
   
 });
 
+var lastScrollTop = 0;
 $(window).on('scroll', function() {
+  // Sticky element
+
+  // Aktuální pozice scrollování
+  var st = $(this).scrollTop();
+    
+  // Vypočítáme rozdíl mezi aktuální scrollovací pozicí a poslední uloženou scrollovací pozicí
+  var delta = st - lastScrollTop;
+  
+  // Aktualizujeme poslední scrollovací pozici
+  lastScrollTop = st;
+  
+  // Aplikujeme zpoždění pomocí transformace, ale omezíme ho pouze na změny v delta
+  $('.sticky-element').css('transform', 'translateY(' + delta + 'px)');
+  
+  // Reset transformace po dojezdu
+  setTimeout(function() {
+    $('.sticky-element').css('transform', 'none');
+  }, 200); // Zpoždění odpovídající CSS transition
+
   // Změna barvy body při scrollu
   /* var scrollTop = $(this).scrollTop();
     var documentHeight = $(document).height();
@@ -273,6 +305,9 @@ $(window).on('scroll', function() {
 
     // Nastavíme barvu pozadí
     $('body').css('background-color', 'rgb(' + r + ',' + g + ',' + b + ')'); */
+
+    
+
   var header = $('.header-container');
   if ($(this).scrollTop() > 100) {
       header.addClass('small-header');

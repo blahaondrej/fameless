@@ -47,6 +47,10 @@ module.exports = {
           import: 'src/views/pages/products/index.html',
           filename: 'products/index.html' // Cesta, kam se má soubor vytvořit
         },
+        productDetail: {
+          import: 'src/views/pages/product-detail/index.html',
+          filename: 'product-detail/index.html' // Cesta, kam se má soubor vytvořit
+        },
         studie: {
           import: 'src/views/pages/studie/index.html',
           filename: 'studie/index.html' // Cesta, kam se má soubor vytvořit

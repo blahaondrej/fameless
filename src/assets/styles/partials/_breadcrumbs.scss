@@ -1,0 +1,27 @@
+.breadcrumbs {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-size: 0.875rem;
+    color: $gray-600;
+    li {
+        display: flex;
+        align-items: center;
+        &:not(:last-child) {
+        margin-right: 0.5rem;
+        &:after {
+            content: '/';
+            margin-left: 0.5rem;
+        }
+        }
+        a {
+        color: $gray-600;
+        &:hover {
+            color: $gray-700;
+        }
+        }
+    }
+}

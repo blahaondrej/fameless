@@ -1,0 +1,186 @@
+{% extends "src/views/layouts/default.html" %}
+
+<!-- set variables used in layout -->
+{% set title="Products" %}
+
+{% block styles %}
+<!-- load specific page style -->
+<link href="./style.scss" rel="stylesheet">
+{% endblock %}
+
+{% block scripts %}
+<!-- load specific page script -->
+<script src="./product-detail.js"></script>
+{% endblock %}
+
+{% block content %}
+
+<div class="circle-background circle-background--homepage"></div>
+<div class="product-detail">
+  <div class="row">
+    <div class="col-12 col-md-2">
+      <div class="sticky-element">
+        <img src="@images/icons/sticky-icon.svg">
+      </div>
+    </div>
+    <div class="col-12 col-md-10">
+      <section class="intro intro--products">
+        <div class="row align-items-center justify-content-center">
+          <div class="col-12">
+            <h1 class="intro__title">Brand management a strategie</h1>
+            <p class="intro__text">S námi fameless opravdu nebudete. S čím pomůžeme vám?</p>
+            <a href="#" class="button-secondary">Zjistit více</a>
+          </div>
+        </div>
+      </section>
+      <div class="products__inner">
+        <div class="row justify-content-md-center align-items-center">
+          <div class="col-12 col-md-4">
+            <div class="products__item products__item--left reveal-opacity">
+              <div class="products__images justify-content-center">
+                <img class="product-left" src="@images/homepage/marketing1_block2.png">
+                <img class="product-right" src="@images/homepage/marketing1_block1.png">
+                <img class="product-bg" src="@images/homepage/marketing1_pc.png">
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-4">
+            <div class="products__item">
+              <h2 class="products__title">Marketing 1</h2>
+              <h5 class="products__subtitle">O zákazníkovi vše podrobné</h5>
+              <p class="products__text">Nabízíme profesionální správu vašeho marketingu. <strong>Zajistíme</strong> více
+                relevantní návštěvnost z veškerých vhodných kanálů. Nabízíme profesionální správu vašeho marketingu.
+              </p>
+              <a href="#" class="button-secondary">
+                Zjistit více
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="products__inner">
+        <div class="row justify-content-md-center align-items-center">
+          <div class="col-12 col-md-4 order-md-2">
+            <div class="products__item products__item--right reveal-opacity">
+              <div class="products__images justify-content-center">
+                <img class="product-left" src="@images/homepage/marketing1_block2.png">
+                <img class="product-right" src="@images/homepage/marketing1_block1.png">
+                <img class="product-bg" src="@images/homepage/marketing1_pc.png">
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-4 order-md-1">
+            <div class="products__item">
+              <h2 class="products__title">Marketing 2</h2>
+              <h5 class="products__subtitle">O zákazníkovi vše podrobné</h5>
+              <p class="products__text">Nabízíme profesionální správu vašeho marketingu. <strong>Zajistíme</strong> více
+                relevantní návštěvnost z veškerých vhodných kanálů. Nabízíme profesionální správu vašeho marketingu.
+              </p>
+              <a href="#" class="button-secondary">
+                Zjistit více
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <section class="stats">
+
+        <div class="stats__item reveal-up100">
+          <div class="stats__number counter" data-count="25">0</div>
+          <div class="stats__text">nových značek</div>
+        </div>
+        <div class="stats__item reveal-up300">
+          <div class="stats__number counter" data-count="100">0</div>
+          <div class="stats__text">implementace našeho skladového řešení</div>
+        </div>
+        <div class="stats__item reveal-up100">
+          <div class="stats__number counter" data-count="10">0</div>
+          <div class="stats__text">let zkušeností</div>
+        </div>
+
+      </section>
+
+      <div class="software software--products">
+        <div class="software__item reveal-up100">
+          <div class="software__icon">
+            <img src="@images/icons/product/potencial-znacky.svg">
+          </div>
+          <h3 class="software__title">Potenciál
+            značky</h3>
+          <p class="software__text">
+            Pochopíme potenciál vaší značky a pomůžeme vám ho plně čerpat
+          </p>
+        </div>
+        <div class="software__item reveal-up200">
+          <div class="software__icon">
+            <img src="@images/icons/product/mene-vice.svg">
+          </div>
+          <h3 class="software__title">Méně může
+            být více</h3>
+          <p class="software__text">
+            Ctíme Parretovo pravidlo, proto se plně zaměříme na aktivity, které jsou pro vaše podnikání důležité
+          </p>
+        </div>
+        <div class="software__item reveal-up300">
+          <div class="software__icon">
+            <img src="@images/icons/product/nove-cesty.svg">
+          </div>
+          <h3 class="software__title">Nalezneme
+            nové cesty</h3>
+          <p class="software__text">
+            Nezatíženi detailní znalostí vašeho produktu často vidíme příležitosti, které ostatní snadno přehlédnou
+          </p>
+        </div>
+      </div>
+      <div class="software software--reference">
+        <div class="software__item reveal-up100">
+          <div class="software__icon">
+            <img src="@images/icons/product/online.svg">
+          </div>
+          <h3 class="software__title">Propojíme on-line
+            a off-line světy</h3>
+          <p class="software__text">
+            Víme, že ne všechny cesty vedou skrz on-line svět, proto vám doporučíme vhodné synergické off-line aktivity
+          </p>
+        </div>
+        <div class="software__item reveal-up200">
+          <div class="software__icon">
+            <img src="@images/icons/product/vysledky.svg">
+          </div>
+          <h3 class="software__title">Měřitelné
+            výsledky</h3>
+          <p class="software__text">
+            Výstupem našich společných aktivit je strategie, která má deterministická a měřitelná kritéria
+          </p>
+        </div>
+        <div class="software__item reveal-up300">
+          <div class="software__icon">
+            <img src="@images/icons/product/analytika.svg">
+          </div>
+          <h3 class="software__title">Analytika</h3>
+          <p class="software__text">
+            Spojujeme čísla a statistiky se selským rozumem
+          </p>
+        </div>
+      </div>
+      <div class="col-12 col-md-5 offset-md-5">
+        <div class="studie-bottom__text reveal-left">
+          <h2>
+            Síla je v komplexnosti
+            a strategii
+          </h2>
+          <p>Každý marketingový kanál má svá specifika. Pro jednotlivé projekty individuálně navrhujeme vyváženou a
+            synergickou strategii mezi vhodnými marketingovými kanály. </p>
+          <p>Nebojíme se Vás od některých on-line aktivit odradit ani Vám doporučit vhodnější off-line aktivity nebo
+            prostředky.</p>
+          <p>Náš úspěch je pevně svázán s Vaším úspěchem.</p>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+{% include "src/views/partials/contact-banner.html" %}
+{% endblock %}

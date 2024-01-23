@@ -53,14 +53,15 @@
     }
     &__call {
         border-radius: 12px;
-        background-color: (177, 227, 253, 0.25);
-        margin: 15px 0;
+        background-color: rgba(177, 227, 253, 0.25);
+        margin: 30px 0;
         color: #08005C;
         font-size: 14px;
         font-style: normal;
         font-weight: 500;
         line-height: 24px;
         margin-bottom: 30px;
+        padding: 12px 20px;
         strong {
             font-weight: 600;
             font-size: 18px;
@@ -69,19 +70,115 @@
     }
     input {
         border-radius: 12px;
-        background-color: (177, 227, 253, 0.25);
+        background-color: rgba(177, 227, 253, 0.25);
         margin: 15px 0;
         color: #08005C;
         font-size: 14px;
         font-style: normal;
         font-weight: 500;
         line-height: 24px;
+        padding: 12px 20px;
+        border: none;
+        max-width: 400px;
         &::placeholder {
             color: #08005C;
             font-size: 14px;
             font-style: normal;
             font-weight: 500;
             line-height: 24px;
+        }
+    }
+    textarea {
+        border-radius: 12px;
+        background-color: rgba(177, 227, 253, 0.25);
+        margin: 15px 0;
+        color: #08005C;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 24px;
+        padding: 12px 20px;
+        border: none;
+        margin-bottom: 30px;
+        min-height: 130px;
+        &::placeholder {
+            color: #08005C;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 24px;
+        }
+    }
+    button {
+        max-width: 200px;
+    }
+}
+
+.contact-mid {
+    padding-bottom: 100px;
+    h3 {
+        color: #070058;
+        font-size: 22px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 30px;
+        margin-bottom: 50px;
+    }
+    p {
+        color: #08005C;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 30px;
+    }
+    iframe {
+        margin-top: 20px;
+        width: 100%;
+        height: 400px;
+        border-radius: 20px;
+    }
+    &__socials {
+
+    }
+    &__icon {
+        height: 46px;
+        width: 46px;
+        background-color: #fff;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+    &__name {
+        margin-bottom: 30px;
+        a {
+            color: #08005C;
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 24px;
+        }
+    }
+}
+
+.contact-bottom {
+    h3 {
+        color: #070058;
+        font-size: 22px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 30px;
+        margin-bottom: 50px;
+    }
+    p, a {
+        color: #08005C;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 30px;
+        strong {
+            font-weight: 700;
         }
     }
 }

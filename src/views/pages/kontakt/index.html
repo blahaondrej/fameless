@@ -1,7 +1,7 @@
 {% extends "src/views/layouts/default.html" %}
 
 <!-- set variables used in layout -->
-{% set title="Products" %}
+{% set title="Kontakt | Fameless" %}
 
 {% block styles %}
 <!-- load specific page style -->
@@ -26,12 +26,12 @@
           <input type="text" placeholder="Vaše jméno / Firma">
           <input type="text" placeholder="Váš e-mail">
           <textarea placeholder="Zaujala mě vaše případová studie, kde řešíte…"></textarea>
-          <button type="submit">
+          <button type="submit" class="button-secondary">
             Odeslat zprávu
           </button>
         </form>
       </div>
-      <div class="col-12 col-md-6">
+      <div class="col-12 col-md-5 offset-md-1">
         <h3>Nebo nám zavolejte</h3>
         <div class="contact-box__call">
           <span><strong>+420 534 534 623</strong>pondělí – pátek 8.00 – 18.00</span>
@@ -40,6 +40,57 @@
       </div>
     </div>
   </div>
+  <div class="contact-mid">
+    <div class="row">
+      <div class="col-12 col-md-3 offset-md-1">
+        <h3>Jsme na sítích</h3>
+        <div class="contact-mid__socials">
+          <div class="contact-mid__icon">
+            <img src="@images/contact/facebook-contact.svg">
+          </div>
+          <div class="contact-mid__name">
+            <a href="#">Facebook</a>
+          </div>
+          <div class="contact-mid__icon">
+            <img src="@images/contact/linkedin-contact.svg">
+          </div>
+          <div class="contact-mid__name">
+            <a href="#">LinkedIn</a>
+          </div>
+          <div class="contact-mid__icon">
+            <img src="@images/contact/instagram-contact.svg">
+          </div>
+          <div class="contact-mid__name">
+            <a href="#">Instagram</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-md-5 offset-md-2">
+        <h3>Kde nás najdete</h3>
+        <p>Divadelní 847<br>Letohrad, 561 51</p>
+        <div class="contact-mid__map">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2562.6926074079115!2d16.498887476898346!3d50.0358555171285!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x470dfae3bfacbe19%3A0x5a8b39eb1ad1d59c!2sDivadeln%C3%AD%20847%2C%20561%2051%20Letohrad!5e0!3m2!1scs!2scz!4v1705496433085!5m2!1scs!2scz"
+            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="contact-bottom">
+    <div class="row">
+      <div class="col-12 col-md-3 offset-md-1">
+        <h3>Fakturační údaje</h3>
+        <p><strong>IČO: 04072448</strong></p>
+        <p>Společnost je zapsaná v obchodním rejstříku pod spisovou značkou C 46527 vedené u Krajského soudu v Hradci
+          Králové.</p>
+      </div>
+      <div class="col-12 col-md-5 offset-md-2">
+        <h3>Kontaktní údaje</h3>
+        <p><a href="mailto:emilie@fameless.cz">emilie@fameless.cz</a></p>
+        <p><a href="tel:+420534534623">+420 534 534 623</a></p>
+      </div>
+    </div>
+  </div>
 </section>
-{% include "src/views/partials/contact-banner.html" %}
 {% endblock %}

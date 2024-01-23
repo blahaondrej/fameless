@@ -2,13 +2,18 @@
 @use '../base/mixins';
 .intro {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     position: relative;
     height: 50vh;
     min-height: 600px;
+    padding-top: 150px;
     &--products {
         justify-content: center;
         text-align: center;
+        padding-top: 60px;
+        padding-bottom: 200px;
+        min-height: auto;
+        height: auto;
     }
     @include mixins.respond-to(sm) {
         height: 100%;

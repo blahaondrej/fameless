@@ -101,6 +101,35 @@
             width: auto;
             height: 50px;
             justify-content: flex-start;
+            background-color: transparent;
+            img {
+                height: auto;
+                width: auto;
+            }
+        }
+        .software__title {
+            cursor: default;
+            &:hover {
+                &::before {
+                    content: none;
+                }
+            }
+            &::after {
+                content: none;
+            }
+        }
+    }
+    &--products {
+        @include mixins.respond-to(sm) {
+            padding: 40px 10px;
+        }
+        .software__icon {
+            width: 46px;
+            height: 46px;
+            justify-content: center;
+            align-items: center;
+            border-radius: 50%;
+            background-color: #fff;
             img {
                 height: auto;
                 width: auto;
