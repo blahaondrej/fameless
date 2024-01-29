@@ -28,6 +28,11 @@
       }
     &__inner {
         padding: 40px 50px 70px 50px;
+        max-height: 305px;
+        @include mixins.respond-to(sm) {
+            padding: 30px 40px;
+            max-height: 280px;
+          }
     }
     &__image {
         height: 200px;
@@ -48,6 +53,9 @@
         display: flex;
         flex-direction: column;
         align-items: flex-end;
+        @include mixins.respond-to(sm) {
+            bottom: 268px;
+          }
         .label {
             display: inline-block;
             margin: 4px 0;
@@ -126,6 +134,15 @@
             text-decoration: none;
         }
     }
+}
+
+.blog-top-image {
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
+    max-height: 500px;
+    object-fit: cover;
+    margin-bottom: 20px;
 }
 
 @keyframes bounceRight {

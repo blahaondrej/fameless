@@ -1,3 +1,4 @@
+@use '../base/mixins';
 .contact {
     padding-top: 50px; 
 }
@@ -9,6 +10,10 @@
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.04);
     margin-bottom: 90px;
     position: relative;
+    @include mixins.respond-to(sm) {
+        padding: 40px 20px 60px 20px;
+        margin-bottom: 50px;
+      }
     &::after {
         content: '';
         position: absolute;
@@ -21,6 +26,10 @@
         background-position: bottom;
         background-size: 100%;
         height: 100%;
+        @include mixins.respond-to(sm) {
+            width: 50%;
+            right: 5%;
+          }
     }
     h1 {
         color: #070058;
@@ -30,6 +39,11 @@
         font-weight: 700;
         line-height: 56px;
         margin-bottom: 60px;
+        @include mixins.respond-to(sm) {
+            font-size: 32px;
+            line-height: 40px;
+            margin-bottom: 30px;
+          }
     }
     h3 {
         color: #070058;
@@ -46,6 +60,10 @@
         font-weight: 400;
         line-height: 30px;
         max-width: 300px;
+        @include mixins.respond-to(sm) {
+            font-size: 16px;
+            line-height: 26px;
+          }
     }
     form {
         display: flex;
@@ -62,10 +80,17 @@
         line-height: 24px;
         margin-bottom: 30px;
         padding: 12px 20px;
+        @include mixins.respond-to(sm) {
+            margin: 20px 0;
+          }
         strong {
             font-weight: 600;
             font-size: 18px;
             margin-right: 25px;
+            @include mixins.respond-to(sm) {
+                margin-right: 20px;
+                display: block;
+              }
         }
     }
     input {
@@ -111,11 +136,34 @@
     }
     button {
         max-width: 200px;
+        color: #070058;
+        text-align: center;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 24px;
+        border-radius: 34px;
+        border: 1px solid #08005C;
+        @include mixins.respond-to(sm) {
+            margin-bottom: 30px;
+          }
     }
 }
 
 .contact-mid {
     padding-bottom: 100px;
+    @include mixins.respond-to(sm) {
+        padding-bottom: 50px;
+      }
+    &__item {
+        display: flex;
+        flex-direction: column;
+        @include mixins.respond-to(sm) {
+            flex-direction: row;
+            margin-bottom: 30px;
+            align-items: center;
+        }
+    }
     h3 {
         color: #070058;
         font-size: 22px;
@@ -138,7 +186,9 @@
         border-radius: 20px;
     }
     &__socials {
-
+        @include mixins.respond-to(sm) {
+            margin-bottom: 50px;
+        }
     }
     &__icon {
         height: 46px;
@@ -149,9 +199,16 @@
         justify-content: center;
         align-items: center;
         margin-bottom: 20px;
+        @include mixins.respond-to(sm) {
+            margin-bottom: 0;
+        }
     }
     &__name {
         margin-bottom: 30px;
+        @include mixins.respond-to(sm) {
+            margin-left: 20px;
+            margin-bottom: 0;
+        }
         a {
             color: #08005C;
             font-size: 18px;

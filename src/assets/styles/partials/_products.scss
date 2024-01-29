@@ -124,16 +124,32 @@
 .product-detail {
     position: relative;
     padding-top: 50px;
+    @include mixins.respond-to(sm) {
+        padding-top: 0;
+    }
 }
 .sticky-element {
     position: sticky;
-    height: 200px;
-    width: 110px;
-    border-radius: 85px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: #fff;
     top: 70px;
     transition: transform 0.2s ease-out;
+    @include mixins.respond-to(sm) {
+        display: none;
+    }
+    &__image {
+        height: 200px;
+        width: 110px;
+        border-radius: 85px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #fff;
+    }
+    &__text {
+        margin-top: 20px;
+        color: #070058;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 18px;
+    }
 }

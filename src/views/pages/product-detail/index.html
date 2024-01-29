@@ -5,7 +5,7 @@
 
 {% block styles %}
 <!-- load specific page style -->
-<link href="./style.scss" rel="stylesheet">
+
 {% endblock %}
 
 {% block scripts %}
@@ -15,7 +15,7 @@
 
 {% block content %}
 
-<div class="circle-background circle-background--homepage"></div>
+<div class="circle-background circle-background--product"></div>
 <nav aria-label="Breadcrumb">
   <ol class="breadcrumbs">
     <li><a href="/"><img src="@images/icons/home-icon.svg"></a></li>
@@ -25,12 +25,17 @@
 </nav>
 <div class="product-detail">
   <div class="row">
-    <div class="col-12 col-md-2">
+    <div class="col-12 col-md-1">
       <div class="sticky-element">
-        <img src="@images/icons/sticky-icon.svg">
+        <div class="sticky-element__image">
+          <img src="@images/icons/sticky-icon.svg">
+        </div>
+        <div class="sticky-element__text">
+          Brand management a strategie
+        </div>
       </div>
     </div>
-    <div class="col-12 col-md-10">
+    <div class="col-12 col-md-11">
       <section class="intro intro--products">
         <div class="row align-items-center justify-content-center">
           <div class="col-12">
@@ -107,8 +112,8 @@
 
       </section>
 
-      <div class="software software--products">
-        <div class="software__item reveal-up100">
+      <div class="software software--products reveal-up100">
+        <div class="software__item">
           <div class="software__icon">
             <img src="@images/icons/product/potencial-znacky.svg">
           </div>
@@ -118,7 +123,7 @@
             Pochopíme potenciál vaší značky a pomůžeme vám ho plně čerpat
           </p>
         </div>
-        <div class="software__item reveal-up200">
+        <div class="software__item">
           <div class="software__icon">
             <img src="@images/icons/product/mene-vice.svg">
           </div>
@@ -128,7 +133,7 @@
             Ctíme Parretovo pravidlo, proto se plně zaměříme na aktivity, které jsou pro vaše podnikání důležité
           </p>
         </div>
-        <div class="software__item reveal-up300">
+        <div class="software__item">
           <div class="software__icon">
             <img src="@images/icons/product/nove-cesty.svg">
           </div>
@@ -139,8 +144,8 @@
           </p>
         </div>
       </div>
-      <div class="software software--reference">
-        <div class="software__item reveal-up100">
+      <div class="software software--products reveal-up100">
+        <div class="software__item">
           <div class="software__icon">
             <img src="@images/icons/product/online.svg">
           </div>
@@ -150,7 +155,7 @@
             Víme, že ne všechny cesty vedou skrz on-line svět, proto vám doporučíme vhodné synergické off-line aktivity
           </p>
         </div>
-        <div class="software__item reveal-up200">
+        <div class="software__item">
           <div class="software__icon">
             <img src="@images/icons/product/vysledky.svg">
           </div>
@@ -160,7 +165,7 @@
             Výstupem našich společných aktivit je strategie, která má deterministická a měřitelná kritéria
           </p>
         </div>
-        <div class="software__item reveal-up300">
+        <div class="software__item">
           <div class="software__icon">
             <img src="@images/icons/product/analytika.svg">
           </div>
@@ -171,7 +176,7 @@
         </div>
       </div>
       <div class="col-12 col-md-5 offset-md-5">
-        <div class="studie-bottom__text reveal-left">
+        <div class="studie-bottom__text reveal-up100">
           <h2>
             Síla je v komplexnosti
             a strategii

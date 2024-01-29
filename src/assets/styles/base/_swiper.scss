@@ -11,6 +11,8 @@
         img {
             width: 150px;
             height: auto;
+            filter: grayscale(100%);
+            opacity: 0.8;
         }
       }
 }

@@ -18,6 +18,7 @@
   <script src="@scripts/scrollreveal.js" defer="defer"></script>
 
   <!-- block for specific page styles -->
+  <link href="@styles/main.scss" rel="stylesheet">
   {% block styles %}{% endblock %}
 </head>
 
@@ -63,6 +64,10 @@
               </g>
             </svg>
           </a>
+          <input id="menu-toggle" type="checkbox" />
+          <label class='menu-button-container' for="menu-toggle">
+            <div class='menu-button'></div>
+          </label>
           {% include "src/views/partials/navigation.html" %}
         </div>
       </div>

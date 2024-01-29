@@ -1,3 +1,4 @@
+@use '../base/mixins';
 .about {
     &__text {
         padding: 20px 0;
@@ -19,6 +20,10 @@
     }
     &__image {
         margin-top: 200px;
+        @include mixins.respond-to(sm) {
+           margin-top: 50px;
+           margin-bottom: 50px;
+          }
         img {
             width: 100%;
             height: auto;
@@ -29,6 +34,26 @@
 
 .about-team {
     padding: 100px 0;
+    overflow: hidden;
+    .col {
+        width: 20%;
+        @include mixins.respond-to(sm) {
+            flex-wrap: nowrap;
+            width: 80%;
+          }
+    }
+    .row {
+        @include mixins.respond-to(sm) {
+            display: flex;
+            flex-wrap: nowrap;
+            overflow-y: auto;
+            scrollbar-width: none;
+            -ms-overflow-style: none;
+            &::-webkit-scrollbar {
+                display: none;
+            }
+          }
+    }
 }
 
 // ANIMATION
@@ -38,6 +63,10 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    overflow: hidden;
+    @include mixins.respond-to(sm) {
+        align-items: flex-start;
+      }
     &__item {
         display: flex;
         align-items: center;
@@ -47,6 +76,11 @@
             .about-timeline__text {
                 left: -200px;
                 text-align: right;
+                @include mixins.respond-to(sm) {
+                    right: -200px;
+                    left: unset;
+                    text-align: left;
+                  }
             }
         }
         &:nth-child(odd) {
@@ -70,6 +104,13 @@
         font-weight: 700;
         line-height: normal;
         margin: 0 30px;
+        @include mixins.respond-to(sm) {
+            margin: 0 15px 0 0;
+            width: 120px;
+            height: 70px;
+            font-size: 28px;
+            border-radius: 50px;
+          }
     }
     &__text {
         color: #070058;
@@ -92,5 +133,9 @@
         background-color: #08005C;
         opacity: 0.12;
         z-index: 0;
+        @include mixins.respond-to(sm) {
+            left: 60;
+            transform: translateX(0);
+          }
     }
 }

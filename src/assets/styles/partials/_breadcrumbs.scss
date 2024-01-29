@@ -1,9 +1,13 @@
+@use '../base/mixins';
 .breadcrumbs {
     list-style: none;
     padding: 0;
     display: flex;
     align-items: center;
     padding-top: 150px;
+    @include mixins.respond-to(sm) {
+        padding-top: 80px;
+      }
     li {
         margin-right: 10px;
         &::after {

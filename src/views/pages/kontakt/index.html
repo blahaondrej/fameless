@@ -5,7 +5,7 @@
 
 {% block styles %}
 <!-- load specific page style -->
-<link href="./style.scss" rel="stylesheet">
+
 {% endblock %}
 
 {% block scripts %}
@@ -52,23 +52,35 @@
       <div class="col-12 col-md-3 offset-md-1">
         <h3>Jsme na sítích</h3>
         <div class="contact-mid__socials">
-          <div class="contact-mid__icon">
-            <img src="@images/contact/facebook-contact.svg">
+          <div class="contact-mid__item">
+            <div class="contact-mid__icon">
+              <a href="#">
+                <img src="@images/contact/facebook-contact.svg">
+              </a>
+            </div>
+            <div class="contact-mid__name">
+              <a href="#">Facebook</a>
+            </div>
           </div>
-          <div class="contact-mid__name">
-            <a href="#">Facebook</a>
+          <div class="contact-mid__item">
+            <div class="contact-mid__icon">
+              <a href="#">
+                <img src="@images/contact/linkedin-contact.svg">
+              </a>
+            </div>
+            <div class="contact-mid__name">
+              <a href="#">LinkedIn</a>
+            </div>
           </div>
-          <div class="contact-mid__icon">
-            <img src="@images/contact/linkedin-contact.svg">
-          </div>
-          <div class="contact-mid__name">
-            <a href="#">LinkedIn</a>
-          </div>
-          <div class="contact-mid__icon">
-            <img src="@images/contact/instagram-contact.svg">
-          </div>
-          <div class="contact-mid__name">
-            <a href="#">Instagram</a>
+          <div class="contact-mid__item">
+            <div class="contact-mid__icon">
+              <a href="#">
+                <img src="@images/contact/instagram-contact.svg">
+              </a>
+            </div>
+            <div class="contact-mid__name">
+              <a href="#">Instagram</a>
+            </div>
           </div>
         </div>
       </div>

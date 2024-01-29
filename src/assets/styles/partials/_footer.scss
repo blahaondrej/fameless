@@ -1,4 +1,5 @@
 @use '../base/fonts/inter.scss' as fontInter;
+@use '../base/mixins';
 .footer {
     background-color: #08005C;
     &__inner {
@@ -6,6 +7,7 @@
     }
     &__logo {
         margin-bottom: 60px;
+        
     }
     &__title {
         color: #FFF;
@@ -17,19 +19,22 @@
         letter-spacing: 1px;
         text-transform: uppercase;
         margin-bottom: 35px;
+        @include mixins.respond-to(sm) {
+            margin-bottom: 20px;
+          }
     }
     &__copyright {
         color: #FFF;
-        font-size: 14px;
-        font-style: normal;
-        font-weight: 500;
-        line-height: 24px;
         text-align: center;
         padding: 18px 20px;
         border-top: 1px solid rgba(255, 255, 255, 0.2);
         p {
             margin-bottom: 0;
             opacity: 0.8;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 24px;
         }
     }
     ul {
@@ -37,11 +42,20 @@
         li {
             list-style-type: none;
             padding-bottom: 32px;
+            @include mixins.respond-to(sm) {
+                padding-bottom: 20px;
+              }
             a {
                 color: #fff;
                 text-decoration: none;
                 display: inline-flex;
                 align-items: center;
+                color: #FFF;
+                font-family: fontInter.$font-family-inter;
+                font-size: 14px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: 24px;
             }
         }
     }
@@ -131,6 +145,9 @@
         flex-direction: column;
         margin-bottom: 130px;
         height: 50px;
+        @include mixins.respond-to(sm) {
+            margin-bottom: 50px;
+          }
         .d-flex-inline {
             display: flex;
         }

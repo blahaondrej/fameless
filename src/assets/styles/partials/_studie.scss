@@ -1,3 +1,4 @@
+@use '../base/mixins';
 .studie-top {
     padding-top: 50px;
     padding-bottom: 50px;
@@ -74,8 +75,14 @@
 }
 .studie-detail {
     padding: 0 150px 50px 50px;
+    @include mixins.respond-to(sm) {
+        padding: 20px 0;
+      }
     &__labels {
         margin-bottom: 40px;
+        @include mixins.respond-to(sm) {
+            margin-bottom: 20px;
+          }
         >.label {
             text-transform: uppercase;
             border-radius: 8px;
@@ -92,6 +99,9 @@
             display: inline-flex;
             align-items: center;
             justify-content: center;
+            @include mixins.respond-to(sm) {
+                margin: 5px;
+              }
             &:first-child {
                 margin-left: 0;
             }
@@ -104,6 +114,9 @@
         font-weight: 400;
         line-height: 42px;
         margin-bottom: 30px;
+        @include mixins.respond-to(sm) {
+            margin-bottom: 20px;
+          }
     }
     &__text {
         color: rgba(7, 0, 88, 0.80);
@@ -179,12 +192,20 @@
         border-radius: 32px;
         background: rgba(8, 0, 92, 0.05);
         margin-bottom: 70px;
+        @include mixins.respond-to(sm) {
+            max-height: 280px;
+            width: 100%;
+          }
         img {
             width: 250px;
             position: absolute;
             bottom: 0;
             transform: translateX(-50%);
             left: 50%;
+            @include mixins.respond-to(sm) {
+                width: 60%;
+                height: auto;
+              }
         }
     }
     &__quote {
@@ -193,6 +214,10 @@
         font-style: normal;
         font-weight: 400;
         line-height: 43px; 
+        @include mixins.respond-to(sm) {
+            font-size: 26px;
+            line-height: 34px;
+          }
     }
     &__logo {
         height: 50px;
@@ -204,6 +229,9 @@
         font-style: normal;
         font-weight: 600;
         line-height: 30px;
+        @include mixins.respond-to(sm) {
+            font-size: 20px;
+          }
     }
     &__position {
         color: #08005C;

@@ -238,6 +238,18 @@ var swiperblogdetail = new Swiper(".swiper-detail-blog", {
   // Accordion
 
   $(document).ready(function() {
+    // Mobile menu
+
+    $('.menu-button').click(function(){
+      $('.navigation').toggleClass('active');
+      $('body').toggleClass('no-scroll');
+      $('.header-container').toggleClass('active');
+    });
+
+    $('.second-level').click(function(){
+      $(this).toggleClass('active');
+  });
+
     $('.accordion-item').click(function() {
         // Kontrola, zda kliknutý element již má třídu 'active'
         if ($(this).hasClass('active')) {
@@ -310,10 +322,15 @@ $(window).on('scroll', function() {
 
   var header = $('.header-container');
   if ($(this).scrollTop() > 70) {
+    if ($(window).width() > 991) {
       header.addClass('small-header');
-  } else {
-      header.removeClass('small-header');
-  }
+    } else {
+      header.addClass('small-header-mobile');
+    }
+} else {
+  header.removeClass('small-header');
+  header.removeClass('small-header-mobile');
+}
   $('.counter').each(function() {
     var $this = $(this);
 
@@ -345,3 +362,26 @@ $(window).on('scroll', function() {
   $('.app-logo').css('height', newSize + 'px'); */
 });
 
+$(document).ready(function(){
+  function moveBlogTopImage() {
+      if ($(window).width() < 991) {
+          $('.blog-top-image').insertAfter('.studie-detail__title');
+      }
+  }
+  function moveStudieTopImage() {
+    if ($(window).width() < 991) {
+        $('.studie-top__wrapper').insertAfter('.studie-detail__title');
+    }
+  }
+
+  // Spuštění funkce při načtení stránky
+  moveBlogTopImage();
+  moveStudieTopImage();
+
+  // Spuštění funkce při změně velikosti okna
+  $(window).resize(function() {
+      moveBlogTopImage();
+      moveStudieTopImage();
+  });
+
+});
