@@ -1,7 +1,7 @@
 {% extends "src/views/layouts/default.html" %}
 
 <!-- set variables used in layout -->
-{% set title="Products" %}
+{% set title="Tvorba webů" %}
 
 {% block styles %}
 <!-- load specific page style -->
@@ -47,12 +47,37 @@
         </div>
       </section>
       <section id="content">
-        <div class="software software--products reveal-up100">
+        <div class="products__inner">
+          <div class="row justify-content-md-center">
+            <div class="col-12 col-md-6 col-lg-5">
+              <div class="products__item products__item--left-marketing reveal-opacity">
+                <div class="products__images products__images--marketing justify-content-center">
+                  <img class="product-marketing" src="@images/marketing/weby/uspesny-web.png">
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-5">
+              <div class="products__item">
+                <h2 class="products__title">Úspěšný web</h2>
+                <p class="products__text">Základní předpoklady pro úspěch webu:</p>
+                <ul>
+                  <li>funkční <strong>design</strong> webu</li>
+                  <li>vhodná <strong>informační architektura</strong></li>
+                  <li>přizpůsobení webu <strong>cílové skupině</strong> webu a jejím specifikům</li>
+                  <li>struktura textů a obsahu obecně</li>
+                  <li>rychlost a stabilita aplikace napříč zařízeními</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="software software--marketing reveal-up100">
           <div class="software__item">
             <div class="software__icon">
               <img src="@images/icons/marketing/weby/reseni-pro-vas-projekt.svg">
             </div>
-            <h3 class="software__title">Řešení pro Váš projekt
+            <h3 class="software__title">Řešení pro<br>Váš projekt
             </h3>
             <p class="software__text">
               Jednostránková prezentace, firemní web nebo internetový obchod, navrhneme Vám to nejvhodnější řešení
@@ -62,7 +87,7 @@
             <div class="software__icon">
               <img src="@images/icons/marketing/weby/prizpusobeni-cilovemu-publiku.svg">
             </div>
-            <h3 class="software__title">Přizpůsobení cílovému publiku</h3>
+            <h3 class="software__title">Přizpůsobení<br>cílovému publiku</h3>
             <p class="software__text">
               Pro maximální oslovení zákazníka přizpůsobujeme strukturu a grafiku webu přímo Vaší cílové skupině
               uživatelů
@@ -80,7 +105,35 @@
           </div>
         </div>
 
-        <div class="software software--products reveal-up100">
+        <div class="products__inner">
+          <div class="row justify-content-md-center">
+            <div class="col-12 col-md-6 col-lg-5 order-md-1 order-lg-2">
+              <div class="products__item products__item--right-marketing reveal-opacity">
+                <div class="products__images products__images--marketing justify-content-center">
+                  <img class="product-marketing" src="@images/marketing/weby/kvalitni-web.png">
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-5 order-md-1 order-lg-1">
+              <div class="products__item">
+                <h2 class="products__title">Co očekávat od kvalitního webu?</h2>
+                <p class="products__text">Co vám naše zpracování přinese?</p>
+                <ul>
+                  <li>Více spokojených uživatelů a zákazníků</li>
+                  <li>Vyšší opakovanou návštěvnost – dobře vytvořený web pozitivně působí na uživatele pozitivně, ti se
+                    na základě této pozitivní zkušenosti rádi vracejí. To přináší navýšení konverzí a zvýšení loajality
+                    zákazníků</li>
+                  <li>Zvýšení důvěryhodnosti a firemní image – snadná orientace uživatelů vede k posílení jejich důvěry
+                    k provozovateli webové prezentace a tím i posílení jeho značky</li>
+                  <li>Úspornější marketing – vyšší pozice ve vyhledávačích a nižší průměrné ceny za proklik u PPC
+                    kampaní</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="software software--marketing reveal-up100">
           <div class="software__item">
             <div class="software__icon">
               <img src="@images/icons/marketing/weby/redakcni-system.svg">
@@ -105,49 +158,10 @@
             <div class="software__icon">
               <img src="@images/icons/marketing/weby/overene-cms.svg">
             </div>
-            <h3 class="software__title">Ověřené a dobře použitelné CMS
+            <h3 class="software__title">Ověřené a dobře<br>použitelné CMS
             </h3>
             <p class="software__text">
               Weby tvoříme „na míru“ nebo na osvědčených a dobře rozšiřitelných systémech Joomla, Wordpress a Prestashop
-            </p>
-          </div>
-        </div>
-
-        <div class="products__inner">
-          <div class="row justify-content-md-center align-items-center">
-            <div class="col-12 col-md-6 col-lg-4">
-              <div class="products__item products__item--left reveal-opacity">
-                <div class="products__images justify-content-center">
-                  <img class="product-bg" src="@images/marketing/weby/uspesny-web.png">
-                </div>
-              </div>
-            </div>
-            <div class="col-12 col-md-6 col-lg-4">
-              <div class="products__item">
-                <h2 class="products__title">Úspěšný web</h2>
-                <h5 class="products__subtitle">Základní předpoklady pro úspěch webové prezentace</h5>
-                <ul>
-                  <li>funkční designu webu</li>
-                  <li>vhodná informační architektura</li>
-                  <li>přizpůsobení webu cílové skupině webu a jejím specifikům</li>
-                  <li>struktuře textů a obsahu obecně</li>
-                  <li>rychlost a stabilita aplikace napříč zařízeními</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-12 col-md-8 col-lg-5 offset-md-2 offset-lg-5">
-          <div class="studie-bottom__text reveal-up100">
-            <h2>
-              Kvalitně zpracovaná webové prezentace přináší:
-            </h2>
-            <p>Každý marketingový kanál má svá specifika. Pro jednotlivé projekty individuálně navrhujeme vyváženou a
-              synergickou strategii mezi vhodnými marketingovými kanály.</p>
-            <p>Nebojíme se Vás od některých on-line aktivit odradit ani Vám doporučit vhodnější off-line aktivity nebo
-              prostředky.</p>
-            <p>Náš úspěch je pevně svázán s Vaším úspěchem.</p>
             </p>
           </div>
         </div>

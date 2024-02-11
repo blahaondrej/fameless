@@ -1,0 +1,229 @@
+{% extends "src/views/layouts/default.html" %}
+
+<!-- set variables used in layout -->
+{% set title="E-shopy spolu s BS shop" %}
+
+{% block styles %}
+<!-- load specific page style -->
+
+{% endblock %}
+
+{% block scripts %}
+<!-- load specific page script -->
+
+{% endblock %}
+
+{% block content %}
+
+<div class="circle-background circle-background--product"></div>
+<nav aria-label="Breadcrumb">
+  <ol class="breadcrumbs">
+    <li><a href="/"><img src="@images/icons/home-icon.svg"></a></li>
+    <li><a href="../marketing/index.html">Markeging</a></li>
+    <li><a href="#">E-shopy spolu s BS shop</a></li>
+  </ol>
+</nav>
+<div class="product-detail">
+  <div class="row">
+    <div class="col-12 col-md-1">
+      <div class="sticky-element">
+        <div class="sticky-element__image">
+          <img src="@images/icons/marketing/eshopy/sticky-icon-eshopy.svg">
+        </div>
+        <div class="sticky-element__text">
+          E-shopy spolu s BS shop
+        </div>
+      </div>
+    </div>
+    <div class="col-12 col-md-11">
+      <section class="intro intro--product-detail">
+        <div class="row align-items-center justify-content-center">
+          <div class="col-12">
+            <h1 class="intro__title">E-shopy spolu s BS shop</h1>
+            <p class="intro__text">E-shop napojený na informační systém POHODA
+            </p>
+            <a href="#content" class="button-secondary">Zjistit více</a>
+          </div>
+        </div>
+      </section>
+      <section id="content">
+        <div class="products__inner">
+          <div class="row justify-content-md-center">
+            <div class="col-12 col-md-6 col-lg-5">
+              <div class="products__item products__item--left-marketing reveal-opacity">
+                <div class="products__images products__images--marketing justify-content-center">
+                  <img class="product-marketing" src="@images/marketing/eshopy/spolecne.png">
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-5">
+              <div class="products__item">
+                <h2 class="products__title">Společně!</h2>
+                <h5 class="products__subtitle">Jsme hrdí na naše obchodní partnerství s  BS shopem! </h5>
+                <p class="products__text">Spolupráce funguje <strong>od roku 2020</strong>, příjemná zkušenost a úspěch
+                  našich společných projektů je důkazem toho, že spolupráce s BS shopem a Fameless je správnou volbou.
+                  Tato zkušenost nás utvrdila v přesvědčení, že naše spolupráce funguje skvěle, přičemž se obě strany
+                  shodly na podobném směru i díky propojení s dalšími systémy - partnery jako je <strong>informační
+                    systém Pohoda</strong> a v oblasti <strong>e-mail marketingu  Mailkit</strong>. Tato vzájemná
+                  spolupráce přináší inovativní e-commerce řešení pro naše společné zákazníky.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <section class="stats">
+          <div class="stats__item reveal-up100">
+            <div class="stats__number counter" data-count="25">0</div>
+            <div class="stats__text">společných projektů</div>
+          </div>
+          <div class="stats__item reveal-up300">
+            <div class="stats__number counter" data-count="11">0</div>
+            <div class="stats__text">zahraničních expanzí</div>
+          </div>
+          <div class="stats__item reveal-up100">
+            <div class="stats__number counter" data-count="50">0</div>
+            <div class="stats__text">funkcí na míru</div>
+          </div>
+        </section>
+      </section>
+
+      <div class="products__inner">
+        <div class="row justify-content-md-center">
+          <div class="col-12 col-md-6 col-lg-5">
+            <div class="products__item products__item--left-marketing reveal-opacity">
+              <div class="products__images products__images--marketing justify-content-center">
+                <img class="product-marketing" src="@images/marketing/eshopy/bs-shop.png">
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-5">
+            <div class="products__item">
+              <h2 class="products__title">O BS shopu</h2>
+              <h5 class="products__subtitle">Špičková platforma pro vytváření e-shopů</h5>
+              <p class="products__text">BS shop poskytuje efektivní a snadno použitelné nástroje pro správu a rozvoj
+                online obchodů včetně přípravy zahraničních mutací více než 40 jazyků a zemí.</p>
+              <p class="products__text">S jejich technologickými schopnostmi a <strong>know-how v oblasti
+                  e-commerce</strong> jsme připraveni posunout hranice e-shopů našich společných zákazníků na novou
+                úroveň.</p>
+              <p class="products__text"><strong>Společně s BS shopem</strong> stavíme inovativní a atraktivní e-shopy,
+                nejen na českém trhu, které osloví cílové publikum a zlepší jejich online zážitek.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+      <div class="software software--marketing reveal-up100">
+        <div class="software__item">
+          <div class="software__icon">
+            <img src="@images/icons/marketing/eshopy/napojeni-na-pohodu.svg">
+          </div>
+          <h3 class="software__title">Napojení<br>na IS POHODA</h3>
+          <p class="software__text">
+            Přímé napojení do databáze IS POHODA znamená vždy aktuální a spolehlivě přesná data na e-shopu i v POHODĚ
+            (skladové zásoby, přijaté objednávky atd.)
+          </p>
+        </div>
+        <div class="software__item">
+          <div class="software__icon">
+            <img src="@images/icons/marketing/eshopy/automatizace-procesu.svg">
+          </div>
+          <h3 class="software__title">Automatizace<br>procesů
+          </h3>
+          <p class="software__text">
+            Automatizovaná změna stavů objednávky a rozesílka e-mailů i SMS za nastavených podmínek, inteligentní
+            rezervace, napojení na dodavatele…
+          </p>
+        </div>
+        <div class="software__item">
+          <div class="software__icon">
+            <img src="@images/icons/marketing/eshopy/napojeni-na-dodavatele.svg">
+          </div>
+          <h3 class="software__title">Napojení<br>na dodavatele
+          </h3>
+          <p class="software__text">
+            Zcela nastavitelné dle Vašich požadavků a potřeb, tj. aktualizace cen, obrázků, dostupnosti a dalších
+            informací z jakéhokoliv zdroje dodavatele.
+          </p>
+        </div>
+      </div>
+
+      <div class="products__inner">
+        <div class="row justify-content-md-center">
+          <div class="col-12 col-md-6 col-lg-5">
+            <div class="products__item products__item--left-marketing reveal-opacity">
+              <div class="products__images products__images--marketing justify-content-center">
+                <img class="product-marketing" src="@images/marketing/eshopy/eshop-pohoda.png">
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-5">
+            <div class="products__item">
+              <h2 class="products__title">Napojení na POHODA</h2>
+              <h5 class="products__subtitle">Přímo a na pohodu! </h5>
+              <p class="products__text">Řešení BSSHOP je zcela bezkonkurenční v propojení s IS POHODA od společnosti
+                Stormware. Netvoří ani nepoužívá žádné převodové můstky ani XML komunikaci. BS SHOP je "on-line"
+                <strong>napojení přímo do databáze IS</strong>, což umožňuje:
+              </p>
+              <ul>
+                <li>provádět <strong>pravidelnou synchronizaci</strong> dat s e-shopem ve velmi krátkých časových
+                  intervalech</li>
+                <li>synchronizovat téměř jakákoliv data s IS</li>
+                <li>synchronizovat spolehlivě (díky přímému napojení do databáze nedochází k žádné datové výměně pomocí
+                  XML</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="software software--marketing reveal-up100">
+        <div class="software__item">
+          <div class="software__icon">
+            <img src="@images/icons/marketing/eshopy/marketingove-nastroje.svg">
+          </div>
+          <h3 class="software__title">Marketingové<br>nástroje</h3>
+          <p class="software__text">
+            Slevové kupóny, bonusy k nákupu, dárky v košíku, věrnostní systém, newslettery, SEO parametrická filtrace,
+            hodnocení produktů, diskusní fórum…
+          </p>
+        </div>
+        <div class="software__item">
+          <div class="software__icon">
+            <img src="@images/icons/marketing/eshopy/vysoka-flexibilita.svg">
+          </div>
+          <h3 class="software__title">Vysoká<br>flexibilita
+          </h3>
+          <p class="software__text">
+            Jednoduchá správa více e-shopů a jazykových mutací s možností hromadných úprav z jedné administrace, využití
+            virtuálních kategorií, variantních produktů…
+          </p>
+        </div>
+        <div class="software__item">
+          <div class="software__icon">
+            <img src="@images/icons/marketing/eshopy/cokoliv-na-miru.svg">
+          </div>
+          <h3 class="software__title">Cokoliv<br>na míru
+          </h3>
+          <p class="software__text">
+            Nestačí vám funkčnosti BS shopu? Nevadí, na míru vytvoří téměř cokoliv: nákupní rádce pro výběr produktů,
+            konfigurátor střihů, automatická výroba v POHODĚ...
+          </p>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="marketing__quote mt-auto">
+          <div class="studie-bottom__quote">
+            S řešením BS shop můžete výrazně zefektivnit dosavadní práci i procesy.
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+{% include "src/views/partials/contact-banner.html" %}
+{% endblock %}

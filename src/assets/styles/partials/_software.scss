@@ -197,6 +197,15 @@
         .software__title {
             cursor: default;
             &:hover {
+                &::after {
+                    content: none;
+                    animation: none;
+                }
+                &::before {
+                    content: none;
+                }
+            }
+            &:hover {
                 &::before {
                     content: none;
                 }

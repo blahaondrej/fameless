@@ -111,6 +111,14 @@ module.exports = {
           import: 'src/views/pages/marketing/zlepseni-pouzitelnosti-webu.html',
           filename: 'marketing/zlepseni-pouzitelnosti-webu.html' // Cesta, kam se má soubor vytvořit
         },
+        marketingGrafickaIdentita: {
+          import: 'src/views/pages/marketing/graficka-identita-ux-ui.html',
+          filename: 'marketing/graficka-identita-ux-ui.html' // Cesta, kam se má soubor vytvořit
+        },
+        marketingEshopy: {
+          import: 'src/views/pages/marketing/eshopy-spolu-s-bs-shop.html',
+          filename: 'marketing/eshopy-spolu-s-bs-shop.html' // Cesta, kam se má soubor vytvořit
+        },
           
         404: './src/views/pages/404/index.html', // => dist/404.html
 
