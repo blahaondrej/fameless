@@ -1,0 +1,105 @@
+{% extends "src/views/layouts/default.html" %}
+
+<!-- set variables used in layout -->
+{% set title="Products" %}
+
+{% block styles %}
+<!-- load specific page style -->
+
+{% endblock %}
+
+{% block scripts %}
+<!-- load specific page script -->
+
+{% endblock %}
+
+{% block content %}
+
+<div class="circle-background circle-background--product"></div>
+<nav aria-label="Breadcrumb">
+  <ol class="breadcrumbs">
+    <li><a href="/"><img src="@images/icons/home-icon.svg"></a></li>
+    <li><a href="../marketing/index.html">Markeging</a></li>
+    <li><a href="#">Správa zbožových srovnávačů</a></li>
+  </ol>
+</nav>
+<div class="product-detail">
+  <div class="row">
+    <div class="col-12 col-md-1">
+      <div class="sticky-element">
+        <div class="sticky-element__image">
+          <img src="@images/icons/marketing/srovnavace/sticky-icon-srovnavace.svg">
+        </div>
+        <div class="sticky-element__text">
+          Správa zbožových srovnávačů
+        </div>
+      </div>
+    </div>
+    <div class="col-12 col-md-11">
+      <section class="intro intro--product-detail">
+        <div class="row align-items-center justify-content-center">
+          <div class="col-12">
+            <h1 class="intro__title">Správa zbožových srovnávačů</h1>
+            <p class="intro__text">Zapomeňte na bidování jednotné ceny pro všechny výrobky, zapomeňte i na bidování na
+              všechny výrobky. Správa zbožových srovnávačů je vyšší dívčí a k tomu, abyste uspěli, je potřeba i trocha
+              automatizace.</p>
+            <a href="#content" class="button-secondary">Zjistit více</a>
+          </div>
+        </div>
+      </section>
+      <section id="content">
+        <div class="software software--products reveal-up100">
+          <div class="software__item">
+            <div class="software__icon">
+              <img src="@images/icons/marketing/srovnavace/audit-xml-feedu.svg">
+            </div>
+            <h3 class="software__title">Audit XML feedu
+            </h3>
+            <p class="software__text">
+              Zpracujeme analýzu vašeho XML feedu pro jednotlivé zbožové srovnávače a najdeme prostor pro zlepšení
+            </p>
+          </div>
+          <div class="software__item">
+            <div class="software__icon">
+              <img src="@images/icons/marketing/srovnavace/chytry-bidding.svg">
+            </div>
+            <h3 class="software__title">Chytrý bidding
+            </h3>
+            <p class="software__text">
+              Projdeme spolu jednotlivé položky nebo kategorie položek a vyzdvihneme právě ty, které si to zaslouží
+            </p>
+          </div>
+        </div>
+
+        <div class="software software--products reveal-up100">
+          <div class="software__item">
+            <div class="software__icon">
+              <img src="@images/icons/marketing/srovnavace/automatizace.svg">
+            </div>
+            <h3 class="software__title">Automatizace</h3>
+            <p class="software__text">
+              Díky chytrým technologiím umíme spravovat jednopoložkové eshopy stejně jako eshopy s desetitisíci
+              položkami
+            </p>
+          </div>
+          <div class="software__item">
+            <div class="software__icon">
+              <img src="@images/icons/marketing/srovnavace/kontinualni-sprava.svg">
+            </div>
+            <h3 class="software__title">Kontinuální správa
+            </h3>
+            <p class="software__text">
+              Průběžně spravujeme vaše portfolio produktů a vyhodnocujeme výsledky, proto budete investovat pouze tam,
+              kde
+              to má smysl
+            </p>
+          </div>
+        </div>
+      </section>
+    </div>
+  </div>
+</div>
+
+
+{% include "src/views/partials/contact-banner.html" %}
+{% endblock %}

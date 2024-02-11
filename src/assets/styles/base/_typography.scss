@@ -181,7 +181,7 @@ a {
     font-weight: 400;
     line-height: normal;
     margin-bottom: 0;
-    @include mixins.respond-to(sm) {
+    @include mixins.respond-to(md) {
       font-size: 22px;
     }
   }
@@ -192,7 +192,7 @@ a {
   &__right {
     display: flex;
     align-items: center;
-    @include mixins.respond-to(sm) {
+    @include mixins.respond-to(md) {
       display: none;
     }
     a {
@@ -251,7 +251,7 @@ a {
     align-items: center;
     justify-content: center;
     margin-right: 24px;
-    @include mixins.respond-to(sm) {
+    @include mixins.respond-to(md) {
       display: none;
     }
     &--pohoda {

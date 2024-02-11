@@ -4,8 +4,9 @@
     display: flex;
     justify-content: space-between;
     padding: 100px;
-    @include mixins.respond-to(sm) {
+    @include mixins.respond-to(md) {
         padding: 0;
+        padding-bottom: 30px;
         display: flex;
         flex-wrap: nowrap;
         overflow-x: auto;
@@ -17,7 +18,7 @@
       }
     &__item {
         width: 220px;
-        @include mixins.respond-to(sm) {
+        @include mixins.respond-to(md) {
             flex: 0 0 auto;
             margin-right: 50px;
         }
@@ -94,7 +95,7 @@
         line-height: 30px;
     }
     &--reference {
-        @include mixins.respond-to(sm) {
+        @include mixins.respond-to(md) {
             padding: 40px 10px;
         }
         .software__icon {
@@ -120,8 +121,18 @@
         }
     }
     &--products {
-        @include mixins.respond-to(sm) {
+        padding-bottom: 0;
+        justify-content: flex-start;
+        gap: 150px;
+        @include mixins.respond-to(xl) {
+            gap: 100px;
+        }
+        @include mixins.respond-to(lg) {
+            gap: 50px;
+        }
+        @include mixins.respond-to(md) {
             padding: 40px 10px;
+            gap: 20px;
         }
         .software__icon {
             width: 46px;
@@ -145,6 +156,63 @@
             &::after {
                 content: none;
             }
+        }
+    }
+
+    &--marketing {
+        justify-content: flex-start;
+        gap: 150px;
+        background-color: rgba(7, 0, 88, 0.05);
+        border-radius: 15px;
+        padding: 50px 70px;
+        margin: 50px 80px 80px 20px;
+        @include mixins.respond-to(xl) {
+            gap: 100px;
+            margin-right: 50px;
+        }
+        @include mixins.respond-to(lg) {
+            padding: 40px;
+            gap: 50px;
+            margin-right: 20px;
+            margin-left: 0;
+        }
+        @include mixins.respond-to(md) {
+            padding: 40px 20px;
+            gap: 20px;
+            margin-right: 0;
+            margin-left: 0;
+        }
+        .software__icon {
+            width: 46px;
+            height: 46px;
+            justify-content: center;
+            align-items: center;
+            border-radius: 50%;
+            background-color: #fff;
+            img {
+                height: auto;
+                width: auto;
+            }
+        }
+        .software__title {
+            cursor: default;
+            &:hover {
+                &::before {
+                    content: none;
+                }
+            }
+            &::after {
+                content: none;
+            }
+        }
+        .software__text {
+            color: rgba(7, 0, 88, 0.80);
+            font-feature-settings: 'clig' off, 'liga' off;
+            font-family: Epilogue;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 28px;
         }
     }
 }

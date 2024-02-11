@@ -85,14 +85,14 @@ body {
   top: 0;
   &--index {
     left: 37%;
-    @include mixins.respond-to(sm) {
+    @include mixins.respond-to(md) {
       left: 0;
       right: 0;
     }
   }
   &--product {
     left: 60px;
-    @include mixins.respond-to(sm) {
+    @include mixins.respond-to(md) {
       left: 0;
     }
   }
@@ -111,7 +111,7 @@ body {
       pointer-events: none;
       background-position: center;
   }
-  @include mixins.respond-to(sm) {
+  @include mixins.respond-to(md) {
     &::after {
       background-size: 450px; 
       background-size: 100%;

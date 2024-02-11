@@ -20,6 +20,10 @@
     }
     &__image {
         margin-top: 200px;
+        @include mixins.respond-to(md) {
+            margin-top: 100px;
+            margin-bottom: 100px;
+           }
         @include mixins.respond-to(sm) {
            margin-top: 50px;
            margin-bottom: 50px;
@@ -37,13 +41,13 @@
     overflow: hidden;
     .col {
         width: 20%;
-        @include mixins.respond-to(sm) {
+        @include mixins.respond-to(md) {
             flex-wrap: nowrap;
             width: 80%;
           }
     }
     .row {
-        @include mixins.respond-to(sm) {
+        @include mixins.respond-to(md) {
             display: flex;
             flex-wrap: nowrap;
             overflow-y: auto;
@@ -134,7 +138,7 @@
         opacity: 0.12;
         z-index: 0;
         @include mixins.respond-to(sm) {
-            left: 60;
+            left: 60px;
             transform: translateX(0);
           }
     }

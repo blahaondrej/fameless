@@ -5,7 +5,7 @@
     border-radius: 20px;
     background: #FFF;
     position: relative;
-    @include mixins.respond-to(sm) {
+    @include mixins.respond-to(md) {
         margin: 100px 0;
       }
     &__bubble {
@@ -20,6 +20,10 @@
         background-position: bottom;
         background-size: 100%;
         height: 100%;
+        @include mixins.respond-to(md) {
+            width: 150px;
+            left: 3%;
+          }
     }
     &__inner {
         z-index: 1;
@@ -31,8 +35,8 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        @include mixins.respond-to(sm) {
-            padding: 60px 20px 180px 20px;
+        @include mixins.respond-to(md) {
+            padding: 60px 20px 100px 20px;
           }
         &::after {
             content: '';
@@ -103,7 +107,7 @@
         font-style: normal;
         font-weight: 600;
         line-height: 102.083%;
-        @include mixins.respond-to(sm) {
+        @include mixins.respond-to(md) {
             font-size: 28px;
           }
     }

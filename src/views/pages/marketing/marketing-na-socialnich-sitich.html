@@ -1,0 +1,135 @@
+{% extends "src/views/layouts/default.html" %}
+
+<!-- set variables used in layout -->
+{% set title="Marketing na sociálních sítích" %}
+
+{% block styles %}
+<!-- load specific page style -->
+
+{% endblock %}
+
+{% block scripts %}
+<!-- load specific page script -->
+
+{% endblock %}
+
+{% block content %}
+
+<div class="circle-background circle-background--product"></div>
+<nav aria-label="Breadcrumb">
+  <ol class="breadcrumbs">
+    <li><a href="/"><img src="@images/icons/home-icon.svg"></a></li>
+    <li><a href="../marketing/index.html">Markeging</a></li>
+    <li><a href="#">Marketing na sociálních sítích</a></li>
+  </ol>
+</nav>
+<div class="product-detail">
+  <div class="row">
+    <div class="col-12 col-md-1">
+      <div class="sticky-element">
+        <div class="sticky-element__image">
+          <img src="@images/icons/marketing/socialy/sticky-icon-socialy.svg">
+        </div>
+        <div class="sticky-element__text">
+          Marketing na sociálních sítích
+        </div>
+      </div>
+    </div>
+    <div class="col-12 col-md-11">
+      <section class="intro intro--product-detail">
+        <div class="row align-items-center justify-content-center">
+          <div class="col-12">
+            <h1 class="intro__title">Marketing na sociálních sítích</h1>
+            <p class="intro__text">Vhodná a efektivní strategie na sociálních sítích vám pomůže lépe se spojit s vašimi
+              zákazníky</p>
+            <a href="#content" class="button-secondary">Zjistit více</a>
+          </div>
+        </div>
+      </section>
+      <section id="content">
+        <div class="row">
+          <div class="marketing__quote mt-auto">
+            <div class="studie-bottom__quote">
+              Využíváte čas Vašich potenciálních zákazníků dostatečně? „Průměrně stráví uživatel sociálních sítí
+              „on-line“
+              dvě hodiny denně“
+            </div>
+            <div class="studie-bottom__position">Zdroj: Global Web Index 2016</div>
+          </div>
+        </div>
+
+        <div class="software software--products reveal-up100">
+          <div class="software__item">
+            <div class="software__icon">
+              <img src="@images/icons/marketing/socialy/socialni-strategie.svg">
+            </div>
+            <h3 class="software__title">Sociální strategie
+            </h3>
+            <p class="software__text">
+              Základním kamenem pro úspěch na sociálních sítích je silná a kreativní strategie. Společně vybereme vhodné
+              techniky a uvedeme do života konkrétní kreativní nápady
+            </p>
+          </div>
+          <div class="software__item">
+            <div class="software__icon">
+              <img src="@images/icons/marketing/socialy/kreativni-obsah.svg">
+            </div>
+            <h3 class="software__title">Kreativní obsah
+            </h3>
+            <p class="software__text">
+              Dáme Vašim zákazníkům obsah, který si žádají, a ti již nebudou chtít nakupovat jinde
+            </p>
+          </div>
+          <div class="software__item">
+            <div class="software__icon">
+              <img src="@images/icons/marketing/socialy/zakaznicke-publikum.svg">
+            </div>
+            <h3 class="software__title">Zákaznické publikum
+            </h3>
+            <p class="software__text">
+              Vybudujeme společně kolem Vaší značky loajální komunitu zákazníků
+            </p>
+          </div>
+        </div>
+
+        <div class="software software--products reveal-up100">
+          <div class="software__item">
+            <div class="software__icon">
+              <img src="@images/icons/marketing/socialy/reputace-znacky.svg">
+            </div>
+            <h3 class="software__title">Reputace značky</h3>
+            <p class="software__text">
+              Pomůžeme vám získat cenné informace o tom, jakou reputaci má vaše značka mezi zákazníky a jaké reakce mezi
+              nimi vyvolává
+            </p>
+          </div>
+          <div class="software__item">
+            <div class="software__icon">
+              <img src="@images/icons/marketing/socialy/budovani-znacky.svg">
+            </div>
+            <h3 class="software__title">Budování značky
+            </h3>
+            <p class="software__text">
+              Šiřte poselství své značky díky síle sociálních sítí rychle a efektivně
+            </p>
+          </div>
+          <div class="software__item">
+            <div class="software__icon">
+              <img src="@images/icons/marketing/socialy/analytika-a-reporting.svg">
+            </div>
+            <h3 class="software__title">Analytika a reporting
+            </h3>
+            <p class="software__text">
+              Před začátkem každé kampaně stanovíme konkrétní cíle a jejich metriky, proto bude vždy zřejmé, jak si vaše
+              „sociální investice“ stojí
+            </p>
+          </div>
+        </div>
+      </section>
+    </div>
+  </div>
+</div>
+
+
+{% include "src/views/partials/contact-banner.html" %}
+{% endblock %}

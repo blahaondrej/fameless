@@ -1,0 +1,165 @@
+{% extends "src/views/layouts/default.html" %}
+
+<!-- set variables used in layout -->
+{% set title="Email Marketing" %}
+
+{% block styles %}
+<!-- load specific page style -->
+
+{% endblock %}
+
+{% block scripts %}
+<!-- load specific page script -->
+
+{% endblock %}
+
+{% block content %}
+
+<div class="circle-background circle-background--product"></div>
+<nav aria-label="Breadcrumb">
+  <ol class="breadcrumbs">
+    <li><a href="/"><img src="@images/icons/home-icon.svg"></a></li>
+    <li><a href="../marketing/index.html">Markeging</a></li>
+    <li><a href="#">Email Marketing</a></li>
+  </ol>
+</nav>
+<div class="product-detail">
+  <div class="row">
+    <div class="col-12 col-md-1">
+      <div class="sticky-element">
+        <div class="sticky-element__image">
+          <img src="@images/icons/marketing/email/sticky-icon-email.svg">
+        </div>
+        <div class="sticky-element__text">
+          Email Marketing
+        </div>
+      </div>
+    </div>
+    <div class="col-12 col-md-11">
+      <section class="intro intro--product-detail">
+        <div class="row align-items-center justify-content-center">
+          <div class="col-12">
+            <h1 class="intro__title">Email Marketing</h1>
+            <p class="intro__text">Pozvedněte úrověň své přímé komunikace se zákazníky.</p>
+            <a href="#content" class="button-secondary">Zjistit více</a>
+          </div>
+        </div>
+      </section>
+      <section id="content">
+        <div class="software software--products reveal-up100">
+          <div class="software__item">
+            <div class="software__icon">
+              <img src="@images/icons/marketing/email/inteligentni-emailing.svg">
+            </div>
+            <h3 class="software__title">Inteligentní emailing
+            </h3>
+            <p class="software__text">
+              Nepřipusťte, aby Vaše značka byla jen „brokovnicovým rozesílačem“ newsletterů, které nikdo nečte. Využijte
+              naplno svých zákaznických znalostí a nabízejte zákazníkům pouze to, co chtějí
+            </p>
+          </div>
+          <div class="software__item">
+            <div class="software__icon">
+              <img src="@images/icons/marketing/email/automatizace-email.svg">
+            </div>
+            <h3 class="software__title">Automatizace
+            </h3>
+            <p class="software__text">
+              Zautomatizujte svůj emailing tak, aby byl schopný pružně zvyšovat efektivitu vašeho podnikání. Na míru vám
+              připravíme automatizované kampaně jako opuštěný košík nebo budování loajality
+            </p>
+          </div>
+          <div class="software__item">
+            <div class="software__icon">
+              <img src="@images/icons/marketing/email/technicke-zajisteni.svg">
+            </div>
+            <h3 class="software__title">Technické zajištění</h3>
+            <p class="software__text">
+              Kompletně obstaráme úkony spojené s technickým nastavením (nastavení propojení, dynamizace a kódování HTML
+              šablon, ...) a poradíme vám se správnou implementací SPF, DKIM včetně nejmodernější technologie DMARC.
+            </p>
+          </div>
+        </div>
+
+        <div class="software software--products reveal-up100">
+          <div class="software__item">
+            <div class="software__icon">
+              <img src="@images/icons/marketing/email/vysoka-mira-personalizace.svg">
+            </div>
+            <h3 class="software__title">Vysoká míra personalizace
+            </h3>
+            <p class="software__text">
+              Personalizace dnes není jen oslovení zákazníka jménem a příjmením, ale kompletní, na míru postavené
+              sdělení
+              či nabídka
+            </p>
+          </div>
+          <div class="software__item">
+            <div class="software__icon">
+              <img src="@images/icons/marketing/email/statistiky.svg">
+            </div>
+            <h3 class="software__title">Statistiky</h3>
+            <p class="software__text">
+              Nejdůležitější součástí emailingu je analýza jeho efektivity. S námi získáte o svých mailingových
+              kampaních
+              větší přehled, než jste si kdy dokázali představit
+            </p>
+          </div>
+          <div class="software__item">
+            <div class="software__icon">
+              <img src="@images/icons/marketing/email/segmentace.svg">
+            </div>
+            <h3 class="software__title">Segmentace
+            </h3>
+            <p class="software__text">
+              Zaměříme se na zvýšení doručitelnosti skrze odstranění faktorů, které ji negativně ovlivňují. Očistíme
+              vaši
+              databázi od spamových pastí a dalších nástrah, které vám kazí reputaci. Na základě umělé inteligenci
+              vyhodnotíme, jak reagují vaši příjemci, a výsledky zužitkujeme při nastavování jednotlivých kampaní.
+            </p>
+          </div>
+        </div>
+
+        <div class="products__inner">
+          <div class="row justify-content-md-center align-items-center">
+            <div class="col-12 col-md-6 col-lg-4">
+              <div class="products__item products__item--left reveal-opacity">
+                <div class="products__images justify-content-center">
+                  <img class="product-bg" src="@images/marketing/email/email-marketing.png">
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4">
+              <div class="products__item">
+                <h2 class="products__title">Email marketing je jednou z nejefektivnějších cest, jak komunikovat se
+                  zákazníky.</h2>
+                <p class="products__text">Každý marketingový kanál má svá specifika. Pro jednotlivé projekty
+                  individuálně
+                  navrhujeme vyváženou a synergickou strategii mezi vhodnými marketingovými kanály.</p>
+                <p class="products__text">Nebojíme se Vás od některých on-line aktivit odradit ani Vám doporučit
+                  vhodnější
+                  off-line aktivity nebo prostředky.</p>
+                <p class="products__text">Náš úspěch je pevně svázán s Vaším úspěchem.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-md-8 col-lg-5 offset-md-2 offset-lg-5">
+          <div class="studie-bottom__text reveal-up100">
+            <h2>
+              Komunikujte se svými zákazníky jako s lidmi:
+            </h2>
+            <p>Cílem našich kampaní není posílat denně miliony emailů, které skončí ve spamu nebo je zákazníci vůbec
+              neotevřou.</p>
+            </p>
+          </div>
+        </div>
+      </section>
+    </div>
+  </div>
+</div>
+
+
+{% include "src/views/partials/contact-banner.html" %}
+{% endblock %}

@@ -1,0 +1,135 @@
+{% extends "src/views/layouts/default.html" %}
+
+<!-- set variables used in layout -->
+{% set title="Copywriting / obsahový marketing" %}
+
+{% block styles %}
+<!-- load specific page style -->
+
+{% endblock %}
+
+{% block scripts %}
+<!-- load specific page script -->
+
+{% endblock %}
+
+{% block content %}
+
+<div class="circle-background circle-background--product"></div>
+<nav aria-label="Breadcrumb">
+  <ol class="breadcrumbs">
+    <li><a href="/"><img src="@images/icons/home-icon.svg"></a></li>
+    <li><a href="../marketing/index.html">Markeging</a></li>
+    <li><a href="#">Copywriting / obsahový marketing</a></li>
+  </ol>
+</nav>
+<div class="product-detail">
+  <div class="row">
+    <div class="col-12 col-md-1">
+      <div class="sticky-element">
+        <div class="sticky-element__image">
+          <img src="@images/icons/marketing/copywriting/sticky-icon-copywriting.svg">
+        </div>
+        <div class="sticky-element__text">
+          Copywriting / obsahový marketing
+        </div>
+      </div>
+    </div>
+    <div class="col-12 col-md-11">
+      <section class="intro intro--product-detail">
+        <div class="row align-items-center justify-content-center">
+          <div class="col-12">
+            <h1 class="intro__title">Copywriting / obsahový marketing</h1>
+            <p class="intro__text">Pomužeme Vám s tím, aby se z návštěvníka či čtenáře Vašeho webu stal zákazník, který
+              se rád vrací</p>
+            <a href="#content" class="button-secondary">Zjistit více</a>
+          </div>
+        </div>
+      </section>
+      <section id="content">
+        <div class="software software--products reveal-up100">
+          <div class="software__item">
+            <div class="software__icon">
+              <img src="@images/icons/marketing/copywriting/obsahove-strategie.svg">
+            </div>
+            <h3 class="software__title">Obsahová strategie
+            </h3>
+            <p class="software__text">
+              Společně vytvoříme obsahovou strategii, která bude magnetem pro stávající i budoucí zákazníky
+            </p>
+          </div>
+          <div class="software__item">
+            <div class="software__icon">
+              <img src="@images/icons/marketing/copywriting/tvorba-obsahu.svg">
+            </div>
+            <h3 class="software__title">Tvorba obsahu
+            </h3>
+            <p class="software__text">
+              Máte spoustu obsahových nápadů, ale nemáte čas na psaní? Texty nemusíte tvořit sami, rádi se staneme
+              architekty textů, které vzejdou z vašich myšlenek
+            </p>
+          </div>
+        </div>
+
+        <div class="software software--products reveal-up100">
+          <div class="software__item">
+            <div class="software__icon">
+              <img src="@images/icons/marketing/copywriting/rozsirovani-obsahu.svg">
+            </div>
+            <h3 class="software__title">Rozšiřování obsahu</h3>
+            <p class="software__text">
+              Pravidelně budeme rozšiřovat obsah vašeho projektu o texty, které zaujmou stávající a přivedou nové
+              zákazníky
+            </p>
+          </div>
+          <div class="software__item">
+            <div class="software__icon">
+              <img src="@images/icons/marketing/copywriting/revize-textu.svg">
+            </div>
+            <h3 class="software__title">Revize textů</h3>
+            <p class="software__text">
+              Tvoříte sami texty? Ale nejste si jisti uchopením textu a stylistikou? Zrevidujeme a zedituje Váše texty
+            </p>
+          </div>
+        </div>
+
+        <div class="products__inner">
+          <div class="row justify-content-md-center align-items-center">
+            <div class="col-12 col-md-6 col-lg-4">
+              <div class="products__item products__item--left reveal-opacity">
+                <div class="products__images justify-content-center">
+                  <img class="product-bg" src="@images/marketing/copywriting/copywriting.png">
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4">
+              <div class="products__item">
+                <p class="products__text">Správně strukturovaný, relevantní obsah je jednou z nejdůležitějších součástí
+                  každého webu. K dobré propagaci patří kvalitní obsahová náplň. Pomůžeme Vám obsahově vyniknout ve
+                  Vašem
+                  oboru. Tvoříme žánrově rozmanité texty s ohledem na cílovou skupinu.</p>
+                <p class="products__text">Sdělte nám, co se má Váš klient dozvědět, a my vytvoříme z Vaší ideji v
+                  atraktivní text.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-md-8 col-lg-5 offset-md-2 offset-lg-5">
+          <div class="studie-bottom__text reveal-up100">
+            <p>Elegantní, hravé, vtipné i věcné, Vaše sdělení může mít mnoho podob, my po konzultaci s Vámi sestavíme
+              tu,
+              která nejlépe odráží Vás záměr a cíl.</p>
+            <p>Nejen forma, i obsah je důležitou součástí strategie Vašeho rozvoje. Využijte obsahový potenciál Vaše
+              webu,
+              e-shopu nebo projektu naplno.</p>
+          </div>
+        </div>
+      </section>
+    </div>
+  </div>
+</div>
+
+
+{% include "src/views/partials/contact-banner.html" %}
+{% endblock %}

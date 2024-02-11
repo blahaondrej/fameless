@@ -1,0 +1,137 @@
+{% extends "src/views/layouts/default.html" %}
+
+<!-- set variables used in layout -->
+{% set title="SEO" %}
+
+{% block styles %}
+<!-- load specific page style -->
+
+{% endblock %}
+
+{% block scripts %}
+<!-- load specific page script -->
+
+{% endblock %}
+
+{% block content %}
+
+<div class="circle-background circle-background--product"></div>
+<nav aria-label="Breadcrumb">
+  <ol class="breadcrumbs">
+    <li><a href="/"><img src="@images/icons/home-icon.svg"></a></li>
+    <li><a href="../marketing/index.html">Markeging</a></li>
+    <li><a href="#">SEO (optimalizace pro vyhledávače)</a></li>
+  </ol>
+</nav>
+<div class="product-detail">
+  <div class="row">
+    <div class="col-12 col-md-1">
+      <div class="sticky-element">
+        <div class="sticky-element__image">
+          <img src="@images/icons/marketing/seo/sticky-icon-seo.svg">
+        </div>
+        <div class="sticky-element__text">
+          SEO (optimalizace pro vyhledávače)
+        </div>
+      </div>
+    </div>
+    <div class="col-12 col-md-11">
+      <section class="intro intro--product-detail">
+        <div class="row align-items-center justify-content-center">
+          <div class="col-12">
+            <h1 class="intro__title">SEO (optimalizace pro vyhledávače)</h1>
+            <p class="intro__text">Tvoření kvalitního obsahu, funkčních bannerů, získání zpětných odkazů v dostatečném
+              množství a kvalitě vašeho webu v přirozené návštěvnosti.</p>
+            <a href="#content" class="button-secondary">Zjistit více</a>
+          </div>
+        </div>
+      </section>
+      <section id="content">
+        <div class="software software--products reveal-up100">
+          <div class="software__item">
+            <div class="software__icon">
+              <img src="@images/icons/marketing/seo/link-building.svg">
+            </div>
+            <h3 class="software__title">Link Building
+            </h3>
+            <p class="software__text">
+              Tak jako v životě potřebujete dobrá doporučení. Budeme pracovat na tom, aby Vás doporučovaly relevantní
+              weby
+              s kvalitním obsahem
+            </p>
+          </div>
+          <div class="software__item">
+            <div class="software__icon">
+              <img src="@images/icons/marketing/seo/synergie.svg">
+            </div>
+            <h3 class="software__title">Synergie
+            </h3>
+            <p class="software__text">
+              Společně vymyslíme zajímavé kampaně, které synergicky provážou Vaše neplacené aktivity s aktivitami
+              placenými
+            </p>
+          </div>
+          <div class="software__item">
+            <div class="software__icon">
+              <img src="@images/icons/marketing/seo/one-page-seo.svg">
+            </div>
+            <h3 class="software__title">One-Page SEO</h3>
+            <p class="software__text">
+              Umožnit zákazníkům i vyhledávačům, aby se dobře orientovali na webu, je základem. Jedná se o pravidla,
+              která
+              je vhodné dodržovat.
+            </p>
+          </div>
+        </div>
+
+        <div class="products__inner">
+          <div class="row justify-content-md-center align-items-center">
+            <div class="col-12 col-md-6 col-lg-4">
+              <div class="products__item products__item--left reveal-opacity">
+                <div class="products__images justify-content-center">
+                  <img class="product-bg" src="@images/marketing/seo/seo.png">
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4">
+              <div class="products__item">
+                <p class="products__text">Vytváříme SEO analýzy, které poskytnou podrobný technický i obsahový náhled
+                  (on-page faktory) na web nebo e-shop. Součástí je i analýza odkazovaného profilu (off-page faktory).
+                  Kombinujeme prvky, jenž vedou k základnímu zhodnocení kritérií použitelnosti a přístupnosti webu přímo
+                  ovlivňující SEO.</p>
+                <p class="products__text">Doporučíme Vám klíčová slova a fráze, na které je dobré zaměřit celkovou
+                  optimalizaci, a zvýšit tak potenciální zobrazení vašeho webu. Po aplikaci závěrů SEO analýzy klient
+                  získá základ pro trvalý přísun návštěvníků webu z vyhledávačů Google, Seznam i dalších.</p>
+                <p class="products__text">Zároveň budeme schopni identifikovat obsahové on-page problémy a off-page
+                  faktory, které je následně nutné řešit v rámci dlouhodobější SEO správy.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-md-8 col-lg-5 offset-md-2 offset-lg-5">
+          <div class="studie-bottom__text reveal-up100">
+            <p>Pomůžeme Vám vyřešit SEO správu i dlouhodobě, abychom Vám zajistili více zobrazení a relevantní
+              návštěvnosti. Zaměřujeme se primárně na SEO ve vyhledávačích Seznam a Google, doplňkově pro vyhledávač
+              Bing.
+            </p>
+
+            <p>Firmám s oblastním působením nabízíme lokální SEO, které dokáže efektivně oslovit zákazníky v okolí.
+              Předložíme rozsah prací, které jsou nutné pro uskutečnění kvalitní optimalizace. Aktivně se podílíme na
+              navrhování úprav stránek s ohledem na měnící se SEO požadavky vyhledávačů a pravidelně zjišťujeme posun
+              pozic webů vůči konkurenci.</p>
+
+            <p>Na základě výsledků doporučíme či ihned provádíme potřebné korekce. Průběžně sledujeme zpětné odkazy na
+              web, vyhodnocujeme a předcházíme možným penalizacím ze strany vyhledávačů.</p>
+
+            </p>
+          </div>
+        </div>
+      </section>
+    </div>
+  </div>
+</div>
+
+
+{% include "src/views/partials/contact-banner.html" %}
+{% endblock %}

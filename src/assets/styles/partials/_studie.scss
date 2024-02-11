@@ -23,6 +23,10 @@
     width: 100%;
     border-radius: 20px;
     margin-bottom: 10px;
+    @include mixins.respond-to(md) {
+        margin-bottom: 20px;
+        height: 350px;
+     }
     }
 
     .swiper-detail-blog {
@@ -36,6 +40,9 @@
     height: 120px;
     box-sizing: border-box;
     padding: 10px 0;
+        @include mixins.respond-to(md) {
+         display: none;
+      }
     }
 
     .swiper-detail-studie .swiper-slide {
@@ -75,12 +82,12 @@
 }
 .studie-detail {
     padding: 0 150px 50px 50px;
-    @include mixins.respond-to(sm) {
-        padding: 20px 0;
+    @include mixins.respond-to(md) {
+        padding: 0;
       }
     &__labels {
         margin-bottom: 40px;
-        @include mixins.respond-to(sm) {
+        @include mixins.respond-to(md) {
             margin-bottom: 20px;
           }
         >.label {
@@ -96,10 +103,11 @@
             padding: 0 30px;
             height: 24px;
             margin: 10px;
+            margin-top: 0;
             display: inline-flex;
             align-items: center;
             justify-content: center;
-            @include mixins.respond-to(sm) {
+            @include mixins.respond-to(md) {
                 margin: 5px;
               }
             &:first-child {
@@ -114,7 +122,7 @@
         font-weight: 400;
         line-height: 42px;
         margin-bottom: 30px;
-        @include mixins.respond-to(sm) {
+        @include mixins.respond-to(md) {
             margin-bottom: 20px;
           }
     }
@@ -192,9 +200,10 @@
         border-radius: 32px;
         background: rgba(8, 0, 92, 0.05);
         margin-bottom: 70px;
-        @include mixins.respond-to(sm) {
+        @include mixins.respond-to(md) {
             max-height: 280px;
             width: 100%;
+            margin-bottom: 30px;
           }
         img {
             width: 250px;
@@ -202,7 +211,7 @@
             bottom: 0;
             transform: translateX(-50%);
             left: 50%;
-            @include mixins.respond-to(sm) {
+            @include mixins.respond-to(md) {
                 width: 60%;
                 height: auto;
               }
@@ -214,7 +223,7 @@
         font-style: normal;
         font-weight: 400;
         line-height: 43px; 
-        @include mixins.respond-to(sm) {
+        @include mixins.respond-to(md) {
             font-size: 26px;
             line-height: 34px;
           }
@@ -229,7 +238,7 @@
         font-style: normal;
         font-weight: 600;
         line-height: 30px;
-        @include mixins.respond-to(sm) {
+        @include mixins.respond-to(md) {
             font-size: 20px;
           }
     }

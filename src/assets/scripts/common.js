@@ -364,12 +364,12 @@ $(window).on('scroll', function() {
 
 $(document).ready(function(){
   function moveBlogTopImage() {
-      if ($(window).width() < 991) {
+      if ($(window).width() < 768) {
           $('.blog-top-image').insertAfter('.studie-detail__title');
       }
   }
   function moveStudieTopImage() {
-    if ($(window).width() < 991) {
+    if ($(window).width() < 768) {
         $('.studie-top__wrapper').insertAfter('.studie-detail__title');
     }
   }

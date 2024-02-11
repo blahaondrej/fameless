@@ -1,0 +1,161 @@
+{% extends "src/views/layouts/default.html" %}
+
+<!-- set variables used in layout -->
+{% set title="Products" %}
+
+{% block styles %}
+<!-- load specific page style -->
+
+{% endblock %}
+
+{% block scripts %}
+<!-- load specific page script -->
+
+{% endblock %}
+
+{% block content %}
+
+<div class="circle-background circle-background--product"></div>
+<nav aria-label="Breadcrumb">
+  <ol class="breadcrumbs">
+    <li><a href="/"><img src="@images/icons/home-icon.svg"></a></li>
+    <li><a href="../marketing/index.html">Markeging</a></li>
+    <li><a href="#">Tvorba webů</a></li>
+  </ol>
+</nav>
+<div class="product-detail">
+  <div class="row">
+    <div class="col-12 col-md-1">
+      <div class="sticky-element">
+        <div class="sticky-element__image">
+          <img src="@images/icons/marketing/weby/sticky-icon-weby.svg">
+        </div>
+        <div class="sticky-element__text">
+          Tvorba webů
+        </div>
+      </div>
+    </div>
+    <div class="col-12 col-md-11">
+      <section class="intro intro--product-detail">
+        <div class="row align-items-center justify-content-center">
+          <div class="col-12">
+            <h1 class="intro__title">Tvorba webů</h1>
+            <p class="intro__text">Vytváříme weby s úmyslem uspokojit cílové skupiny i klienta z pohledu plnění
+              konverzních cílů</p>
+            <a href="#content" class="button-secondary">Zjistit více</a>
+          </div>
+        </div>
+      </section>
+      <section id="content">
+        <div class="software software--products reveal-up100">
+          <div class="software__item">
+            <div class="software__icon">
+              <img src="@images/icons/marketing/weby/reseni-pro-vas-projekt.svg">
+            </div>
+            <h3 class="software__title">Řešení pro Váš projekt
+            </h3>
+            <p class="software__text">
+              Jednostránková prezentace, firemní web nebo internetový obchod, navrhneme Vám to nejvhodnější řešení
+            </p>
+          </div>
+          <div class="software__item">
+            <div class="software__icon">
+              <img src="@images/icons/marketing/weby/prizpusobeni-cilovemu-publiku.svg">
+            </div>
+            <h3 class="software__title">Přizpůsobení cílovému publiku</h3>
+            <p class="software__text">
+              Pro maximální oslovení zákazníka přizpůsobujeme strukturu a grafiku webu přímo Vaší cílové skupině
+              uživatelů
+            </p>
+          </div>
+          <div class="software__item">
+            <div class="software__icon">
+              <img src="@images/icons/marketing/weby/responzivita.svg">
+            </div>
+            <h3 class="software__title">Responzivita</h3>
+            <p class="software__text">
+              Tvoříme responzivní weby a tím zajišťujeme vhodné zobrazení webu napříč všemi druhy zařízení (tablety,
+              mobilní telefony, atd.)
+            </p>
+          </div>
+        </div>
+
+        <div class="software software--products reveal-up100">
+          <div class="software__item">
+            <div class="software__icon">
+              <img src="@images/icons/marketing/weby/redakcni-system.svg">
+            </div>
+            <h3 class="software__title">Redakční systém
+            </h3>
+            <p class="software__text">
+              Ne každý je milovník složitostí, naše redakční systémy, proto umožňují ovládání webu bez nutnosti mít
+              hluboké technické znalosti
+            </p>
+          </div>
+          <div class="software__item">
+            <div class="software__icon">
+              <img src="@images/icons/marketing/weby/bezpecnost.svg">
+            </div>
+            <h3 class="software__title">Bezpečnost</h3>
+            <p class="software__text">
+              Abychom zajistili Vašemu projektu bezpečnost, opatřujeme naše weby SSL certifikáty
+            </p>
+          </div>
+          <div class="software__item">
+            <div class="software__icon">
+              <img src="@images/icons/marketing/weby/overene-cms.svg">
+            </div>
+            <h3 class="software__title">Ověřené a dobře použitelné CMS
+            </h3>
+            <p class="software__text">
+              Weby tvoříme „na míru“ nebo na osvědčených a dobře rozšiřitelných systémech Joomla, Wordpress a Prestashop
+            </p>
+          </div>
+        </div>
+
+        <div class="products__inner">
+          <div class="row justify-content-md-center align-items-center">
+            <div class="col-12 col-md-6 col-lg-4">
+              <div class="products__item products__item--left reveal-opacity">
+                <div class="products__images justify-content-center">
+                  <img class="product-bg" src="@images/marketing/weby/uspesny-web.png">
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4">
+              <div class="products__item">
+                <h2 class="products__title">Úspěšný web</h2>
+                <h5 class="products__subtitle">Základní předpoklady pro úspěch webové prezentace</h5>
+                <ul>
+                  <li>funkční designu webu</li>
+                  <li>vhodná informační architektura</li>
+                  <li>přizpůsobení webu cílové skupině webu a jejím specifikům</li>
+                  <li>struktuře textů a obsahu obecně</li>
+                  <li>rychlost a stabilita aplikace napříč zařízeními</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-md-8 col-lg-5 offset-md-2 offset-lg-5">
+          <div class="studie-bottom__text reveal-up100">
+            <h2>
+              Kvalitně zpracovaná webové prezentace přináší:
+            </h2>
+            <p>Každý marketingový kanál má svá specifika. Pro jednotlivé projekty individuálně navrhujeme vyváženou a
+              synergickou strategii mezi vhodnými marketingovými kanály.</p>
+            <p>Nebojíme se Vás od některých on-line aktivit odradit ani Vám doporučit vhodnější off-line aktivity nebo
+              prostředky.</p>
+            <p>Náš úspěch je pevně svázán s Vaším úspěchem.</p>
+            </p>
+          </div>
+        </div>
+      </section>
+    </div>
+  </div>
+</div>
+
+
+{% include "src/views/partials/contact-banner.html" %}
+{% endblock %}

@@ -2,9 +2,15 @@
 .product-list {
     .grid-item { 
         width: 32%;
+        @include mixins.respond-to(md) {
+            width: 48%;
+          }
         @include mixins.respond-to(sm) {
             width: 100%;
             left: 0 !important;
           }
      }
+}
+.nav-pills {
+    padding: 0 15px;
 }

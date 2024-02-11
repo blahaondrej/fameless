@@ -10,7 +10,7 @@
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.04);
     margin-bottom: 90px;
     position: relative;
-    @include mixins.respond-to(sm) {
+    @include mixins.respond-to(md) {
         padding: 40px 20px 60px 20px;
         margin-bottom: 50px;
       }
@@ -20,16 +20,20 @@
         bottom: 0;
         right: 10%;
         background-image: url('src/assets/images/icons/contact-detail-bubble.png');
-        z-index: 0;
+        z-index: 1;
         background-repeat: no-repeat;
         width: 350px;
         background-position: bottom;
         background-size: 100%;
         height: 100%;
-        @include mixins.respond-to(sm) {
+        @include mixins.respond-to(md) {
             width: 50%;
             right: 5%;
           }
+    }
+    &__right {
+        z-index: 2;
+        position: relative;
     }
     h1 {
         color: #070058;
@@ -39,7 +43,7 @@
         font-weight: 700;
         line-height: 56px;
         margin-bottom: 60px;
-        @include mixins.respond-to(sm) {
+        @include mixins.respond-to(md) {
             font-size: 32px;
             line-height: 40px;
             margin-bottom: 30px;
@@ -60,7 +64,7 @@
         font-weight: 400;
         line-height: 30px;
         max-width: 300px;
-        @include mixins.respond-to(sm) {
+        @include mixins.respond-to(md) {
             font-size: 16px;
             line-height: 26px;
           }
@@ -68,6 +72,9 @@
     form {
         display: flex;
         flex-direction: column;
+        &.hidden {
+            display: none;
+        }
     }
     &__call {
         border-radius: 12px;
@@ -80,14 +87,14 @@
         line-height: 24px;
         margin-bottom: 30px;
         padding: 12px 20px;
-        @include mixins.respond-to(sm) {
+        @include mixins.respond-to(md) {
             margin: 20px 0;
           }
         strong {
             font-weight: 600;
             font-size: 18px;
             margin-right: 25px;
-            @include mixins.respond-to(sm) {
+            @include mixins.respond-to(md) {
                 margin-right: 20px;
                 display: block;
               }
@@ -144,7 +151,7 @@
         line-height: 24px;
         border-radius: 34px;
         border: 1px solid #08005C;
-        @include mixins.respond-to(sm) {
+        @include mixins.respond-to(md) {
             margin-bottom: 30px;
           }
     }
@@ -152,7 +159,7 @@
 
 .contact-mid {
     padding-bottom: 100px;
-    @include mixins.respond-to(sm) {
+    @include mixins.respond-to(md) {
         padding-bottom: 50px;
       }
     &__item {
@@ -266,5 +273,43 @@
                 transform: scaleX(1);
             }
         }
+    }
+}
+
+.success-form {
+    display: none;
+    min-height: 400px;
+    &__title {
+        font-size: 24px;
+        line-height: 40px;
+        font-weight: 400;
+        color: #070058;
+        position: relative;
+        padding-left: 30px;
+        &::before {
+            content: '';
+            position: absolute;
+            width: 18px;
+            height: 10px;
+            top: 50%;
+            transform: translateY(-50%);
+            left: 0;
+            background-image: url('src/assets/images/icons/success-form.svg');
+        }
+    }
+    &__text {
+        p {
+            margin-bottom: 20px;
+            font-size: 18px;
+            line-height: 30px;
+            font-weight: 400;
+            a {
+                color: #070058;
+                font-weight: 700;
+            }
+        }
+    }
+    &.active {
+        display: block;
     }
 }

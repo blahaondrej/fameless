@@ -23,7 +23,12 @@
     &__inner {
         padding: 50px 60px;
         @include mixins.respond-to(sm) {
-            padding: 0;
+            padding: 20px 0;
+        }
+        &--left {
+            @include mixins.respond-to(md) {
+                display: none;
+            } 
         }
     }
     .accordion {

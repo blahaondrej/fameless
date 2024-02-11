@@ -41,7 +41,7 @@
         &:after {
             content: none;
         }
-        @include mixins.respond-to(sm) {
+        @include mixins.respond-to(md) {
             display: none;
           }
     }

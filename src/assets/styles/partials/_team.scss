@@ -3,7 +3,7 @@
 .team {
     &__inner {
         padding: 50px 20px;
-        @include mixins.respond-to(sm) {
+        @include mixins.respond-to(md) {
             padding: 30px 0 30px 20px;
           }
     }

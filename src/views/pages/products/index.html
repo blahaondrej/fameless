@@ -44,8 +44,20 @@
         type="button" role="tab" aria-controls="pills-marketing" aria-selected="false">Marketing</button>
     </li>
     <li class="nav-item" role="presentation">
-      <button class="nav-link" id="pills-system-tab" data-bs-toggle="pill" data-bs-target="#pills-system" type="button"
-        role="tab" aria-controls="pills-system" aria-selected="false">Systémová řešení</button>
+      <button class="nav-link" id="pills-vyvoj-tab" data-bs-toggle="pill" data-bs-target="#pills-vyvoj" type="button"
+        role="tab" aria-controls="pills-vyvoj" aria-selected="false">Vývoj</button>
+    </li>
+    <li class="nav-item" role="presentation">
+      <button class="nav-link" id="pills-famedash-tab" data-bs-toggle="pill" data-bs-target="#pills-famedash"
+        type="button" role="tab" aria-controls="pills-famedash" aria-selected="false">Famedash</button>
+    </li>
+    <li class="nav-item" role="presentation">
+      <button class="nav-link" id="pills-integrace-tab" data-bs-toggle="pill" data-bs-target="#pills-integrace"
+        type="button" role="tab" aria-controls="pills-integrace" aria-selected="false">Integrace systémů</button>
+    </li>
+    <li class="nav-item" role="presentation">
+      <button class="nav-link" id="pills-sklad-tab" data-bs-toggle="pill" data-bs-target="#pills-sklad" type="button"
+        role="tab" aria-controls="pills-sklad" aria-selected="false">Skladový systém</button>
     </li>
   </ul>
 
@@ -57,7 +69,7 @@
       <li class="category__item js-category__item" data-filter="web">Prezentační web</li>
       <li class="category__item js-category__item" data-filter="mobil">Mobilní aplikace</li>
       <li class="category__item js-category__item" data-filter="logo">Loga</li>
-      <li class="category__item js-category__item" data-filter="ux">Systémové UX & UI</li>
+      <!-- <li class="category__item js-category__item" data-filter="ux">Systémové UX & UI</li> -->
     </ul>
   </div>
 
@@ -170,7 +182,169 @@
         </div>
       </div>
     </div>
-    <div class="tab-pane fade" id="pills-system" role="tabpanel" aria-labelledby="pills-system-tab" tabindex="0">
+    <div class="tab-pane fade" id="pills-vyvoj" role="tabpanel" aria-labelledby="pills-vyvoj-tab" tabindex="0">
+      <div class="blog__inner grid product-list">
+        <div class="row">
+
+          <div class="grid-item filter-all  filter-shoptet filter-eshop filter-ux filter-consultant">
+            {% include "src/views/partials/blog-item.html" %}
+          </div>
+
+          <div class="grid-item filter-all filter-software filter-shoptet filter-eshop filter-logo filter-software">
+            {% include "src/views/partials/blog-item.html" %}
+          </div>
+
+          <div class="grid-item filter-all filter-software filter-shoptet filter-eshop filter-consultant">
+            {% include "src/views/partials/blog-item.html" %}
+          </div>
+
+          <div class="grid-item filter-all  filter-shoptet filter-eshop filter-consultant filter-mobil">
+            {% include "src/views/partials/blog-item.html" %}
+          </div>
+
+          <div class="grid-item filter-all filter-software filter-shoptet filter-eshop filter-ux">
+            {% include "src/views/partials/blog-item.html" %}
+          </div>
+
+          <div class="grid-item filter-all filter-software  filter-eshop filter-ux filter-consultant">
+            {% include "src/views/partials/blog-item.html" %}
+          </div>
+          <div class="grid-item filter-all  filter-shoptet filter-eshop filter-ux filter-logo filter-software">
+            {% include "src/views/partials/blog-item.html" %}
+          </div>
+
+          <div class="grid-item filter-all filter-software filter-shoptet filter-eshop filter-mobil">
+            {% include "src/views/partials/blog-item.html" %}
+          </div>
+
+          <div class="grid-item filter-all filter-software filter-shoptet filter-eshop filter-logo filter-software">
+            {% include "src/views/partials/blog-item.html" %}
+          </div>
+
+          <div class="grid-item filter-all  filter-shoptet filter-eshop filter-consultant filter-mobil filter-software">
+            {% include "src/views/partials/blog-item.html" %}
+          </div>
+
+          <div class="grid-item filter-all filter-software filter-shoptet filter-eshop filter-ux">
+            {% include "src/views/partials/blog-item.html" %}
+          </div>
+
+          <div
+            class="grid-item filter-all filter-software  filter-eshop filter-ux filter-logo filter-mobil filter-software">
+            {% include "src/views/partials/blog-item.html" %}
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="tab-pane fade" id="pills-famedash" role="tabpanel" aria-labelledby="pills-famedash-tab" tabindex="0">
+      <div class="blog__inner grid product-list">
+        <div class="row">
+
+          <div class="grid-item filter-all  filter-shoptet filter-eshop filter-ux filter-consultant">
+            {% include "src/views/partials/blog-item.html" %}
+          </div>
+
+          <div class="grid-item filter-all filter-software filter-shoptet filter-eshop filter-logo filter-software">
+            {% include "src/views/partials/blog-item.html" %}
+          </div>
+
+          <div class="grid-item filter-all filter-software filter-shoptet filter-eshop filter-consultant">
+            {% include "src/views/partials/blog-item.html" %}
+          </div>
+
+          <div class="grid-item filter-all  filter-shoptet filter-eshop filter-consultant filter-mobil">
+            {% include "src/views/partials/blog-item.html" %}
+          </div>
+
+          <div class="grid-item filter-all filter-software filter-shoptet filter-eshop filter-ux">
+            {% include "src/views/partials/blog-item.html" %}
+          </div>
+
+          <div class="grid-item filter-all filter-software  filter-eshop filter-ux filter-consultant">
+            {% include "src/views/partials/blog-item.html" %}
+          </div>
+          <div class="grid-item filter-all  filter-shoptet filter-eshop filter-ux filter-logo filter-software">
+            {% include "src/views/partials/blog-item.html" %}
+          </div>
+
+          <div class="grid-item filter-all filter-software filter-shoptet filter-eshop filter-mobil">
+            {% include "src/views/partials/blog-item.html" %}
+          </div>
+
+          <div class="grid-item filter-all filter-software filter-shoptet filter-eshop filter-logo filter-software">
+            {% include "src/views/partials/blog-item.html" %}
+          </div>
+
+          <div class="grid-item filter-all  filter-shoptet filter-eshop filter-consultant filter-mobil filter-software">
+            {% include "src/views/partials/blog-item.html" %}
+          </div>
+
+          <div class="grid-item filter-all filter-software filter-shoptet filter-eshop filter-ux">
+            {% include "src/views/partials/blog-item.html" %}
+          </div>
+
+          <div
+            class="grid-item filter-all filter-software  filter-eshop filter-ux filter-logo filter-mobil filter-software">
+            {% include "src/views/partials/blog-item.html" %}
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="tab-pane fade" id="pills-integrace" role="tabpanel" aria-labelledby="pills-integrace-tab" tabindex="0">
+      <div class="blog__inner grid product-list">
+        <div class="row">
+
+          <div class="grid-item filter-all  filter-shoptet filter-eshop filter-ux filter-consultant">
+            {% include "src/views/partials/blog-item.html" %}
+          </div>
+
+          <div class="grid-item filter-all filter-software filter-shoptet filter-eshop filter-logo filter-software">
+            {% include "src/views/partials/blog-item.html" %}
+          </div>
+
+          <div class="grid-item filter-all filter-software filter-shoptet filter-eshop filter-consultant">
+            {% include "src/views/partials/blog-item.html" %}
+          </div>
+
+          <div class="grid-item filter-all  filter-shoptet filter-eshop filter-consultant filter-mobil">
+            {% include "src/views/partials/blog-item.html" %}
+          </div>
+
+          <div class="grid-item filter-all filter-software filter-shoptet filter-eshop filter-ux">
+            {% include "src/views/partials/blog-item.html" %}
+          </div>
+
+          <div class="grid-item filter-all filter-software  filter-eshop filter-ux filter-consultant">
+            {% include "src/views/partials/blog-item.html" %}
+          </div>
+          <div class="grid-item filter-all  filter-shoptet filter-eshop filter-ux filter-logo filter-software">
+            {% include "src/views/partials/blog-item.html" %}
+          </div>
+
+          <div class="grid-item filter-all filter-software filter-shoptet filter-eshop filter-mobil">
+            {% include "src/views/partials/blog-item.html" %}
+          </div>
+
+          <div class="grid-item filter-all filter-software filter-shoptet filter-eshop filter-logo filter-software">
+            {% include "src/views/partials/blog-item.html" %}
+          </div>
+
+          <div class="grid-item filter-all  filter-shoptet filter-eshop filter-consultant filter-mobil filter-software">
+            {% include "src/views/partials/blog-item.html" %}
+          </div>
+
+          <div class="grid-item filter-all filter-software filter-shoptet filter-eshop filter-ux">
+            {% include "src/views/partials/blog-item.html" %}
+          </div>
+
+          <div
+            class="grid-item filter-all filter-software  filter-eshop filter-ux filter-logo filter-mobil filter-software">
+            {% include "src/views/partials/blog-item.html" %}
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="tab-pane fade" id="pills-sklad" role="tabpanel" aria-labelledby="pills-sklad-tab" tabindex="0">
       <div class="blog__inner grid product-list">
         <div class="row">
 

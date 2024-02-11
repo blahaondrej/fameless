@@ -55,6 +55,10 @@ module.exports = {
           import: 'src/views/pages/studie/index.html',
           filename: 'studie/index.html' // Cesta, kam se má soubor vytvořit
         },
+        blogDetail: {
+          import: 'src/views/pages/blog-detail/index.html',
+          filename: 'blog-detail/index.html' // Cesta, kam se má soubor vytvořit
+        },
         blog: {
           import: 'src/views/pages/blog/index.html',
           filename: 'blog/index.html' // Cesta, kam se má soubor vytvořit
@@ -66,6 +70,46 @@ module.exports = {
         partners: {
           import: 'src/views/pages/partners/index.html',
           filename: 'partners/index.html' // Cesta, kam se má soubor vytvořit
+        },
+        marketing: {
+          import: 'src/views/pages/marketing/index.html',
+          filename: 'marketing/index.html' // Cesta, kam se má soubor vytvořit
+        },
+        marketingBrand: {
+          import: 'src/views/pages/marketing/brand-management-a-strategie.html',
+          filename: 'marketing/brand-management-a-strategie.html' // Cesta, kam se má soubor vytvořit
+        },
+        marketingCopywriting: {
+          import: 'src/views/pages/marketing/copywriting-obsahovy-marketing.html',
+          filename: 'marketing/copywriting-obsahovy-marketing.html' // Cesta, kam se má soubor vytvořit
+        },
+        marketingEmail: {
+          import: 'src/views/pages/marketing/email-marketing.html',
+          filename: 'marketing/email-marketing.html' // Cesta, kam se má soubor vytvořit
+        },
+        marketingMarketing: {
+          import: 'src/views/pages/marketing/marketing-na-socialnich-sitich.html',
+          filename: 'marketing/marketing-na-socialnich-sitich.html' // Cesta, kam se má soubor vytvořit
+        },
+        marketingSeo: {
+          import: 'src/views/pages/marketing/seo.html',
+          filename: 'marketing/seo.html' // Cesta, kam se má soubor vytvořit
+        },
+        marketingSprava: {
+          import: 'src/views/pages/marketing/sprava-ppc.html',
+          filename: 'marketing/sprava-ppc.html' // Cesta, kam se má soubor vytvořit
+        },
+        marketingSpravaZbozi: {
+          import: 'src/views/pages/marketing/sprava-zbozovych-srovnavacu.html',
+          filename: 'marketing/sprava-zbozovych-srovnavacu.html' // Cesta, kam se má soubor vytvořit
+        },
+        marketingTvorbaWebu: {
+          import: 'src/views/pages/marketing/tvorba-webu.html',
+          filename: 'marketing/tvorba-webu.html' // Cesta, kam se má soubor vytvořit
+        },
+        marketingZlepseniPouzitelnosti: {
+          import: 'src/views/pages/marketing/zlepseni-pouzitelnosti-webu.html',
+          filename: 'marketing/zlepseni-pouzitelnosti-webu.html' // Cesta, kam se má soubor vytvořit
         },
           
         404: './src/views/pages/404/index.html', // => dist/404.html

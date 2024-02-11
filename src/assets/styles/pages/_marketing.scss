@@ -1,0 +1,11 @@
+@use '../base/mixins';
+.marketing {
+    &__quote {
+        padding: 100px;
+        padding-bottom: 0;
+        @include mixins.respond-to(md) {
+            padding: 0;
+            padding-bottom: 30px;
+          }
+    }
+}

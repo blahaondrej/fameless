@@ -4,8 +4,9 @@
     padding: 0;
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
     padding-top: 150px;
-    @include mixins.respond-to(sm) {
+    @include mixins.respond-to(md) {
         padding-top: 80px;
       }
     li {

@@ -18,9 +18,14 @@ $footer-bg-color: #15384f;
   min-height: 100px;
   margin-bottom: 50px;
   z-index: 10;
-  @include mixins.respond-to(sm) {
+  @include mixins.respond-to(md) {
     height: 50px;
     min-height: 50px;
+  }
+  .container {
+      @include mixins.respond-to(md) {
+        max-width: 100%;
+      }
   }
   &.small-header {
     min-height: auto;
@@ -34,7 +39,7 @@ $footer-bg-color: #15384f;
         opacity: 0;
         visibility: hidden;
         max-height: 0;
-        @include mixins.respond-to(sm) {
+        @include mixins.respond-to(md) {
           height: 50px;
           opacity: 1;
           visibility: visible;
@@ -77,10 +82,11 @@ $footer-bg-color: #15384f;
           animation: none;
         }
       }
+      
     }
   }
   >.container {
-    @include mixins.respond-to(sm) {
+    @include mixins.respond-to(md) {
       padding-left: 0;
       padding-right: 0;
     }
@@ -105,7 +111,7 @@ $footer-bg-color: #15384f;
       align-items: center;
       justify-content: flex-end;
       transition: all 0.2s ease-in-out;
-      @include mixins.respond-to(sm) {
+      @include mixins.respond-to(md) {
         flex-direction: column;
         width: 100%;
         align-items: flex-start;
@@ -129,7 +135,7 @@ $footer-bg-color: #15384f;
         &:hover {
           color: #1273EF;
         }
-        @include mixins.respond-to(sm) {
+        @include mixins.respond-to(md) {
           width: 100%;
           padding: 16px 20px 12px 30px;
           border-bottom: 1px solid rgba(7, 0, 88, 0.1);
@@ -151,7 +157,7 @@ $footer-bg-color: #15384f;
       }
       .header-social {
         padding-left: 16px;
-        @include mixins.respond-to(sm) {
+        @include mixins.respond-to(md) {
           display: none;
         }
         svg {
@@ -176,7 +182,7 @@ $footer-bg-color: #15384f;
       height: 44px;
       align-items: center;
       justify-content: flex-end;
-      @include mixins.respond-to(sm) {
+      @include mixins.respond-to(md) {
         flex-direction: column;
         width: 100%;
         height: auto;
@@ -234,28 +240,28 @@ $footer-bg-color: #15384f;
             &:before {
               width: 8px;
               height: 8px;
-              background: linear-gradient(180deg, #4BC6B6 0%, #37A395 100%);
+              background: linear-gradient(180deg, #2E09AE 0%, #08005C 100%);
             }
           }
           &:nth-child(3) {
             &:before {
               width: 8px;
               height: 8px;
-              background: linear-gradient(180deg, #F75544 0%, #AD2A1C 100%);
+              background: linear-gradient(180deg, #4BC6B6 0%, #37A395 100%);
             }
           }
           &:nth-child(4) {
             &:before {
               width: 8px;
               height: 8px;
-              background: linear-gradient(180deg, #2E09AE 0%, #08005C 100%);
+              background: linear-gradient(180deg, #FAAD21 0%, #D4931D 100%);
             }
           }
           &:nth-child(5) {
             &:before {
               width: 8px;
               height: 8px;
-              background: linear-gradient(180deg, #FAAD21 0%, #D4931D 100%);
+              background: linear-gradient(180deg, #F75544 0%, #AD2A1C 100%);
             }
           }
           &:last-child {
@@ -268,14 +274,14 @@ $footer-bg-color: #15384f;
               top: 2px;
               left: -24px;
             }
-            @include mixins.respond-to(sm) {
+            @include mixins.respond-to(md) {
               margin-left: 0;
               &::before {
                 display: none;
               }
             }
           }
-          @include mixins.respond-to(sm) {
+          @include mixins.respond-to(md) {
             width: 100%;
             padding: 16px 20px 12px 30px;
             border-bottom: 1px solid rgba(7, 0, 88, 0.1);
@@ -292,7 +298,7 @@ $footer-bg-color: #15384f;
           margin-left: 0;
           &::before {
             left: 0;
-            @include mixins.respond-to(sm) {
+            @include mixins.respond-to(md) {
               left: 15px;
             }
           }
@@ -300,7 +306,7 @@ $footer-bg-color: #15384f;
             width: calc(100% - 30px);
             left: 15px;
           }
-          @include mixins.respond-to(sm) {
+          @include mixins.respond-to(md) {
             margin-right: 0;
             width: 100%;
             display: inline;
@@ -315,7 +321,7 @@ $footer-bg-color: #15384f;
             display: inline-flex;
             align-items: center;
             @include mixins.animation();
-            @include mixins.respond-to(sm) {
+            @include mixins.respond-to(md) {
               margin-left: 0;
             }
             &::after {
@@ -337,7 +343,7 @@ $footer-bg-color: #15384f;
                 background-image: url('src/assets/images/icons/arrow-down-light.svg');
               }
             }
-            @include mixins.respond-to(sm) {
+            @include mixins.respond-to(md) {
               &:after {
                 top: 50%;
                 transform: translateY(-50%);
@@ -359,7 +365,7 @@ $footer-bg-color: #15384f;
             min-width: 300px;
             margin-bottom: 0;
             @include mixins.animation();
-            @include mixins.respond-to(sm) {
+            @include mixins.respond-to(md) {
               position: relative;
               opacity: 1;
               visibility: visible;
@@ -405,7 +411,7 @@ $footer-bg-color: #15384f;
           }
           &.active {
             animation: expand 2s ease-in-out forwards;
-            @include mixins.respond-to(sm) {
+            @include mixins.respond-to(md) {
               ul {
                 max-height: 1000px;
               }
@@ -420,7 +426,7 @@ $footer-bg-color: #15384f;
     min-height: 30px;
     margin-right: 20px;
     transition: all 0.3s ease-in-out;
-    @include mixins.respond-to(sm) {
+    @include mixins.respond-to(md) {
       svg {
         max-width: 140px;
       }

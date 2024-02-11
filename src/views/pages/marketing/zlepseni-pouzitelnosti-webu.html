@@ -1,0 +1,117 @@
+{% extends "src/views/layouts/default.html" %}
+
+<!-- set variables used in layout -->
+{% set title="Products" %}
+
+{% block styles %}
+<!-- load specific page style -->
+
+{% endblock %}
+
+{% block scripts %}
+<!-- load specific page script -->
+
+{% endblock %}
+
+{% block content %}
+
+<div class="circle-background circle-background--product"></div>
+<nav aria-label="Breadcrumb">
+  <ol class="breadcrumbs">
+    <li><a href="/"><img src="@images/icons/home-icon.svg"></a></li>
+    <li><a href="../marketing/index.html">Markeging</a></li>
+    <li><a href="#">Zlepšení použitelnosti webu</a></li>
+  </ol>
+</nav>
+<div class="product-detail">
+  <div class="row">
+    <div class="col-12 col-md-1">
+      <div class="sticky-element">
+        <div class="sticky-element__image">
+          <img src="@images/icons/marketing/pouzitelnost/sticky-icon-pouzitelnost.svg">
+        </div>
+        <div class="sticky-element__text">
+          Zlepšení použitelnosti webu
+        </div>
+      </div>
+    </div>
+    <div class="col-12 col-md-11">
+      <section class="intro intro--product-detail">
+        <div class="row align-items-center justify-content-center">
+          <div class="col-12">
+            <h1 class="intro__title">Zlepšení použitelnosti webu</h1>
+            <p class="intro__text">Řídíme se citátem Steva Kruga „Nenuťte uživatele přemýšlet“</p>
+            <a href="#content" class="button-secondary">Zjistit více</a>
+          </div>
+        </div>
+      </section>
+      <section id="content">
+        <div class="software software--products reveal-up100">
+          <div class="software__item">
+            <div class="software__icon">
+              <img src="@images/icons/marketing/pouzitelnost/ab-testovani.svg">
+            </div>
+            <h3 class="software__title">A/B testování</h3>
+            <p class="software__text">
+              Pro účely testování vytvoříme různé varianty typových stránek webu. Následně je náhodně předložíme skupině
+              uživatelů, což nám umožní vyhodnotit, která varianta vzhledu vede častěji ke splnění cíle a bude pro Vás
+              ideálním řešením.
+            </p>
+          </div>
+          <div class="software__item">
+            <div class="software__icon">
+              <img src="@images/icons/marketing/pouzitelnost/heatmapy.svg">
+            </div>
+            <h3 class="software__title">Heatmapy</h3>
+            <p class="software__text">
+              Analýza uživatelských cest pomocí heatmap s vizualizací kliků se zaměřuje na přímé chování návštěvníků
+              stránek. Zjistíme, zda uživatelé upírají svůj zájem směrem k plnění navigačních nebo obchodních cílů.
+            </p>
+          </div>
+        </div>
+
+        <div class="products__inner">
+          <div class="row justify-content-md-center align-items-center">
+            <div class="col-12 col-md-6 col-lg-4">
+              <div class="products__item products__item--left reveal-opacity">
+                <div class="products__images justify-content-center">
+                  <img class="product-bg" src="@images/marketing/pouzitelnost/zlepseni-pouzitelnosti-webu.png">
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4">
+              <div class="products__item">
+                <p class="products__text">Kvalitní analýza správu vašeho marketingu. Zajistíme více relevantní
+                  návštěvnost
+                  z veškerých vhodných kanálů. Nabízíme profesionální správu vašeho marketingu.
+                </p>
+                <p class="products__text">Analýza návštěvnosti
+                </p>
+                <ul>
+                  <li>Kdo jsou a kdo by měli být návštěvníci webu</li>
+                  <li>Odkud se na web dostávají a odkud naopak nepřicházejí</li>
+                  <li>Jak se na stránkách návštěvníci chovají, co je zajímá a odkud nejvíce odcházejí</li>
+                  <li>Jak zvýšit míru konverzí stránky vzhledem k návštěvnosti</li>
+                  <li>Který obor online marketingu je třeba posílit (SEO, PPC kampaně, sociální sítě atd.)</li>
+                </ul>
+                <p class="products__text">Z hlediska použitelnosti webu má svá specifika. Pro jednotlivé projekty
+                  individuálně navrhujeme vyváženou a synergickou strategii mezi vhodnými marketingovými kanály.
+                </p>
+                <p class="products__text">Nebojíme se Vás od některých on-line aktivit odradit ani Vám doporučit
+                  vhodnější
+                  off-line aktivity nebo prostředky.
+                </p>
+                <p class="products__text">Náš úspěch je pevně svázán s Vaším úspěchem.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </div>
+</div>
+
+
+{% include "src/views/partials/contact-banner.html" %}
+{% endblock %}
