@@ -79,6 +79,13 @@
             width: 100%;
             height: auto;
             position: relative;
+            &.small {
+                width: 70%;
+                text-align: center;
+                @include mixins.respond-to(md) {
+                    width: 90%;
+                }
+            }
         }
         .product-left {
             top: -10px;
