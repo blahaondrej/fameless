@@ -338,7 +338,7 @@ $footer-bg-color: #15384f;
               background-size: 100%;
               background-repeat: no-repeat;
             }
-            &:hover {
+            &:hover, &:focus {
               &::after {
                 background-image: url('src/assets/images/icons/arrow-down-light.svg');
               }

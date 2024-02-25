@@ -10,192 +10,222 @@
 
 {% block scripts %}
 <!-- load specific page script -->
-
+<script src="./products.js"></script>
 {% endblock %}
+
 
 {% block content %}
 
-<div class="circle-background circle-background--product"></div>
+<div class="circle-background circle-background--homepage"></div>
 <nav aria-label="Breadcrumb">
   <ol class="breadcrumbs">
     <li><a href="/"><img src="@images/icons/home-icon.svg"></a></li>
     <li><a href="/about/index.html">O nás</a></li>
-    <li><a href="#">Produkt</a></li>
+    <li><a href="#">Produkty</a></li>
   </ol>
 </nav>
-<div class="product-detail">
-  <div class="row">
-    <div class="col-12 col-md-1">
-      <div class="sticky-element">
-        <div class="sticky-element__image">
-          <img src="@images/icons/sticky-icon.svg">
-        </div>
-        <div class="sticky-element__text">
-          Brand management a strategie
-        </div>
-      </div>
-    </div>
-    <div class="col-12 col-md-11">
-      <section class="intro intro--product-detail">
-        <div class="row align-items-center justify-content-center">
-          <div class="col-12">
-            <h1 class="intro__title">Brand management a strategie</h1>
-            <p class="intro__text">S námi fameless opravdu nebudete. S čím pomůžeme vám?</p>
-            <a href="#content" class="button-secondary">Zjistit více</a>
-          </div>
-        </div>
-      </section>
-
-      <section id="content">
-        <div class="products__inner">
-          <div class="row justify-content-md-center align-items-center">
-            <div class="col-12 col-md-6 col-lg-4">
-              <div class="products__item products__item--left reveal-opacity">
-                <div class="products__images justify-content-center">
-                  <img class="product-left" src="@images/homepage/marketing1_block2.png">
-                  <img class="product-right" src="@images/homepage/marketing1_block1.png">
-                  <img class="product-bg" src="@images/homepage/marketing1_pc.png">
-                </div>
-              </div>
-            </div>
-            <div class="col-12 col-md-6 col-lg-4">
-              <div class="products__item">
-                <h2 class="products__title">Marketing 1</h2>
-                <h5 class="products__subtitle">O zákazníkovi vše podrobné</h5>
-                <p class="products__text">Nabízíme profesionální správu vašeho marketingu. <strong>Zajistíme</strong>
-                  více
-                  relevantní návštěvnost z veškerých vhodných kanálů. Nabízíme profesionální správu vašeho marketingu.
-                </p>
-                <a href="#" class="button-secondary">
-                  Zjistit více
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="products__inner">
-          <div class="row justify-content-md-center align-items-center">
-            <div class="col-12 col-md-6 col-lg-4 order-md-2 order-lg-2">
-              <div class="products__item products__item--right reveal-opacity">
-                <div class="products__images justify-content-center">
-                  <img class="product-left" src="@images/homepage/marketing1_block2.png">
-                  <img class="product-right" src="@images/homepage/marketing1_block1.png">
-                  <img class="product-bg" src="@images/homepage/marketing1_pc.png">
-                </div>
-              </div>
-            </div>
-            <div class="col-12 col-md-6 col-lg-4 order-md-1 order-lg-1">
-              <div class="products__item">
-                <h2 class="products__title">Marketing 2</h2>
-                <h5 class="products__subtitle">O zákazníkovi vše podrobné</h5>
-                <p class="products__text">Nabízíme profesionální správu vašeho marketingu. <strong>Zajistíme</strong>
-                  více
-                  relevantní návštěvnost z veškerých vhodných kanálů. Nabízíme profesionální správu vašeho marketingu.
-                </p>
-                <a href="#" class="button-secondary">
-                  Zjistit více
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-        <section class="stats">
-
-          <div class="stats__item reveal-up100">
-            <div class="stats__number counter" data-count="25">0</div>
-            <div class="stats__text">nových značek</div>
-          </div>
-          <div class="stats__item reveal-up300">
-            <div class="stats__number counter" data-count="100">0</div>
-            <div class="stats__text">implementace našeho skladového řešení</div>
-          </div>
-          <div class="stats__item reveal-up100">
-            <div class="stats__number counter" data-count="10">0</div>
-            <div class="stats__text">let zkušeností</div>
-          </div>
-
-        </section>
-
-        <div class="software software--products reveal-up100">
-          <div class="software__item">
-            <div class="software__icon">
-              <img src="@images/icons/marketing/brand/potencial-znacky.svg">
-            </div>
-            <h3 class="software__title">Potenciál značky</h3>
-            <p class="software__text">
-              Pochopíme potenciál vaší značky a pomůžeme vám ho plně čerpat
-            </p>
-          </div>
-          <div class="software__item">
-            <div class="software__icon">
-              <img src="@images/icons/marketing/brand/mene-vice.svg">
-            </div>
-            <h3 class="software__title">Méně může být více</h3>
-            <p class="software__text">
-              Ctíme Parretovo pravidlo, proto se plně zaměříme na aktivity, které jsou pro vaše podnikání důležité
-            </p>
-          </div>
-          <div class="software__item">
-            <div class="software__icon">
-              <img src="@images/icons/marketing/brand/nove-cesty.svg">
-            </div>
-            <h3 class="software__title">Nalezneme nové cesty</h3>
-            <p class="software__text">
-              Nezatíženi detailní znalostí vašeho produktu často vidíme příležitosti, které ostatní snadno přehlédnou
-            </p>
-          </div>
-        </div>
-        <div class="software software--products reveal-up100">
-          <div class="software__item">
-            <div class="software__icon">
-              <img src="@images/icons/marketing/brand/online.svg">
-            </div>
-            <h3 class="software__title">Propojíme on-line
-              a off-line světy</h3>
-            <p class="software__text">
-              Víme, že ne všechny cesty vedou skrz on-line svět, proto vám doporučíme vhodné synergické off-line
-              aktivity
-            </p>
-          </div>
-          <div class="software__item">
-            <div class="software__icon">
-              <img src="@images/icons/marketing/brand/vysledky.svg">
-            </div>
-            <h3 class="software__title">Měřitelné
-              výsledky</h3>
-            <p class="software__text">
-              Výstupem našich společných aktivit je strategie, která má deterministická a měřitelná kritéria
-            </p>
-          </div>
-          <div class="software__item">
-            <div class="software__icon">
-              <img src="@images/icons/marketing/brand/analytika.svg">
-            </div>
-            <h3 class="software__title">Analytika</h3>
-            <p class="software__text">
-              Spojujeme čísla a statistiky se selským rozumem
-            </p>
-          </div>
-        </div>
-        <div class="col-12 col-md-8 col-lg-5 offset-md-2 offset-lg-5">
-          <div class="studie-bottom__text reveal-up100">
-            <h2>
-              Síla je v komplexnosti
-              a strategii
-            </h2>
-            <p>Každý marketingový kanál má svá specifika. Pro jednotlivé projekty individuálně navrhujeme vyváženou a
-              synergickou strategii mezi vhodnými marketingovými kanály. </p>
-            <p>Nebojíme se Vás od některých on-line aktivit odradit ani Vám doporučit vhodnější off-line aktivity nebo
-              prostředky.</p>
-            <p>Náš úspěch je pevně svázán s Vaším úspěchem.</p>
-            </p>
-          </div>
-        </div>
-      </section>
+<section class="intro intro--products">
+  <div class="row align-items-center justify-content-center">
+    <div class="col-12">
+      <h1 class="intro__title">Strategický partner pro vaši firmu</h1>
+      <p class="intro__text">S námi fameless opravdu nebudete. S čím pomůžeme vám?</p>
+      <a href="#" class="button-secondary">Zjistit více</a>
     </div>
   </div>
-</div>
+</section>
 
+<section class="blog blog--products products-list">
+  <div class="blog__inner grid product-list">
+    <div class="row">
+      <div class="grid-item">
+        <a href="email-marketing.html" class="blog-item">
+          <div class="blog-item__image blog-item__image--detail">
+            <img class="pc-top" src="@images/icons/marketing/email/sticky-icon-email.svg">
+          </div>
+          <div class="blog-item__inner">
+            <h3 class="blog-item__title blog-item__title--detail">
+              Email Marketing
+            </h3>
+            <p class="blog-item__text blog-item__text--detail">
+              Naše automatické a personalizované kampaně vám ušetří čas i peníze. Vytvoříme pro vás funkční emailingovou
+              strategii na míru.
+            </p>
+          </div>
+          <span class="blog-item__arrow"></span>
+        </a>
+      </div>
+      <div class="grid-item">
+        <a href="sprava-ppc.html" class="blog-item">
+          <div class="blog-item__image blog-item__image--detail">
+            <img class="pc-top" src="@images/icons/marketing/ppc/sticky-icon-ppc.svg">
+          </div>
+          <div class="blog-item__inner">
+            <h3 class="blog-item__title blog-item__title--detail">
+              PPC kampaně
+            </h3>
+            <p class="blog-item__text blog-item__text--detail">
+              Neboli "zaplať za proklik" je jednoduchý, efektivní a snadno měřitelný nástroj. Navrhneme strategii PPC a
+              pracujeme podle ní na Google Adwords i Sklik.
+            </p>
+          </div>
+          <span class="blog-item__arrow"></span>
+        </a>
+      </div>
+      <div class="grid-item">
+        <a href="seo.html" class="blog-item">
+          <div class="blog-item__image blog-item__image--detail">
+            <img class="pc-top" src="@images/icons/marketing/ppc/sticky-icon-ppc.svg">
+          </div>
+          <div class="blog-item__inner">
+            <h3 class="blog-item__title blog-item__title--detail">
+              SEO (optimalizace pro vyhledávače)
+            </h3>
+            <p class="blog-item__text blog-item__text--detail">
+              Optimalizace pro vyhledávače Google a Seznam je základ. Naše SEO strategie vám pomohou umísťovat se na
+              předních příčkách ve výsledcích vyhledávačů. 
+            </p>
+          </div>
+          <span class="blog-item__arrow"></span>
+        </a>
+      </div>
+      <div class="grid-item">
+        <a href="tvorba-webu.html" class="blog-item">
+          <div class="blog-item__image blog-item__image--detail">
+            <img class="pc-top" src="@images/icons/marketing/weby/sticky-icon-weby.svg">
+          </div>
+          <div class="blog-item__inner">
+            <h3 class="blog-item__title blog-item__title--detail">
+              Tvorba webů
+            </h3>
+            <p class="blog-item__text blog-item__text--detail">
+              Tvoříme weby na míru. Zjistíme, k čemu vlastně je web určen, a přizpůsobíme tomu vlastní stavbu webu.
+            </p>
+          </div>
+          <span class="blog-item__arrow"></span>
+        </a>
+      </div>
+      <div class="grid-item">
+        <a href="brand-management-a-strategie.html" class="blog-item">
+          <div class="blog-item__image blog-item__image--detail">
+            <img class="pc-top" src="@images/icons/marketing/brand/sticky-icon-brand.svg">
+          </div>
+          <div class="blog-item__inner">
+            <h3 class="blog-item__title blog-item__title--detail">
+              Brand management<br>
+              a strategie
+            </h3>
+            <p class="blog-item__text blog-item__text--detail">
+              Vytvoříme vhodnou marketingovou strategii pro vaše podnikání. Komplexní strategie na míru a všechny služby
+              pod jednou střechou.
+            </p>
+          </div>
+          <span class="blog-item__arrow"></span>
+        </a>
+      </div>
+      <div class="grid-item">
+        <a href="brand-management-a-strategie.html" class="blog-item">
+          <div class="blog-item__image blog-item__image--detail">
+            <img class="pc-top" src="@images/icons/marketing/srovnavace/sticky-icon-srovnavace.svg">
+          </div>
+          <div class="blog-item__inner">
+            <h3 class="blog-item__title blog-item__title--detail">
+              Správa zbožových srovnávačů
+            </h3>
+            <p class="blog-item__text blog-item__text--detail">
+              Na základě vašich marží navrhneme vhodnou strategii pro zbožové srovnávače.
+            </p>
+          </div>
+          <span class="blog-item__arrow"></span>
+        </a>
+      </div>
+      <div class="grid-item">
+        <a href="eshopy-spolu-s-bs-shop.html" class="blog-item">
+          <div class="blog-item__image blog-item__image--detail">
+            <img class="pc-top" src="@images/icons/marketing/eshopy/sticky-icon-eshopy.svg">
+          </div>
+          <div class="blog-item__inner">
+            <h3 class="blog-item__title blog-item__title--detail">
+              E-shopy spolu s BSSHOP
+            </h3>
+            <p class="blog-item__text blog-item__text--detail">
+              Díky integraci a propojení dalších systémů jako je informační systém Pohoda a v oblasti e-mail marketingu 
+              Mailkit dokážeme vytvořit komplexní e-shopové řešení.
+            </p>
+          </div>
+          <span class="blog-item__arrow"></span>
+        </a>
+      </div>
+      <div class="grid-item">
+        <a href="graficka-identita-ux-ui.html" class="blog-item">
+          <div class="blog-item__image blog-item__image--detail">
+            <img class="pc-top" src="@images/icons/marketing/identita/sticky-icon-identita.svg">
+          </div>
+          <div class="blog-item__inner">
+            <h3 class="blog-item__title blog-item__title--detail">
+              Grafický design
+            </h3>
+            <p class="blog-item__text blog-item__text--detail">
+              Pomůžeme Vám odlišit se od konkurence. Dodáme vám grafiku napříč spektrem aplikací. Od rozsáhlých e-shopů
+              až po polepy aut.
+            </p>
+          </div>
+          <span class="blog-item__arrow"></span>
+        </a>
+      </div>
+      <div class="grid-item">
+        <a href="marketing-na-socialnich-sitich.html" class="blog-item">
+          <div class="blog-item__image blog-item__image--detail">
+            <img class="pc-top" src="@images/icons/marketing/socialy/sticky-icon-socialy.svg">
+          </div>
+          <div class="blog-item__inner">
+            <h3 class="blog-item__title blog-item__title--detail">
+              Marketing na sociálních sítích
+            </h3>
+            <p class="blog-item__text blog-item__text--detail">
+              Zákaznící nejčastěji komunikují přes socialní sítě. Při správné implementaci může marketing na sociálních
+              sítích přinést význámný přínos vašemu podnikání.
+            </p>
+          </div>
+          <span class="blog-item__arrow"></span>
+        </a>
+      </div>
+      <div class="grid-item">
+        <a href="copywriting-obsahovy-marketing.html" class="blog-item">
+          <div class="blog-item__image blog-item__image--detail">
+            <img class="pc-top" src="@images/icons/marketing/copywriting/sticky-icon-copywriting.svg">
+          </div>
+          <div class="blog-item__inner">
+            <h3 class="blog-item__title blog-item__title--detail">
+              Copywriting / Obsahový marketing
+            </h3>
+            <p class="blog-item__text blog-item__text--detail">
+              Nabízíme profesionální správu vašeho marketingu. Zajistíme více relevantní návštěvnost z veškerých
+              vhodných kanálů.
+            </p>
+          </div>
+          <span class="blog-item__arrow"></span>
+        </a>
+      </div>
+      <div class="grid-item">
+        <a href="zlepseni-pouzitelnosti-webu.html" class="blog-item">
+          <div class="blog-item__image blog-item__image--detail">
+            <img class="pc-top" src="@images/icons/marketing/pouzitelnost/sticky-icon-pouzitelnost.svg">
+          </div>
+          <div class="blog-item__inner">
+            <h3 class="blog-item__title blog-item__title--detail">
+              Zlepšení použitelnosti webu
+            </h3>
+            <p class="blog-item__text blog-item__text--detail">
+              Zákaznící nejčastěji komunikují přes socialní sítě. Při správné implementaci může marketing na sociálních
+              sítích přinést význámný přínos vašemu podnikání.
+            </p>
+          </div>
+          <span class="blog-item__arrow"></span>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
 
 {% include "src/views/partials/contact-banner.html" %}
 {% endblock %}

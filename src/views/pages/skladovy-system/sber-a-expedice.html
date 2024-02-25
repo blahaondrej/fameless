@@ -1,0 +1,246 @@
+{% extends "src/views/layouts/default.html" %}
+
+<!-- set variables used in layout -->
+{% set title="Sběr & expedice" %}
+
+{% block styles %}
+<!-- load specific page style -->
+
+{% endblock %}
+
+{% block scripts %}
+<!-- load specific page script -->
+
+{% endblock %}
+
+{% block content %}
+
+<div class="circle-background circle-background--product"></div>
+<nav aria-label="Breadcrumb">
+  <ol class="breadcrumbs">
+    <li><a href="/"><img src="@images/icons/home-icon.svg"></a></li>
+    <li><a href="../skladovy-system/index.html">Skladový systém</a></li>
+    <li><a href="#">Sběr & expedice</a></li>
+  </ol>
+</nav>
+<div class="product-detail">
+  <div class="row">
+    <div class="col-12 col-md-1">
+      <div class="sticky-element">
+        <div class="sticky-element__image">
+          <img src="@images/icons/skladovy-system/workflow-prijmu/sticky-icon-workflow.svg">
+        </div>
+        <div class="sticky-element__text">
+          Expedice<br>efektivně
+        </div>
+      </div>
+    </div>
+    <div class="col-12 col-md-11">
+      <section class="intro intro--product-detail">
+        <div class="row align-items-center justify-content-center">
+          <div class="col-12">
+            <h1 class="intro__title">Sběr & expedice</h1>
+            <p class="intro__text">WMS - Storage Monkey</p>
+            <a href="#content" class="button-secondary">Zjistit více</a>
+          </div>
+        </div>
+      </section>
+      <section id="content">
+
+        <div class="products__inner">
+          <div class="row justify-content-md-center">
+            <div class="col-12 col-md-6 col-lg-5">
+              <div class="products__item products__item--left-marketing reveal-opacity">
+                <div class="products__images products__images--marketing justify-content-center">
+                  <img class="product-marketing" src="@images/skladovy-system/sber-a-expedice/sber-a-expedice1.png">
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-5">
+              <div class="products__item">
+                <h2 class="products__title">Expedice<br>efektivně</h2>
+                <h5 class="products__subtitle">WMS opičák má neustálý přehled o procesu vychystání objednávek.
+                </h5>
+                <p class="products__text">‍A spolu s ním ho máte i vy. Už žádný chaos při balení a expedici balíčků.
+                  Pokaždé budete mít dokonalý přehled o tom, jaké objednávky je potřeba zabalit, případně kdo je zabalil
+                  a kdy. Za pomocí čtečky čárových kódů snadno zefektivníte picking a kompletaci objednávek a
+                  minimalizujete chyby při vychystávání.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="software software--marketing reveal-up100">
+          <div class="software__item">
+            <div class="software__icon">
+              <img src="@images/icons/skladovy-system/sber-a-expedice/sber-a-expedice-flexibilita.svg">
+            </div>
+            <h3 class="software__title">Flexibilita<br>pro jednotlivé<br>koše sběru</h3>
+            <p class="software__text">
+              Na paletě nebo až v 16 koších, na to všechno jsme při vývoji opičáka pamatovali. Záleží jen na velikosti
+              vašeho zboží.
+            </p>
+          </div>
+          <div class="software__item">
+            <div class="software__icon">
+              <img src="@images/icons/skladovy-system/sber-a-expedice/sber-a-expedice-efektivita.svg">
+            </div>
+            <h3 class="software__title">Efektivita<br>při navádění<br>a výběru trasy</h3>
+            <p class="software__text">
+              Díky pozicování opičák při vychystání objednávek najde tu nejoptimílnější trasu pro vašeho skladníka.
+              Zajistí také přednostní vyskladnění kusů s bližším datem expirace.
+            </p>
+          </div>
+          <div class="software__item">
+            <div class="software__icon">
+              <img src="@images/icons/skladovy-system/sber-a-expedice/sber-a-expedice-express.svg">
+            </div>
+            <h3 class="software__title">Expresní<br>picking a<br>kompletace</h3>
+            <p class="software__text">
+              Účinná navigace a výběr trasy vede k úspoře času skladníků, minimalizaci chybovosti a expresní kompletaci
+              objednávky.
+            </p>
+          </div>
+        </div>
+
+
+        <section class="work">
+          <div class="section-title">
+            <div class="section-title__left">
+              <h2 class=" section-title__title">Účinný a hladký příjem zboží</h2>
+            </div>
+          </div>
+          <div class="work__inner">
+            <div class="row">
+              <div class="col-12 col-md-12 col-lg-6 justify-content-center align-items-center work__inner--left">
+                <div class="work__image">
+                  <img class="full-width" src="@images/skladovy-system/sber-a-expedice/sber-a-expedice3.png">
+                </div>
+              </div>
+              <div class="col-12 col-md-12 col-lg-6">
+                <div class="accordion reveal-up100" id="accordionExample">
+                  <div class="accordion-item active">
+                    <h2 class="accordion-header" id="headingOne">
+                      <div class="accordion-icon">
+                        <img src="@images/icons/skladovy-system/sber-a-expedice/sber-a-expedice-objednavka.svg">
+                      </div>
+                      <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        1. Vytištěná objednávka
+                      </button>
+                    </h2>
+                    <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                      data-bs-parent="#accordionExample">
+                      <div class="accordion-body">
+                        Na centrální tiskárně skladu je vytištěna objednávka k expedici.
+                      </div>
+                    </div>
+                  </div>
+                  <div class="accordion-item reveal-up100">
+                    <h2 class="accordion-header" id="headingTwo">
+                      <div class="accordion-icon">
+                        <img src="@images/icons/skladovy-system/sber-a-expedice/sber-a-expedice-ctecka.svg">
+                      </div>
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        2. Čtečka a kompletace
+                      </button>
+                    </h2>
+                    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                      data-bs-parent="#accordionExample">
+                      <div class="accordion-body">
+                        Skladník ji pomocí čtečky a čárových kódů/kódu produktů kompletuje.
+                      </div>
+                    </div>
+                  </div>
+                  <div class="accordion-item reveal-up100">
+                    <h2 class="accordion-header" id="headingThree">
+                      <div class="accordion-icon">
+                        <img src="@images/icons/skladovy-system/sber-a-expedice/sber-a-expedice-faktura.svg">
+                      </div>
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        3. Tisk faktury
+                      </button>
+                    </h2>
+                    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                      data-bs-parent="#accordionExample">
+                      <div class="accordion-body">
+                        Po dokončení kompletace skladník do balíčku na balicím stanovišti vloží fakturu.
+                      </div>
+                    </div>
+                  </div>
+                  <div class="accordion-item reveal-up100">
+                    <h2 class="accordion-header" id="headingFour">
+                      <div class="accordion-icon">
+                        <img src="@images/icons/skladovy-system/sber-a-expedice/sber-a-expedice-stitky.svg">
+                      </div>
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                        4. Tisk štítků
+                      </button>
+                    </h2>
+                    <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
+                      data-bs-parent="#accordionExample">
+                      <div class="accordion-body">
+                        Tisk štítků pro dopravce probíhá na štítkové tiskárně v místě balení.
+                      </div>
+                    </div>
+                  </div>
+                  <div class="accordion-item reveal-up100">
+                    <h2 class="accordion-header" id="headingFive">
+                      <div class="accordion-icon">
+                        <img src="@images/icons/skladovy-system/sber-a-expedice/sber-a-expedice-expedice.svg">
+                      </div>
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                        5. Expedice
+                      </button>
+                    </h2>
+                    <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive"
+                      data-bs-parent="#accordionExample">
+                      <div class="accordion-body">
+                        Automatické objednávání svozu pro každého dopravce v jiný čas.
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+
+
+
+
+        <div class="products__inner">
+          <div class="row justify-content-md-center">
+            <div class="col-12 col-md-6 col-lg-5">
+              <div class="products__item products__item--left-marketing reveal-opacity">
+                <div class="products__images products__images--marketing justify-content-center">
+                  <img class="product-marketing" src="@images/skladovy-system/sber-a-expedice/sber-a-expedice2.png">
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-5">
+              <div class="products__item">
+                <h2 class="products__title">Napojení<br>na dopravce</h2>
+                <h5 class="products__subtitle">WMS opičák si umí povídat se systémy většiny dopravců na trhu.
+                </h5>
+                <p class="products__text">Děje se tak díky BHIT MODULU DOPRAVA. Domluvit se tak dovedeme se širokou
+                  škálou dopravců, například PPL, DPD, Zásilkovnou, ale i Českou poštou a mnohými dalšími. Pro každého
+                  dopravce navíc automaticky objednáme svoz.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </section>
+    </div>
+  </div>
+</div>
+
+
+{% include "src/views/partials/contact-banner.html" %}
+{% endblock %}

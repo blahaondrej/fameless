@@ -18,7 +18,7 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        height: 110px;
+        height: 130px;
         width: 200px;
         text-align: center;
         padding: 30px 20px;
@@ -70,6 +70,11 @@
             position: absolute;
             left: -20px;
         }
+        &.no-plus {
+            &:before {
+                content: '';
+            }
+        }
     }
     &__text {
         color: #070058;
@@ -79,5 +84,6 @@
         font-style: normal;
         font-weight: 500;
         line-height: 24px;
+        text-wrap: pretty;
     }
 }

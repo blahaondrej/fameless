@@ -199,3 +199,23 @@
         line-height: 18px;
     }
 }
+.product-full {
+    &__title {
+        color: #070058;
+        font-feature-settings: 'clig' off, 'liga' off;
+        font-size: 48px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 102.083%;
+        margin-bottom: 16px;
+        text-align: center;
+        margin-bottom: 50px;
+        @include mixins.respond-to(md) {
+            font-size: 28px;
+        } 
+    }
+    &__image {
+        width: 100%;
+        height: auto;
+    }
+}

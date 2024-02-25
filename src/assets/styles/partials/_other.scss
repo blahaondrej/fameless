@@ -1,0 +1,30 @@
+@use '../base/fonts/inter.scss' as fontInter;
+@use '../base/mixins';
+
+.other {
+    margin-top: 50px;
+    &__wrapper {
+        display: flex;
+        justify-content: center;
+    }
+
+    &__title {
+        color: #070058;
+        font-feature-settings: 'clig' off, 'liga' off;
+        font-size: 48px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 102.083%;
+        margin-bottom: 16px;
+        text-align: center;
+        @include mixins.respond-to(md) {
+            font-size: 28px;
+        }
+    }
+    .blog-item {
+        width: 33.33%;
+        @include mixins.respond-to(md) {
+            width: 100%;
+        }
+    }
+}

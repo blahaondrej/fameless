@@ -119,6 +119,38 @@ module.exports = {
           import: 'src/views/pages/marketing/eshopy-spolu-s-bs-shop.html',
           filename: 'marketing/eshopy-spolu-s-bs-shop.html' // Cesta, kam se má soubor vytvořit
         },
+        sklad: {
+          import: 'src/views/pages/skladovy-system/index.html',
+          filename: 'skladovy-system/index.html' // Cesta, kam se má soubor vytvořit
+        },
+        skladBrand: {
+          import: 'src/views/pages/skladovy-system/skladovy-system.html',
+          filename: 'skladovy-system/skladovy-system.html' // Cesta, kam se má soubor vytvořit
+        },
+        skladAplikace: {
+          import: 'src/views/pages/skladovy-system/aplikace-ctecka.html',
+          filename: 'skladovy-system/aplikace-ctecka.html' // Cesta, kam se má soubor vytvořit
+        },
+        skladWorkflow: {
+          import: 'src/views/pages/skladovy-system/workflow-prijmu.html',
+          filename: 'skladovy-system/workflow-prijmu.html' // Cesta, kam se má soubor vytvořit
+        },
+        skladSber: {
+          import: 'src/views/pages/skladovy-system/sber-a-expedice.html',
+          filename: 'skladovy-system/sber-a-expedice.html' // Cesta, kam se má soubor vytvořit
+        },
+        skladAdministrace: {
+          import: 'src/views/pages/skladovy-system/administracni-rozhrani.html',
+          filename: 'skladovy-system/administracni-rozhrani.html' // Cesta, kam se má soubor vytvořit
+        },
+        skladModuly: {
+          import: 'src/views/pages/skladovy-system/nadstavbove-moduly.html',
+          filename: 'skladovy-system/nadstavbove-moduly.html' // Cesta, kam se má soubor vytvořit
+        },
+        integrace: {
+          import: 'src/views/pages/integrace-systemu/index.html',
+          filename: 'integrace-systemu/index.html' // Cesta, kam se má soubor vytvořit
+        },
           
         404: './src/views/pages/404/index.html', // => dist/404.html
 

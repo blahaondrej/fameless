@@ -1,0 +1,275 @@
+{% extends "src/views/layouts/default.html" %}
+
+<!-- set variables used in layout -->
+{% set title="Workflow příjmu" %}
+
+{% block styles %}
+<!-- load specific page style -->
+
+{% endblock %}
+
+{% block scripts %}
+<!-- load specific page script -->
+
+{% endblock %}
+
+{% block content %}
+
+<div class="circle-background circle-background--product"></div>
+<nav aria-label="Breadcrumb">
+  <ol class="breadcrumbs">
+    <li><a href="/"><img src="@images/icons/home-icon.svg"></a></li>
+    <li><a href="../skladovy-system/index.html">Skladový systém</a></li>
+    <li><a href="#">Workflow příjmu</a></li>
+  </ol>
+</nav>
+<div class="product-detail">
+  <div class="row">
+    <div class="col-12 col-md-1">
+      <div class="sticky-element">
+        <div class="sticky-element__image">
+          <img src="@images/icons/skladovy-system/workflow-prijmu/sticky-icon-workflow.svg">
+        </div>
+        <div class="sticky-element__text">
+          Snadná orientace<br>a organizace
+        </div>
+      </div>
+    </div>
+    <div class="col-12 col-md-11">
+      <section class="intro intro--product-detail">
+        <div class="row align-items-center justify-content-center">
+          <div class="col-12">
+            <h1 class="intro__title">Workflow příjmu</h1>
+            <p class="intro__text">Komplexní strategie na míru, spolupráce více na těsno, všechny služby pod jednou
+              střechou</p>
+            <a href="#content" class="button-secondary">Zjistit více</a>
+          </div>
+        </div>
+      </section>
+      <section id="content">
+
+        <div class="products__inner">
+          <div class="row justify-content-md-center">
+            <div class="col-12 col-md-6 col-lg-5">
+              <div class="products__item products__item--left-marketing reveal-opacity">
+                <div class="products__images products__images--marketing justify-content-center">
+                  <img class="product-marketing" src="@images/skladovy-system/workflow-prijmu/workflow-prijmu1.png">
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-5">
+              <div class="products__item">
+                <h2 class="products__title">Snadná orientace<br>a organizace</h2>
+                <h5 class="products__subtitle">WMS opičák se postará o to, abyste se ve svém skladu už nikdy neztratili.
+                </h5>
+                <p class="products__text">Jednotlivé položky zapozicuje na to pravé místo, pomůže s navigací po skladu a
+                  účelně celý sklad zorganizuje.</p>
+                <ul>
+                  <li>příjem položek pomocí čtečky čárových kódů</li>
+                  <li>tu pravou pozici zvolí podle obrátkovosti a nebo jinak podle vašich aktuálních potřeb, například
+                    do sektorů</li>
+                  <li>poskytne neustálý přehled o tom, kdo, co a kam přesunul nebo naskladnil</li>
+                  <li>Inventura celého skladu, jednotlivých sektorů nebo konkrétích pozic na jedno kliknutí a vreálném
+                    čase</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <section class="work">
+          <div class="section-title">
+            <div class="section-title__left">
+              <h2 class=" section-title__title">Účinný a hladký příjem zboží</h2>
+            </div>
+          </div>
+          <div class="work__inner">
+            <div class="row">
+              <div class="col-12 col-md-12 col-lg-6 justify-content-center align-items-center work__inner--left">
+                <div class="work__image">
+                  <img class="full-width" src="@images/skladovy-system/workflow-prijmu/workflow-prijmu2.png">
+                </div>
+              </div>
+              <div class="col-12 col-md-12 col-lg-6">
+                <div class="accordion reveal-up100" id="accordionExample">
+                  <div class="accordion-item active">
+                    <h2 class="accordion-header" id="headingOne">
+                      <div class="accordion-icon">
+                        <img src="@images/icons/skladovy-system/workflow-prijmu/workflow-naskladneni.svg">
+                      </div>
+                      <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        Naskladnění
+                      </button>
+                    </h2>
+                    <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                      data-bs-parent="#accordionExample">
+                      <div class="accordion-body">
+                        Pomocí čárového kódu a čtečky, bez chyb, papírování a v reálném čase.
+                      </div>
+                    </div>
+                  </div>
+                  <div class="accordion-item reveal-up100">
+                    <h2 class="accordion-header" id="headingTwo">
+                      <div class="accordion-icon">
+                        <img src="@images/icons/skladovy-system/workflow-prijmu/workflow-urceni-pozice.svg">
+                      </div>
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        Určení pozice
+                      </button>
+                    </h2>
+                    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                      data-bs-parent="#accordionExample">
+                      <div class="accordion-body">
+                        Pozice podle zvolené strategie, rychlé přepozicování, hladká orientace na skladě.
+                      </div>
+                    </div>
+                  </div>
+                  <div class="accordion-item reveal-up100">
+                    <h2 class="accordion-header" id="headingThree">
+                      <div class="accordion-icon">
+                        <img src="@images/icons/skladovy-system/workflow-prijmu/workflow-prehled-o-skladu.svg">
+                      </div>
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        Přehled o skladu a inventura
+                      </button>
+                    </h2>
+                    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                      data-bs-parent="#accordionExample">
+                      <div class="accordion-body">
+                        Automatizace na pozadí, vždy zcela aktuální přehled a inventura skladu.
+                      </div>
+                    </div>
+                  </div>
+                  <div class="accordion-item reveal-up100">
+                    <h2 class="accordion-header" id="headingFour">
+                      <div class="accordion-icon">
+                        <img src="@images/icons/skladovy-system/workflow-prijmu/workflow-propozicovani-produktu.svg">
+                      </div>
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                        Přepozicování produktů
+                      </button>
+                    </h2>
+                    <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
+                      data-bs-parent="#accordionExample">
+                      <div class="accordion-body">
+                        Snadné přepozicování, nejefektivnější proces vychystání objednávek.
+                      </div>
+                    </div>
+                  </div>
+                  <div class="accordion-item reveal-up100">
+                    <h2 class="accordion-header" id="headingFive">
+                      <div class="accordion-icon">
+                        <img src="@images/icons/skladovy-system/workflow-prijmu/workflow-vyskladneni-zbozi.svg">
+                      </div>
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                        Vyskladnění zboží a expedice
+                      </button>
+                    </h2>
+                    <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive"
+                      data-bs-parent="#accordionExample">
+                      <div class="accordion-body">
+                        Účinná navigace a výběr trasy, úspora času, minimalizace chybovosti.
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <div class="products__inner">
+          <div class="row justify-content-md-center">
+            <div class="col-12 col-md-6 col-lg-5 order-md-1 order-lg-2">
+              <div class="products__item products__item--right-marketing reveal-opacity">
+                <div class="products__images products__images--marketing justify-content-center">
+                  <img class="product-marketing small"
+                    src="@images/skladovy-system/workflow-prijmu/workflow-prijmu3.png">
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-5 order-md-1 order-lg-1">
+              <div class="products__item">
+                <h2 class="products__title">Příjem na čtečce</h2>
+                <h5 class="products__subtitle">WMS opičák zajistí bezchybné naskladnění pomocí čárových kódů a čtečky.
+                </h5>
+                <p class="products__text">Zaručí tak rychlý a přesný přenos informací
+                  o jednotlivých skladových položkách. Zboží do skladu přijímá podle dodavatele, objednávky, faktury
+                  nebo pouze jako souhrnný příjem.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="products__inner">
+          <div class="row justify-content-md-center">
+            <div class="col-12 col-md-6 col-lg-5">
+              <div class="products__item products__item--left-marketing reveal-opacity">
+                <div class="products__images products__images--marketing justify-content-center">
+                  <img class="product-marketing small"
+                    src="@images/skladovy-system/workflow-prijmu/workflow-prijmu4.png">
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-5">
+              <div class="products__item">
+                <h2 class="products__title">Přenos pozice</h2>
+                <h5 class="products__subtitle">WMS opičák pozicuje skladové položky podle vámi zvolené strategie.
+                </h5>
+                <p class="products__text">Tu pravou pozici zvolí mazaně podle obrátkovosti a nebo jinak podle vašich
+                  aktuálních potřeb. Pokaždé se tak děje v reálném čase a vy proto máte ucelený přehled o vytíženosti
+                  skladu a jeho uspořádání. V případě změny strategie se přepozicování jednotlivých položek děje snadno
+                  a v jednom kroku.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="software software--marketing reveal-up100">
+          <div class="software__item">
+            <div class="software__icon">
+              <img src="@images/icons/skladovy-system/workflow-prijmu/sklad-rizeny-podle-pozic.svg">
+            </div>
+            <h3 class="software__title">Sklad řízený<br>podle pozic</h3>
+            <p class="software__text">
+              Vždy víte, kde které položky hledat, nebloudíte a dokážete maximálně optimalizovat proces vychystávání
+              objednávek.
+            </p>
+          </div>
+          <div class="software__item">
+            <div class="software__icon">
+              <img src="@images/icons/skladovy-system/workflow-prijmu/procesy-rizene-workflow.svg">
+            </div>
+            <h3 class="software__title">Procesy<br>řízené workflow</h3>
+            <p class="software__text">
+              Optimálně nastavené workflow a procesní automatizace na pozadí se postarají o minimalizaci lidského
+              faktoru a chybovosti.
+            </p>
+          </div>
+          <div class="software__item">
+            <div class="software__icon">
+              <img src="@images/icons/skladovy-system/workflow-prijmu/mazane-vyskladnovani.svg">
+            </div>
+            <h3 class="software__title">Mazané<br>vyskladňování</h3>
+            <p class="software__text">
+              Aplikací chytrých metod vychystání upřednostňuje nejstarší kusy na skladě tak, aby bylo zboží s bližší
+              expirací expedováno co nejdříve.
+            </p>
+          </div>
+        </div>
+
+      </section>
+    </div>
+  </div>
+</div>
+
+
+{% include "src/views/partials/contact-banner.html" %}
+{% endblock %}

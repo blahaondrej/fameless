@@ -1,0 +1,118 @@
+{% extends "src/views/layouts/default.html" %}
+
+<!-- set variables used in layout -->
+{% set title="Aplikace Čtečka" %}
+
+{% block styles %}
+<!-- load specific page style -->
+
+{% endblock %}
+
+{% block scripts %}
+<!-- load specific page script -->
+
+{% endblock %}
+
+{% block content %}
+
+<div class="circle-background circle-background--product"></div>
+<nav aria-label="Breadcrumb">
+  <ol class="breadcrumbs">
+    <li><a href="/"><img src="@images/icons/home-icon.svg"></a></li>
+    <li><a href="../skladovy-system/index.html">Skladový systém</a></li>
+    <li><a href="#">Aplikace Čtečka</a></li>
+  </ol>
+</nav>
+<div class="product-detail">
+  <div class="row">
+    <div class="col-12 col-md-1">
+      <div class="sticky-element">
+        <div class="sticky-element__image">
+          <img src="@images/icons/skladovy-system/aplikace-ctecka/sticky-icon-ctecka.svg">
+        </div>
+        <div class="sticky-element__text">
+          Důmyslná<br>a jednoduchá
+        </div>
+      </div>
+    </div>
+    <div class="col-12 col-md-11">
+      <section class="intro intro--product-detail">
+        <div class="row align-items-center justify-content-center">
+          <div class="col-12">
+            <h1 class="intro__title">Aplikace Čtečka</h1>
+            <p class="intro__text"> WMS - Storage Monkey</p>
+            <a href="#content" class="button-secondary">Zjistit více</a>
+          </div>
+        </div>
+      </section>
+      <section id="content">
+
+        <div class="products__inner">
+          <div class="row justify-content-md-center">
+            <div class="col-12 col-md-6 col-lg-5">
+              <div class="products__item products__item--left-marketing reveal-opacity">
+                <div class="products__images products__images--marketing justify-content-center">
+                  <img class="product-marketing" src="@images/skladovy-system/aplikace-ctecka/aplikace-ctecka1.png">
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-5">
+              <div class="products__item">
+                <h2 class="products__title">Důmyslná<br>a jednoduchá</h2>
+                <h5 class="products__subtitle">WMS - Storage Monkey čtečka v sobě kombinuje jednoduché používání a
+                  pokrývá všechny klíčové skladové procesy:</h5>
+                <ul>
+                  <li>příjem zboží do skladu</li>
+                  <li>pozicování včetně možnosti přesunu, tzv. přepozicování</li>
+                  <li>efektivní sběr a trasování skladníka</li>
+                  <li>expedice a výdej zboží</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-11">
+            <div class="product-full">
+              <h2 class="product-full__title">
+                Co vidíte v aplikaci
+              </h2>
+            </div>
+            <img class="product-full__image" src="@images/skladovy-system/aplikace-ctecka/aplikace-ctecka2.png">
+
+          </div>
+        </div>
+
+        <div class="products__inner">
+          <div class="row justify-content-md-center">
+            <div class="col-12 col-md-6 col-lg-5 order-md-1 order-lg-2">
+              <div class="products__item products__item--right-marketing reveal-opacity">
+                <div class="products__images products__images--marketing justify-content-center">
+                  <img class="product-marketing" src="@images/skladovy-system/aplikace-ctecka/aplikace-ctecka3.png">
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-5 order-md-1 order-lg-1">
+              <div class="products__item">
+                <h2 class="products__title">Nadstavbové<br>moduly</h2>
+                <h5 class="products__subtitle">Geniálně jednoduché používání a důmyslné pokročilé funkce v jednom.</h5>
+                <p class="products__text">Vedle klíčových činností si WMS - Storage Monkey hravě poradí i s pokročilými
+                  funkcemi pro efektivnější řízení skladů, jako jsou vkládání obrázků do skladových karet, tisk etiket,
+                  namátková kontrola, inventura a další.</p>
+                <p class="products__text">Nadstavbové funkce si vybíráte na základě vlastních potřeb. Vždy tak dostanete
+                  jen to, co skutečně potřebujete.</p>
+                <a href="nadstavbove-moduly.html" class="button-secondary">Zjistit více</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </section>
+    </div>
+  </div>
+</div>
+
+
+{% include "src/views/partials/contact-banner.html" %}
+{% endblock %}

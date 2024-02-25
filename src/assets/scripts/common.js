@@ -293,7 +293,7 @@ $(window).on('scroll', function() {
   // Reset transformace po dojezdu
   setTimeout(function() {
     $('.sticky-element').css('transform', 'none');
-  }, 200); // Zpoždění odpovídající CSS transition
+  }, 400); // Zpoždění odpovídající CSS transition
 
   // Změna barvy body při scrollu
   /* var scrollTop = $(this).scrollTop();

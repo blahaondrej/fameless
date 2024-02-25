@@ -1,0 +1,190 @@
+{% extends "src/views/layouts/default.html" %}
+
+<!-- set variables used in layout -->
+{% set title="Administrační rozhraní" %}
+
+{% block styles %}
+<!-- load specific page style -->
+
+{% endblock %}
+
+{% block scripts %}
+<!-- load specific page script -->
+
+{% endblock %}
+
+{% block content %}
+
+<div class="circle-background circle-background--product"></div>
+<nav aria-label="Breadcrumb">
+  <ol class="breadcrumbs">
+    <li><a href="/"><img src="@images/icons/home-icon.svg"></a></li>
+    <li><a href="../skladovy-system/index.html">Skladový systém</a></li>
+    <li><a href="#">Administrační rozhraní</a></li>
+  </ol>
+</nav>
+<div class="product-detail">
+  <div class="row">
+    <div class="col-12 col-md-1">
+      <div class="sticky-element">
+        <div class="sticky-element__image">
+          <img src="@images/icons/skladovy-system/administracni-rozhrani/sticky-icon-admin.svg">
+        </div>
+        <div class="sticky-element__text">
+          Uceleně<br>a srozumitelně
+        </div>
+      </div>
+    </div>
+    <div class="col-12 col-md-11">
+      <section class="intro intro--product-detail">
+        <div class="row align-items-center justify-content-center">
+          <div class="col-12">
+            <h1 class="intro__title">Administrační rozhraní</h1>
+            <p class="intro__text">WMS - Storage Monkey</p>
+            <a href="#content" class="button-secondary">Zjistit více</a>
+          </div>
+        </div>
+      </section>
+      <section id="content">
+        <div class="products__inner">
+          <div class="row justify-content-md-center">
+            <div class="col-12 col-md-6 col-lg-5">
+              <div class="products__item products__item--left-marketing reveal-opacity">
+                <div class="products__images products__images--marketing justify-content-center">
+                  <img class="product-marketing"
+                    src="@images/skladovy-system/administracni-rozhrani/administracni-rozhrani1.png">
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-5">
+              <div class="products__item">
+                <h2 class="products__title">Uceleně<br>a srozumitelně</h2>
+                <h5 class="products__subtitle">WMS opičák vám podá kompletní a komplexní přehled o fungování skladu.
+                </h5>
+                <p class="products__text">Na přehledném dashboardu snadno odhalíte, kdo a jak rychle zabalil kolik kusů
+                  zboží a balíků v jaké váze. Stejně tak se dozvíte, kolik objednávek je právě v procesu vychystání a
+                  který skladník na nich aktuálně pracuje. Získáte tak přehled, z kterého snadno a pohotově vypočtete
+                  KPI skladu a jeho provozu.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="products__inner">
+          <div class="row justify-content-md-center">
+            <div class="col-12 col-md-6 col-lg-5 order-md-1 order-lg-2">
+              <div class="products__item products__item--right-marketing reveal-opacity">
+                <div class="products__images products__images--marketing justify-content-center">
+                  <img class="product-marketing"
+                    src="@images/skladovy-system/administracni-rozhrani/administracni-rozhrani2.png">
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-5 order-md-1 order-lg-1">
+              <div class="products__item">
+                <h2 class="products__title">Dashboard</h2>
+                <h5 class="products__subtitle">WMS opičák má pod čepicí, a tak ví, jak efektivně to ve vašem skladu
+                  běží.
+                </h5>
+                <p class="products__text">V reálném čase proto můžete sledovat, kolik objednávek je třeba zabalit, které
+                  jsou aktuálně vychystávány, kým a jak rychle. Systém navíc řídí, eviduje a vyhodnocuje skladové
+                  procesy a skladníkům automaticky generuje úkoly, eliminuje tak chybovost a pomáhá zrychlit skladové
+                  operace.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="products__inner">
+          <div class="row justify-content-md-center">
+            <div class="col-12 col-md-6 col-lg-5">
+              <div class="products__item products__item--left-marketing reveal-opacity">
+                <div class="products__images products__images--marketing justify-content-center">
+                  <img class="product-marketing"
+                    src="@images/skladovy-system/administracni-rozhrani/administracni-rozhrani3.png">
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-5">
+              <div class="products__item">
+                <h2 class="products__title">Flexibilní sběr<br>do košů</h2>
+                <h5 class="products__subtitle">WMS opičák se umí přizpůsobit velikosti vašich produktů.
+                </h5>
+                <p class="products__text">V případě, že je váš sortiment spíš menší velikosti, může pro vás sběrný vozík
+                  rozdělit na 8-16 košů. Pokud je vaše zboží větší, umí ho samozřejmě přepravit i na paletě. Při vývoji
+                  opičáka jsme mysleli opravdu na všechno.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="products__inner">
+          <div class="row justify-content-md-center">
+            <div class="col-12 col-md-6 col-lg-5 order-md-1 order-lg-2">
+              <div class="products__item products__item--right-marketing reveal-opacity">
+                <div class="products__images products__images--marketing justify-content-center">
+                  <img class="product-marketing"
+                    src="@images/skladovy-system/administracni-rozhrani/administracni-rozhrani4.png">
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-5 order-md-1 order-lg-1">
+              <div class="products__item">
+                <h2 class="products__title">Detailní přehled</h2>
+                <h5 class="products__subtitle">WMS opičák má detailní přehled o práci jednotlivých skladníků.
+                </h5>
+                <p class="products__text">Vede si totiž statistiky, kdo, kolik balíků, kolik kusů zboží, v jaké váze a
+                  jak rychle zabalil. Získáte tak přehled, z kterého snadno a pohotově vypočtete KPI skladu a jeho
+                  provozu.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="other">
+          <h2 class="other__title">
+            Související produkty a služby
+          </h2>
+          <div class="other__wrapper">
+            <a href="aplikace-ctecka.html" class="blog-item">
+              <div class="blog-item__image blog-item__image--detail">
+                <img class="pc-top" src="@images/icons/skladovy-system/aplikace-ctecka/sticky-icon-ctecka.svg">
+              </div>
+              <div class="blog-item__inner blog-item__inner--detail">
+                <h3 class="blog-item__title blog-item__title--detail">
+                  Aplikace čtečka
+                </h3>
+                <p class="blog-item__text blog-item__text--detail">
+                  Aplikace čtečka skladového systému WMS - Storage Monkey je jednoduchá na používání a pokrývá všechny
+                  klíčové skladové procesy.<br><br>Hravě si ale poradí i s pokročilými funkcemi pro efektivnější řízení
+                  skladů.
+                </p>
+              </div>
+              <span class="blog-item__arrow"></span>
+            </a>
+            <a href="administracni-rozhrani.html" class="blog-item">
+              <div class="blog-item__image blog-item__image--detail">
+                <img class="pc-top" src="@images/icons/marketing/brand/sticky-icon-brand.svg">
+              </div>
+              <div class="blog-item__inner blog-item__inner--detail">
+                <h3 class="blog-item__title blog-item__title--detail">
+                  Nadstavbové moduly
+                </h3>
+                <p class="blog-item__text blog-item__text--detail">
+                  Vedle klíčových funkcí si WMS Storage Monkey hravě poradí i s pokročilými operacemi jako jsou vkládání
+                  obrázků do skladových karet, tisk etiket, namátková kontrola, inventura a další.
+                </p>
+              </div>
+              <span class="blog-item__arrow"></span>
+            </a>
+          </div>
+        </div>
+
+      </section>
+    </div>
+  </div>
+</div>
+
+
+{% include "src/views/partials/contact-banner.html" %}
+{% endblock %}

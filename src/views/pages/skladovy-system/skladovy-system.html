@@ -1,0 +1,251 @@
+{% extends "src/views/layouts/default.html" %}
+
+<!-- set variables used in layout -->
+{% set title="Skladový systém" %}
+
+{% block styles %}
+<!-- load specific page style -->
+
+{% endblock %}
+
+{% block scripts %}
+<!-- load specific page script -->
+
+{% endblock %}
+
+{% block content %}
+
+<div class="circle-background circle-background--product"></div>
+<nav aria-label="Breadcrumb">
+  <ol class="breadcrumbs">
+    <li><a href="/"><img src="@images/icons/home-icon.svg"></a></li>
+    <li><a href="../skladovy-system/index.html">Skladový systém</a></li>
+    <li><a href="#">Skladový systém</a></li>
+  </ol>
+</nav>
+<div class="product-detail">
+  <div class="row">
+    <div class="col-12 col-md-1">
+      <div class="sticky-element">
+        <div class="sticky-element__image">
+          <img src="@images/icons/skladovy-system/skladovy-system/sticky-icon-sklad.svg">
+        </div>
+        <div class="sticky-element__text">
+          Skladový systém
+        </div>
+      </div>
+    </div>
+    <div class="col-12 col-md-11">
+      <section class="intro intro--product-detail">
+        <div class="row align-items-center justify-content-center">
+          <div class="col-12">
+            <h1 class="intro__title">Skladový systém</h1>
+            <p class="intro__text">Na míru vytvořený a jedinečný systém WMS - Storage Monkey.</p>
+            <a href="#content" class="button-secondary">Zjistit více</a>
+          </div>
+        </div>
+      </section>
+      <section id="content">
+        <div class="products__inner">
+          <div class="row justify-content-md-center">
+            <div class="col-12 col-md-6 col-lg-5">
+              <div class="products__item products__item--left-marketing reveal-opacity">
+                <div class="products__images products__images--marketing justify-content-center">
+                  <img class="product-marketing" src="@images/skladovy-system/skladovy-system/skladovy-system1.png">
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-5">
+              <div class="products__item">
+                <h2 class="products__title">Opravdu chytré řízení skladu</h2>
+                <h5 class="products__subtitle">Šetří čas, peníze a zvyšuje efektivitu</h5>
+                <p class="products__text">Chytrý jako opice. Takový je WMS - Storage Monkey. Pomáhá s <strong>řízením,
+                    efektivním uspořádáním a sledováním skladových položek</strong>. Díky <strong>automatizaci
+                    procesů</strong> přispívá ke <strong>zrychlení skladových operací</strong> a vy tak vždy v reálném
+                  čase máte po ruce <strong>přehled o stavu jednotlivých skladových položek a jejich
+                    lokalizaci</strong>. Dokáže také eliminovat lidský faktor a <strong>snižuje chybovost v procesu
+                    evidence</strong> skladu.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="products__inner">
+          <div class="row justify-content-md-center">
+            <div class="col-12 col-md-6 col-lg-5 order-md-1 order-lg-2">
+              <div class="products__item products__item--right-marketing reveal-opacity">
+                <div class="products__images products__images--marketing justify-content-center">
+                  <img class="product-marketing" src="@images/skladovy-system/skladovy-system/skladovy-system2.png">
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-5 order-md-1 order-lg-1">
+              <div class="products__item">
+                <h2 class="products__title">Mazaná integrace</h2>
+                <h5 class="products__subtitle">Co můžete od našeho opičáka čekat?</h5>
+                <p class="products__text"><strong>Plně se vám přizpůsobí</strong>. Přes otevřené API rozhraní ho totiž
+                  napojíme na účetní systém Pohoda. Pak už všechno, od příjmu zboží až po jeho vychystání, poplyne
+                  hladce. Provozovat tak můžete jeden i více e-shopů, desítky skladů, informace o skladových zásobách
+                  budete i přesto mít pokaždé zcela aktuální na všech místech, a to doslova jedním kliknutím.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <section class="stats reveal-up200">
+          <div class="stats__item">
+            <div class="stats__number counter" data-count="8">0</div>
+            <div class="stats__text">integrací WMS</div>
+          </div>
+          <div class="stats__item">
+            <div class="stats__number no-plus">o 99 %</div>
+            <div class="stats__text">méně chyb při vychystávání</div>
+          </div>
+          <div class="stats__item">
+            <div class="stats__number no-plus">-2 hod.</div>
+            <div class="stats__text">práce každého skladníka denně</div>
+          </div>
+        </section>
+
+        <div class="products__inner">
+          <div class="row justify-content-md-center">
+            <div class="col-12 col-md-6 col-lg-5">
+              <div class="products__item products__item--left-marketing reveal-opacity">
+                <div class="products__images products__images--marketing justify-content-center">
+                  <img class="product-marketing" src="@images/skladovy-system/skladovy-system/skladovy-system3.png">
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-5">
+              <div class="products__item">
+                <h2 class="products__title">Přínosy</h2>
+                <h5 class="products__subtitle">Co vás s naším opičákem nemine?</h5>
+                <ul>
+                  <li>zvýšení <strong>kvality a produktivity práce</strong> ve skladu</li>
+                  <li><strong>zrychlení a zpřesnění</strong> procesu <strong>vyhledávání zboží</strong></li>
+                  <li><strong>snadná identifikace zboží</strong> přes čárové kódy</li>
+                  <li>přehled o <strong>výtěžnosti skladu</strong> a efektivitě jednotlivých skladníků</li>
+                  <li>proces výdeje podle <strong>procesních metod vychystávání</strong> (FIFO a ostatní)</li>
+                  <li>propojení s ERP systémem <strong>IS Pohoda</strong></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="software software--marketing reveal-up100">
+          <div class="software__item">
+            <div class="software__icon">
+              <img src="@images/icons/skladovy-system/skladovy-system/dumyslna-organizace-prace-ve-skladu.svg">
+            </div>
+            <h3 class="software__title">Důmyslná organizace<br>práce ve skladu</h3>
+            <p class="software__text">
+              Aplikace ve čtečkách skladníkům automaticky generuje úkoly, dochází také k prioritizaci činností pomocí
+              fronty úkolů.
+            </p>
+          </div>
+          <div class="software__item">
+            <div class="software__icon">
+              <img src="@images/icons/skladovy-system/skladovy-system/zrychleni-skladovych-operaci.svg">
+            </div>
+            <h3 class="software__title">Zrychlení skladových<br>operací</h3>
+            <p class="software__text">
+              Díky čtečkám čárových kódů dochází k snadnému zaznamenání příjmu, pozicování, výdeje nebo
+              přesunu
+              zboží.
+            </p>
+          </div>
+          <div class="software__item">
+            <div class="software__icon">
+              <img src="@images/icons/skladovy-system/skladovy-system/prehled-o-zasobach-a-sprava-zbozi.svg">
+            </div>
+            <h3 class="software__title">Přehled o zásobách<br>a správa zboží</h3>
+            <p class="software__text">
+              Aplikací chytrých metod vychystání mazaně upřednostňuje nejstarší kusy na skladě tak, aby bylo zboží s
+              bližší expirací expedováno co nejdříve.
+            </p>
+          </div>
+        </div>
+
+        <div class="software software--marketing reveal-up100">
+          <div class="software__item">
+            <div class="software__icon">
+              <img src="@images/icons/skladovy-system/skladovy-system/aktualni-informace-o-skladovem-mnozstvi.svg">
+            </div>
+            <h3 class="software__title">Aktuální informace<br>o skladovém množství̌</h3>
+            <p class="software__text">
+              Snadná skladová inventura a reporting díky ucelené evidenci a synchronizaci všech skladových operací
+              vůči jednotlivým skladovým položkám v reálném čase.
+            </p>
+          </div>
+          <div class="software__item">
+            <div class="software__icon">
+              <img src="@images/icons/skladovy-system/skladovy-system/detailni-prehled-o-pohybech-ve-skladu.svg">
+            </div>
+            <h3 class="software__title">Detailní přehled<br>o pohybech ve skladu</h3>
+            <p class="software__text">
+              Automatická evidence skladových operací a reporting klientovi, který slouží k plánování a
+              vyhodnocování provozu skladů a pracovníků skladu.
+            </p>
+          </div>
+          <div class="software__item">
+            <div class="software__icon">
+              <img src="@images/icons/skladovy-system/skladovy-system/snizeni-chybovosti.svg">
+            </div>
+            <h3 class="software__title">Snížení<br>chybovosti</h3>
+            <p class="software__text">
+              Identifikace zboží pomocí čárových kódů a automatizace procesů eliminuje tzv. lidský faktor a
+              snižuje chybovost v procesu evidence skladu.
+            </p>
+          </div>
+        </div>
+
+        <div class="other">
+          <h2 class="other__title">
+            Související produkty a služby
+          </h2>
+          <div class="other__wrapper">
+            <a href="aplikace-ctecka.html" class="blog-item">
+              <div class="blog-item__image blog-item__image--detail">
+                <img class="pc-top" src="@images/icons/skladovy-system/aplikace-ctecka/sticky-icon-ctecka.svg">
+              </div>
+              <div class="blog-item__inner blog-item__inner--detail">
+                <h3 class="blog-item__title blog-item__title--detail">
+                  Aplikace čtečka
+                </h3>
+                <p class="blog-item__text blog-item__text--detail">
+                  Aplikace čtečka skladového systému WMS - Storage Monkey je jednoduchá na používání a pokrývá všechny
+                  klíčové skladové procesy.<br><br>Hravě si ale poradí i s pokročilými funkcemi pro efektivnější řízení
+                  skladů.
+                </p>
+              </div>
+              <span class="blog-item__arrow"></span>
+            </a>
+            <a href="administracni-rozhrani.html" class="blog-item">
+              <div class="blog-item__image blog-item__image--detail">
+                <img class="pc-top" src="@images/icons/skladovy-system/administracni-rozhrani/sticky-icon-admin.svg">
+              </div>
+              <div class="blog-item__inner blog-item__inner--detail">
+                <h3 class="blog-item__title blog-item__title--detail">
+                  Administrační rozhraní
+                </h3>
+                <p class="blog-item__text blog-item__text--detail">
+                  Kompletní a srozumitelný přehled o tom, kdo a jak rychle zabalil kolik kusů zboží a balíků v jaké
+                  váze.<br><br>Přehled, z kterého snadno a pohotově vypočtete KPI skladu a jeho provozu.
+                </p>
+              </div>
+              <span class="blog-item__arrow"></span>
+            </a>
+          </div>
+        </div>
+
+
+
+      </section>
+    </div>
+  </div>
+</div>
+
+
+{% include "src/views/partials/contact-banner.html" %}
+{% endblock %}

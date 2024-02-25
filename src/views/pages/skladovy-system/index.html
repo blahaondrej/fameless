@@ -1,0 +1,151 @@
+{% extends "src/views/layouts/default.html" %}
+
+<!-- set variables used in layout -->
+{% set title="Skladový systém" %}
+
+{% block styles %}
+<!-- load specific page style -->
+
+{% endblock %}
+
+{% block scripts %}
+<!-- load specific page script -->
+<script src="./products.js"></script>
+{% endblock %}
+
+
+{% block content %}
+
+<div class="circle-background circle-background--homepage"></div>
+<nav aria-label="Breadcrumb">
+  <ol class="breadcrumbs">
+    <li><a href="/"><img src="@images/icons/home-icon.svg"></a></li>
+    <li><a href="/about/index.html">O nás</a></li>
+    <li><a href="#">Produkty</a></li>
+  </ol>
+</nav>
+<section class="intro intro--products">
+  <div class="row align-items-center justify-content-center">
+    <div class="col-12">
+      <h1 class="intro__title">Strategický partner pro vaši firmu</h1>
+      <p class="intro__text">S námi fameless opravdu nebudete. S čím pomůžeme vám?</p>
+      <a href="#" class="button-secondary">Zjistit více</a>
+    </div>
+  </div>
+</section>
+
+<section class="blog blog--products products-list">
+  <div class="blog__inner grid product-list">
+    <div class="row">
+      <div class="grid-item">
+        <a href="skladovy-system.html" class="blog-item">
+          <div class="blog-item__image blog-item__image--detail">
+            <img class="pc-top" src="@images/icons/skladovy-system/skladovy-system/sticky-icon-sklad.svg">
+          </div>
+          <div class="blog-item__inner blog-item__inner--detail">
+            <h3 class="blog-item__title blog-item__title--detail">
+              Skladový systém
+            </h3>
+            <p class="blog-item__text blog-item__text--detail">
+              Chytrý jako opice. Takový je WMS - Storage Monkey. Pomáhá s řízením, efektivním uspořádáním a sledováním
+              skladových položek. Dokáže také eliminovat lidský faktor a snižuje chybovost v procesu evidence skladu.
+            </p>
+          </div>
+          <span class="blog-item__arrow"></span>
+        </a>
+      </div>
+      <div class="grid-item">
+        <a href="aplikace-ctecka.html" class="blog-item">
+          <div class="blog-item__image blog-item__image--detail">
+            <img class="pc-top" src="@images/icons/skladovy-system/aplikace-ctecka/sticky-icon-ctecka.svg">
+          </div>
+          <div class="blog-item__inner blog-item__inner--detail">
+            <h3 class="blog-item__title blog-item__title--detail">
+              Aplikace čtečka
+            </h3>
+            <p class="blog-item__text blog-item__text--detail">
+              WMS - Storage Monkey čtečka v sobě kombinuje jednoduché používání a pokrývá všechny klíčové skladové
+              operace. Poradí si i s pokročilými funkcemi pro efektivnější řízení skladů, jako jsou vkládání obrázků do
+              skladových karet, tisk etiket a další.
+            </p>
+          </div>
+          <span class="blog-item__arrow"></span>
+        </a>
+      </div>
+      <div class="grid-item">
+        <a href="workflow-prijmu.html" class="blog-item">
+          <div class="blog-item__image blog-item__image--detail">
+            <img class="pc-top" src="@images/icons/skladovy-system/workflow-prijmu/sticky-icon-workflow.svg">
+          </div>
+          <div class="blog-item__inner blog-item__inner--detail">
+            <h3 class="blog-item__title blog-item__title--detail">
+              Workflow příjmu
+            </h3>
+            <p class="blog-item__text blog-item__text--detail">
+              WMS opičák se postará o to, abyste se ve svém skladu už nikdy neztratili. Jednotlivé položky zapozicuje na
+              to pravé místo, pomůže s navigací po skladu a účelně celý sklad zorganizuje. Aplikací chytrých metod
+              upřednostňuje vychystání zboží s nejbližší expirací.
+            </p>
+          </div>
+          <span class="blog-item__arrow"></span>
+        </a>
+      </div>
+      <div class="grid-item">
+        <a href="sber-a-expedice.html" class="blog-item">
+          <div class="blog-item__image blog-item__image--detail">
+            <img class="pc-top" src="@images/icons/skladovy-system/workflow-prijmu/sticky-icon-workflow.svg">
+          </div>
+          <div class="blog-item__inner blog-item__inner--detail">
+            <h3 class="blog-item__title blog-item__title--detail">
+              Sběr & expedice
+            </h3>
+            <p class="blog-item__text blog-item__text--detail">
+              Expedice efektivně, WMS opičák má neustálý přehled o procesu vychystání objednávek. Za pomocí čtečky
+              čárových kódů snadno zefektivníte picking a kompletaci objednávek a minimalizujete chyby při vychystávání.
+            </p>
+          </div>
+          <span class="blog-item__arrow"></span>
+        </a>
+      </div>
+      <div class="grid-item">
+        <a href="administracni-rozhrani.html" class="blog-item">
+          <div class="blog-item__image blog-item__image--detail">
+            <img class="pc-top" src="@images/icons/skladovy-system/administracni-rozhrani/sticky-icon-admin.svg">
+          </div>
+          <div class="blog-item__inner blog-item__inner--detail">
+            <h3 class="blog-item__title blog-item__title--detail">
+              Administrační rozhraní
+            </h3>
+            <p class="blog-item__text blog-item__text--detail">
+              Uceleně a srozumitelně na přehledném dashboardu odhalíte, kdo a jak rychle zabalil kolik kusů zboží a
+              balíků v jaké váze. Stejně tak se dozvíte, kolik objednávek je právě v procesu vychystání a který skladník
+              na nich aktuálně pracuje.
+            </p>
+          </div>
+          <span class="blog-item__arrow"></span>
+        </a>
+      </div>
+      <div class="grid-item">
+        <a href="nadstavbove-moduly.html" class="blog-item">
+          <div class="blog-item__image blog-item__image--detail">
+            <img class="pc-top" src="@images/icons/skladovy-system/nadstavbove-moduly/sticky-icon-nadstavba.svg">
+          </div>
+          <div class="blog-item__inner blog-item__inner--detail">
+            <h3 class="blog-item__title blog-item__title--detail">
+              Nadstavbové moduly
+            </h3>
+            <p class="blog-item__text blog-item__text--detail">
+              Vedle klíčových operací si WMS - Storage Monkey hravě poradí i s pokročilými funkcemi pro efektivnější
+              řízení skladů, jako jsou vkládání obrázků do skladových karet, tisk etiket, namátková kontrola, inventura
+              a další.
+            </p>
+          </div>
+          <span class="blog-item__arrow"></span>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+{% include "src/views/partials/contact-banner.html" %}
+{% endblock %}

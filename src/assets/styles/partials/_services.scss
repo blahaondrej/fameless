@@ -107,11 +107,12 @@
     }
     &__text {
         color: rgba(7, 0, 88, 0.80);
-        font-size: 16px;
+        font-size: 15px;
         font-style: normal;
         font-weight: 400;
         line-height: 24px;
         font-family: fontInter.$font-family-inter;
+        text-wrap: pretty;
         strong {
             opacity: 0.8;
             font-weight: 700;
