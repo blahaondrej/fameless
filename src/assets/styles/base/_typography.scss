@@ -255,16 +255,19 @@ a {
       display: none;
     }
     &--pohoda {
-        background: linear-gradient(180deg, #F75544 0%, #AD2A1C 100%);
+        background: linear-gradient(180deg, #1273EF 0%, #0D5DC5 100%);
     }
     &--sklad {
-        background: linear-gradient(180deg, #FAAD21 0%, #D4931D 100%);
+        background: linear-gradient(180deg, #2E09AE 0%, #08005C 100%);
     }
     &--vyvoj {
         background: linear-gradient(180deg, #4BC6B6 0%, #37A395 100%);
     }
     &--marketing {
-        background: linear-gradient(180deg, #1273EF 0%, #0D5DC5 100%);
+        background: linear-gradient(180deg, #F75543 0%, #AE2B1C 100%);
+    }
+    &--integrace {
+        background: linear-gradient(180deg, #FAAD21 0%, #D4931D 100%);
     }
     img {
       width: 23px;

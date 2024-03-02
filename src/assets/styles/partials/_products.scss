@@ -214,6 +214,12 @@
             font-size: 28px;
         } 
     }
+    a {
+        cursor: initial;
+        @include mixins.respond-to(md) {
+            cursor: pointer;
+        }
+    }
     &__image {
         width: 100%;
         height: auto;

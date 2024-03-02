@@ -238,6 +238,7 @@
         font-style: normal;
         font-weight: 600;
         line-height: 30px;
+        margin-top: 20px;
         @include mixins.respond-to(md) {
             font-size: 20px;
           }

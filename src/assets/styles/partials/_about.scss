@@ -41,6 +41,7 @@
     overflow: hidden;
     .col {
         width: 20%;
+        flex: 0 1 auto;
         @include mixins.respond-to(md) {
             flex-wrap: nowrap;
             width: 80%;

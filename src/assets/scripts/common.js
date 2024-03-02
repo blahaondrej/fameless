@@ -16,12 +16,6 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { ScrollToPlugin } from "gsap/ScrollToPlugin";
 import { TextPlugin } from "gsap/TextPlugin"; */
 
-lightbox.option({
-  'resizeDuration': 200,
-  'wrapAround': true,
-  'albumLabel': "Obrázek %1 z %2"
-});
-
 
 /*gsap.registerPlugin(ScrollTrigger,ScrollToPlugin,TextPlugin);
  const scroll = new LocomotiveScroll({
@@ -238,6 +232,40 @@ var swiperblogdetail = new Swiper(".swiper-detail-blog", {
   // Accordion
 
   $(document).ready(function() {
+  // Funkce pro přidání Lightbox atributů
+  function enableLightboxForMobile() {
+    // Zjistíme, zda je uživatel na mobilním zařízení
+    if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+      // Vybereme všechny odkazy, které mají třídu 'lightbox-trigger'
+      var links = document.querySelectorAll('.lightbox-trigger');
+
+      // Pro každý takový odkaz přidáme atribut 'data-lightbox'
+      links.forEach(function(link) {
+        link.setAttribute('data-lightbox', 'image-1');
+      });
+
+      // Zde můžete inicializovat Lightbox, pokud je to potřeba
+      // Například: lightbox.option({...});
+    }
+  }
+
+  // Spustíme funkci
+  enableLightboxForMobile();
+
+  var isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+
+  if (isMobile) {
+    // Mobilní zařízení: Přidáme atribut 'data-lightbox'
+    $('.lightbox-trigger').attr('data-lightbox', 'image-1');
+    // Zde inicializujte Lightbox, pokud ještě není inicializován
+  } else {
+    // Desktop zařízení: Zabráníme otevření galerie
+    $('.lightbox-trigger').on('click', function(event) {
+      event.preventDefault(); // Zabrání výchozímu chování odkazu
+      // Zde můžete přidat další logiku, např. upozornění, že galerie není dostupná
+    });
+  }
+
     // Mobile menu
 
     $('.menu-button').click(function(){

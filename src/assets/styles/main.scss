@@ -2,8 +2,9 @@
 @use 'base/mixins';
 // Bootstrap 
 @use "~bootstrap/scss/bootstrap";
+
 //Lightbox
-@use"node_modules/lightbox2/src/css/lightbox.css";
+@use "node_modules/lightbox2/src/css/lightbox.css";
 
 // Base
 @use 'base/normalize';
