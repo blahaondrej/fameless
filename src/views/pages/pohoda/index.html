@@ -1,0 +1,268 @@
+{% extends "src/views/layouts/default.html" %}
+
+<!-- set variables used in layout -->
+{% set title="Fameless | Moduly FameDash" %}
+
+{% block styles %}
+<!-- load specific page style -->
+
+{% endblock %}
+
+
+{% block content %}
+
+<div class="circle-background circle-background--homepage"></div>
+<nav aria-label="Breadcrumb">
+  <ol class="breadcrumbs">
+    <li><a href="/"><img src="@images/icons/home-icon.svg"></a></li>
+    <li><a href="#">Moduly FameDash</a></li>
+  </ol>
+</nav>
+<section class="intro intro--products">
+  <div class="row align-items-center justify-content-center">
+    <div class="col-12">
+      <h1 class="intro__title">Moduly FameDash</h1>
+      <p class="intro__text">S FameDash si usnadníte vaše podnikání. Nevěříte? Tak to vyzkoušejte.</p>
+      <a href="#moduly-famedash" class="button-secondary">Zjistit více</a>
+    </div>
+  </div>
+</section>
+
+<section class="blog blog--products products-list" id="moduly-famedash">
+  <div class="blog__inner grid product-list">
+    <div class="row">
+      <div class="grid-item">
+        <a href="famedash.html" class="blog-item">
+          <div class="blog-item__image blog-item__image--detail">
+            <img class="pc-top" src="@images/icons/pohoda/sticky-icon-famedash.svg">
+          </div>
+          <div class="blog-item__inner blog-item__inner--detail">
+            <h3 class="blog-item__title blog-item__title--detail">
+              FameDash
+            </h3>
+            <p class="blog-item__text blog-item__text--detail">
+              FameDash je komplexní on-line webová platforma napojená na IS POHODA. Díky ní budete mít vše přehledně na
+              jednom místě. Ať už se jedná o zákaznickou péči, sklad, expedici nebo třeba manažerské pohledy a
+              vyhodnocení KPI.
+            </p>
+          </div>
+          <span class="blog-item__arrow"></span>
+        </a>
+      </div>
+      <div class="grid-item">
+        <a href="reseni-zakazek.html" class="blog-item">
+          <div class="blog-item__image blog-item__image--detail">
+            <img class="pc-top" src="@images/icons/pohoda/sticky-icon-reseni-zakazek.svg">
+          </div>
+          <div class="blog-item__inner blog-item__inner--detail">
+            <h3 class="blog-item__title blog-item__title--detail">
+              Řešení zakázek
+            </h3>
+            <p class="blog-item__text blog-item__text--detail">
+              Pokud máte ve firmě zakázkovou výrobu, oceníte, že zde můžete mimo jiné zadávat i další položky oceněné
+              např. hodinovým nákladem, zaměstnanci si mohou logovat čas nad zakázkou nebo vyskladňovat produkty ze
+              skladu k dané zakázce.
+            </p>
+          </div>
+          <span class="blog-item__arrow"></span>
+        </a>
+      </div>
+      <div class="grid-item">
+        <div class="blog-item">
+          <div class="blog-item__image blog-item__image--detail">
+            <img class="pc-top" src="@images/icons/pohoda/sticky-icon-prehledne-a-efektivne-dle-vasich-potreb.svg">
+          </div>
+          <div class="blog-item__inner blog-item__inner--detail">
+            <h3 class="blog-item__title blog-item__title--detail">
+              Přehledně a efektivně dle vašich potřeb
+            </h3>
+            <p class="blog-item__text blog-item__text--detail">
+              Vše, co potřebujete vidět ihned po spuštění si můžete nechat na úvodní straně FameDash. Na první pohled
+              tedy vidíte nejdůležitější přehledy jako je počet objednávek, aktuální zisk za dané období a nebo cokoliv,
+              co vás zajímá.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="grid-item">
+        <div class="blog-item">
+          <div class="blog-item__image blog-item__image--detail">
+            <img class="pc-top" src="@images/icons/pohoda/sticky-icon-manazerske-pohledy-a-statistiky.svg">
+          </div>
+          <div class="blog-item__inner blog-item__inner--detail">
+            <h3 class="blog-item__title blog-item__title--detail">
+              Manažerské pohledy a statistiky
+            </h3>
+            <p class="blog-item__text blog-item__text--detail">
+              Grafy, tabulky a přehledy, cokoliv, co chcete sledovat. Mysleli jsme na to, že každý má jiné nároky a
+              zajímají ho jiné údaje. Dokážeme propojit i data z Google Data Studia, vše tak budete mít přehledně na
+              jednom místě.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="grid-item">
+        <div class="blog-item">
+          <div class="blog-item__image blog-item__image--detail">
+            <img class="pc-top" src="@images/icons/pohoda/sticky-icon-zakaznicka-pece-aktualne-a-prehledne.svg">
+          </div>
+          <div class="blog-item__inner blog-item__inner--detail">
+            <h3 class="blog-item__title blog-item__title--detail">
+              Zákaznická péče aktuálně & přehledně
+            </h3>
+            <p class="blog-item__text blog-item__text--detail">
+              Všechny objednávky pěkně přehledně, nespárované platby, schvalování přijatých faktur i přehled
+              nezlikvidovaných zálohových faktur. Samozřejmostí je i pohodlná správa reklamací.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="grid-item">
+        <div class="blog-item">
+          <div class="blog-item__image blog-item__image--detail">
+            <img class="pc-top" src="@images/icons/pohoda/sticky-icon-automatizace-procesu.svg">
+          </div>
+          <div class="blog-item__inner blog-item__inner--detail">
+            <h3 class="blog-item__title blog-item__title--detail">
+              Automatizace procesů
+            </h3>
+            <p class="blog-item__text blog-item__text--detail">
+              Zákaznická péče by nebyla tak efektivní, pokud by na pozadí nefungovala automatizace procesů, která se
+              postará o vystavování a faktur a zálohových faktur. Samozřejmostí je i párování a likvidace banky.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="grid-item">
+        <div class="blog-item">
+          <div class="blog-item__image blog-item__image--detail">
+            <img class="pc-top" src="@images/icons/pohoda/sticky-icon-import-a-export-dokladu-napric-agendami.svg">
+          </div>
+          <div class="blog-item__inner blog-item__inner--detail">
+            <h3 class="blog-item__title blog-item__title--detail">
+              Import a export dokladů napříč agendami
+            </h3>
+            <p class="blog-item__text blog-item__text--detail">
+              Důležitá funkce, která se prolíná napříč celým systémem je import dokladů napříč agendami. Importujte
+              doklady pohodlně přes FameDash.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="grid-item">
+        <div class="blog-item">
+          <div class="blog-item__image blog-item__image--detail">
+            <img class="pc-top" src="@images/icons/pohoda/sticky-icon-vyrobni-procesy-efektivne.svg">
+          </div>
+          <div class="blog-item__inner blog-item__inner--detail">
+            <h3 class="blog-item__title blog-item__title--detail">
+              Výrobní procesy efektivně
+            </h3>
+            <p class="blog-item__text blog-item__text--detail">
+              Efektivita výrobního procesu je velmi důležitá, v tomto modulu vyrábíte na základě komponentů, pracujete s
+              obrátkou zboží pro dostatečnou přípravu zásob v rámci sezónnosti apod.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="grid-item">
+        <div class="blog-item">
+          <div class="blog-item__image blog-item__image--detail">
+            <img class="pc-top" src="@images/icons/pohoda/sticky-icon-produkty-a-sluzby.svg">
+          </div>
+          <div class="blog-item__inner blog-item__inner--detail">
+            <h3 class="blog-item__title blog-item__title--detail">
+              Produkty a služby
+            </h3>
+            <p class="blog-item__text blog-item__text--detail">
+              V modulu máte kompletní přehled o svých produktech a službách, můžete zde nové produkty i založit.
+              Definujte si dlouhodobě neprodávané zboží, kontrolujte marže, stav zásob na skladech, obrátky i FIFO.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="grid-item">
+        <div class="blog-item">
+          <div class="blog-item__image blog-item__image--detail">
+            <img class="pc-top" src="@images/icons/pohoda/sticky-icon-sklad-a-expedice.svg">
+          </div>
+          <div class="blog-item__inner blog-item__inner--detail">
+            <h3 class="blog-item__title blog-item__title--detail">
+              Sklad a expedice
+            </h3>
+            <p class="blog-item__text blog-item__text--detail">
+              Co kdo balí? Víte to? S tímto modulem můžete sledovat objednávky v expediční frontě, expedované objednávky
+              a také snadno zjistíte, který skladník co zabalil a jaká je jeho výkonnost.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="grid-item">
+        <div class="blog-item">
+          <div class="blog-item__image blog-item__image--detail">
+            <img class="pc-top" src="@images/icons/pohoda/sticky-icon-dodavatele.svg">
+          </div>
+          <div class="blog-item__inner blog-item__inner--detail">
+            <h3 class="blog-item__title blog-item__title--detail">
+              Dodavatelé
+            </h3>
+            <p class="blog-item__text blog-item__text--detail">
+              Zde spravujte svoje dodavatele vč. automatického vystavování objednávek. Sledujte, zda plníte bonusy,
+              které vám dodavatel poskytuje. FameDash napojíme i na dodavatelské B2B. Zapište si jednání ze schůzky.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="grid-item">
+        <div class="blog-item">
+          <div class="blog-item__image blog-item__image--detail">
+            <img class="pc-top" src="@images/icons/pohoda/sticky-icon-zakaznici.svg">
+          </div>
+          <div class="blog-item__inner blog-item__inner--detail">
+            <h3 class="blog-item__title blog-item__title--detail">
+              Zákazníci
+            </h3>
+            <p class="blog-item__text blog-item__text--detail">
+              Spravujte svoje zákazníky vč. “problémových”, uvidíte také odstoupení od smlouvy a reklamace. Zápis ze
+              schůzky nebo založení nového zákazníka je samozřejmostí. Spravujte slevy odběratelů.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="grid-item">
+        <div class="blog-item">
+          <div class="blog-item__image blog-item__image--detail">
+            <img class="pc-top" src="@images/icons/pohoda/sticky-icon-prodejny.svg">
+          </div>
+          <div class="blog-item__inner blog-item__inner--detail">
+            <h3 class="blog-item__title blog-item__title--detail">
+              Prodejny
+            </h3>
+            <p class="blog-item__text blog-item__text--detail">
+              FameDash umíme napojit i na vaše prodejny. FameDash nabízí nadstavbu pro pokladnu i osobní odběr z
+              e-shopu.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="grid-item">
+        <div class="blog-item">
+          <div class="blog-item__image blog-item__image--detail">
+            <img class="pc-top" src="@images/icons/pohoda/sticky-icon-vlastni-api-na-pohodu.svg">
+          </div>
+          <div class="blog-item__inner blog-item__inner--detail">
+            <h3 class="blog-item__title blog-item__title--detail">
+              Vlastní API na “POHODU”
+            </h3>
+            <p class="blog-item__text blog-item__text--detail">
+              Pokud potřebujete na IS POHODA napojit něco dalšího, s vlastním API to není žádný problém.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+{% include "src/views/partials/contact-banner.html" %}
+{% endblock %}

@@ -59,9 +59,9 @@ module.exports = {
           import: 'src/views/pages/blog-detail/index.html',
           filename: 'blog-detail/index.html' // Cesta, kam se má soubor vytvořit
         },
-        blog: {
-          import: 'src/views/pages/blog/index.html',
-          filename: 'blog/index.html' // Cesta, kam se má soubor vytvořit
+        pripadoveStudie: {
+          import: 'src/views/pages/pripadove-studie/index.html',
+          filename: 'pripadove-studie/index.html' // Cesta, kam se má soubor vytvořit
         },
         kontakt: {
           import: 'src/views/pages/kontakt/index.html',
@@ -115,10 +115,6 @@ module.exports = {
           import: 'src/views/pages/marketing/graficka-identita-ux-ui.html',
           filename: 'marketing/graficka-identita-ux-ui.html' // Cesta, kam se má soubor vytvořit
         },
-        marketingEshopy: {
-          import: 'src/views/pages/marketing/eshopy-spolu-s-bs-shop.html',
-          filename: 'marketing/eshopy-spolu-s-bs-shop.html' // Cesta, kam se má soubor vytvořit
-        },
         sklad: {
           import: 'src/views/pages/skladovy-system/index.html',
           filename: 'skladovy-system/index.html' // Cesta, kam se má soubor vytvořit
@@ -150,6 +146,34 @@ module.exports = {
         integrace: {
           import: 'src/views/pages/integrace-systemu/index.html',
           filename: 'integrace-systemu/index.html' // Cesta, kam se má soubor vytvořit
+        },
+        integraceFamebee: {
+          import: 'src/views/pages/integrace-systemu/konektor-famebee.html',
+          filename: 'integrace-systemu/konektor-famebee.html' // Cesta, kam se má soubor vytvořit
+        },
+        integraceSupportbox: {
+          import: 'src/views/pages/integrace-systemu/supportbox-pohoda.html',
+          filename: 'integrace-systemu/supportbox-pohoda.html' // Cesta, kam se má soubor vytvořit
+        },
+        pohoda: {
+          import: 'src/views/pages/pohoda/index.html',
+          filename: 'pohoda/index.html' // Cesta, kam se má soubor vytvořit
+        },
+        pohodaFamedash: {
+          import: 'src/views/pages/pohoda/famedash.html',
+          filename: 'pohoda/famedash.html' // Cesta, kam se má soubor vytvořit
+        },
+        pohodaReseniZakazek: {
+          import: 'src/views/pages/pohoda/reseni-zakazek.html',
+          filename: 'pohoda/reseni-zakazek.html' // Cesta, kam se má soubor vytvořit
+        },
+        vyvoj: {
+          import: 'src/views/pages/vyvoj/index.html',
+          filename: 'vyvoj/index.html' // Cesta, kam se má soubor vytvořit
+        },
+        vyvojFamedash: {
+          import: 'src/views/pages/vyvoj/eshopy-spolu-s-bs-shop.html',
+          filename: 'vyvoj/eshopy-spolu-s-bs-shop.html' // Cesta, kam se má soubor vytvořit
         },
           
         404: './src/views/pages/404/index.html', // => dist/404.html

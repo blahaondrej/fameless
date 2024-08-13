@@ -10,7 +10,7 @@ body {
 body {
   display: flex;
   flex-direction: column;
-  background-color: #ADE8FF;
+  background-color: #ade8ff;
   &.no-scroll {
     overflow: hidden;
   }
@@ -97,23 +97,23 @@ body {
     }
   }
   &::after {
-      content: '';
-      position: absolute;
-      top: -120px;
-      right: 0;
-      left: 0;
-      background-image: url('src/assets/images/icons/three-circles.svg');
-      z-index: 0;
-      background-repeat: no-repeat;
-      width: 100%;
-      min-height: 1100px;
-      background-size: 1100px; 
-      pointer-events: none;
-      background-position: center;
+    content: '';
+    position: absolute;
+    top: -120px;
+    right: 0;
+    left: 0;
+    background-image: url('src/assets/images/icons/three-circles.svg');
+    z-index: 0;
+    background-repeat: no-repeat;
+    width: 100%;
+    min-height: 1100px;
+    background-size: 1100px;
+    pointer-events: none;
+    background-position: center;
   }
   @include mixins.respond-to(md) {
     &::after {
-      background-size: 450px; 
+      background-size: 450px;
       background-size: 100%;
       inset: 0;
       width: 100%;

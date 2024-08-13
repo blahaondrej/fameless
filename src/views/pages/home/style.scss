@@ -1,2 +1,21 @@
 @use '@styles/main.scss';
 @use '@styles/abstracts/_variables.scss' as var;
+
+#stw-banner-wrapper {
+  container-type: inline-size;
+}
+#stw-banner {
+  height: 100px;
+  border: none;
+  outline: none;
+}
+@container (min-width:672px) {
+  #stw-banner {
+    height: 150px;
+  }
+}
+@container (min-width:1024px) {
+  #stw-banner {
+    height: 200px;
+  }
+}

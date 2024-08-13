@@ -1,265 +1,272 @@
 @use '../base/fonts/inter.scss' as fontInter;
 @use '../base/mixins';
 .footer {
-    background-color: #08005C;
-    &__inner {
-        padding: 100px 0 50px;
-        @include mixins.respond-to(md) {
-            padding: 50px 0 30px;
-          }
+  background-color: #08005c;
+  &__right {
+    margin-top: 75px;
+    @include mixins.respond-to(md) {
+      margin-top: 30px;
     }
-    &__logo {
-        margin-bottom: 60px;
-        
+  }
+  &__inner {
+    padding: 100px 0 50px;
+    @include mixins.respond-to(md) {
+      padding: 50px 0 30px;
     }
-    &__title {
-        color: #FFF;
-        font-feature-settings: 'clig' off, 'liga' off;
-        font-size: 12px;
+  }
+  &__logo {
+    margin-bottom: 60px;
+  }
+  &__title {
+    color: #fff;
+    font-feature-settings:
+      'clig' off,
+      'liga' off;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin-bottom: 35px;
+    @include mixins.respond-to(md) {
+      margin-bottom: 20px;
+    }
+  }
+  &__copyright {
+    color: #fff;
+    text-align: center;
+    padding: 18px 20px;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    p {
+      margin-bottom: 0;
+      opacity: 0.8;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 24px;
+    }
+  }
+  ul {
+    list-style-type: none;
+    li {
+      list-style-type: none;
+      padding-bottom: 32px;
+      @include mixins.respond-to(md) {
+        padding-bottom: 20px;
+      }
+      a {
+        color: #fff;
+        text-decoration: none;
+        display: inline-flex;
+        align-items: center;
+        color: #fff;
+        font-family: fontInter.$font-family-inter;
+        font-size: 14px;
         font-style: normal;
-        font-weight: 600;
-        line-height: normal;
-        letter-spacing: 1px;
-        text-transform: uppercase;
-        margin-bottom: 35px;
-        @include mixins.respond-to(md) {
-            margin-bottom: 20px;
-          }
+        font-weight: 500;
+        line-height: 24px;
+      }
     }
-    &__copyright {
-        color: #FFF;
-        text-align: center;
-        padding: 18px 20px;
-        border-top: 1px solid rgba(255, 255, 255, 0.2);
-        p {
-            margin-bottom: 0;
-            opacity: 0.8;
-            font-size: 14px;
-            font-style: normal;
-            font-weight: 500;
-            line-height: 24px;
-        }
+  }
+  &__list {
+    padding-left: 0;
+    &--icons {
+      padding-left: 30px;
     }
-    ul {
-        list-style-type: none;
-        li {
-            list-style-type: none;
-            padding-bottom: 32px;
-            @include mixins.respond-to(md) {
-                padding-bottom: 20px;
-              }
-            a {
-                color: #fff;
-                text-decoration: none;
-                display: inline-flex;
-                align-items: center;
-                color: #FFF;
-                font-family: fontInter.$font-family-inter;
-                font-size: 14px;
-                font-style: normal;
-                font-weight: 500;
-                line-height: 24px;
-            }
-        }
+  }
+  &__link {
+    position: relative;
+    &::before {
+      content: '';
+      position: absolute;
+      display: flex;
+      left: -34px;
+      height: 22px;
+      width: 22px;
+      background-size: auto;
+      background-position: center;
+      background-repeat: no-repeat;
     }
-    &__list {
-        padding-left: 0;
-        &--icons {
-            padding-left: 30px;
-        }
+    &::after {
+      content: '';
+      position: absolute;
+      width: 100%;
+      height: 1px;
+      background-color: #fff;
+      bottom: 0;
+      left: 0;
+      transform-origin: right;
+      transform: scaleX(0);
+      transition: transform 0.3s ease-in-out;
     }
-    &__link {
-        position: relative;
-        &::before {
-            content: '';
-            position: absolute;
-            display: flex;
-            left: -34px;
-            height: 22px;
-            width: 22px;
-            background-size: auto;
-            background-position: center;
-            background-repeat: no-repeat;
-        }
-        &::after {
-            content: '';
-            position: absolute;
-            width: 100%;
-            height: 1px;
-            background-color: #fff;
-            bottom: 0;
-            left: 0;
-            transform-origin: right;
-            transform: scaleX(0);
-            transition: transform .3s ease-in-out;
-        }
-        &:hover {
-            &::after {
-                transform-origin: left;
-                transform: scaleX(1);
-            }
-        }
-        &--email {
-            &::before {
-                background-image: url('src/assets/images/icons/footer/footer_email.svg');   
-            }
-        }
-        &--phone {
-            &::before {
-                background-image: url('src/assets/images/icons/footer/footer_phone.svg');   
-            }
-        }
-        &--location {
-            &::before {
-                background-image: url('src/assets/images/icons/footer/footer_location.svg');   
-            }
-        }
-        &--form {
-            &::before {
-                background-image: url('src/assets/images/icons/footer/footer_form.svg');   
-            }
-        }
-        &--facebook {
-            &::before {
-                height: 15px;
-                width: 10px;
-                background-image: url('src/assets/images/icons/footer/footer_facebook.svg');   
-            }
-        }
-        &--instagram {
-            &::before {
-                height: 15px;
-                width: 14px;
-                background-image: url('src/assets/images/icons/footer/footer_instagram.svg');   
-            }
-        }
-        &--linkedin {
-            &::before {
-                height: 15px;
-                width: 15px;
-                background-image: url('src/assets/images/icons/footer/footer_linkedin.svg');   
-            }
-        }
+    &:hover {
+      &::after {
+        transform-origin: left;
+        transform: scaleX(1);
+      }
     }
+    &--email {
+      &::before {
+        background-image: url('src/assets/images/icons/footer/footer_email.svg');
+      }
+    }
+    &--phone {
+      &::before {
+        background-image: url('src/assets/images/icons/footer/footer_phone.svg');
+      }
+    }
+    &--location {
+      &::before {
+        background-image: url('src/assets/images/icons/footer/footer_location.svg');
+      }
+    }
+    &--form {
+      &::before {
+        background-image: url('src/assets/images/icons/footer/footer_form.svg');
+      }
+    }
+    &--facebook {
+      &::before {
+        height: 15px;
+        width: 10px;
+        background-image: url('src/assets/images/icons/footer/footer_facebook.svg');
+      }
+    }
+    &--instagram {
+      &::before {
+        height: 15px;
+        width: 14px;
+        background-image: url('src/assets/images/icons/footer/footer_instagram.svg');
+      }
+    }
+    &--linkedin {
+      &::before {
+        height: 15px;
+        width: 15px;
+        background-image: url('src/assets/images/icons/footer/footer_linkedin.svg');
+      }
+    }
+  }
 }
 .newsletter {
-    &__form {
-        display: flex;
-        flex-direction: column;
-        margin-bottom: 130px;
-        height: 50px;
-        @include mixins.respond-to(md) {
-            margin-bottom: 50px;
-          }
-        .d-flex-inline {
-            display: flex;
-        }
-        input {
-            border-radius: 8px;
-            background: rgba(177, 227, 253, 0.259);
-            border: none;
-            color: #FFF;
-            font-size: 14px;
-            font-style: normal;
-            font-family: fontInter.$font-family-inter;
-            font-weight: 500;
-            line-height: 24px;
-            height: 100%;
-            width: 100%;
-            max-width: 330px;
-            padding: 12px 20px;
-            outline: none;
-            height: 36px;
-            &::placeholder {
-                color: rgba(255 ,255 ,255 ,0.5);
-                font-size: 14px;
-                font-style: normal;
-                font-weight: 500;
-                line-height: 24px;
-                color: #FFF;
-                opacity: 0.5;
-            }
-        }
-        button {
-            border-radius: 34px;
-            border: 1px solid #FFF;
-            color: #fff;
-            width: 128px;
-            height: 36px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            text-align: center;
-            font-size: 14px;
-            font-style: normal;
-            font-weight: 500;
-            line-height: 24px;
-            background-color: transparent;
-            margin-left: 14px;
-        }
-        .checkbox-container {
-            display: block;
-            position: relative;
-            padding-left: 22px;
-            margin-top: 12px;
-            cursor: pointer;
-            font-size: 14px;
-            user-select: none;
-            color: #FFF;
-            font-family: fontInter.$font-family-inter;
-            font-size: 10px;
-            font-style: normal;
-            font-weight: 500;
-            line-height: 24px;
-            opacity: 0.8;
-          }
-          
-          /* Skryje checkbox */
-          .checkbox-container input {
-            position: absolute;
-            opacity: 0;
-            cursor: pointer;
-            height: 0;
-            width: 0;
-          }
-          
-          /* Vytvoří vlastní checkbox */
-          .checkmark {
-            position: absolute;
-            top: 5px;
-            left: 0;
-            height: 14px;
-            width: 14px;
-            border-radius: 4px;
-            background: rgba(177,227,253, 0.259);
-          }
-          
-          /* Při zaškrtnutí změní barvu pozadí */
-          .checkbox-container input:checked ~ .checkmark {
-            background-color: #2196F3;
-          }
-          
-          /* Vytvoří indikátor zaškrtnutí v checkboxu */
-          .checkmark:after {
-            content: "";
-            position: absolute;
-            display: none;
-          }
-          
-          /* Zobrazí indikátor zaškrtnutí, když je checkbox zaškrtnut */
-          .checkbox-container input:checked ~ .checkmark:after {
-            display: block;
-          }
-          
-          /* Styl pro indikátor zaškrtnutí */
-          .checkbox-container .checkmark:after {
-            left: 5px;
-            top: 2px;
-            width: 4px;
-            height: 9px;
-            border: solid white;
-            border-width: 0 2px 2px 0;
-            transform: rotate(45deg);
-          }
+  &__form {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 130px;
+    height: 50px;
+    @include mixins.respond-to(md) {
+      margin-bottom: 50px;
     }
+    .d-flex-inline {
+      display: flex;
+    }
+    input {
+      border-radius: 8px;
+      background: rgba(177, 227, 253, 0.259);
+      border: none;
+      color: #fff;
+      font-size: 14px;
+      font-style: normal;
+      font-family: fontInter.$font-family-inter;
+      font-weight: 500;
+      line-height: 24px;
+      height: 100%;
+      width: 100%;
+      max-width: 330px;
+      padding: 12px 20px;
+      outline: none;
+      height: 36px;
+      &::placeholder {
+        color: rgba(255, 255, 255, 0.5);
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 24px;
+        color: #fff;
+        opacity: 0.5;
+      }
+    }
+    button {
+      border-radius: 34px;
+      border: 1px solid #fff;
+      color: #fff;
+      width: 128px;
+      height: 36px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 24px;
+      background-color: transparent;
+      margin-left: 14px;
+    }
+    .checkbox-container {
+      display: block;
+      position: relative;
+      padding-left: 22px;
+      margin-top: 12px;
+      cursor: pointer;
+      font-size: 14px;
+      user-select: none;
+      color: #fff;
+      font-family: fontInter.$font-family-inter;
+      font-size: 10px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 24px;
+      opacity: 0.8;
+    }
+
+    /* Skryje checkbox */
+    .checkbox-container input {
+      position: absolute;
+      opacity: 0;
+      cursor: pointer;
+      height: 0;
+      width: 0;
+    }
+
+    /* Vytvoří vlastní checkbox */
+    .checkmark {
+      position: absolute;
+      top: 5px;
+      left: 0;
+      height: 14px;
+      width: 14px;
+      border-radius: 4px;
+      background: rgba(177, 227, 253, 0.259);
+    }
+
+    /* Při zaškrtnutí změní barvu pozadí */
+    .checkbox-container input:checked ~ .checkmark {
+      background-color: #2196f3;
+    }
+
+    /* Vytvoří indikátor zaškrtnutí v checkboxu */
+    .checkmark:after {
+      content: '';
+      position: absolute;
+      display: none;
+    }
+
+    /* Zobrazí indikátor zaškrtnutí, když je checkbox zaškrtnut */
+    .checkbox-container input:checked ~ .checkmark:after {
+      display: block;
+    }
+
+    /* Styl pro indikátor zaškrtnutí */
+    .checkbox-container .checkmark:after {
+      left: 5px;
+      top: 2px;
+      width: 4px;
+      height: 9px;
+      border: solid white;
+      border-width: 0 2px 2px 0;
+      transform: rotate(45deg);
+    }
+  }
 }

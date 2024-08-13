@@ -1,211 +1,71 @@
 {% extends "src/views/layouts/default.html" %}
 
 <!-- set variables used in layout -->
-{% set title="Integrace systémů" %}
+{% set title="Fameless | Integrace systémů" %}
 
 {% block styles %}
 <!-- load specific page style -->
 
 {% endblock %}
 
-{% block scripts %}
-<!-- load specific page script -->
-
-{% endblock %}
 
 {% block content %}
 
-<div class="circle-background circle-background--product"></div>
+<div class="circle-background circle-background--homepage"></div>
 <nav aria-label="Breadcrumb">
   <ol class="breadcrumbs">
     <li><a href="/"><img src="@images/icons/home-icon.svg"></a></li>
     <li><a href="#">Integrace systémů</a></li>
   </ol>
 </nav>
-<div class="product-detail">
-  <div class="row">
-    <div class="col-12 col-md-1">
-      <div class="sticky-element">
-        <div class="sticky-element__image">
-          <img src="@images/icons/integrace-systemu/sticky-icon-integrace-systemu.svg">
-        </div>
-        <div class="sticky-element__text">
-          Integrace systémů
-        </div>
-      </div>
-    </div>
-    <div class="col-12 col-md-11">
-      <section class="intro intro--product-detail">
-        <div class="row align-items-center justify-content-center">
-          <div class="col-12">
-            <h1 class="intro__title">Integrace systémů</h1>
-            <p class="intro__text">Jsme specialisti na systémová řešení, automatizaci a napojení na POHODA.</p>
-            <a href="#content" class="button-secondary">Zjistit více</a>
-          </div>
-        </div>
-      </section>
-      <section id="content">
-
-        <div class="products__inner">
-          <div class="row justify-content-md-center">
-            <div class="col-12 col-md-6 col-lg-5">
-              <div class="products__item products__item--left-marketing reveal-opacity">
-                <div class="products__images products__images--marketing justify-content-center">
-                  <img class="product-marketing" src="@images/integrace-systemu/integrace-systemu1.png">
-                </div>
-              </div>
-            </div>
-            <div class="col-12 col-md-6 col-lg-5">
-              <div class="products__item">
-                <h2 class="products__title">SupportBox<br>& POHODA</h2>
-                <h5 class="products__subtitle">Jednoduché a efektivní řešení zobrazení objednávek</h5>
-                <p class="products__text">Vyvinuli jsme aplikaci <strong>FameBee, díky které propojíte
-                    SupportBox</strong> s dnes nejpoužívanějším ekonomickým systémem na českém trhu
-                  <strong>POHODA</strong>. Integrace na tuto oblíbenou platformu nesměla chybět.
-                </p>
-                <p class="products__text">Propojení vaší Pohody a SupportBoxu <strong>zvládnete velmi snadno</strong>.
-                </p>
-                <p class="products__text">Díky integraci se vám budou u každé zprávy <strong>zobrazovat všechny důležité
-                    informace</strong>, které máte v administraci u klienta zaevidovány. Nemusíte tedy otevírat Pohodu a
-                  zjišťovat si informace o klientovi nebo jeho objednávce zvlášť. Vše důležité vidíte <strong>hned po
-                    otevření zprávy nebo zvednutí telefonu</strong>.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="row">
-          <div class="col-11">
-            <div class="product-full">
-              <h2 class="product-full__title">
-                Co vidíte v pluginu
-              </h2>
-            </div>
-            <img class="product-full__image" src="@images/integrace-systemu/integrace-systemu2.png">
-
-          </div>
-        </div>
-
-        <div class="products__inner">
-          <div class="row justify-content-md-center">
-            <div class="col-12 col-md-6 col-lg-5 order-md-1 order-lg-2">
-              <div class="products__item products__item--right-marketing reveal-opacity">
-                <div class="products__images products__images--marketing justify-content-center">
-                  <img class="product-marketing" src="@images/integrace-systemu/integrace-systemu3.png">
-                </div>
-              </div>
-            </div>
-            <div class="col-12 col-md-6 col-lg-5 order-md-1 order-lg-1">
-              <div class="products__item">
-                <h2 class="products__title">Perfektní<br>přehled</h2>
-                <h5 class="products__subtitle">Mějte přehled o objednávkách zákazníka u příchozích zpráv</h5>
-                <p class="products__text">Díky <strong>propojení Pohody a SupportBoxu ušetříte mnoho
-                    času</strong> zbytečným zdlouhavým filtrováním v systému, přepínání mezi okny apod.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="row">
-          <div class="col-11">
-            <div class="product-full">
-              <h2 class="product-full__title">
-                Buďte efektivnější s FameBee
-              </h2>
-            </div>
-          </div>
-        </div>
-
-        <div class="software software--marketing reveal-up100">
-          <div class="software__item">
-            <div class="software__icon">
-              <img src="@images/icons/integrace-systemu/integrace-systemu-pohoda.svg">
-            </div>
-            <h3 class="software__title">Napojený na<br>POHODA</h3>
-            <p class="software__text">
-              FameBee je napojený na POHODA, nejpoužívanější český ekonomický systém.
-            </p>
-          </div>
-          <div class="software__item">
-            <div class="software__icon">
-              <img src="@images/icons/integrace-systemu/integrace-systemu-klik.svg">
-            </div>
-            <h3 class="software__title">Na pár<br>kliků</h3>
-            <p class="software__text">
-              Snadná integrace, která vám zabere pár minut. To je FameBee.
-            </p>
-          </div>
-          <div class="software__item">
-            <div class="software__icon">
-              <img src="@images/icons/integrace-systemu/integrace-systemu-filtr.svg">
-            </div>
-            <h3 class="software__title">Filtrům<br>odzvonilo</h3>
-            <p class="software__text">
-              Všechny důležité informace o zákazníkovi jsou zobrazené hned bez nutnosti filtrování.
-            </p>
-          </div>
-        </div>
-
-        <div class="software software--marketing reveal-up100">
-          <div class="software__item">
-            <div class="software__icon">
-              <img src="@images/icons/integrace-systemu/integrace-systemu-zakaznik.svg">
-            </div>
-            <h3 class="software__title">Se zákazníky<br>efektivněji</h3>
-            <p class="software__text">
-              Dotazy zákazníků řešíte efektivněji a na vyšší úrovni.
-            </p>
-          </div>
-          <div class="software__item">
-            <div class="software__icon">
-              <img src="@images/icons/integrace-systemu/integrace-systemu-detail.svg">
-            </div>
-            <h3 class="software__title">Detailní<br>přehled</h3>
-            <p class="software__text">
-              Kompletní přehled o objednávkách daného zákazníka.
-            </p>
-          </div>
-          <div class="software__item">
-            <div class="software__icon">
-              <img src="@images/icons/integrace-systemu/integrace-systemu-prodej.svg">
-            </div>
-            <h3 class="software__title">Zvýšení<br>prodejů</h3>
-            <p class="software__text">
-              Dobrá informovanost operátora otevírá prostor pro upsell a crossell.
-            </p>
-          </div>
-        </div>
-
-        <div class="products__inner">
-          <div class="row justify-content-md-center">
-            <div class="col-12 col-md-6 col-lg-5 order-md-1 order-lg-2">
-              <div class="products__item products__item--right-marketing reveal-opacity">
-                <div class="products__images products__images--marketing justify-content-center">
-                  <img class="product-marketing" src="@images/integrace-systemu/integrace-systemu4.png">
-                </div>
-              </div>
-            </div>
-            <div class="col-12 col-md-6 col-lg-5 order-md-1 order-lg-1">
-              <div class="products__item">
-                <h2 class="products__title">Cena řešení</h2>
-                <h5 class="products__subtitle">Naistalujte si aplikaci FameBee a propojte si SupportBox a Pohodu.</h5>
-                <p class="products__text">Máte <strong>14 dní zdarma</strong> na vyzkoušení. 12. den od instalace
-                  <strong>Vás kontaktujeme</strong>, zda chcete prodloužit licenci na trvalé propojení.
-                </p>
-                <p class="products__text">Jednorázová cena: <strong>5 000 Kč</strong><br>Roční servisní poplatek:
-                  <strong>790 Kč</strong>
-                </p>
-                <a href="#" class="button-secondary">Více o SupportBox</a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-      </section>
+<section class="intro intro--products">
+  <div class="row align-items-center justify-content-center">
+    <div class="col-12">
+      <h1 class="intro__title">Integrace systémů</h1>
+      <p class="intro__text">S námi fameless opravdu nebudete. S čím pomůžeme vám?</p>
+      <a href="#" class="button-secondary">Zjistit více</a>
     </div>
   </div>
-</div>
+</section>
 
+<section class="blog blog--products products-list">
+  <div class="blog__inner grid product-list">
+    <div class="row">
+      <div class="grid-item">
+        <a href="konektor-famebee.html" class="blog-item">
+          <div class="blog-item__image blog-item__image--detail">
+            <img class="pc-top" src="@images/icons/integrace-systemu/famebee/sticky-icon-famebee.svg">
+          </div>
+          <div class="blog-item__inner blog-item__inner--detail">
+            <h3 class="blog-item__title blog-item__title--detail">
+              Konektor FameBee
+            </h3>
+            <p class="blog-item__text blog-item__text--detail">
+              Integrační můstek pro ekonomický a informační systém POHODA.
+            </p>
+          </div>
+          <span class="blog-item__arrow"></span>
+        </a>
+      </div>
+      <div class="grid-item">
+        <a href="supportbox-pohoda.html" class="blog-item">
+          <div class="blog-item__image blog-item__image--detail">
+            <img class="pc-top" src="@images/icons/integrace-systemu/supportbox/sticky-icon-supportbox.svg">
+          </div>
+          <div class="blog-item__inner blog-item__inner--detail">
+            <h3 class="blog-item__title blog-item__title--detail">
+              SupportBox & POHODA
+            </h3>
+            <p class="blog-item__text blog-item__text--detail">
+              Jednoduché a efektivní řešení zobrazení objednávek
+            </p>
+          </div>
+          <span class="blog-item__arrow"></span>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
 
 {% include "src/views/partials/contact-banner.html" %}
 {% endblock %}

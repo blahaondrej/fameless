@@ -1,0 +1,96 @@
+{% extends "src/views/layouts/default.html" %}
+
+<!-- set variables used in layout -->
+{% set title="Fameless | Případové studie" %}
+
+{% block styles %}
+<!-- load specific page style -->
+
+{% endblock %}
+
+{% block content %}
+
+<div class="circle-background circle-background--homepage"></div>
+<nav aria-label="Breadcrumb">
+  <ol class="breadcrumbs">
+    <li><a href="/"><img src="@images/icons/home-icon.svg"></a></li>
+    <li><a href="#">Případové studie</a></li>
+  </ol>
+</nav>
+<section class="intro intro--products">
+  <div class="row align-items-center justify-content-center">
+    <div class="col-12">
+      <h1 class="intro__title">Případové studie</h1>
+      <p class="intro__text">S námi fameless opravdu nebudete. S čím pomůžeme vám?</p>
+      <a href="#pripadove-studie" class="button-secondary">Zjistit více</a>
+    </div>
+  </div>
+</section>
+
+<section class="blog" id="pripadove-studie">
+  <div class="blog__inner">
+    <div class="row">
+      <div class="swiper swiper-studie">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <a href="/studie/" class="blog-item">
+              <div class="blog-item__image">
+                <img class="pc-top" src="@images/pripadove-studie/ekokoza-nahled.png">
+              </div>
+              <div class="blog-item__inner">
+                <h3 class="blog-item__title">
+                  Ekokoza CZ,<br>migrace e-shopu
+                </h3>
+                <p class="blog-item__text">
+                  Nabízíme migraci vašeho e-shopu pod
+                  IS POHODA a nadstavbový systém BSSHOP, která zajistí precizní on-line synchronizaci e-shopu a dalších
+                  systémů.
+                </p>
+              </div>
+              <span class="blog-item__arrow"></span>
+            </a>
+          </div>
+          <div class="swiper-slide">
+            <div class="blog-item">
+              <div class="blog-item__image">
+                <img class="pc-top" src="@images/pripadove-studie/buga-nahled.png">
+              </div>
+              <div class="blog-item__inner">
+                <h3 class="blog-item__title">
+                  Buga,<br>IS POHODA by Fameless
+                </h3>
+                <p class="blog-item__text">
+                  Díky živému propojení IS POHODA a webové aplikace FAMEDASH budete mít o svém e-shopu vždy perfektní
+                  přehled v reálném čase, stejně jako Buga, výrobce originální české módy.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="blog-item">
+              <div class="blog-item__image">
+                <img class="pc-top" src="@images/pripadove-studie/vitalpoint-nahled.png">
+              </div>
+              <div class="blog-item__inner">
+                <h3 class="blog-item__title">
+                  VitalPoint,<br>komplexní mailing kit
+                </h3>
+                <p class="blog-item__text">
+                  Nabízíme profesionální správu vašeho marketingu, vč. komplexního mailingového servisu se skutečným
+                  dopadem na návštěvnost vašeho e-shopu.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-button-prev swiper-button-studie-prev"></div>
+        <div class="swiper-button-next swiper-button-studie-next"></div>
+      </div>
+    </div>
+  </div>
+
+</section>
+
+{% include "src/views/partials/contact-banner.html" %}
+{% endblock %}

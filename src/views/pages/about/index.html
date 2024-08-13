@@ -1,7 +1,7 @@
 {% extends "src/views/layouts/default.html" %}
 
 <!-- set variables used in layout -->
-{% set title="About" %}
+{% set title="Fameless | About" %}
 
 {% block styles %}
 <!-- load specific page style -->
@@ -19,7 +19,7 @@
 <nav aria-label="Breadcrumb">
   <ol class="breadcrumbs">
     <li><a href="/"><img src="@images/icons/home-icon.svg"></a></li>
-    <li><a href="/about/index.html">O nás</a></li>
+    <li><a href="#">O nás</a></li>
   </ol>
 </nav>
 <section class="intro intro--detail">
@@ -27,12 +27,12 @@
     <div class="col-12">
       <h1 class="intro__title">Strategický partner pro vaši firmu</h1>
       <p class="intro__text">S námi fameless opravdu nebudete. S čím pomůžeme vám?</p>
-      <a href="#" class="button-secondary">Zjistit více</a>
+      <a href="#o-nas" class="button-secondary">Zjistit více</a>
     </div>
   </div>
 </section>
 
-<section class="about">
+<section class="about" id="o-nas">
   <div class="row">
     <div class="col-12 col-md-6 col-lg-4">
       <div class="about__text">
@@ -44,7 +44,7 @@
           Automatizace procesů hraje nejen v tomto směru klíčovou roli.</p>
       </div>
     </div>
-    <div class="col-12 col-md-6 offset-lg-2">
+    <div class="col-12 col-md-6 col-lg-4 offset-lg-3">
       <div class="about__image">
         <img class="product-bg" src="@images/about-top.png">
       </div>
@@ -53,66 +53,66 @@
 </section>
 <section class="studie-bottom">
   <div class="row">
-    <div class="col-12 col-md-4 col-lg-4">
-      <div class="studie-bottom__image reveal-opacity">
-        <img src="@images/studie-bottom-emilie-tomanova.png" alt="Emílie Tomanová">
-      </div>
-    </div>
-    <div class="col-12 col-md-8 col-lg-6 mt-auto">
+    <div class="col-10">
       <div class="studie-bottom__quote">
-        Ve Fameless jsme připraveni trefit do černého. Naše řešení jsou komplexem všeho, co potřebujete. Mají ale taky
-        přesah do dalších oblastí vašeho každodenního počínání.
+        Ve Fameless jsme připraveni trefit se do černého. Naše řešení jsou kompletním mixem všeho, co potřebujete. Mají
+        ale také přesah do dalších oblastí vašeho každodenního počínání.
       </div>
-      <div class="studie-bottom__name">Emílie Tomanová </div>
-      <div class="studie-bottom__position">zakladatelka Fameless</div>
+      <div class="studie-bottom__name">Emílie Tomanová</div>
+      <div class="studie-bottom__position">Head of Fameless</div>
     </div>
   </div>
 </section>
 
 <section class="about-team">
-  <div class="row py-4">
-    <div class="col">
-      {% include "src/views/partials/team/anna-doubravova.html" %}
-    </div>
-    <div class="col">
-      {% include "src/views/partials/team/denisa-prokopova.html" %}
-    </div>
+  <div class="row py-3">
     <div class="col">
       {% include "src/views/partials/team/emilie-tomanova.html" %}
     </div>
     <div class="col">
-      {% include "src/views/partials/team/eva-pracharova.html" %}
-    </div>
-    <div class="col">
-      {% include "src/views/partials/team/ivo-kylian.html" %}
-    </div>
-  </div>
-  <div class="row py-4">
-    <div class="col">
       {% include "src/views/partials/team/jakub-sedaj.html" %}
+    </div>
+    <div class="col">
+      {% include "src/views/partials/team/ondra-tobiska.html" %}
     </div>
     <div class="col">
       {% include "src/views/partials/team/lubos-racek.html" %}
     </div>
     <div class="col">
-      {% include "src/views/partials/team/martin-jenik.html" %}
-    </div>
-    <div class="col">
       {% include "src/views/partials/team/ondra-stantejsky.html" %}
     </div>
     <div class="col">
-      {% include "src/views/partials/team/ondra-tobiska.html" %}
+      {% include "src/views/partials/team/zuzana-cebulova.html" %}
     </div>
-  </div>
-  <div class="row py-4">
     <div class="col">
-      {% include "src/views/partials/team/pavla-bubakova.html" %}
+      {% include "src/views/partials/team/anna-doubravova.html" %}
     </div>
     <div class="col">
       {% include "src/views/partials/team/vojtech-kral.html" %}
     </div>
     <div class="col">
-      {% include "src/views/partials/team/zuzana-cebulova.html" %}
+      {% include "src/views/partials/team/martin-jenik.html" %}
+    </div>
+    <div class="col">
+      {% include "src/views/partials/team/ivo-kylian.html" %}
+    </div>
+    <div class="col">
+      {% include "src/views/partials/team/denisa-prokopova.html" %}
+    </div>
+    <div class="col">
+      {% include "src/views/partials/team/pavla-bubakova.html" %}
+    </div>
+    <div class="col">
+      {% include "src/views/partials/team/eva-pracharova.html" %}
+    </div>
+    <div class="col">
+      {% include "src/views/partials/team/kamila-krejcova.html" %}
+    </div>
+    <div class="col">
+      {% include "src/views/partials/team/petra-hubalkova.html" %}
+    </div>
+    <div class="col">
+      {% include "src/views/partials/team/tomas-ludwig.html" %}
     </div>
   </div>
 </section>
@@ -123,7 +123,7 @@
       <h2 class=" section-title__title">Jak fungujeme?</h2>
     </div>
     <div class="section-title__right">
-      <a href="#">Sjednejte si s námi schůzku</a>
+      <a href="/kontakt/">Sjednejte si s námi schůzku</a>
     </div>
   </div>
   <div class="work__inner">
@@ -148,7 +148,7 @@
             <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
               data-bs-parent="#accordionExample">
               <div class="accordion-body">
-                Soustředíme se na pochopení vaší značky a vašich produktů jako celku
+                Soustředíme se na pochopení vaší značky a vašich produktů jako celku.
               </div>
             </div>
           </div>
@@ -165,7 +165,7 @@
             <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
               data-bs-parent="#accordionExample">
               <div class="accordion-body">
-                Soustředíme se na pochopení vaší značky a vašich produktů jako celku
+                Vaše data i procesy si proklepneme od hlavy až k patě. Na nás je spoleh.
               </div>
             </div>
           </div>
@@ -182,7 +182,7 @@
             <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
               data-bs-parent="#accordionExample">
               <div class="accordion-body">
-                Soustředíme se na pochopení vaší značky a vašich produktů jako celku
+                Vždy je co zlepšovat a posunovat, a proto vám navrhneme ideální řešení na míru.
               </div>
             </div>
           </div>
@@ -199,7 +199,7 @@
             <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
               data-bs-parent="#accordionExample">
               <div class="accordion-body">
-                Soustředíme se na pochopení vaší značky a vašich produktů jako celku
+                Než vám začneme všechno měnit přímo pod rukama, pečlivě vše otestujeme.
               </div>
             </div>
           </div>
@@ -216,7 +216,7 @@
             <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive"
               data-bs-parent="#accordionExample">
               <div class="accordion-body">
-                Soustředíme se na pochopení vaší značky a vašich produktů jako celku
+                A to nejlepší na konec, všechno nasadíme a také vás perfektně proškolíme.
               </div>
             </div>
           </div>
@@ -232,31 +232,55 @@
       2015
     </div>
     <div class="about-timeline__text reveal-right">
-      Založení společnosti a otevření kanceláře
+      Zakládáme on-line /<br>marketingovou agenturu v Brně
     </div>
   </div>
   <div class="about-timeline__item">
     <div class="about-timeline__year reveal-up400">
-      2015
+      2016
     </div>
     <div class="about-timeline__text reveal-left">
-      Založení společnosti a otevření kanceláře
+      Stáváme se partnerskou<br>agenturou pro Mailkit
     </div>
   </div>
   <div class="about-timeline__item">
     <div class="about-timeline__year reveal-up400">
-      2015
+      2018
     </div>
     <div class="about-timeline__text reveal-right">
-      Založení společnosti a otevření kanceláře
+      Rozšiřujeme se o další e-commerce<br>oblasti - IT a vývoj SW
     </div>
   </div>
   <div class="about-timeline__item">
     <div class="about-timeline__year reveal-up400">
-      2015
+      2019
     </div>
     <div class="about-timeline__text reveal-left">
-      Založení společnosti a otevření kanceláře
+      První verze FameDash SW pro<br>integraci s IS POHODA
+    </div>
+  </div>
+  <div class="about-timeline__item">
+    <div class="about-timeline__year reveal-up400">
+      2020
+    </div>
+    <div class="about-timeline__text reveal-left">
+      Partnerství s BSSHOP
+    </div>
+  </div>
+  <div class="about-timeline__item">
+    <div class="about-timeline__year reveal-up400">
+      2021
+    </div>
+    <div class="about-timeline__text reveal-left">
+      Vývoj SW skladového<br>systému WMS 1.0
+    </div>
+  </div>
+  <div class="about-timeline__item">
+    <div class="about-timeline__year reveal-up400">
+      2022
+    </div>
+    <div class="about-timeline__text reveal-left">
+      Partneři SupportBoxu<br>a modul FameBee 1.0
     </div>
   </div>
 </section>

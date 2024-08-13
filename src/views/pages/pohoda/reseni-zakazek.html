@@ -1,0 +1,174 @@
+{% extends "src/views/layouts/default.html" %}
+
+<!-- set variables used in layout -->
+{% set title="Fameless | Řešení zakázek" %}
+
+{% block styles %}
+<!-- load specific page style -->
+
+{% endblock %}
+
+{% block scripts %}
+<!-- load specific page script -->
+
+{% endblock %}
+
+{% block content %}
+
+<div class="circle-background circle-background--product"></div>
+<nav aria-label="Breadcrumb">
+  <ol class="breadcrumbs">
+    <li><a href="/"><img src="@images/icons/home-icon.svg"></a></li>
+    <li><a href="/pohoda/">Moduly FameDash</a></li>
+    <li><a href="#">Řešení zakázek</a></li>
+  </ol>
+</nav>
+<div class="product-detail">
+  <div class="row">
+    <div class="col-12 col-md-1">
+      <div class="sticky-element">
+        <div class="sticky-element__image">
+          <img src="@images/icons/integrace-systemu/famebee/sticky-icon-famebee.svg">
+        </div>
+        <div class="sticky-element__text">
+          Řešení zakázek
+        </div>
+      </div>
+    </div>
+    <div class="col-12 col-md-11">
+      <section class="intro intro--product-detail">
+        <div class="row align-items-center justify-content-center">
+          <div class="col-12">
+            <h1 class="intro__title">Řešení zakázek</h1>
+            <p class="intro__text">Podchytíte i vaši zakázkovou výrobu, vše budete mít přehledně okamžitě k dispozici
+            </p>
+            <a href="#reseni-zakazek" class="button-secondary">Zjistit více</a>
+          </div>
+        </div>
+      </section>
+      <section id="reseni-zakazek">
+        <div class="products__inner">
+          <div class="row justify-content-md-center">
+            <div class="col-12 col-md-6 col-lg-5">
+              <div class="products__item products__item--left-marketing reveal-opacity">
+                <div class="products__images products__images--marketing justify-content-center">
+                  <img class="product-marketing" src="@images/pohoda/famedash/rychle-jednoduse-a-prehledne.png">
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-5">
+              <div class="products__item">
+                <h2 class="products__title">Přehledné<br>informace</h2>
+                <h5 class="products__subtitle">Kompletní informace o zakázce na jednom místě</h5>
+                <p class="products__text">Vždy zjistíte, kolik je na zakázce odpracováno času. On-line můžete sledovat,
+                  kolik je vyčerpáno budgetu, jaké zboží a služby v jakém množství byly do zakázky odepsané. Aplikace je
+                  on-line, tudíž mohou vaši zaměstnanci vše zadávat pohodlně i z terénu.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="products__inner">
+          <div class="row justify-content-md-center">
+            <div class="col-12 col-md-6 col-lg-5 order-md-1 order-lg-2">
+              <div class="products__item products__item--right-marketing reveal-opacity">
+                <div class="products__images products__images--marketing justify-content-center">
+                  <img class="product-marketing" src="@images/pohoda/famedash/automatizace.png">
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-5 order-md-1 order-lg-1">
+              <div class="products__item">
+                <h2 class="products__title">Logování času</h2>
+                <h5 class="products__subtitle">Zaměstnanci mohou zadávat odvedený čas přímo v terénu</h5>
+                <p class="products__text">Z pohodlí kanceláře mohou manažeři a vedoucí sledovat, jak zaměstnanci
+                  pracují. Vždy máte po ruce přehled o všech rozpracovaných zakázkách. Každý zaměstnanec může mít jinou
+                  hodinovou sazbu.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="software software--marketing reveal-up100">
+          <div class="software__item">
+            <div class="software__icon">
+              <img src="@images/icons/pohoda/reseni-zakazek/prehledne-a-kompletni.svg">
+            </div>
+            <h3 class="software__title">Přehledné<br>a kompletní</h3>
+            <p class="software__text">
+              Vše na jednom místě, nemusíte nic zdlouhavě dohledávat v jiných systémech. I toto umí nadstavba IS POHODA.
+            </p>
+          </div>
+          <div class="software__item">
+            <div class="software__icon">
+              <img src="@images/icons/pohoda/reseni-zakazek/zbozi-prevedene-do-zakazky-ze-skladu.svg">
+            </div>
+            <h3 class="software__title">Zboží převedené<br>do zakázky ze skladu</h3>
+            <p class="software__text">
+              Stačí kliknout, vybrat zboží a to se načte do zakázky a odečte ze skladu, nikdy dříve to nebylo tak
+              snadné.
+            </p>
+          </div>
+          <div class="software__item">
+            <div class="software__icon">
+              <img src="@images/icons/pohoda/reseni-zakazek/uz-zadny-dochazkovy-system.svg">
+            </div>
+            <h3 class="software__title">Už žádný<br>docházkový systém</h3>
+            <p class="software__text">
+              Vykazování časů nad zakázkami zaměstnancům krásně nahradí i docházkový systém. Ušetříte tedy peníze i čas
+              za další systém navíc.
+            </p>
+          </div>
+        </div>
+
+        <div class="products__inner">
+          <div class="row justify-content-md-center">
+            <div class="col-12 col-md-6 col-lg-5">
+              <div class="products__item products__item--left-marketing reveal-opacity">
+                <div class="products__images products__images--marketing justify-content-center">
+                  <img class="product-marketing" src="@images/pohoda/famedash/moduly-famedash.png">
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-5">
+              <div class="products__item">
+                <h2 class="products__title">Převod zboží<br>ze skladu</h2>
+                <h5 class="products__subtitle">Do každé zakázky můžete přímo ze skladu vyskladňovat zboží</h5>
+                <p class="products__text">Pomocí modulu pro řízení zakázek snadno převedete zboží nebo služby ze skladu
+                  vašeho IS POHODA přímo do zakázek. Zboží převedené do zakázky se vám samozřejmě z Pohody odečte a o
+                  jeho hodnotu se navýší pořizovací cena zakázky.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="products__inner">
+          <div class="row justify-content-md-center">
+            <div class="col-12 col-md-6 col-lg-5 order-md-1 order-lg-2">
+              <div class="products__item products__item--right-marketing reveal-opacity">
+                <div class="products__images products__images--marketing justify-content-center">
+                  <img class="product-marketing" src="@images/pohoda/famedash/automatizace.png">
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-5 order-md-1 order-lg-1">
+              <div class="products__item">
+                <h2 class="products__title">Nahradí<br>i docházkový systém</h2>
+                <h5 class="products__subtitle">Další a další systémy? S FameDash to budete mít snazší a na jednom místě.
+                </h5>
+                <p class="products__text">Pokud si budou vaši zaměstnanci logovat časy přímo v rámci FameDash, nemusíte
+                  řešit další docházkový systém. FameDash zvládne i dovolené a absence.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </section>
+    </div>
+  </div>
+</div>
+
+
+{% include "src/views/partials/contact-banner.html" %}
+{% endblock %}

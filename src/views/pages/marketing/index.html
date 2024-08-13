@@ -1,7 +1,7 @@
 {% extends "src/views/layouts/default.html" %}
 
 <!-- set variables used in layout -->
-{% set title="Products" %}
+{% set title="Fameless | Marketing" %}
 
 {% block styles %}
 <!-- load specific page style -->
@@ -20,21 +20,20 @@
 <nav aria-label="Breadcrumb">
   <ol class="breadcrumbs">
     <li><a href="/"><img src="@images/icons/home-icon.svg"></a></li>
-    <li><a href="/about/index.html">O nás</a></li>
-    <li><a href="#">Produkty</a></li>
+    <li><a href="#">Marketing</a></li>
   </ol>
 </nav>
 <section class="intro intro--products">
   <div class="row align-items-center justify-content-center">
     <div class="col-12">
-      <h1 class="intro__title">Strategický partner pro vaši firmu</h1>
+      <h1 class="intro__title">Marketing</h1>
       <p class="intro__text">S námi fameless opravdu nebudete. S čím pomůžeme vám?</p>
-      <a href="#" class="button-secondary">Zjistit více</a>
+      <a href="#marketing" class="button-secondary">Zjistit více</a>
     </div>
   </div>
 </section>
 
-<section class="blog blog--products products-list">
+<section class="blog blog--products products-list" id="marketing">
   <div class="blog__inner grid product-list">
     <div class="row">
       <div class="grid-item">
@@ -133,23 +132,6 @@
             </h3>
             <p class="blog-item__text blog-item__text--detail">
               Na základě vašich marží navrhneme vhodnou strategii pro zbožové srovnávače.
-            </p>
-          </div>
-          <span class="blog-item__arrow"></span>
-        </a>
-      </div>
-      <div class="grid-item">
-        <a href="eshopy-spolu-s-bs-shop.html" class="blog-item">
-          <div class="blog-item__image blog-item__image--detail">
-            <img class="pc-top" src="@images/icons/marketing/eshopy/sticky-icon-eshopy.svg">
-          </div>
-          <div class="blog-item__inner">
-            <h3 class="blog-item__title blog-item__title--detail">
-              E-shopy spolu s BSSHOP
-            </h3>
-            <p class="blog-item__text blog-item__text--detail">
-              Díky integraci a propojení dalších systémů jako je informační systém Pohoda a v oblasti e-mail marketingu 
-              Mailkit dokážeme vytvořit komplexní e-shopové řešení.
             </p>
           </div>
           <span class="blog-item__arrow"></span>

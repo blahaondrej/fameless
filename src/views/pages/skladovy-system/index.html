@@ -1,7 +1,7 @@
 {% extends "src/views/layouts/default.html" %}
 
 <!-- set variables used in layout -->
-{% set title="Skladový systém" %}
+{% set title="Fameless | Skladový systém" %}
 
 {% block styles %}
 <!-- load specific page style -->
@@ -10,7 +10,6 @@
 
 {% block scripts %}
 <!-- load specific page script -->
-<script src="./products.js"></script>
 {% endblock %}
 
 
@@ -20,21 +19,20 @@
 <nav aria-label="Breadcrumb">
   <ol class="breadcrumbs">
     <li><a href="/"><img src="@images/icons/home-icon.svg"></a></li>
-    <li><a href="/about/index.html">O nás</a></li>
-    <li><a href="#">Produkty</a></li>
+    <li><a href="#">WMS - Skladový systém</a></li>
   </ol>
 </nav>
 <section class="intro intro--products">
   <div class="row align-items-center justify-content-center">
     <div class="col-12">
-      <h1 class="intro__title">Strategický partner pro vaši firmu</h1>
+      <h1 class="intro__title">WMS - Skladový systém</h1>
       <p class="intro__text">S námi fameless opravdu nebudete. S čím pomůžeme vám?</p>
-      <a href="#" class="button-secondary">Zjistit více</a>
+      <a href="#skladovy-system" class="button-secondary">Zjistit více</a>
     </div>
   </div>
 </section>
 
-<section class="blog blog--products products-list">
+<section class="blog blog--products products-list" id="skladovy-system">
   <div class="blog__inner grid product-list">
     <div class="row">
       <div class="grid-item">

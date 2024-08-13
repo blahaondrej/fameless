@@ -1,146 +1,139 @@
 @use '../base/mixins';
 .about {
-    &__text {
-        padding: 20px 0;
-        h2 {
-            color: #070058;
-            font-size: 32px;
-            font-style: normal;
-            font-weight: 400;
-            line-height: 50px;
-        }
-        p {
-            color: rgba(7, 0, 88, 0.80);
-            font-size: 18px;
-            font-style: normal;
-            font-weight: 400;
-            line-height: 30px;  
-            margin-bottom: 20px;          
-        }
+  &__text {
+    padding: 20px 0;
+    h2 {
+      color: #070058;
+      font-size: 32px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 50px;
     }
-    &__image {
-        margin-top: 200px;
-        @include mixins.respond-to(md) {
-            margin-top: 100px;
-            margin-bottom: 100px;
-           }
-        @include mixins.respond-to(sm) {
-           margin-top: 50px;
-           margin-bottom: 50px;
-          }
-        img {
-            width: 100%;
-            height: auto;
-            border-radius: 20px;
-        }
+    p {
+      color: rgba(7, 0, 88, 0.8);
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 30px;
+      margin-bottom: 20px;
     }
+  }
+  &__image {
+    margin: 80px 0;
+    @include mixins.respond-to(md) {
+      margin-top: 40px;
+      margin-bottom: 50px;
+    }
+    @include mixins.respond-to(sm) {
+      margin-top: 50px;
+      margin-bottom: 50px;
+    }
+    img {
+      width: 100%;
+      height: auto;
+      border-radius: 20px;
+    }
+  }
 }
 
 .about-team {
-    padding: 100px 0;
-    overflow: hidden;
-    .col {
-        width: 20%;
-        flex: 0 1 auto;
-        @include mixins.respond-to(md) {
-            flex-wrap: nowrap;
-            width: 80%;
-          }
+  padding-bottom: 100px;
+  overflow: hidden;
+  .col {
+    width: 20%;
+    flex: 0 1 auto;
+    padding-block: 12px;
+    @include mixins.respond-to(lg) {
+      width: 33%;
     }
-    .row {
-        @include mixins.respond-to(md) {
-            display: flex;
-            flex-wrap: nowrap;
-            overflow-y: auto;
-            scrollbar-width: none;
-            -ms-overflow-style: none;
-            &::-webkit-scrollbar {
-                display: none;
-            }
-          }
+    @include mixins.respond-to(md) {
+      width: 50%;
     }
+  }
 }
 
 // ANIMATION
 .about-timeline {
-    position: relative;
-    padding: 20px 0;
+  position: relative;
+  padding: 20px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: hidden;
+  @include mixins.respond-to(sm) {
+    align-items: flex-start;
+  }
+  &__item {
     display: flex;
-    flex-direction: column;
     align-items: center;
-    overflow: hidden;
-    @include mixins.respond-to(sm) {
-        align-items: flex-start;
+    margin: 30px 0;
+    position: relative;
+    &:nth-child(even) {
+      .about-timeline__text {
+        left: -200px;
+        text-align: right;
+        @include mixins.respond-to(sm) {
+          right: -200px;
+          left: unset;
+          text-align: left;
+        }
       }
-    &__item {
-        display: flex;
-        align-items: center;
-        margin: 30px 0;
-        position: relative;
-        &:nth-child(even) {
-            .about-timeline__text {
-                left: -200px;
-                text-align: right;
-                @include mixins.respond-to(sm) {
-                    right: -200px;
-                    left: unset;
-                    text-align: left;
-                  }
-            }
-        }
-        &:nth-child(odd) {
-            .about-timeline__text {
-                right: -200px;
-                text-align: left;
-            }
-        }
     }
-    &__year {
-        color: #1273EF;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        background-color: #fff;
-        border-radius: 85px;
-        width: 200px;
-        height: 110px;
-        font-size: 36px;
-        font-style: normal;
-        font-weight: 700;
-        line-height: normal;
-        margin: 0 30px;
-        @include mixins.respond-to(sm) {
-            margin: 0 15px 0 0;
-            width: 120px;
-            height: 70px;
-            font-size: 28px;
-            border-radius: 50px;
-          }
+    &:nth-child(odd) {
+      .about-timeline__text {
+        right: -200px;
+        text-align: left;
+      }
     }
-    &__text {
-        color: #070058;
-        font-feature-settings: 'clig' off, 'liga' off;
-        font-size: 14px;
-        font-style: normal;
-        font-weight: 500;
-        line-height: 24px;
-        max-width: 200px;
-        position: absolute;
+  }
+  &__year {
+    color: #1273ef;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    border-radius: 85px;
+    width: 200px;
+    height: 110px;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin: 0 30px;
+    @include mixins.respond-to(sm) {
+      margin: 0 15px 0 0;
+      width: 120px;
+      height: 70px;
+      font-size: 28px;
+      border-radius: 50px;
     }
-    &::before {
-        content: '';
-        position: absolute;
-        top: 0;
-        left: 50%;
-        transform: translateX(-50%);
-        width: 1.5px;
-        height: 100%;
-        background-color: #08005C;
-        opacity: 0.12;
-        z-index: 0;
-        @include mixins.respond-to(sm) {
-            left: 60px;
-            transform: translateX(0);
-          }
+  }
+  &__text {
+    color: #070058;
+    font-feature-settings:
+      'clig' off,
+      'liga' off;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+    max-width: 200px;
+    position: absolute;
+  }
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 1.5px;
+    height: 100%;
+    background-color: #08005c;
+    opacity: 0.12;
+    z-index: 0;
+    @include mixins.respond-to(sm) {
+      left: 60px;
+      transform: translateX(0);
     }
+  }
 }

@@ -1,0 +1,61 @@
+{% extends "src/views/layouts/default.html" %}
+
+<!-- set variables used in layout -->
+{% set title="Fameless | Vývoj" %}
+
+{% block styles %}
+<!-- load specific page style -->
+
+{% endblock %}
+
+{% block scripts %}
+<!-- load specific page script -->
+
+{% endblock %}
+
+
+{% block content %}
+
+<div class="circle-background circle-background--homepage"></div>
+<nav aria-label="Breadcrumb">
+  <ol class="breadcrumbs">
+    <li><a href="/"><img src="@images/icons/home-icon.svg"></a></li>
+    <li><a href="#">Vývoj</a></li>
+  </ol>
+</nav>
+<section class="intro intro--products">
+  <div class="row align-items-center justify-content-center">
+    <div class="col-12">
+      <h1 class="intro__title">Vývoj</h1>
+      <p class="intro__text">S námi fameless opravdu nebudete. S čím pomůžeme vám?</p>
+      <a href="#vyvoj" class="button-secondary">Zjistit více</a>
+    </div>
+  </div>
+</section>
+
+<section class="blog blog--products products-list" id="vyvoj">
+  <div class="blog__inner grid product-list">
+    <div class="row">
+      <div class="grid-item">
+        <a href="eshopy-spolu-s-bs-shop.html" class="blog-item">
+          <div class="blog-item__image blog-item__image--detail">
+            <img class="pc-top" src="@images/icons/vyvoj/sticky-icon-eshopy-spolu-s-bsshop.svg">
+          </div>
+          <div class="blog-item__inner blog-item__inner--detail">
+            <h3 class="blog-item__title blog-item__title--detail">
+              E-shopy spolu s BSSHOP
+            </h3>
+            <p class="blog-item__text blog-item__text--detail">
+              Díky e-shopové platformě BSSHOP, která má společnou databázi s informačním systémem POHODA společně s
+              e-mailingovým nástrojem Mailkit dokážeme vytvořit komplexní e-shopové řešení.
+            </p>
+          </div>
+          <span class="blog-item__arrow"></span>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+{% include "src/views/partials/contact-banner.html" %}
+{% endblock %}

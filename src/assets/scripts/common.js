@@ -199,7 +199,6 @@ var swiperstudie = new Swiper(".swiper-detail-studie", {
   watchSlidesProgress: true,
 });
 var swiperstudie2 = new Swiper(".swiper-detail-studie2", {
-  spaceBetween: 10,
   navigation: {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",
@@ -411,5 +410,39 @@ $(document).ready(function(){
       moveBlogTopImage();
       moveStudieTopImage();
   });
+
+  // formulář
+
+	function clearForm(){
+		$('.js-input').val("");
+	}
+
+	function showLoading( status ){
+		$('.js-loader').show();
+	}
+
+	function hideMessage(){
+		$('.js-contact-message').empty();
+		$('.js-contact-message').fadeTo(0);
+	}
+
+	$('.js-request-form').on('submit', function(e){
+		e.preventDefault();
+		hideMessage();
+		showLoading();
+
+		$.post('../contact.php', $( this ).serialize(), function(response){
+			if (response == 1) {
+				$('.form__wrapper--thankyou').show();
+				$(".submit__button").attr("disabled", true);
+        $('.js-request-form').addClass('hidden');
+				clearForm();
+			} else {
+				$('.form__wrapper--error').show();
+        $('.js-request-form').addClass('hidden');
+			}
+
+		});
+	});
 
 });

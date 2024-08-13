@@ -1,0 +1,208 @@
+{% extends "src/views/layouts/default.html" %}
+
+<!-- set variables used in layout -->
+{% set title="Fameless | FameDash" %}
+
+{% block styles %}
+<!-- load specific page style -->
+
+{% endblock %}
+
+{% block scripts %}
+<!-- load specific page script -->
+
+{% endblock %}
+
+{% block content %}
+
+<div class="circle-background circle-background--product"></div>
+<nav aria-label="Breadcrumb">
+  <ol class="breadcrumbs">
+    <li><a href="/"><img src="@images/icons/home-icon.svg"></a></li>
+    <li><a href="/pohoda/">Moduly FameDash</a></li>
+    <li><a href="#">Famedash</a></li>
+  </ol>
+</nav>
+<div class="product-detail">
+  <div class="row">
+    <div class="col-12 col-md-1">
+      <div class="sticky-element">
+        <div class="sticky-element__image">
+          <img src="@images/icons/pohoda/sticky-icon-famedash.svg">
+        </div>
+        <div class="sticky-element__text">
+          FameDash
+        </div>
+      </div>
+    </div>
+    <div class="col-12 col-md-11">
+      <section class="intro intro--product-detail">
+        <div class="row align-items-center justify-content-center">
+          <div class="col-12">
+            <h1 class="intro__title">FameDash</h1>
+            <p class="intro__text">Systémové řešení, automatizace a napojení na ekonomický a informační systém POHODA.
+            </p>
+            <a href="#famedash" class="button-secondary">Zjistit více</a>
+          </div>
+        </div>
+      </section>
+      <section id="famedash">
+        <div class="products__inner">
+          <div class="row justify-content-md-center">
+            <div class="col-12 col-md-6 col-lg-5">
+              <div class="products__item products__item--left-marketing reveal-opacity">
+                <div class="products__images products__images--marketing justify-content-center">
+                  <img class="product-marketing" src="@images/pohoda/famedash/rychle-jednoduse-a-prehledne.png">
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-5">
+              <div class="products__item">
+                <h2 class="products__title">Rychle, jednoduše<br>a přehledně</h2>
+                <h5 class="products__subtitle">FameDash je komplexní online webová platforma napojená na ekonomický a
+                  informační systém POHODA.</h5>
+                <p class="products__text">Díky ní budete mít vše přehledně na jednom místě. Ať už se jedná o zákaznickou
+                  péči, sklad a expedici nebo třeba manažerské pohledy a vyhodnocení KPI.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="products__inner">
+          <div class="row justify-content-md-center">
+            <div class="col-12 col-md-6 col-lg-5 order-md-1 order-lg-2">
+              <div class="products__item products__item--right-marketing reveal-opacity">
+                <div class="products__images products__images--marketing justify-content-center">
+                  <img class="product-marketing" src="@images/pohoda/famedash/automatizace.png">
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-5 order-md-1 order-lg-1">
+              <div class="products__item">
+                <h2 class="products__title">Automatizace</h2>
+                <h5 class="products__subtitle">Bez automatizace se při správě e-shopu neobejdete.</h5>
+                <p class="products__text">Ušetří vám čas při tvorbě faktur, usnadní vám řešení problematických
+                  objednávek a zákaznická péče s ní bude čirá radost. </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-11">
+            <div class="product-full">
+              <h2 class="product-full__title">
+                Co všechno FameDash umí?
+              </h2>
+            </div>
+          </div>
+        </div>
+
+        <div class="software software--marketing reveal-up100">
+          <div class="software__item">
+            <div class="software__icon">
+              <img src="@images/icons/pohoda/famedash/efektivni-vycet-prehledu-a-dat.svg">
+            </div>
+            <h3 class="software__title">Efektivní výčet<br>přehledů a dat</h3>
+            <p class="software__text">
+              Získejte rychlý náhled na klíčová data pro váš business. FameDash vám poskytne okamžitě i taková data,
+              která byste v IS POHODA složitě filtrovali.
+            </p>
+          </div>
+          <div class="software__item">
+            <div class="software__icon">
+              <img src="@images/icons/pohoda/famedash/automatizace-procesu.svg">
+            </div>
+            <h3 class="software__title">Automatizaci<br>procesů</h3>
+            <p class="software__text">
+              Pomůžeme vám s automatizací opakujících se činností, čímž ušetříte čas a můžete se tak soustředit více na
+              důležité úkoly.
+            </p>
+          </div>
+          <div class="software__item">
+            <div class="software__icon">
+              <img src="@images/icons/pohoda/famedash/importy-a-exporty-dat.svg">
+            </div>
+            <h3 class="software__title">Importy<br>a exporty dat</h3>
+            <p class="software__text">
+              S FameDash můžete dokonce i snadno do IS POHODA zapisovat data. A to je velká výhoda, nemyslíte?
+            </p>
+          </div>
+        </div>
+
+        <div class="software software--marketing reveal-up100">
+          <div class="software__item">
+            <div class="software__icon">
+              <img src="@images/icons/pohoda/famedash/rizeni-a-reseni-zakazek.svg">
+            </div>
+            <h3 class="software__title">Řízení a řešení<br>zakázek</h3>
+            <p class="software__text">
+              Zabýváte se ve svém podnikání zakázkovou výrobou či poskytujete služby na míru? S FameDash pak využijete
+              systém pro správu a řízení zakázek.
+            </p>
+          </div>
+          <div class="software__item">
+            <div class="software__icon">
+              <img src="@images/icons/pohoda/famedash/nadstavbove-moduly-pro-vyrobu.svg">
+            </div>
+            <h3 class="software__title">Nadstavbové<br>moduly pro výrobu</h3>
+            <p class="software__text">
+              Mysleli jsme na výrobu. Můžete se spolehnout, že s moduly ve FameDash svoji výrobu můžete posunout zase o
+              kousek dál.
+            </p>
+          </div>
+          <div class="software__item">
+            <div class="software__icon">
+              <img src="@images/icons/pohoda/famedash/analyzu-a-vyhodnoceni-prehledne.svg">
+            </div>
+            <h3 class="software__title">Analýzu<br>a vyhodnocení<br>přehledně</h3>
+            <p class="software__text">
+              Nikdo nechce věnovat mnoho času hledání, filtrování a analýze dat. Hodnocení úspěšnosti vašeho podnikání
+              máte s FameDash ihne k dispozici.
+            </p>
+          </div>
+        </div>
+
+        <div class="products__inner">
+          <div class="container">
+            <div class="col-12">
+              <div class="products__item">
+                <h2 class="products__title">Univerzální pomocník, upravíme ho pro vás i na míru!</h2>
+                <p class="products__text">Spoustu věcí řeší každá firma - sledujete ekonomické ukazatele, řešíte cenové
+                  nabídky nebo počítáte odeslané balíky v rámci e-shopu a samozřejmě mnoho dalšího.</p>
+                <p class="products__text">Co když máte nebo děláte něco, co ostatní nedělají nebo neřeší? I s tím vám
+                  umíme pomoci! <strong>FameDash upravujeme na míru dle potřeb zákazníka!</strong></p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="products__inner">
+          <div class="row justify-content-md-center">
+            <div class="col-12 col-md-6 col-lg-5">
+              <div class="products__item products__item--left-marketing reveal-opacity">
+                <div class="products__images products__images--marketing justify-content-center">
+                  <img class="product-marketing" src="@images/pohoda/famedash/moduly-famedash.png">
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-5">
+              <div class="products__item">
+                <h2 class="products__title">Moduly FameDash</h2>
+                <h5 class="products__subtitle">FameDash toho umího hodně.</h5>
+                <p class="products__text">Modulů ve FameDash je mnoho. Záleží pouze a jen na vás, co si z naší nabídky
+                  vyberete a co pomůže právě vám. Podívejte se na to, co jsme si pro vás připravili.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </section>
+    </div>
+  </div>
+</div>
+
+
+{% include "src/views/partials/contact-banner.html" %}
+{% endblock %}

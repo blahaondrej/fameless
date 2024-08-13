@@ -1,7 +1,7 @@
 {% extends "src/views/layouts/default.html" %}
 
 <!-- set variables used in layout -->
-{% set title="Kontakt | Fameless" %}
+{% set title="Fameless | Kontakt" %}
 
 {% block styles %}
 <!-- load specific page style -->
@@ -10,7 +10,7 @@
 
 {% block scripts %}
 <!-- load specific page script -->
-
+<script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
 {% endblock %}
 
 {% block content %}
@@ -19,7 +19,6 @@
 <nav aria-label="Breadcrumb">
   <ol class="breadcrumbs">
     <li><a href="/"><img src="@images/icons/home-icon.svg"></a></li>
-    <li><a href="/about/index.html">O nás</a></li>
     <li><a href="#">Kontakt</a></li>
   </ol>
 </nav>
@@ -29,19 +28,30 @@
     <div class="row">
       <div class="col-12 col-md-6">
         <h3>Napište nám</h3>
-        <form action="" class="hidden">
-          <input type="text" placeholder="Vaše jméno / Firma">
-          <input type="text" placeholder="Váš e-mail">
-          <textarea placeholder="Zaujala mě vaše případová studie, kde řešíte…"></textarea>
+        <form action="" class="js-request-form">
+          <input type="text" placeholder="Vaše jméno / Firma" class="js-contact-message" id="contact_name"
+            name="contact_name" required="required">
+          <input type="email" placeholder="Váš e-mail" class="js-contact-message" id="contact_email"
+            name="contact_email" required="required">
+          <textarea placeholder="Zaujala mě vaše případová studie, kde řešíte…" class="js-contact-message"
+            id="contact_note" name="contact_note"></textarea>
           <button type="submit" class="button-secondary">
             Odeslat zprávu
           </button>
         </form>
-        <div class="success-form active">
+        <div class="success-form form__wrapper--thankyou">
           <h3 class="success-form__title">Odesláno!</h3>
           <div class="success-form__text">
             <p>Děkujeme za kontaktování, ozveme se vám do druhého dne.</p>
-            <p>Zatím se můžete podívat na naše <a href="#">případové studie</a>.</p>
+            <p>Zatím se můžete podívat na naše <a href="/pripadove-studie/">případové studie</a>.</p>
+          </div>
+        </div>
+        <div class="success-form form__wrapper--error">
+          <h3 class="success-form__title">Chyba!</h3>
+          <div class="success-form__text">
+            <p>Během odesílání poptávkového formuláře nastala chyba. Zkuste to později, nebo nás kontaktuje jiným
+              způsobem.</p>
+            <p>Zatím se můžete podívat na naše <a href="/pripadove-studie">případové studie</a>.</p>
           </div>
         </div>
       </div>
@@ -53,6 +63,27 @@
           </div>
           <p>Nechte nám na sebe kontakt a my se vám nejpozději do druhého pracovního dne ozveme.</p>
         </div>
+      </div>
+    </div>
+  </div>
+  <div class="contact-calendar">
+    <div class="row">
+      <!--<div class="col-12 col-md-4">
+        <div class="contact-calendar__inner">
+          <h3>Zarezervujte si konzultaci</h3>
+          <p>Nebo si rovnou vytvořte rezervaci na schůzku s námi.</p>
+          <div class="contact-calendar__button">
+            <a href="#" class="button-primary">Vytvořit rezervaci</a>
+          </div>
+        </div>
+      </div>-->
+      <div class="col-12">
+        <h3>Zarezervujte si konzultaci</h3>
+        <!-- Calendly inline widget begin -->
+        <div class="calendly-inline-widget"
+          data-url="https://calendly.com/famelesssro/30min?background_color=ffffff&primary_color=1273ef"
+          style="min-width:320px;height:700px;"></div>
+        <!-- Calendly inline widget end -->
       </div>
     </div>
   </div>
@@ -110,12 +141,13 @@
       <div class="col-12 col-md-6 col-lg-3 offset-lg-1">
         <h3>Fakturační údaje</h3>
         <p><strong>IČO: 04072448</strong></p>
+        <p><strong>DIČ: CZ04072448</strong></p>
         <p>Společnost je zapsaná v obchodním rejstříku pod spisovou značkou C 46527 vedené u Krajského soudu v Hradci
           Králové.</p>
       </div>
       <div class="col-12 col-md-6 col-lg-5 offset-lg-2">
         <h3>Kontaktní údaje</h3>
-        <p><a href="mailto:emilie@fameless.cz">emilie@fameless.cz</a></p>
+        <p><a href="mailto:info@fameless.cz">info@fameless.cz</a></p>
         <p><a href="tel:+420534534623">+420 534 534 623</a></p>
       </div>
     </div>

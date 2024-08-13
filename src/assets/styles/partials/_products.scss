@@ -1,227 +1,242 @@
 @use '../base/fonts/inter.scss' as fontInter;
 @use '../base/mixins';
 .products {
-    
-    &__inner {
-        margin: 100px 0;
-        @include mixins.respond-to(md) {
-            margin: 50px 0;
-        }
+  &__inner {
+    margin: 150px 0;
+    @include mixins.respond-to(md) {
+      margin: 70px 0;
     }
-    &__item {
-        &--left {
-            padding-right: 80px;
-        }
-        &--right {
-            padding-left: 80px;
-        }
-        &--left-marketing {
-            padding-right: 20px;
-            margin-top: -50px;
-            @include mixins.respond-to(md) {
-                padding-right: 0;
-            }
-        }
-        &--right-marketing {
-            padding-left: 20px;
-            margin-top: -50px;
-            @include mixins.respond-to(md) {
-                padding-left: 0;
-            }
-        }
-        @include mixins.respond-to(md) {
-            margin-bottom: 40px;
-            &--left {
-                padding-right: 0;
-            }
-            &--right {
-                padding-left: 0;
-            }
-        }
-        ul {
-            li {
-                color: rgba(7, 0, 88, 0.80);
-                font-feature-settings: 'clig' off, 'liga' off;
-                font-size: 18px;
-                font-style: normal;
-                font-weight: 400;
-                line-height: 30px;
-            }
-        }
+  }
+  &__item {
+    &--left {
+      padding-right: 80px;
     }
-    &__images {
-        position: relative;
-        @include mixins.respond-to(md) {
-            text-align: center;
-            width: 60%;
-            margin: 0 auto;
-        }
-        &--marketing {
-            @include mixins.respond-to(md) {
-                width: 80%;
-                margin-top: 30px;
-            }
-        }
-        img {
-            position: absolute;
-            width: 100%;
-            height: auto;
-            border-radius: 10px;
-        }
-        .product-bg {
-            position: relative;
-            width: 300px;
-            @include mixins.respond-to(md) {
-                width: 100%;
-            }
-        }
-        .product-marketing {
-            width: 100%;
-            height: auto;
-            position: relative;
-            &.small {
-                width: 70%;
-                text-align: center;
-                @include mixins.respond-to(md) {
-                    width: 90%;
-                }
-            }
-        }
-        .product-left {
-            top: -10px;
-            left: -60px;
-            z-index: 2;
-            width: 170px;
-            @include mixins.respond-to(md) {
-                left: -30px;
-                width: 120px;
-              }
-        }
-        .product-right {
-            top: 32%;
-            right: 20px;
-            z-index: 2;
-            width: 170px;
-            @include mixins.respond-to(md) {
-                right: -30px;
-                top: 40%;
-                width: 120px;
-              }
-        }
+    &--right {
+      padding-left: 80px;
     }
-    &__title {
-        color: #070058;
-        font-feature-settings: 'clig' off, 'liga' off;
-        font-size: 48px;
-        font-style: normal;
-        font-weight: 600;
-        line-height: 102.083%;
-        margin-bottom: 16px;
-        @include mixins.respond-to(md) {
-            font-size: 28px;
-        }
+    &--left-marketing {
+      padding-right: 20px;
+      margin-top: -50px;
+      @include mixins.respond-to(md) {
+        padding-right: 0;
+      }
     }
-    &__subtitle {
-        color: #070058;
-        font-feature-settings: 'clig' off, 'liga' off;
-        font-family: fontInter.$font-family-inter;
-        font-size: 20px;
-        font-style: normal;
-        font-weight: 500;
-        line-height: 25px;
-        margin-bottom: 32px;
+    &--right-marketing {
+      padding-left: 20px;
+      margin-top: -50px;
+      @include mixins.respond-to(md) {
+        padding-left: 0;
+      }
     }
-    &__text {
-        color: rgba(7, 0, 88, 0.80);
-        font-feature-settings: 'clig' off, 'liga' off;
+    @include mixins.respond-to(md) {
+      margin-bottom: 40px;
+      padding-inline: 10px;
+      &--left {
+        padding-right: 0;
+      }
+      &--right {
+        padding-left: 0;
+      }
+    }
+    ul {
+      li {
+        color: rgba(7, 0, 88, 0.8);
+        font-feature-settings:
+          'clig' off,
+          'liga' off;
         font-size: 18px;
         font-style: normal;
         font-weight: 400;
         line-height: 30px;
-        margin-bottom: 25px;
-        strong {
-            font-weight: 700;
-        }
-        @include mixins.respond-to(md) {
-            font-size: 15px;
-            margin-bottom: 30px;
-        }
+      }
     }
+  }
+  &__images {
+    position: relative;
+    @include mixins.respond-to(md) {
+      text-align: center;
+      width: 60%;
+      margin: 0 auto;
+    }
+    &--marketing {
+      @include mixins.respond-to(md) {
+        width: 80%;
+        margin-top: 30px;
+      }
+      @include mixins.respond-to(sm) {
+        width: 90%;
+        margin-top: 30px;
+      }
+    }
+    img {
+      position: absolute;
+      width: 100%;
+      height: auto;
+      border-radius: 10px;
+    }
+    .product-bg {
+      position: relative;
+      width: 300px;
+      @include mixins.respond-to(md) {
+        width: 100%;
+      }
+    }
+    .product-marketing {
+      width: 100%;
+      height: auto;
+      position: relative;
+      &.small {
+        width: 70%;
+        text-align: center;
+        @include mixins.respond-to(md) {
+          width: 90%;
+        }
+      }
+    }
+    .product-left {
+      top: -10px;
+      left: -60px;
+      z-index: 2;
+      width: 170px;
+      @include mixins.respond-to(md) {
+        left: -30px;
+        width: 120px;
+      }
+    }
+    .product-right {
+      top: 32%;
+      right: 20px;
+      z-index: 2;
+      width: 170px;
+      @include mixins.respond-to(md) {
+        right: -30px;
+        top: 40%;
+        width: 120px;
+      }
+    }
+  }
+  &__title {
+    color: #070058;
+    font-feature-settings:
+      'clig' off,
+      'liga' off;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 102.083%;
+    margin-bottom: 16px;
+    @include mixins.respond-to(md) {
+      font-size: 28px;
+    }
+  }
+  &__subtitle {
+    color: #070058;
+    font-feature-settings:
+      'clig' off,
+      'liga' off;
+    font-family: fontInter.$font-family-inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 25px;
+    margin-bottom: 32px;
+  }
+  &__text {
+    color: rgba(7, 0, 88, 0.8);
+    font-feature-settings:
+      'clig' off,
+      'liga' off;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px;
+    margin-bottom: 25px;
+    strong {
+      font-weight: 700;
+    }
+    @include mixins.respond-to(md) {
+      font-size: 15px;
+      margin-bottom: 30px;
+    }
+  }
 }
 
 .products-list {
-    .nav-pills .nav-link {
-        color: #08005C;
-        font-size: 22px;
-        font-style: normal;
-        font-weight: 600;
-        line-height: 30px;
-        @include mixins.respond-to(md) {
-            font-size: 18px;
-            line-height: 24px;
-        }
+  .nav-pills .nav-link {
+    color: #08005c;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 30px;
+    @include mixins.respond-to(md) {
+      font-size: 18px;
+      line-height: 24px;
     }
-    .nav-pills .nav-link.active, .nav-pills .show > .nav-link {
-        background: none;
-        text-decoration: underline;
-    }
+  }
+  .nav-pills .nav-link.active,
+  .nav-pills .show > .nav-link {
+    background: none;
+    text-decoration: underline;
+  }
 }
 
 .product-detail {
-    position: relative;
-    padding-top: 50px;
-    @include mixins.respond-to(md) {
-        padding-top: 0;
-    }
+  position: relative;
+  padding-top: 50px;
+  @include mixins.respond-to(md) {
+    padding-top: 0;
+  }
 }
 .sticky-element {
-    position: sticky;
-    top: 70px;
-    transition: transform 0.2s ease-out;
-    @include mixins.respond-to(md) {
-        display: none;
-    }
-    &__image {
-        height: 200px;
-        width: 110px;
-        border-radius: 85px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        background-color: #fff;
-    }
-    &__text {
-        margin-top: 20px;
-        color: #070058;
-        font-size: 14px;
-        font-style: normal;
-        font-weight: 500;
-        line-height: 18px;
-    }
+  position: sticky;
+  top: 70px;
+  transition: transform 0.2s ease-out;
+  @include mixins.respond-to(md) {
+    display: none;
+  }
+  &__image {
+    height: 200px;
+    width: 110px;
+    border-radius: 85px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+  }
+  &__text {
+    margin-top: 20px;
+    color: #070058;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 18px;
+  }
 }
 .product-full {
-    &__title {
-        color: #070058;
-        font-feature-settings: 'clig' off, 'liga' off;
-        font-size: 48px;
-        font-style: normal;
-        font-weight: 600;
-        line-height: 102.083%;
-        margin-bottom: 16px;
-        text-align: center;
-        margin-bottom: 50px;
-        @include mixins.respond-to(md) {
-            font-size: 28px;
-        } 
+  &__title {
+    color: #070058;
+    font-feature-settings:
+      'clig' off,
+      'liga' off;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 102.083%;
+    margin-bottom: 16px;
+    text-align: center;
+    margin-bottom: 50px;
+    @include mixins.respond-to(md) {
+      font-size: 28px;
     }
-    a {
-        cursor: initial;
-        @include mixins.respond-to(md) {
-            cursor: pointer;
-        }
+  }
+  a {
+    cursor: initial;
+    @include mixins.respond-to(md) {
+      cursor: pointer;
     }
-    &__image {
-        width: 100%;
-        height: auto;
-    }
+  }
+  &__image {
+    width: 100%;
+    height: auto;
+  }
 }
